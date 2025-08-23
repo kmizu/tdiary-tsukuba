@@ -1,0 +1,465 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ja-JP">
+<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=1B2M2Y8A" charset="utf-8"></script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=1B2M2Y8A" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://www2.coins.tsukuba.ac.jp:80/~i021216/diary/","20051201165445","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1133456085");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=1B2M2Y8A" />
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=1B2M2Y8A" />
+<!-- End Wayback Rewrite JS Include -->
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="generator" content="tDiary 2.0.0">
+	<meta http-equiv="Last-Modified" content="Thu, 1 Dec 2005 13:33:58 GMT">
+	<meta http-equiv="Content-Script-Type" content="text/javascript; charset=UTF-8">
+	<meta name="author" content="水島宏太">
+	<link rev="made" href="mailto:hau51010@tree.odn.ne.jp">
+	<link rel="index" title="トップ" href="http://www2.coins.tsukuba.ac.jp/~i021216/">
+	<link rel="start" title="最新" href="./">
+	<meta http-equiv="content-style-type" content="text/css">
+	<link rel="stylesheet" href="/web/20051201165445cs_/http://www2.coins.tsukuba.ac.jp/~i021216/diary/theme/base.css" type="text/css" media="all">
+	<link rel="stylesheet" href="/web/20051201165445cs_/http://www2.coins.tsukuba.ac.jp/~i021216/diary/theme/another_blue/another_blue.css" title="another_blue" type="text/css" media="all">
+	<title>Onion開発日記</title>
+	
+	<!--link rel="alternate" type="application/x-lirs" title="lirs" href="antenna.lirs"-->
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="https://web.archive.org/web/20051201165445/http://www2.coins.tsukuba.ac.jp/~i021216/diary/index.rdf">
+</head>
+<body>
+
+
+<div class="adminmenu">
+<span class="adminmenu"><a href="https://web.archive.org/web/20051201165445/http://www2.coins.tsukuba.ac.jp/~i021216/">トップ</a></span>
+<span class="adminmenu"><a href="update.rb">追記</a></span>
+</div>
+<h1>Onion開発日記</h1>
+<div class="calendar">
+<div class="year">2004|<a href="./?date=200409">09</a>|<a href="./?date=200410">10</a>|<a href="./?date=200411">11</a>|<a href="./?date=200412">12</a>|</div>
+<div class="year">2005|<a href="./?date=200501">01</a>|<a href="./?date=200502">02</a>|<a href="./?date=200503">03</a>|<a href="./?date=200504">04</a>|<a href="./?date=200505">05</a>|<a href="./?date=200506">06</a>|<a href="./?date=200507">07</a>|<a href="./?date=200508">08</a>|<a href="./?date=200509">09</a>|<a href="./?date=200510">10</a>|<a href="./?date=200511">11</a>|<a href="./?date=200512">12</a>|</div>
+</div>
+<div class="todo">
+	<div class="todo-title">
+		<p>ToDo:</p>
+	</div>
+	<div class="todo-body">
+<ul>
+</ul>
+
+	</div>
+</div>
+
+
+<hr class="sep">
+
+
+	
+<div class="day">
+<h2><span class="date"><a href="./?date=20051201">2005-12-01</a></span> <span class="title"></span></h2>
+
+<div class="body">
+
+<div class="section">
+<h3><a href="./?date=20051201#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=Java">Java</a>][<a href="./?year=2005;month=4Q;category=%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0">プログラミング</a>][<a href="./?year=2005;month=4Q;category=%B8%C0%B8%EC">言語</a>][<a href="./?year=2005;month=4Q;category=%A5%D1%A1%BC%A5%B6%A5%B8%A5%A7%A5%CD%A5%EC%A1%BC%A5%BF">パーザジェネレータ</a>]<a href="https://web.archive.org/web/20051201165445/http://compilers.cs.ucla.edu/jtb/jtb-2003/">JTB: The Java Tree Builder</a></h3><p>
+Javaで書かれたアクションを含まないJavaCCのファイルから、構文木を生成するJavaのアクションを含むJavaCCのファイルを生成するツールらしい。同様のツールにJavaCCに付属のJJTreeがあるが、どの程度違うのか気になる。
+</p></div><div class="section">
+<h3><a href="./?date=20051201#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=Java">Java</a>][<a href="./?year=2005;month=4Q;category=%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0">プログラミング</a>][<a href="./?year=2005;month=4Q;category=%B8%C0%B8%EC">言語</a>][<a href="./?year=2005;month=4Q;category=%A5%D1%A1%BC%A5%B6%A5%B8%A5%A7%A5%CD%A5%EC%A1%BC%A5%BF">パーザジェネレータ</a>]<a href="https://web.archive.org/web/20051201165445/http://grammatica.percederberg.net/index.html">Grammatica</a></h3><p>
+<a href="https://web.archive.org/web/20051201165445/http://d.hatena.ne.jp/atsushieno/20050915">ものがたりの過去のエントリ</a>経由で。</a>
+IKeJIが<a href="https://web.archive.org/web/20051201165445/http://www.ssw.uni-linz.ac.at/Research/Projects/Coco/">Coco/R</a>が使いにくいと言うので、もっと良さげなパーザジェネレータを探していたところ見つけた、Java/C#のコードを生成するLL(k)パーザジェネレータ。複数個のトークンを先読みする必要がある場合でも、何個先読みすればよいかを自動で判断してくれるようだ。JavaCCでは、複数個のトークンを先読みするときは、明示的に書かなければならないことを考えると、結構便利かも。とりあえず今週末にでも早速試してみよう。
+</p></div><div class="section">
+<h3><a href="./?date=20051201#p03"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=Java">Java</a>][<a href="./?year=2005;month=4Q;category=%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0">プログラミング</a>][<a href="./?year=2005;month=4Q;category=%B8%C0%B8%EC">言語</a>][<a href="./?year=2005;month=4Q;category=%A5%D1%A1%BC%A5%B6%A5%B8%A5%A7%A5%CD%A5%EC%A1%BC%A5%BF">パーザジェネレータ</a>]<a href="https://web.archive.org/web/20051201165445/http://llk.sourceforge.net/">LLK</a></h3><p>
+ANTLR2.7.2から派生したパーザジェネレータ。記法はかなりJavaCCに似ているようだ。
+</p></div>
+
+</div>
+
+<div class="comment">
+
+	<div class="caption">[<a href="./?date=20051201#c">ツッコミを入れる</a>]</div>
+</div>
+
+
+
+
+
+
+
+		<div class="referer">
+		本日のリンク元 | <a href="https://web.archive.org/web/20051201165445/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">8</a> | <a href="https://web.archive.org/web/20051201165445/http://w1.nirai.ne.jp/m-mata/diary/diary0510.html" title="http://w1.nirai.ne.jp/m-mata/diary/diary0510.html">2</a> | <a href="https://web.archive.org/web/20051201165445/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">1</a> | <a href="https://web.archive.org/web/20051201165445/http://www.google.co.jp/search?q=%22Java+for+C%2B%2B%22&amp;hl=ja&amp;lr=&amp;ie=UTF-8&amp;start=130&amp;sa=N" title="google検索(&quot;Java for C++&quot;)">1</a> | <a href="./?date=20051201#t">TrackBack(0)</a>
+		</div>
+</div>
+
+
+	<hr class="sep">
+	
+<div class="day">
+<h2><span class="date"><a href="./?date=20051129">2005-11-29</a></span> <span class="title"></span></h2>
+
+<div class="body">
+
+<div class="section">
+<h3><a href="./?date=20051129#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=Java">Java</a>][<a href="./?year=2005;month=4Q;category=%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0">プログラミング</a>]<a href="https://web.archive.org/web/20051201165445/http://java4cpp.kapott.org/">Java for C++</a></h3><p>
+Javaクラスからそれを操作する(JNIを使った)C++のソースコードを生成するというソフトウェアらしい。そこまでするなら、初めからJavaでプログラムを書いて、一部だけJNIを使うようにすればいいような気がするが、どうなんだろうか。
+</p></div><div class="section">
+<h3><a href="./?date=20051129#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%BD%F1%C0%D2">書籍</a>]<a href="https://web.archive.org/web/20051201165445/http://www.gihyo.co.jp/books/syoseki.php/4-7741-2581-4">アスペクト指向入門</a></h3><p>
+千葉滋先生による、アスペクト指向の入門書(?)。アスペクト指向については、基本的なことは大体理解しているつもりだが、1度自分の持っている知識を整理しておきたいので購入した。
+</p>
+<p>
+内容はと言えば、アスペクト指向入門といいつつ、全然入門書では無かった(と思う)。どのくらい入門ではないかというと、Bertrand Meyerの<a href="https://web.archive.org/web/20051201165445/http://www.amazon.co.jp/exec/obidos/ASIN/4756100503/249-7436497-2603506">オブジェクト指向入門</a>がオブジェクト指向入門では無いくらい。いや、本当のところは、確かに入門でもあるのだが、それにとどまらず、MOPやリフレクションとアスペクト指向技術の比較、Hyper/JなどのAspectJとは異なる系列のアスペクト指向言語の紹介など、様々な内容について取り扱われており、読んでいて飽きない。
+</p>
+<p>
+また、専門の研究者らしく、Aspect指向に対するうんちくを語ったり、AspectJの仕様の複雑さについて批判しているのも面白い。アスペクト指向に興味のある人は、買ってみて損はしないと思う。
+</p></div>
+
+</div>
+
+<div class="comment">
+
+	<div class="caption">[<a href="./?date=20051129#c">ツッコミを入れる</a>]</div>
+</div>
+
+
+
+
+
+
+
+		<div class="referer">
+		本日のリンク元 | <a href="https://web.archive.org/web/20051201165445/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">17</a> | <a href="https://web.archive.org/web/20051201165445/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20051129%23p02&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">8</a> | <a href="https://web.archive.org/web/20051201165445/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">4</a> | <a href="https://web.archive.org/web/20051201165445/http://mixi.jp/home.pl" title="http://mixi.jp/home.pl">4</a> | <a href="https://web.archive.org/web/20051201165445/http://mixi.jp/show_friend.pl?id=170835" title="http://mixi.jp/show_friend.pl?id=170835">2</a> | <a href="https://web.archive.org/web/20051201165445/http://labs.ceek.jp/jblog/" title="http://labs.ceek.jp/jblog/">2</a> | <a href="https://web.archive.org/web/20051201165445/http://www.hdhd1.com/" title="http://www.hdhd1.com">1</a> | <a href="https://web.archive.org/web/20051201165445/http://www.google.com/search?q=eclipse+%E8%A8%AD%E5%AE%9A+%E3%82%AD%E3%83%BC%E3%83%90%E3%82%A4%E3%83%B3%E3%83%89+%E3%82%A4%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88&amp;num=50&amp;hl=ja" title="google検索(eclipse 荐�� 繧�礒上秬紊�繝潟ラ 繧ゃΦ繝昴�上�num=50)">1</a> | <a href="https://web.archive.org/web/20051201165445/http://www.google.com/search?q=ActiveBasic+++%E9%85%8D%E5%88%97&amp;hl=ja&amp;lr=&amp;rls=SUNA,SUNA:2005-45,SUNA:ja&amp;start=20&amp;sa=N" title="google検索(ActiveBasic   驟榊��)">1</a> | <a href="https://web.archive.org/web/20051201165445/http://www.google.com/search?hl=fr&amp;rls=DVXA%2CDVXA%3A2005-05%2CDVXA%3Aen&amp;q=onion.java+&amp;btnG=Rechercher&amp;lr=" title="google検索(onion.java )">1</a> | <a href="./?date=20051129#t">TrackBack(0)</a>
+		</div>
+</div>
+
+
+	<hr class="sep">
+	
+<div class="day">
+<h2><span class="date"><a href="./?date=20051127">2005-11-27</a></span> <span class="title"></span></h2>
+
+<div class="body">
+
+<div class="section">
+<h3><a href="./?date=20051127#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">ジョギング</a>]つくばマラソン</h3><p>
+さて、今日はつくばマラソンだったのだが、結果だけ言うと、完走できなかった。
+</p>
+<p>
+走り始めた時点で右膝が痛み出しており、しょっぱなから既にまずい状態だったのだが、それでも10km過ぎくらいまではなんとかなった。しかし、それ以降は膝の痛みのため、とても走れる状態ではなくなったので、なんとか歩いて行けるところまでは行くことに。
+</p>
+<p>
+20kmを過ぎた辺りで、膝の痛みとは関係無しに、足のあちこちが疲労してきて、歩き続けるのもかなりつらくなってきたため、結局、23.5kmを過ぎた辺りで、リタイアした人を乗せる収容車に乗って、スタート地点まで帰って来た。
+</p>
+<p>
+今年は、規定時間内に完走するつもりでいただけに、悔しい。しかし、考えてみれば、たかだか1ヶ月ちょっとくらいのトレーニングでフルマラソンに挑んだのが無謀だったのかもしれない。来年は、もっと長期的な計画を立てて、トレーニングをすることにしよう。
+</p></div>
+
+</div>
+
+<div class="comment">
+
+		<div class="caption">本日のツッコミ(全7件) [<a href="./?date=20051127#c">ツッコミを入れる</a>]</div>
+		<div class="commentshort">
+			<p><a href="./?date=20051127#c01">Before...</a></p>
+				<p><a href="./?date=20051127#c03"><span class="canchor">_</span></a>
+				<span class="commentator">おの</span>&nbsp;[おつかれです。
+ 俺は中間地点でリタイアですよ。
+ 見かけなかったということは、俺は常に後ろにいたのかな？]</p>
+				<p><a href="./?date=20051127#c05"><span class="canchor">_</span></a>
+				<span class="commentator">みずしま</span>&nbsp;[&gt; おつかれさまです。
+ &gt; 私は最近、100m走っただけでも息切れが...。
+ 
+ よろしければ、ささださんもどう..]</p>
+				<p><a href="./?date=20051127#c06"><span class="canchor">_</span></a>
+				<span class="commentator">斎藤ただし</span>&nbsp;[お疲れさまでした。完走できなかったとはいえ、ハーフまで行ったとはすごい。俺も来年は参加したいなぁ。
+ あとはとにかく..]</p>
+				<p><a href="./?date=20051127#c07"><span class="canchor">_</span></a>
+				<span class="commentator">mayaqua</span>&nbsp;[乙です〜、ご無事が何よりです。
+ 膝の調子が芳しくないようでしたら、病院に連行する方向で検討しておきます。]</p>
+				<p><a href="./?date=20051127#c08"><span class="canchor">_</span></a>
+				<span class="commentator">みずしま</span>&nbsp;[&gt; お疲れさまでした。完走できなかったとはいえ、ハーフまで行ったとはすごい。俺も来年は参加したいなぁ。
+ あとはとに..]</p>
+		</div>
+</div>
+
+
+
+
+
+
+
+		<div class="referer">
+		本日のリンク元 | <a href="https://web.archive.org/web/20051201165445/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">14</a> | <a href="https://web.archive.org/web/20051201165445/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20051127%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">10</a> | <a href="https://web.archive.org/web/20051201165445/http://mixi.jp/home.pl" title="http://mixi.jp/home.pl">7</a> | <a href="https://web.archive.org/web/20051201165445/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">3</a> | <a href="https://web.archive.org/web/20051201165445/http://www.google.co.jp/search?q=epic+eclipse&amp;hl=ja&amp;lr=lang_ja&amp;rls=GGLD,GGLD:2004-50,GGLD:ja&amp;start=20&amp;sa=N" title="google検索(epic eclipse)">2</a> | <a href="https://web.archive.org/web/20051201165445/http://www.google.co.jp/search?q=No+suitable+driver&amp;hl=ja&amp;lr=lang_ja&amp;rls=GGLD,GGLD:2005-24,GGLD:ja&amp;start=10&amp;sa=N" title="google検索(No suitable driver)">2</a> | <a href="https://web.archive.org/web/20051201165445/http://www.google.co.jp/search?q=Eclipse+plugin+%E4%BA%92%E6%8F%9B%E6%80%A7+%E9%96%8B%E7%99%BA&amp;hl=ja&amp;lr=&amp;rls=DVXA,DVXA:2004-37,DVXA:ja&amp;start=10&amp;sa=N" title="google検索(Eclipse plugin 莠呈鋤諤狗匱)">2</a> | <a href="https://web.archive.org/web/20051201165445/http://a.hatena.ne.jp/masato_kiyama/simple?gid=251312" title="http://a.hatena.ne.jp/masato_kiyama/simple?gid=251...">2</a> | <a href="https://web.archive.org/web/20051201165445/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">1</a> | <a href="https://web.archive.org/web/20051201165445/http://www.kmonos.net/wlog/55.php" title="http://www.kmonos.net/wlog/55.php">1</a> | <a href="./?date=20051127#t">TrackBack(0)</a>
+		</div>
+</div>
+
+
+	<hr class="sep">
+	
+<div class="day">
+<h2><span class="date"><a href="./?date=20051126">2005-11-26</a></span> <span class="title"></span></h2>
+
+<div class="body">
+
+<div class="section">
+<h3><a href="./?date=20051126#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]つくばマラソン前日</h3><p>
+いよいよ明日はつくばマラソンだ。心配していた右膝の調子も今日になって大分良くなったので、とりあえず走ることはできそうだ。いつまた痛み出すかわからないので、無理をするのは禁物だが、できたら完走したいなあ。
+</p></div>
+
+</div>
+
+<div class="comment">
+
+		<div class="caption">本日のツッコミ(全2件) [<a href="./?date=20051126#c">ツッコミを入れる</a>]</div>
+		<div class="commentshort">
+				<p><a href="./?date=20051126#c01"><span class="canchor">_</span></a>
+				<span class="commentator">しゅ</span>&nbsp;[うぉ、出るんだ。
+ 僕はその時間帯は車で外出しないように気をつけます。
+ 身動きとれなくなるからなー]</p>
+				<p><a href="./?date=20051126#c02"><span class="canchor">_</span></a>
+				<span class="commentator">みずしま</span>&nbsp;[走る方は車道を走れて気持ちいいのですけど、車を使う方としては、不便でしょうね。大学の友人もちょっと愚痴ってました。
+..]</p>
+		</div>
+</div>
+
+
+
+
+
+
+
+		<div class="referer">
+		本日のリンク元 | <a href="https://web.archive.org/web/20051201165445/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">9</a> | <a href="https://web.archive.org/web/20051201165445/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20051126%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">6</a> | <a href="https://web.archive.org/web/20051201165445/http://mixi.jp/home.pl" title="http://mixi.jp/home.pl">5</a> | <a href="https://web.archive.org/web/20051201165445/http://www.google.com/search?q=openPNE&amp;hl=ja&amp;lr=&amp;rls=SUNA,SUNA:2005-41,SUNA:ja&amp;start=40&amp;sa=N" title="google検索(openPNE)">1</a> | <a href="https://web.archive.org/web/20051201165445/http://www.google.co.jp/search?hl=ja&amp;q=jframe+%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89%E4%B8%80%E8%A6%A7&amp;lr=" title="google検索(jframe 繝＜た繝�絅蛻��螟�)">1</a> | <a href="https://web.archive.org/web/20051201165445/http://search.msn.co.jp/results.aspx?q=%E8%A7%92%E3%81%B5%E3%81%98%E3%80%80%E6%98%8E%E7%A5%9E&amp;FORM=QBRE3" title="msn検索(隗偵�桁痂繼�守)">1</a> | <a href="https://web.archive.org/web/20051201165445/http://labs.ceek.jp/jblog/" title="http://labs.ceek.jp/jblog/">1</a> | <a href="https://web.archive.org/web/20051201165445/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">1</a> | <a href="https://web.archive.org/web/20051201165445/http://ikejisoft.com/" title="http://ikejisoft.com/">1</a> | <a href="./?date=20051126#t">TrackBack(0)</a>
+		</div>
+</div>
+
+
+	<hr class="sep">
+	
+<div class="day">
+<h2><span class="date"><a href="./?date=20051124">2005-11-24</a></span> <span class="title"></span></h2>
+
+<div class="body">
+
+<div class="section">
+<h3><a href="./?date=20051124#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]右膝の痛み</h3><p>
+右膝の痛みがまだ完全には治っていない。週末にはつくばマラソンがあるのに、困ったものだ。
+</p></div><div class="section">
+<h3><a href="./?date=20051124#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=Groovy">Groovy</a>][<a href="./?year=2005;month=4Q;category=%B8%C0%B8%EC">言語</a>]<a href="https://web.archive.org/web/20051201165445/http://groovy.codehaus.org/News">Groovy JSR 04</a></h3><p>
+<a href="https://web.archive.org/web/20051201165445/http://machine.homeunix.org/weblog/archives/cat_script_on_java.html">こんな毎日・・・ Script_on_Java</a>経由で。Groovyを使ったソフトを作っている身としては、どの程度不具合が修正されているのか気になる。
+</p></div>
+
+</div>
+
+<div class="comment">
+
+	<div class="caption">[<a href="./?date=20051124#c">ツッコミを入れる</a>]</div>
+</div>
+
+
+
+
+
+
+
+		<div class="referer">
+		本日のリンク元 | <a href="https://web.archive.org/web/20051201165445/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">19</a> | <a href="https://web.archive.org/web/20051201165445/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">5</a> | <a href="https://web.archive.org/web/20051201165445/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20051124%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">4</a> | <a href="https://web.archive.org/web/20051201165445/http://66.102.7.104/search?q=cache:E4_rfWu5zE8J:www2.coins.tsukuba.ac.jp/~i021216/diary/%3Fcategory%3DALL+%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E7%90%86%E8%AB%96%E3%80%80%E6%9C%9F%E6%9C%AB%E8%A9%A6%E9%A8%93&amp;hl=ja" title="http://66.102.7.104/search?q=cache:E4_rfWu5zE8J:ww...">4</a> | <a href="https://web.archive.org/web/20051201165445/http://www.google.co.jp/search?sourceid=navclient&amp;hl=ja&amp;ie=UTF-8&amp;rls=GGLD,GGLD:2005-20,GGLD:ja&amp;q=BCEL%E3%80%80%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB%E3%80%80%E3%83%90%E3%82%B0" title="google検索(BCEL縲�絅�繝九Η繧≪Ν縲�絅鞳�)">2</a> | <a href="https://web.archive.org/web/20051201165445/http://www.google.co.jp/search?q=looking+glass+Java+Web+Start&amp;hl=ja&amp;lr=lang_ja&amp;start=10&amp;sa=N" title="google検索(looking glass Java Web Start)">2</a> | <a href="https://web.archive.org/web/20051201165445/http://www.google.co.jp/search?q=cvs+%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%80%80%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E7%B7%A8%E9%9B%86&amp;hl=ja&amp;rls=GGLD%2CGGLD%3A2004-27%2CGGLD%3Aja" title="google検索(cvs 繧潟Α繝�絅蒹��紊球磧礒球祕薹�hl=ja)">2</a> | <a href="https://web.archive.org/web/20051201165445/http://search.msn.co.jp/results.aspx?v=1&amp;RS=CHECKED&amp;CY=ja&amp;FORM=MSNH&amp;q=ONION%E8%A8%80%E8%AA%9E" title="msn検索(ONION險��)">2</a> | <a href="https://web.archive.org/web/20051201165445/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20051124%23p02&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">2</a> | <a href="https://web.archive.org/web/20051201165445/http://mixi.jp/show_friend.pl?id=170835" title="http://mixi.jp/show_friend.pl?id=170835">2</a> | <a href="./?date=20051124#t">TrackBack(0)</a>
+		</div>
+</div>
+
+
+	<hr class="sep">
+	
+<div class="day">
+<h2><span class="date"><a href="./?date=20051121">2005-11-21</a></span> <span class="title"></span></h2>
+
+<div class="body">
+
+<div class="section">
+<h3><a href="./?date=20051121#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">ジョギング</a>]5km,37分</h3><p>
+昨日に比べて足の調子もマシになった…と思って、走ったのが間違いだった。半分くらい走ったくらいから、昨日と同様、右膝がかなり痛み始めた。ある程度走った後で引き返すのもシャクだったので、ちょっと無理してなんとか1周は走った。
+</p></div>
+
+</div>
+
+<div class="comment">
+
+	<div class="caption">[<a href="./?date=20051121#c">ツッコミを入れる</a>]</div>
+</div>
+
+
+
+
+
+
+
+		<div class="referer">
+		本日のリンク元 | <a href="https://web.archive.org/web/20051201165445/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">24</a> | <a href="https://web.archive.org/web/20051201165445/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20051121%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">6</a> | <a href="https://web.archive.org/web/20051201165445/http://www.google.co.jp/search?hl=ja&amp;q=%E7%AD%91%E6%B3%A2%E3%80%80%E3%81%BE%E3%81%90%E3%82%8D%E9%A3%9F%E3%81%B9%E6%94%BE%E9%A1%8C&amp;lr=" title="google検索(遲第晦�紜舌畧紕迺マ紜視�冗)">5</a> | <a href="https://web.archive.org/web/20051201165445/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">4</a> | <a href="https://web.archive.org/web/20051201165445/http://labs.ceek.jp/jblog/" title="http://labs.ceek.jp/jblog/">4</a> | <a href="https://web.archive.org/web/20051201165445/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">4</a> | <a href="https://web.archive.org/web/20051201165445/http://www.programmers-paradise.com/tdiary/?date=20050918" title="http://www.programmers-paradise.com/tdiary/?date=2...">3</a> | <a href="https://web.archive.org/web/20051201165445/http://www.kmonos.net/wlog/" title="http://www.kmonos.net/wlog/">3</a> | <a href="https://web.archive.org/web/20051201165445/http://www.google.co.jp/search?hl=ja&amp;q=Eclipse%E3%80%80%E5%80%89%E5%BA%AB%E7%95%AA&amp;lr=" title="google検索(Eclipse縲�艱昆臺�)">3</a> | <a href="https://web.archive.org/web/20051201165445/http://search.msn.co.jp/results.aspx?v=1&amp;RS=CHECKED&amp;CY=ja&amp;FORM=MSNH&amp;q=ONION%E8%A8%80%E8%AA%9E" title="msn検索(ONION險��)">3</a> | <a href="./?date=20051121#t">TrackBack(0)</a>
+		</div>
+</div>
+
+
+	<hr class="sep">
+	
+<div class="day">
+<h2><span class="date"><a href="./?date=20051120">2005-11-20</a></span> <span class="title"></span></h2>
+
+<div class="body">
+
+<div class="section">
+<h3><a href="./?date=20051120#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">ジョギング</a>]0.1kmで中断</h3><p>
+走り始めて少しの所で、右膝の辺りが痛み出した。無理をして走れなくなってしまうのは避けたいので、仕方なく引き返した。明日には治っていると良いのだが。
+</p></div><div class="section">
+<h3><a href="./?date=20051120#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=Java">Java</a>]<a href="https://web.archive.org/web/20051201165445/http://pcweb.mycom.co.jp/news/2005/11/16/010.html">Project Looking GlassがJava Web Start経由で体験可能に</a></h3><p>
+<a href="https://web.archive.org/web/20051201165445/http://pcweb.mycom.co.jp/">MYCOM PC WEB</a>より。実際に試してみるには、<a href="https://web.archive.org/web/20051201165445/https://lg3d-webstart.dev.java.net/">このページ</a>にあるJava Web Start版へのリンクをクリックすれば良いようだ。
+</p></div>
+
+</div>
+
+<div class="comment">
+
+	<div class="caption">[<a href="./?date=20051120#c">ツッコミを入れる</a>]</div>
+</div>
+
+
+
+
+
+
+
+		<div class="referer">
+		本日のリンク元 | <a href="https://web.archive.org/web/20051201165445/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">17</a> | <a href="https://web.archive.org/web/20051201165445/http://www.kmonos.net/php/kana/?t=wlog" title="http://www.kmonos.net/php/kana/?t=wlog">5</a> | <a href="https://web.archive.org/web/20051201165445/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20051120%23p02&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">4</a> | <a href="https://web.archive.org/web/20051201165445/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20051120%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">4</a> | <a href="https://web.archive.org/web/20051201165445/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">3</a> | <a href="https://web.archive.org/web/20051201165445/http://72.14.203.104/search?q=cache:9hXhYqtnQNIJ:http://www2.coins.tsukuba.ac.jp/~i021216/diary/%3Fdate%3D200507+ActiveBasic+%A5%B3%A5%DE%A5%F3%A5%C9%A5%E9%A5%A4%A5%F3%B0%FA%BF%F4&amp;lr=lang_ja&amp;hl=ja&amp;ie=EUC-JP&amp;output=html&amp;client=nttx" title="http://72.14.203.104/search?q=cache:9hXhYqtnQNIJ:h...">3</a> | <a href="https://web.archive.org/web/20051201165445/http://labs.ceek.jp/rss2/main.cgi?id=607" title="http://labs.ceek.jp/rss2/main.cgi?id=607">2</a> | <a href="https://web.archive.org/web/20051201165445/http://labs.ceek.jp/jblog/" title="http://labs.ceek.jp/jblog/">2</a> | <a href="https://web.archive.org/web/20051201165445/http://a.hatena.ne.jp/masato_kiyama/simple?gid=251312" title="http://a.hatena.ne.jp/masato_kiyama/simple?gid=251...">2</a> | <a href="https://web.archive.org/web/20051201165445/http://www.kmonos.net/wlog/55.php" title="http://www.kmonos.net/wlog/55.php">1</a> | <a href="./?date=20051120#t">TrackBack(0)</a>
+		</div>
+</div>
+
+
+	<hr class="sep">
+	
+<div class="day">
+<h2><span class="date"><a href="./?date=20051119">2005-11-19</a></span> <span class="title"></span></h2>
+
+<div class="body">
+
+<div class="section">
+<h3><a href="./?date=20051119#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">ジョギング</a>]10km,56分</h3><p></p></div>
+
+</div>
+
+<div class="comment">
+
+	<div class="caption">[<a href="./?date=20051119#c">ツッコミを入れる</a>]</div>
+</div>
+
+
+
+
+
+
+
+		<div class="referer">
+		本日のリンク元 | <a href="https://web.archive.org/web/20051201165445/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">11</a> | <a href="https://web.archive.org/web/20051201165445/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20051119%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">3</a> | <a href="https://web.archive.org/web/20051201165445/http://mixi.jp/show_friend.pl?id=170835" title="http://mixi.jp/show_friend.pl?id=170835">3</a> | <a href="https://web.archive.org/web/20051201165445/http://www.kmonos.net/wlog/" title="http://www.kmonos.net/wlog/">2</a> | <a href="https://web.archive.org/web/20051201165445/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">2</a> | <a href="https://web.archive.org/web/20051201165445/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">1</a> | <a href="https://web.archive.org/web/20051201165445/http://www.kmonos.net/php/kana/?t=wlog" title="http://www.kmonos.net/php/kana/?t=wlog">1</a> | <a href="https://web.archive.org/web/20051201165445/http://www.google.com/search?q=pugs+haskell&amp;sourceid=mozilla-search&amp;start=0&amp;start=0&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-a&amp;rls=org.mozilla:en-US:official" title="google検索(pugs haskell)">1</a> | <a href="https://web.archive.org/web/20051201165445/http://www.google.com/search?hl=ja&amp;ie=SJIS&amp;oe=SJIS&amp;q=%8D%D6%93%A1%82%BD%82%BE%82%B5" title="google検索(斎藤ただし)">1</a> | <a href="https://web.archive.org/web/20051201165445/http://www.google.co.jp/search?num=100&amp;hs=koa&amp;hl=ja&amp;c2coff=1&amp;client=firefox-a&amp;rls=org.mozilla%3Aja%3Aofficial&amp;q=pugs+haskell&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=lang_ja" title="google検索(pugs haskell)">1</a> | <a href="./?date=20051119#t">TrackBack(0)</a>
+		</div>
+</div>
+
+
+	<hr class="sep">
+	
+<div class="day">
+<h2><span class="date"><a href="./?date=20051118">2005-11-18</a></span> <span class="title"></span></h2>
+
+<div class="body">
+
+<div class="section">
+<h3><a href="./?date=20051118#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=Java">Java</a>]<a href="https://web.archive.org/web/20051201165445/http://launch4j.sourceforge.net/">Launch4j</a></h3><p>
+<a href="https://web.archive.org/web/20051201165445/http://www.moongift.jp/">MOONGIFT</a>にある<a href="https://web.archive.org/web/20051201165445/http://oss.moongift.jp/intro/i-808.html">ソフト紹介記事</a>経由で。
+Javaで作られたアプリケーションを、Windows NativeのExeファイルでラッピングするソフト。起動時のスプラッシュスクリーンや、アイコンなども設定できるようだ。自分で作ったJavaアプリケーションを配布したいときには便利かも。
+</p></div><div class="section">
+<h3><a href="./?date=20051118#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">ジョギング</a>]10km,59分</h3><p>
+体調は良好、呼吸も余裕があったのだが、足がそれについていかない。やはり、1週間も間が空いたせいだろうか。
+</p></div>
+
+</div>
+
+<div class="comment">
+
+	<div class="caption">[<a href="./?date=20051118#c">ツッコミを入れる</a>]</div>
+</div>
+
+
+
+
+
+
+
+		<div class="referer">
+		本日のリンク元 | <a href="https://web.archive.org/web/20051201165445/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">17</a> | <a href="https://web.archive.org/web/20051201165445/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20051117%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">5</a> | <a href="https://web.archive.org/web/20051201165445/http://labs.ceek.jp/jblog/" title="http://labs.ceek.jp/jblog/">3</a> | <a href="https://web.archive.org/web/20051201165445/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">2</a> | <a href="https://web.archive.org/web/20051201165445/http://www.kmonos.net/php/kana/index.php?d=20051118&amp;t=wlog" title="http://www.kmonos.net/php/kana/index.php?d=2005111...">2</a> | <a href="https://web.archive.org/web/20051201165445/http://www.kmonos.net/php/kana/?t=wlog" title="http://www.kmonos.net/php/kana/?t=wlog">1</a> | <a href="https://web.archive.org/web/20051201165445/http://www.google.co.jp/search?q=jdbcDriver+%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0+sql&amp;hl=ja&amp;lr=lang_ja&amp;rls=GGLD,GGLD:2004-27,GGLD:ja&amp;start=20&amp;sa=N" title="google検索(jdbcDriver 繝励Ο繧違Λ繝sql)">1</a> | <a href="https://web.archive.org/web/20051201165445/http://www.google.co.jp/search?q=jdbcDriver+%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0+sql&amp;hl=ja&amp;lr=lang_ja&amp;rls=GGLD,GGLD:2004-27,GGLD:ja&amp;start=10&amp;sa=N" title="google検索(jdbcDriver 繝励Ο繧違Λ繝sql)">1</a> | <a href="https://web.archive.org/web/20051201165445/http://www.google.co.jp/search?q=eclipse+3.1+profiler&amp;hl=ja&amp;lr=lang_ja&amp;start=10&amp;sa=N" title="google検索(eclipse 3.1 profiler)">1</a> | <a href="https://web.archive.org/web/20051201165445/http://www.google.co.jp/search?q=Pugs&amp;meta=lr=lang_ja&amp;hl=ja&amp;sourceid=mozilla-search&amp;num=30&amp;start=0&amp;start=0" title="google検索(Pugs)">1</a> | <a href="./?date=20051118#t">TrackBack(0)</a>
+		</div>
+</div>
+
+
+	<hr class="sep">
+	
+<div class="day">
+<h2><span class="date"><a href="./?date=20051117">2005-11-17</a></span> <span class="title"></span></h2>
+
+<div class="body">
+
+<div class="section">
+<h3><a href="./?date=20051117#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%BC%F8%B6%C8">授業</a>]計算モデル論</h3><p>
+試験週間より1週間早いが、期末テストがあった。ノート・プリント持ち込み可であったこともあるが、ほとんど全ての問題が解けて、ほっとした。この科目はたぶん単位が取れるだろう。
+</p></div>
+
+</div>
+
+<div class="comment">
+
+	<div class="caption">[<a href="./?date=20051117#c">ツッコミを入れる</a>]</div>
+</div>
+
+
+
+
+
+
+
+		<div class="referer">
+		本日のリンク元 | <a href="https://web.archive.org/web/20051201165445/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20051117%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">5</a> | <a href="https://web.archive.org/web/20051201165445/http://labs.ceek.jp/jblog/" title="http://labs.ceek.jp/jblog/">1</a> | <a href="./?date=20051117#t">TrackBack(0)</a>
+		</div>
+</div>
+
+
+	<hr class="sep">
+
+<center>
+Mizushima Kota/e-mail: i021216@coins.tsukuba.ac.jp/SKype ID: mizu_standard
+</center>
+
+
+
+
+<div class="footer">
+Generated by <a href="https://web.archive.org/web/20051201165445/http://www.tdiary.org/">tDiary</a> version 2.0.0<br>
+Powered by <a href="https://web.archive.org/web/20051201165445/http://www.ruby-lang.org/">Ruby</a> version 1.6.2
+</div>
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 16:54:45 Dec 01, 2005 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 12:47:38 Jun 14, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 2.28
+  exclusion.robots: 0.064
+  exclusion.robots.policy: 0.029
+  esindex: 1.239
+  cdx.remote: 62.191
+  LoadShardBlock: 359.143 (3)
+  PetaboxLoader3.datanode: 126.72 (4)
+  PetaboxLoader3.resolve: 157.47 (2)
+  load_resource: 107.354
+-->

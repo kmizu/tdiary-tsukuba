@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /home/mizushima/repo/tdiary-tsukuba log --all --oneline)",
+      "Bash(curl:*)",
+      "Bash(./download_archives.sh:*)",
+      "Bash(./download_missing.sh)",
+      "Bash(./download_2007_2008.sh)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

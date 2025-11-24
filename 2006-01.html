@@ -1,43 +1,168 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="ja-JP">
-<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=Hk4-lkW3" charset="utf-8"></script>
-<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<head>
+
 <script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
-<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+
 <script type="text/javascript">
     __wm.init("https://web.archive.org/web");
   __wm.wombat("http://www.coins.tsukuba.ac.jp:80/~i021216/diary/?date=200601","20070327112319","https://web.archive.org/","web","https://web-static.archive.org/_static/",
 	      "1174994599");
 </script>
-<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" />
-<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+
+
 <!-- End Wayback Rewrite JS Include -->
 
-	<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="generator" content="tDiary 2.0.0">
 	<meta http-equiv="Last-Modified" content="Tue, 06 Mar 2007 11:57:20 GMT">
-	<meta http-equiv="Content-Script-Type" content="text/javascript; charset=EUC-JP">
-	<meta name="author" content="���繨��">
+	<meta http-equiv="Content-Script-Type" content="text/javascript; charset=UTF-8">
+	<meta name="author" content="水島宏太">
 	<link rev="made" href="mailto:hau51010{at}tree.odn.ne.jp">
-	<link rel="index" title="�ȥå�" href="http://www.coins.tsukuba.ac.jp/~i021216/">
-	<link rel="start" title="�ǿ�" href="./">
+	<link rel="index" title="トップ" href="http://www.coins.tsukuba.ac.jp/~i021216/">
+	<link rel="start" title="最新" href="./">
 	<meta http-equiv="content-style-type" content="text/css">
 	<link rel="stylesheet" href="/web/20070327112319cs_/http://www.coins.tsukuba.ac.jp/~i021216/diary/theme/base.css" type="text/css" media="all">
 	<link rel="stylesheet" href="/web/20070327112319cs_/http://www.coins.tsukuba.ac.jp/~i021216/diary/theme/another_blue/another_blue.css" title="another_blue" type="text/css" media="all">
-	<title>Onion��ȯ����(2006-01)</title>
+	<title>Onion開発日記(2006-01)</title>
 	
 	<!--link rel="alternate" type="application/x-lirs" title="lirs" href="antenna.lirs"-->
-	<link rel="alternate" type="application/rss+xml" title="RSS" href="https://web.archive.org/web/20070327112319/http://www.coins.tsukuba.ac.jp/~i021216/diary/index.rdf">
+	
+
+<style>
+    /* Modern Styling */
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.7;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        color: #333;
+    }
+    
+    h1 {
+        color: #2c3e50;
+        border-bottom: 3px solid #3498db;
+        padding-bottom: 12px;
+        font-size: 2em;
+        margin-top: 0;
+    }
+    
+    h2 {
+        color: #34495e;
+        border-left: 4px solid #3498db;
+        padding-left: 12px;
+        margin-top: 30px;
+    }
+    
+    h3 {
+        color: #555;
+        margin-top: 24px;
+    }
+    
+    .day {
+        background: white;
+        border-radius: 12px;
+        padding: 24px;
+        margin-bottom: 24px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .day:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    
+    .section {
+        margin: 16px 0;
+        padding: 12px;
+        border-left: 3px solid #e8e8e8;
+    }
+    
+    .date {
+        color: #3498db;
+        font-weight: 600;
+    }
+    
+    .title {
+        color: #2c3e50;
+        font-size: 1.3em;
+    }
+    
+    a {
+        color: #3498db;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    
+    a:hover {
+        color: #2980b9;
+        text-decoration: underline;
+    }
+    
+    pre {
+        background: #f8f9fa;
+        border: 1px solid #e9ecef;
+        border-radius: 6px;
+        padding: 16px;
+        overflow-x: auto;
+        font-size: 0.9em;
+    }
+    
+    code {
+        background: #f8f9fa;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .comment {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 16px;
+        margin-top: 20px;
+    }
+    
+    .adminmenu, .calendar, .todo {
+        background: white;
+        border-radius: 8px;
+        padding: 12px;
+        margin-bottom: 16px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .referer {
+        font-size: 0.85em;
+        color: #7f8c8d;
+        margin-top: 16px;
+        padding-top: 12px;
+        border-top: 1px solid #e8e8e8;
+    }
+    
+    /* Web Archive ツールバーを非表示 */
+    #wm-ipp-base, #wm-ipp, #donato {
+        display: none !important;
+    }
+    
+    hr.sep {
+        border: none;
+        border-top: 2px solid #e8e8e8;
+        margin: 30px 0;
+    }
+</style>
+
 </head>
 <body>
 
 
 <div class="adminmenu">
-<span class="adminmenu"><a href="https://web.archive.org/web/20070327112319/http://www.coins.tsukuba.ac.jp/~i021216/">�ȥå�</a></span>
-<span class="adminmenu"><a href="./">�ǿ�</a></span>
-<span class="adminmenu"><a href="update.rb">�ɵ�</a></span>
+<span class="adminmenu"><a href="https://web.archive.org/web/20070327112319/http://www.coins.tsukuba.ac.jp/~i021216/">トップ</a></span>
+<span class="adminmenu"><a href="./">最新</a></span>
+<span class="adminmenu"><a href="update.rb">追記</a></span>
 </div>
-<h1>Onion��ȯ����</h1>
+<h1>Onion開発日記</h1>
 <div class="calendar">
 <div class="year">2004|<a href="./?date=200409">09</a>|<a href="./?date=200410">10</a>|<a href="./?date=200411">11</a>|<a href="./?date=200412">12</a>|</div>
 <div class="year">2005|<a href="./?date=200501">01</a>|<a href="./?date=200502">02</a>|<a href="./?date=200503">03</a>|<a href="./?date=200504">04</a>|<a href="./?date=200505">05</a>|<a href="./?date=200506">06</a>|<a href="./?date=200507">07</a>|<a href="./?date=200508">08</a>|<a href="./?date=200509">09</a>|<a href="./?date=200510">10</a>|<a href="./?date=200511">11</a>|<a href="./?date=200512">12</a>|</div>
@@ -66,18 +191,18 @@
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060101#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]��ö</h3><p>
-�����ޤ��Ƥ���ǤȤ��������ޤ�����ǯ�����������ꤤ���ޤ���
+<h3><a href="./?date=20060101#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]元旦</h3><p>
+あけましておめでとうございます。今年もよろしくお願いします。
 </p>
 <p>
-�Ĵ���1/6�ޤ�������񤤤Ƥ�Τǡ������ǤϤ��뤬��
+…既に1/6まで日記を書いてるので、今更ではあるが。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20060101#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20060101#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -87,7 +212,7 @@
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327112319/http://64.233.179.104/translate_c?hl=en&amp;u=http://www2.coins.tsukuba.ac.jp/~i021216/diary/%3Fdate%3D200601&amp;prev=/search%3Fq%3D%2B%2Bfilmxx%2Bh%26hl%3Den%26lr%3D%26sa%3DG" title="http://64.233.179.104/translate_c?hl=en&amp;u=http://w...">2</a> | <a href="https://web.archive.org/web/20070327112319/http://www2.coins.tsukuba.ac.jp:80/%7Ei021216/diary/?date=20060102" title="http://www2.coins.tsukuba.ac.jp:80/~i021216/diary/...">1</a> | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/show_friend.pl?id=170835" title="http://mixi.jp/show_friend.pl?id=170835">1</a> | <a href="./?date=20060101#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327112319/http://64.233.179.104/translate_c?hl=en&amp;u=http://www2.coins.tsukuba.ac.jp/~i021216/diary/%3Fdate%3D200601&amp;prev=/search%3Fq%3D%2B%2Bfilmxx%2Bh%26hl%3Den%26lr%3D%26sa%3DG" title="http://64.233.179.104/translate_c?hl=en&amp;u=http://w...">2</a> | <a href="https://web.archive.org/web/20070327112319/http://www2.coins.tsukuba.ac.jp:80/%7Ei021216/diary/?date=20060102" title="http://www2.coins.tsukuba.ac.jp:80/~i021216/diary/...">1</a> | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/show_friend.pl?id=170835" title="http://mixi.jp/show_friend.pl?id=170835">1</a> | <a href="./?date=20060101#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -100,16 +225,16 @@
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060102#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=Java">Java</a>][<a href="./?year=2006;month=1Q;category=%A5%D1%A1%BC%A5%B6%A5%B8%A5%A7%A5%CD%A5%EC%A1%BC%A5%BF">�ѡ��������ͥ졼��</a>]<a href="https://web.archive.org/web/20070327112319/https://a-visual-llk-parser-generator.dev.java.net/">VisualLangLab</a></h3><p>
-GUI�ǹ�ʸ�����������뤳�Ȥ��Ǥ���ѡ��������ͥ졼��������äȤ����ȤäƤߤ������������������ʵ�ǽ�Ϥ����ΤΡ�����Ū�ˤۤ����Ƥ�����ޥ����ǹԤ��褦�˺���Ƥ��뤿�ᡢ�����ܡ��ɤǹ�ʸ�����񤯤Τ�
-���줭�äƤ��뼫ʬ�ˤȤäƤϻȤ��ˤ����褦�˴�������
+<h3><a href="./?date=20060102#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=Java">Java</a>][<a href="./?year=2006;month=1Q;category=%A5%D1%A1%BC%A5%B6%A5%B8%A5%A7%A5%CD%A5%EC%A1%BC%A5%BF">パーザジェネレータ</a>]<a href="https://web.archive.org/web/20070327112319/https://a-visual-llk-parser-generator.dev.java.net/">VisualLangLab</a></h3><p>
+GUIで構文定義を作成することができるパーザジェネレータ。ちょっとだけ使ってみたが、いろいろ便利な機能はあるものの、基本的にほぼ全ての操作をマウスで行うように作られているため、キーボードで構文定義を書くのに
+慣れきっている自分にとっては使いにくいように感じた。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��24��) [<a href="./?date=20060102#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全24件) [<a href="./?date=20060102#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 			<p><a href="./?date=20060102#c01">Before...</a></p>
 				<p><a href="./?date=20060102#c20"><span class="canchor">_</span></a>
@@ -132,7 +257,7 @@ GUI�ǹ�ʸ�����������뤳�Ȥ��Ǥ���ѡ��������ͥ졼��������äȤ����ȤäƤߤ����
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327112319/http://www2.coins.tsukuba.ac.jp/?date=20060102" title="http://www2.coins.tsukuba.ac.jp/?date=20060102">47</a> | <a href="https://web.archive.org/web/20070327112319/http://www.hyuki.com/t/" title="http://www.hyuki.com/t/">41</a> | <a href="https://web.archive.org/web/20070327112319/http://www2.coins.tsukuba.ac.jp:80/~i021216/diary/?date=20060102" title="http://www2.coins.tsukuba.ac.jp:80/~i021216/diary/...">27</a> | <a href="https://web.archive.org/web/20070327112319/http://www.hyuki.com/t/200601.html" title="http://www.hyuki.com/t/200601.html">21</a> | <a href="https://web.archive.org/web/20070327112319/http://translate.google.com/translate_p?hl=en&amp;sl=ja&amp;u=http://www2.coins.tsukuba.ac.jp/~i021216/diary/%3Fdate%3D20060102&amp;prev=/search%3Fq%3Ddistrubitors%2Bof%2Bsoy%2Bcandles%26hl%3Den%26lr%3Dlang_en%26safe%3Dactive" title="http://translate.google.com/translate_p?hl=en&amp;sl=j...">14</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.at/search?client=firefox-a&amp;rls=org.mozilla%3Ade%3Aofficial_s&amp;hl=de&amp;q=mahijon&amp;meta=&amp;btnG=Google-Suche" title="http://www.google.at/search?client=firefox-a&amp;rls=o...">10</a> | <a href="https://web.archive.org/web/20070327112319/http://www.coins.tsukuba.ac.jp/~i021216/diary/?date=20060722" title="http://www.coins.tsukuba.ac.jp/~i021216/diary/?dat...">10</a> | <a href="https://web.archive.org/web/20070327112319/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">9</a> | <a href="https://web.archive.org/web/20070327112319/http://translate.google.com/translate?hl=en&amp;sl=ja&amp;u=http://www2.coins.tsukuba.ac.jp/~i021216/diary/%3Fdate%3D20060102&amp;sa=X&amp;oi=translate&amp;resnum=1&amp;ct=result&amp;prev=/search%3Fq%3Ddistrubitors%2Bof%2Bsoy%2Bcandles%26hl%3Den%26lr%3Dlang_en%26safe%3Dactive" title="http://translate.google.com/translate?hl=en&amp;sl=ja&amp;...">8</a> | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060102%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">7</a> | <a href="./?date=20060102#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327112319/http://www2.coins.tsukuba.ac.jp/?date=20060102" title="http://www2.coins.tsukuba.ac.jp/?date=20060102">47</a> | <a href="https://web.archive.org/web/20070327112319/http://www.hyuki.com/t/" title="http://www.hyuki.com/t/">41</a> | <a href="https://web.archive.org/web/20070327112319/http://www2.coins.tsukuba.ac.jp:80/~i021216/diary/?date=20060102" title="http://www2.coins.tsukuba.ac.jp:80/~i021216/diary/...">27</a> | <a href="https://web.archive.org/web/20070327112319/http://www.hyuki.com/t/200601.html" title="http://www.hyuki.com/t/200601.html">21</a> | <a href="https://web.archive.org/web/20070327112319/http://translate.google.com/translate_p?hl=en&amp;sl=ja&amp;u=http://www2.coins.tsukuba.ac.jp/~i021216/diary/%3Fdate%3D20060102&amp;prev=/search%3Fq%3Ddistrubitors%2Bof%2Bsoy%2Bcandles%26hl%3Den%26lr%3Dlang_en%26safe%3Dactive" title="http://translate.google.com/translate_p?hl=en&amp;sl=j...">14</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.at/search?client=firefox-a&amp;rls=org.mozilla%3Ade%3Aofficial_s&amp;hl=de&amp;q=mahijon&amp;meta=&amp;btnG=Google-Suche" title="http://www.google.at/search?client=firefox-a&amp;rls=o...">10</a> | <a href="https://web.archive.org/web/20070327112319/http://www.coins.tsukuba.ac.jp/~i021216/diary/?date=20060722" title="http://www.coins.tsukuba.ac.jp/~i021216/diary/?dat...">10</a> | <a href="https://web.archive.org/web/20070327112319/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">9</a> | <a href="https://web.archive.org/web/20070327112319/http://translate.google.com/translate?hl=en&amp;sl=ja&amp;u=http://www2.coins.tsukuba.ac.jp/~i021216/diary/%3Fdate%3D20060102&amp;sa=X&amp;oi=translate&amp;resnum=1&amp;ct=result&amp;prev=/search%3Fq%3Ddistrubitors%2Bof%2Bsoy%2Bcandles%26hl%3Den%26lr%3Dlang_en%26safe%3Dactive" title="http://translate.google.com/translate?hl=en&amp;sl=ja&amp;...">8</a> | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060102%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">7</a> | <a href="./?date=20060102#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -145,56 +270,56 @@ GUI�ǹ�ʸ�����������뤳�Ȥ��Ǥ���ѡ��������ͥ졼��������äȤ����ȤäƤߤ����
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060103#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0">�ץ�����ߥ�</a>][<a href="./?year=2006;month=1Q;category=%B8%C0%B8%EC">����</a>]Typing with Initial Value�ʽ���ͤˤ�뷿�դ���</h3><p>
-<a href="https://web.archive.org/web/20070327112319/http://www.programmers-paradise.com/tdiary/?date=20060102#c">�ץ�����ޡ�����</a>���
+<h3><a href="./?date=20060103#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0">プログラミング</a>][<a href="./?year=2006;month=1Q;category=%B8%C0%B8%EC">言語</a>]Typing with Initial Value（初期値による型付け）</h3><p>
+<a href="https://web.archive.org/web/20070327112319/http://www.programmers-paradise.com/tdiary/?date=20060102#c">プログラマー日記</a>より
 </p>
 <blockquote>
-��Typing with Initial Value�ʽ���ͤˤ�뷿�դ��ˡפȤ���̾���Ǥɤ��Ǥ�����
+「Typing with Initial Value（初期値による型付け）」という名前でどうでせう？
 </blockquote>
 <p>
-��̣��ͤ���ȡ�����ʴ���������ʤ��ΤǤϤʤ����Ȼפ��ޤ�����ʬ�⡢���Ȥ����ä˴ؤ��ƤϤ��ޤ�ܤ���̵���Τǡ������Ϥ���ޤ��󤬡����ʤߤˡ�C# 3.0�ǤϤ��ε�ǽ��<strong>Implicitly typed local variables</strong>�ȸƤФ�Ƥ���褦�Ǥ������ܸ�������ȡ����ۤ˷��դ����줿���������ѿ��Ȥ��ä��Ȥ����Ǥ��礦����
+意味を考えると、そんな感じで問題ないのではないかと思います。自分も、型とかの話に関してはあまり詳しく無いので、自信はありませんが。ちなみに、C# 3.0ではこの機能は<strong>Implicitly typed local variables</strong>と呼ばれているようです。日本語に訳すと、暗黙に型付けされたローカル変数といったところでしょうか。
 </p>
 <blockquote>
-����Ϥ����ȡ���var1 = null;�פʤ�Ƥ�����������Ƚ���ͤ����ǤϷ�����ꤹ�뤳�ȤϤǤ��ޤ���͡�
+それはそうと、「var1 = null;」なんていう初期化だと初期値だけでは型を決定することはできませんね。
 </blockquote>
 <p>
-������ͤȤ��Ƥϡ�null���ǽ���������줿��硢Object���Ȥ��뤳�Ȥǲ��Ǥ��ޤ�(Onion�ǤϤ������Ƥޤ�)��������󡢤��Τ褦�ʾ�硢����Ū�ˤϷ����꤬�Ǥ���ɬ�פ�����ޤ�����
+言語仕様としては、nullが最初に代入された場合、Object型とすることで解決できます(Onionではそうしてます)。もちろん、そのような場合、実用的には型指定ができる必要がありますが。
 </p>
 <blockquote>
-���Τ��Ȥ�����������ͤޤǤߤƷ��ꤹ�뤫���ޤ��ϥ��������ѿ��η����꤬�Ǥ���褦�ˤ��Ƥ���ɬ�פ�����ޤ���
+そのあとの代入される値までみて決定するか、またはローカル変数の型指定ができるようにしておく必要があります。
 </blockquote>
 <p>
-���ԤˤĤ��ƤϹͤ������Ȥ�����ΤǤ������ʹ֤��������뤿��ε�§��ʣ���ˤʤ�Τǡ����ޤ깥�ޤ����ʤ��Ȼפ��ޤ����㤨�С�
+前者については考えたことがあるのですが、人間が推論するための規則が複雑になるので、あまり好ましくないと思います。例えば、
 </p>
 <pre>
 x = null;
 if ... {
-  x = new ArrayList;//x��ArrayList����
+  x = new ArrayList;//xはArrayList型？
 } else {
-  x = new LinkedList;//x��LinkedList����
+  x = new LinkedList;//xはLinkedList型？
 }
 </pre>
 <p>
-�Ȥ���ȡ�x�ϲ����ˤʤ�Τ����Ȥ������ξ�硢ArrayList��LinkedList�Υ����ѡ������פ򤿤ɤäơ����̤�����η��Ȥ���Ȥ��ä���ˡ�Ϲͤ����ޤ�������������ȡ������顼�ˤʤä��Ȥ��Υ��顼��å����������ˤʤꤽ���ʵ������ޤ���
+とすると、xは何型になるのか、とか。この場合、ArrayListとLinkedListのスーパータイプをたどって、共通の祖先の型とするといった方法は考えられますが、そうすると、型エラーになったときのエラーメッセージが難解になりそうな気がします。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��6��) [<a href="./?date=20060103#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全6件) [<a href="./?date=20060103#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 			<p><a href="./?date=20060103#c01">Before...</a></p>
 				<p><a href="./?date=20060103#c02"><span class="canchor">_</span></a>
-				<span class="commentator">�ߤ�����</span>&nbsp;[���㥹�Ȥ�Ȥ��Ȥ����Τϡ������ʤ�������Ȼפ��ޤ��������� ��������ȷ�����򤹤�ΤȤ��ޤ��Ѥ��ʤ��ΤǤϤʤ�����..]</p>
+				<span class="commentator">みずしま</span>&nbsp;[キャストを使うというのは、悪くない選択だと思います。ただ、 そうすると型宣言をするのとあまり変わらないのではないかと..]</p>
 				<p><a href="./?date=20060103#c03"><span class="canchor">_</span></a>
-				<span class="commentator">YT</span>&nbsp;[������դˤʤ�ʤ�������������ˤ��Ƥ��ޤ��ΤϤɤ��Ǥ��礦��  ]</p>
+				<span class="commentator">YT</span>&nbsp;[型が一意にならない場合は定数扱いにしてしまうのはどうでしょう？  ]</p>
 				<p><a href="./?date=20060103#c04"><span class="canchor">_</span></a>
-				<span class="commentator">�ߤ�����</span>&nbsp;[��������äƤ����Τ��褯�狼��ʤ���Ǥ����ɡ��ɤ����� ��̣�Ǥ��礦����  ]</p>
+				<span class="commentator">みずしま</span>&nbsp;[定数扱いっていうのがよくわからないんですけど、どういう 意味でしょうか？  ]</p>
 				<p><a href="./?date=20060103#c05"><span class="canchor">_</span></a>
-				<span class="commentator">YT</span>&nbsp;[�����ȡ�x = null;�Ǥ����#define x null(���㤨���Ԥ��᤮�Ǥ�Pascal���Ada���η�̵..]</p>
+				<span class="commentator">YT</span>&nbsp;[ええと、x = null;であれば#define x null(は例えが行き過ぎでもPascalやらAdaやらの型無..]</p>
 				<p><a href="./?date=20060103#c06"><span class="canchor">_</span></a>
-				<span class="commentator">�ߤ�����</span>&nbsp;[�����󡣽���ͤȤ���null����������Ȥ����Τϡ�����ξ�硢 ���ȤǤʤ�餫���ͤ��������뤳�Ȥ�տޤ��Ƥ��ޤ�����..]</p>
+				<span class="commentator">みずしま</span>&nbsp;[うーん。初期値としてnullを代入するというのは、大抵の場合、 あとでなんらかの値を代入することを意図していますから..]</p>
 		</div>
 </div>
 
@@ -205,7 +330,7 @@ if ... {
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327112319/http://www.programmers-paradise.com/tdiary/?date=20060102" title="http://www.programmers-paradise.com/tdiary/?date=2...">44</a> | <a href="https://web.archive.org/web/20070327112319/http://d.hatena.ne.jp/ytqwerty/" title="http://d.hatena.ne.jp/ytqwerty/">16</a> | <a href="https://web.archive.org/web/20070327112319/http://d.hatena.ne.jp/ytqwerty/20060104" title="http://d.hatena.ne.jp/ytqwerty/20060104">12</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.co.jp/search?num=100&amp;hl=ja&amp;q=c%23++%E5%9E%8B%E5%AE%A3%E8%A8%80&amp;lr=" title="google����(c#  �����)">11</a> | <a href="https://web.archive.org/web/20070327112319/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">11</a> | <a href="https://web.archive.org/web/20070327112319/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">8</a> | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060103%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">5</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.co.jp/search?hl=ja&amp;q=PL%2FSQL%E3%80%80NULL%E3%80%80C%23&amp;lr=" title="google����(PL/SQL��NULL��C#)">2</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.co.jp/search?hl=ja&amp;q=%E3%80%80java5%E3%80%80%E5%9E%8B%E6%8C%87%E5%AE%9A%E3%80%80list&amp;lr=" title="google����(��java5�������ꡡlist)">2</a> | <a href="https://web.archive.org/web/20070327112319/http://tsukuba4ac.ring.hatena.ne.jp/" title="http://tsukuba4ac.ring.hatena.ne.jp/">2</a> | <a href="./?date=20060103#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327112319/http://www.programmers-paradise.com/tdiary/?date=20060102" title="http://www.programmers-paradise.com/tdiary/?date=2...">44</a> | <a href="https://web.archive.org/web/20070327112319/http://d.hatena.ne.jp/ytqwerty/" title="http://d.hatena.ne.jp/ytqwerty/">16</a> | <a href="https://web.archive.org/web/20070327112319/http://d.hatena.ne.jp/ytqwerty/20060104" title="http://d.hatena.ne.jp/ytqwerty/20060104">12</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.co.jp/search?num=100&amp;hl=ja&amp;q=c%23++%E5%9E%8B%E5%AE%A3%E8%A8%80&amp;lr=" title="google検索(c#  型宣言)">11</a> | <a href="https://web.archive.org/web/20070327112319/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">11</a> | <a href="https://web.archive.org/web/20070327112319/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">8</a> | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060103%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">5</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.co.jp/search?hl=ja&amp;q=PL%2FSQL%E3%80%80NULL%E3%80%80C%23&amp;lr=" title="google検索(PL/SQL　NULL　C#)">2</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.co.jp/search?hl=ja&amp;q=%E3%80%80java5%E3%80%80%E5%9E%8B%E6%8C%87%E5%AE%9A%E3%80%80list&amp;lr=" title="google検索(　java5　型指定　list)">2</a> | <a href="https://web.archive.org/web/20070327112319/http://tsukuba4ac.ring.hatena.ne.jp/" title="http://tsukuba4ac.ring.hatena.ne.jp/">2</a> | <a href="./?date=20060103#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -218,18 +343,18 @@ if ... {
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060104#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]����</h3><p>
-ī8���᤮�ο������ǵ��äƤ�������줿��
+<h3><a href="./?date=20060104#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]帰筑</h3><p>
+朝8時過ぎの新幹線で帰ってきた。疲れた。
 </p></div><div class="section">
-<h3><a href="./?date=20060104#p02"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]�ե��륿���ݽ�</h3><p>
-�����Ƕᡢ����Υ������󤬤��ޤ�����Ƥ��ʤ��ä��Τǡ��Ҥ�äȤ��ƥե��륿���˥��ߤ����ޤäƤ��뤻�����Ȼפ����ե��륿�����ݽ����Ƥߤ�������ȡ����ޤǤ����Τ褦�˸����Ϥ᤿������ǡ���Ǥ��Ŭ�˺�Ȥ��Ǥ��롣�褫�ä����褫�ä���
+<h3><a href="./?date=20060104#p02"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]フィルター掃除</h3><p>
+ここ最近、自宅のエアコンがあまり効いていなかったので、ひょっとしてフィルターにゴミがたまっているせいかと思い、フィルターを掃除してみた。すると、今までが嘘のように効き始めた。これで、夜でも快適に作業ができる。よかった、よかった。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20060104#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20060104#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -239,7 +364,7 @@ if ... {
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327112319/http://d.hatena.ne.jp/ytqwerty/" title="http://d.hatena.ne.jp/ytqwerty/">7</a> | <a href="https://web.archive.org/web/20070327112319/http://www.kmonos.net/r/" title="http://www.kmonos.net/r/">5</a> | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060104%23p02&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">5</a> | <a href="https://web.archive.org/web/20070327112319/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">4</a> | <a href="https://web.archive.org/web/20070327112319/http://www.programmers-paradise.com/tdiary/?date=20060102" title="http://www.programmers-paradise.com/tdiary/?date=2...">2</a> | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/show_friend.pl?id=170835" title="http://mixi.jp/show_friend.pl?id=170835">2</a> | <a href="https://web.archive.org/web/20070327112319/http://d.hatena.ne.jp/ytqwerty/20060104" title="http://d.hatena.ne.jp/ytqwerty/20060104">2</a> | <a href="https://web.archive.org/web/20070327112319/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">1</a> | <a href="https://web.archive.org/web/20070327112319/http://www.kmonos.net/wlog/56.php" title="http://www.kmonos.net/wlog/56.php">1</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.co.jp/search?hl=ja&amp;c2coff=1&amp;rls=DVXA%2CDVXA%3A2005-25%2CDVXA%3Aja&amp;q=Quantum+DB&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=lang_ja" title="google����(Quantum DB)">1</a> | <a href="./?date=20060104#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327112319/http://d.hatena.ne.jp/ytqwerty/" title="http://d.hatena.ne.jp/ytqwerty/">7</a> | <a href="https://web.archive.org/web/20070327112319/http://www.kmonos.net/r/" title="http://www.kmonos.net/r/">5</a> | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060104%23p02&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">5</a> | <a href="https://web.archive.org/web/20070327112319/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">4</a> | <a href="https://web.archive.org/web/20070327112319/http://www.programmers-paradise.com/tdiary/?date=20060102" title="http://www.programmers-paradise.com/tdiary/?date=2...">2</a> | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/show_friend.pl?id=170835" title="http://mixi.jp/show_friend.pl?id=170835">2</a> | <a href="https://web.archive.org/web/20070327112319/http://d.hatena.ne.jp/ytqwerty/20060104" title="http://d.hatena.ne.jp/ytqwerty/20060104">2</a> | <a href="https://web.archive.org/web/20070327112319/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">1</a> | <a href="https://web.archive.org/web/20070327112319/http://www.kmonos.net/wlog/56.php" title="http://www.kmonos.net/wlog/56.php">1</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.co.jp/search?hl=ja&amp;c2coff=1&amp;rls=DVXA%2CDVXA%3A2005-25%2CDVXA%3Aja&amp;q=Quantum+DB&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=lang_ja" title="google検索(Quantum DB)">1</a> | <a href="./?date=20060104#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -252,22 +377,22 @@ if ... {
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060105#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]<a href="https://web.archive.org/web/20070327112319/http://slashdot.jp/articles/06/01/05/0112208.shtml">����å���ɥå� ����ѥ�  | ���եȥХ󥯤������Ω��</a></h3><p>
-�����ȥ�η綠�Τ�Τˤ��礷�ƶ�̣��̵���Τ�����
+<h3><a href="./?date=20060105#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]<a href="https://web.archive.org/web/20070327112319/http://slashdot.jp/articles/06/01/05/0112208.shtml">スラッシュドット ジャパン  | ソフトバンクが大学設立へ</a></h3><p>
+タイトルの件そのものには大して興味が無いのだが、
 </p>
 <blockquote>
-���Ǥ�������߲ĤΥե�󥹸�λ�ǡ��ե�󥹿ͤ����������ͤ��ΤäƤ��ޤ���
-�����ñ�̤��褿������顤������ŷ�������ʤ���
+何でも持ち込み可のフランス語の試験で，フランス人を持ち込んだ人を知っています．
+それで単位が来たんだから，教官も天晴れだよなぁ．
 </blockquote>
 <p>
-�Ȥ��������ȤˤϾФä����������ʤ���
+というコメントには笑った。大胆だなあ。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20060105#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20060105#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -277,7 +402,7 @@ if ... {
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327112319/http://www.hyuki.com/t/" title="http://www.hyuki.com/t/">25</a> | <a href="https://web.archive.org/web/20070327112319/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">17</a> | <a href="https://web.archive.org/web/20070327112319/http://www.hyuki.com/t/200601.html" title="http://www.hyuki.com/t/200601.html">8</a> | <a href="https://web.archive.org/web/20070327112319/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">7</a> | <a href="https://web.archive.org/web/20070327112319/http://www.programmers-paradise.com/tdiary/?date=20060102" title="http://www.programmers-paradise.com/tdiary/?date=2...">6</a> | <a href="https://web.archive.org/web/20070327112319/http://www.kmonos.net/r/" title="http://www.kmonos.net/r/">5</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.com/search?q=%22Windows%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%22+%E9%96%8B%E7%99%BA&amp;hl=ja&amp;lr=&amp;start=160&amp;sa=N" title="google����(&quot;Windows�����ӥ�&quot; ��ȯ)">5</a> | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060105%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">5</a> | <a href="https://web.archive.org/web/20070327112319/http://d.hatena.ne.jp/ytqwerty/" title="http://d.hatena.ne.jp/ytqwerty/">5</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.co.jp/search?hl=ja&amp;q=Quantum+DB&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=lang_ja" title="google����(Quantum DB)">3</a> | <a href="./?date=20060105#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327112319/http://www.hyuki.com/t/" title="http://www.hyuki.com/t/">25</a> | <a href="https://web.archive.org/web/20070327112319/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">17</a> | <a href="https://web.archive.org/web/20070327112319/http://www.hyuki.com/t/200601.html" title="http://www.hyuki.com/t/200601.html">8</a> | <a href="https://web.archive.org/web/20070327112319/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">7</a> | <a href="https://web.archive.org/web/20070327112319/http://www.programmers-paradise.com/tdiary/?date=20060102" title="http://www.programmers-paradise.com/tdiary/?date=2...">6</a> | <a href="https://web.archive.org/web/20070327112319/http://www.kmonos.net/r/" title="http://www.kmonos.net/r/">5</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.com/search?q=%22Windows%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%22+%E9%96%8B%E7%99%BA&amp;hl=ja&amp;lr=&amp;start=160&amp;sa=N" title="google検索(&quot;Windowsサービス&quot; 開発)">5</a> | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060105%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">5</a> | <a href="https://web.archive.org/web/20070327112319/http://d.hatena.ne.jp/ytqwerty/" title="http://d.hatena.ne.jp/ytqwerty/">5</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.co.jp/search?hl=ja&amp;q=Quantum+DB&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=lang_ja" title="google検索(Quantum DB)">3</a> | <a href="./?date=20060105#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -291,17 +416,17 @@ if ... {
 
 <div class="section">
 <h3><a href="./?date=20060106#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=Groovy">Groovy</a>]<a href="https://web.archive.org/web/20070327112319/http://www.pj-smoothies.co.uk/">Site built with Groovy</a></h3><p>
-<a href="https://web.archive.org/web/20070327112319/http://machine.homeunix.org/weblog/archives/cat_script_on_java.html">��������������� Script_on_Java</a>��ͳ��Groovy��WebMacro��Ȥäƺ��줿�����Ȥ餷����Groovy�Ǻ��줿�����Ǥ�̵���Ȼפ���(���֤󡢲����Ȥ��ޤ���ʤ���)���빽�Ť���
+<a href="https://web.archive.org/web/20070327112319/http://machine.homeunix.org/weblog/archives/cat_script_on_java.html">こんな毎日・・・ Script_on_Java</a>経由。GroovyとWebMacroを使って作られたサイトらしい。Groovyで作られたせいでは無いと思うが(たぶん、画像使いまくりなため)、結構重い。
 </p></div><div class="section">
-<h3><a href="./?date=20060106#p02"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%B8%C0%B8%EC">����</a>]<a href="https://web.archive.org/web/20070327112319/http://sru.ikejisoft.com/?FrontPage">�ץ�����ߥ󥰸���SRU</a></h3><p>
-<a href="https://web.archive.org/web/20070327112319/http://www.ikejisoft.com/">IKeJI</a>�κ�ä��ץ�����ߥ󥰸��졣Smalltalk��̣�Υ��ޥ�ƥ�������Ruby��̣�ι�ʸ����ħ��
+<h3><a href="./?date=20060106#p02"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%B8%C0%B8%EC">言語</a>]<a href="https://web.archive.org/web/20070327112319/http://sru.ikejisoft.com/?FrontPage">プログラミング言語SRU</a></h3><p>
+<a href="https://web.archive.org/web/20070327112319/http://www.ikejisoft.com/">IKeJI</a>の作ったプログラミング言語。Smalltalk風味のセマンティクスとRuby風味の構文が特徴。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��1��) [<a href="./?date=20060106#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全1件) [<a href="./?date=20060106#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20060106#c01"><span class="canchor">_</span></a>
 				<span class="commentator">bjaguyo kvpbeu</span>&nbsp;[xpcbsmq dkbqvph jobmr wkmlqnf eurzhmgc zftgcr xwvhkujrd  ]</p>
@@ -315,7 +440,7 @@ if ... {
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327112319/http://sru.ikejisoft.com/?%B9%B9%BF%B7%BD%E7%A5%EA%A5%F3%A5%AF" title="http://sru.ikejisoft.com/?��������">104</a> | <a href="https://web.archive.org/web/20070327112319/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">24</a> | <a href="https://web.archive.org/web/20070327112319/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">16</a> | <a href="https://web.archive.org/web/20070327112319/http://www.hyuki.com/t/" title="http://www.hyuki.com/t/">13</a> | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/show_friend.pl?id=170835" title="http://mixi.jp/show_friend.pl?id=170835">10</a> | <a href="https://web.archive.org/web/20070327112319/http://a.hatena.ne.jp/ytqwerty/" title="http://a.hatena.ne.jp/ytqwerty/">9</a> | <a href="https://web.archive.org/web/20070327112319/http://www.programmers-paradise.com/tdiary/?date=20060102" title="http://www.programmers-paradise.com/tdiary/?date=2...">8</a> | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060106%23p02&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">8</a> | <a href="https://web.archive.org/web/20070327112319/http://a.hatena.ne.jp/ucho/" title="http://a.hatena.ne.jp/ucho/">5</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.com/" title="http://www.google.com">4</a> | <a href="./?date=20060106#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327112319/http://sru.ikejisoft.com/?%B9%B9%BF%B7%BD%E7%A5%EA%A5%F3%A5%AF" title="http://sru.ikejisoft.com/?更新順リンク">104</a> | <a href="https://web.archive.org/web/20070327112319/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">24</a> | <a href="https://web.archive.org/web/20070327112319/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">16</a> | <a href="https://web.archive.org/web/20070327112319/http://www.hyuki.com/t/" title="http://www.hyuki.com/t/">13</a> | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/show_friend.pl?id=170835" title="http://mixi.jp/show_friend.pl?id=170835">10</a> | <a href="https://web.archive.org/web/20070327112319/http://a.hatena.ne.jp/ytqwerty/" title="http://a.hatena.ne.jp/ytqwerty/">9</a> | <a href="https://web.archive.org/web/20070327112319/http://www.programmers-paradise.com/tdiary/?date=20060102" title="http://www.programmers-paradise.com/tdiary/?date=2...">8</a> | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060106%23p02&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">8</a> | <a href="https://web.archive.org/web/20070327112319/http://a.hatena.ne.jp/ucho/" title="http://a.hatena.ne.jp/ucho/">5</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.com/" title="http://www.google.com">4</a> | <a href="./?date=20060106#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -328,18 +453,18 @@ if ... {
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060110#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]�ץ�����ߥ󥰥���ݥ����ࣱ����</h3><p>
-��������<a href="https://web.archive.org/web/20070327112319/http://www.ipsj.or.jp/prosym/47/47participation.html">�ץ�����ߥ󥰥���ݥ�����</a>���Ĥ��Х������ץ쥹��JR���Х��Ⱦ��Ѥ��ǲ���<a href="https://web.archive.org/web/20070327112319/http://www.ipsj.or.jp/prosym/47/47participation.html">Ȣ���ۥƥ뾮ͯ��</a>�ء�
+<h3><a href="./?date=20060110#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]プログラミングシンポジウム１日目</h3><p>
+今日から<a href="https://web.archive.org/web/20070327112319/http://www.ipsj.or.jp/prosym/47/47participation.html">プログラミングシンポジウム</a>。つくばエクスプレス、JR、バスと乗り継いで会場の<a href="https://web.archive.org/web/20070327112319/http://www.ipsj.or.jp/prosym/47/47participation.html">箱根ホテル小湧園</a>へ。
 </p>
 <p>
-������Ű�뤷�������ǡ�������̲���ä����ʤ�Ȥ�¾�οͤ�ȯɽ��˿��Ƥ��ޤ��褦�ʻ��֤ˤϤʤ�ʤ��ä�������ϤꡢŰ��ʤ�Ƥ������������󤸤�ʤ��ʡ�
+前日に徹夜したせいで、すごく眠かった。なんとか他の人の発表中に寝てしまうような事態にはならなかったが、やはり、徹夜なんてそうそうするもんじゃないな。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20060110#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20060110#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -349,7 +474,7 @@ if ... {
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327112319/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">39</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.com/search?hl=ja&amp;lr=lang_ja&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=%E3%83%A2%E3%83%A2%E3%83%BC%E3%82%A4%E3%82%82%E6%AC%B2%E3%81%97%E3%81%8C%E3%82%8B%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E3%80%8E%E5%B0%8F%E9%BA%A6%E3%81%A1%E3%82%83%E3%82%93%E3%80%8F%E7%99%BB%E5%A0%B4&amp;num=100" title="google����(��⡼�����ߤ�����ѥ��������ؾ����������о�)">32</a> | <a href="https://web.archive.org/web/20070327112319/http://www.programmers-paradise.com/tdiary/?date=20060102" title="http://www.programmers-paradise.com/tdiary/?date=2...">28</a> | <a href="https://web.archive.org/web/20070327112319/http://cheapest-airline-tickets.mysite.de/" title="http://cheapest-airline-tickets.mysite.de/">22</a> | <a href="https://web.archive.org/web/20070327112319/http://ikejisoft.com/" title="http://ikejisoft.com/">14</a> | <a href="https://web.archive.org/web/20070327112319/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">11</a> | <a href="https://web.archive.org/web/20070327112319/http://sru.ikejisoft.com/?%B9%B9%BF%B7%BD%E7%A5%EA%A5%F3%A5%AF" title="http://sru.ikejisoft.com/?��������">8</a> | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060110%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">8</a> | <a href="https://web.archive.org/web/20070327112319/http://www.kmonos.net/wlog/56.php" title="http://www.kmonos.net/wlog/56.php">7</a> | <a href="https://web.archive.org/web/20070327112319/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">5</a> | <a href="./?date=20060110#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327112319/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">39</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.com/search?hl=ja&amp;lr=lang_ja&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=%E3%83%A2%E3%83%A2%E3%83%BC%E3%82%A4%E3%82%82%E6%AC%B2%E3%81%97%E3%81%8C%E3%82%8B%E3%83%91%E3%83%81%E3%82%B9%E3%83%AD%E6%A9%9F%E3%80%8E%E5%B0%8F%E9%BA%A6%E3%81%A1%E3%82%83%E3%82%93%E3%80%8F%E7%99%BB%E5%A0%B4&amp;num=100" title="google検索(モモーイも欲しがるパチスロ機『小麦ちゃん』登場)">32</a> | <a href="https://web.archive.org/web/20070327112319/http://www.programmers-paradise.com/tdiary/?date=20060102" title="http://www.programmers-paradise.com/tdiary/?date=2...">28</a> | <a href="https://web.archive.org/web/20070327112319/http://cheapest-airline-tickets.mysite.de/" title="http://cheapest-airline-tickets.mysite.de/">22</a> | <a href="https://web.archive.org/web/20070327112319/http://ikejisoft.com/" title="http://ikejisoft.com/">14</a> | <a href="https://web.archive.org/web/20070327112319/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">11</a> | <a href="https://web.archive.org/web/20070327112319/http://sru.ikejisoft.com/?%B9%B9%BF%B7%BD%E7%A5%EA%A5%F3%A5%AF" title="http://sru.ikejisoft.com/?更新順リンク">8</a> | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060110%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">8</a> | <a href="https://web.archive.org/web/20070327112319/http://www.kmonos.net/wlog/56.php" title="http://www.kmonos.net/wlog/56.php">7</a> | <a href="https://web.archive.org/web/20070327112319/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">5</a> | <a href="./?date=20060110#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -362,21 +487,21 @@ if ... {
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060121#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]��</h3><p>
-ī�������Ƥߤ��餹���������1/10�⡢ī�������㤬�Ѥ�äƤ�������������̳ʤ����������饻�󥿡���������������������Ѥ������ʤ���
+<h3><a href="./?date=20060121#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]雪</h3><p>
+朝、起きてみたらすごい雪だ。1/10も、朝方薄く雪が積もっていたが、今回は別格だ。今日からセンター入試だが、受験生は大変だろうなあ。
 </p>
 <center>
 <table>
 <tr>
-<td>��ع���ηʿ�1</td>
-<td>��ع���ηʿ�2</td>
+<td>大学構内の景色1</td>
+<td>大学構内の景色2</td>
 </tr>
 <tr>
 <td>
-<img title="��ع���ηʿ�1" src="https://web.archive.org/web/20070327112319im_/http://www2.coins.tsukuba.ac.jp/~i021216/images/20060121_1.jpg">
+<img title="大学構内の景色1" src="https://web.archive.org/web/20070327112319im_/http://www2.coins.tsukuba.ac.jp/~i021216/images/20060121_1.jpg">
 </td>
 <td>
-<img title="��ع���ηʿ�2" src="https://web.archive.org/web/20070327112319im_/http://www2.coins.tsukuba.ac.jp/~i021216/images/20060121_2.jpg">
+<img title="大学構内の景色2" src="https://web.archive.org/web/20070327112319im_/http://www2.coins.tsukuba.ac.jp/~i021216/images/20060121_2.jpg">
 </td>
 </tr>
 </table>
@@ -386,12 +511,12 @@ if ... {
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��2��) [<a href="./?date=20060121#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全2件) [<a href="./?date=20060121#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20060121#c01"><span class="canchor">_</span></a>
-				<span class="commentator">nt</span>&nbsp;[����Ϸ빽�Ѥ�ä����͡������Ϥ���Ĥ����٤ǤĤ��Ϥ��Ƥʤ�� ����Ϸ빽Ĺ���ֹߤäƤ뤫�������ˤ��Ѥ�äƤ뤫..]</p>
+				<span class="commentator">nt</span>&nbsp;[関東は結構積もったんやね！関西はちらつく程度でつもりはしてないわ． 今夜は結構長い間降ってるから明日には積もってるか..]</p>
 				<p><a href="./?date=20060121#c02"><span class="canchor">_</span></a>
-				<span class="commentator">�ߤ�����</span>&nbsp;[�ۤ�ȡ����ʤ��Ѥ�ä��衣����(1/24)�Ǥ⡢�ޤ��㤬�ĤäƤ��뤯�餤������͡��������ǲ��ٳ�ꤽ���ˤʤä����Ȥ�..]</p>
+				<span class="commentator">みずしま</span>&nbsp;[ほんと、かなり積もったよ。今日(1/24)でも、まだ雪が残っているくらいだからね。おかげで何度滑りそうになったことか..]</p>
 		</div>
 </div>
 
@@ -402,7 +527,7 @@ if ... {
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060121%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">3</a> | <a href="./?date=20060121#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060121%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">3</a> | <a href="./?date=20060121#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -415,15 +540,15 @@ if ... {
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060122#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]���</h3><p>
-�����Фäơ������ʬ�Ȥ���������������ˤ���������ϩ�̤���뤷�Ƥ��ơ����˴��ʤ����᤯���ܲ��˼�ž�֤ǹԤ��Τ���ϫ����
+<h3><a href="./?date=20060122#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]凍結</h3><p>
+１日経って、雪は大分とけたが、その代わりにあちこちの路面が凍結していて、非常に危ない。近くの本屋に自転車で行くのも一苦労だ。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20060122#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20060122#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -433,7 +558,7 @@ if ... {
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327112319/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">5</a> | <a href="https://web.archive.org/web/20070327112319/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">3</a> | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060121%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">3</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.co.jp/search?q=Pugs&amp;hl=ja&amp;lr=lang_ja&amp;rls=GGLG,GGLG:2005-51,GGLG:ja&amp;start=20&amp;sa=N" title="google����(Pugs)">2</a> | <a href="https://web.archive.org/web/20070327112319/http://tsukuba4ac.ring.hatena.ne.jp/" title="http://tsukuba4ac.ring.hatena.ne.jp/">2</a> | <a href="https://web.archive.org/web/20070327112319/http://a.hatena.ne.jp/masato_kiyama/simple" title="http://a.hatena.ne.jp/masato_kiyama/simple">2</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.com/search?q=ONION&amp;hl=ja&amp;lr=lang_ja&amp;oe=Shift_JIS&amp;inlang=ja&amp;start=10&amp;sa=N" title="google����(ONION)">1</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.co.jp/search?sourceid=navclient&amp;hl=ja&amp;ie=UTF-8&amp;rls=GGLG,GGLG:2005-35,GGLG:ja&amp;q=%E3%82%B3%E3%83%B3%E3%82%B9%E3%83%88%E3%83%A9%E3%82%AF%E3%82%BF%E5%86%85%E3%80%80%E5%8A%A0%E7%AE%97" title="google����(���󥹥ȥ饯���⡡�û�)">1</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.co.jp/search?q=eclipse+applet&amp;hl=ja&amp;lr=lang_ja&amp;start=10&amp;sa=N" title="google����(eclipse applet)">1</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.co.jp/search?q=PHP%E3%80%80%E3%83%A9%E3%83%83%E3%83%91%E3%83%BC%E3%80%80%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%97&amp;hl=ja&amp;lr=&amp;rls=GGLD,GGLD:2005-08,GGLD:en&amp;start=10&amp;sa=N" title="google����(PHP����åѡ����ƤӽФ�)">1</a> | <a href="./?date=20060122#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327112319/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">5</a> | <a href="https://web.archive.org/web/20070327112319/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">3</a> | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060121%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">3</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.co.jp/search?q=Pugs&amp;hl=ja&amp;lr=lang_ja&amp;rls=GGLG,GGLG:2005-51,GGLG:ja&amp;start=20&amp;sa=N" title="google検索(Pugs)">2</a> | <a href="https://web.archive.org/web/20070327112319/http://tsukuba4ac.ring.hatena.ne.jp/" title="http://tsukuba4ac.ring.hatena.ne.jp/">2</a> | <a href="https://web.archive.org/web/20070327112319/http://a.hatena.ne.jp/masato_kiyama/simple" title="http://a.hatena.ne.jp/masato_kiyama/simple">2</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.com/search?q=ONION&amp;hl=ja&amp;lr=lang_ja&amp;oe=Shift_JIS&amp;inlang=ja&amp;start=10&amp;sa=N" title="google検索(ONION)">1</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.co.jp/search?sourceid=navclient&amp;hl=ja&amp;ie=UTF-8&amp;rls=GGLG,GGLG:2005-35,GGLG:ja&amp;q=%E3%82%B3%E3%83%B3%E3%82%B9%E3%83%88%E3%83%A9%E3%82%AF%E3%82%BF%E5%86%85%E3%80%80%E5%8A%A0%E7%AE%97" title="google検索(コンストラクタ内　加算)">1</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.co.jp/search?q=eclipse+applet&amp;hl=ja&amp;lr=lang_ja&amp;start=10&amp;sa=N" title="google検索(eclipse applet)">1</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.co.jp/search?q=PHP%E3%80%80%E3%83%A9%E3%83%83%E3%83%91%E3%83%BC%E3%80%80%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%97&amp;hl=ja&amp;lr=&amp;rls=GGLD,GGLD:2005-08,GGLD:en&amp;start=10&amp;sa=N" title="google検索(PHP　ラッパー　呼び出し)">1</a> | <a href="./?date=20060122#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -446,15 +571,15 @@ if ... {
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060123#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]<a href="https://web.archive.org/web/20070327112319/http://www.youtube.com/w/Ultimate-Utopia-XXIII?v=FAGl9AvDbCc&amp;search=final%20fantasy%20parody%20rpg%20role%20playing%20game%20ultimate%20utopia%20video">Ultimate Utopia XXIII</a></h3><p>
-������ͧã�˶����Ƥ��ä��ͥ�ư�衣�ʤ�ȡ��ꥢ��FF(�ե����ʥ�ե��󥿥���)���äƤ��롣�褯��ޤ��������ޤǶŤ���Τ���
+<h3><a href="./?date=20060123#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]<a href="https://web.archive.org/web/20070327112319/http://www.youtube.com/w/Ultimate-Utopia-XXIII?v=FAGl9AvDbCc&amp;search=final%20fantasy%20parody%20rpg%20role%20playing%20game%20ultimate%20utopia%20video">Ultimate Utopia XXIII</a></h3><p>
+今日、友達に教えてもらったネタ動画。なんと、リアルFF(ファイナルファンタジー)をやっている。よくもまあ、ここまで凝れるものだ。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20060123#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20060123#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -464,7 +589,7 @@ if ... {
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327112319/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">16</a> | <a href="https://web.archive.org/web/20070327112319/http://www.infoseek.co.jp/OTitles?lk=noframes&amp;qp=0&amp;st=10&amp;nh=10&amp;col=OW&amp;qt=Eclipse3.1+Profiler&amp;svp=SEEK&amp;svx=101981&amp;wd=0&amp;lg=all&amp;nc=1" title="Infoseek����(Eclipse3.1 Profiler)">11</a> | <a href="https://web.archive.org/web/20070327112319/http://www.infoseek.co.jp/OTitles?lk=noframes&amp;qp=0&amp;st=0&amp;nh=10&amp;col=OW&amp;qt=Eclipse3.1+Profiler&amp;svp=SEEK&amp;svx=100600" title="Infoseek����(Eclipse3.1 Profiler)">11</a> | <a href="https://web.archive.org/web/20070327112319/http://search.yahoo.co.jp/search?p=eclipse+%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%83%AB%E3%80%80%E8%A1%A8%E7%A4%BA%E3%81%95%E3%82%8C%E3%81%AA%E3%81%84&amp;ei=UTF-8&amp;fl=0&amp;meta=vc%3D&amp;pstart=1&amp;fr=moz2&amp;b=11" title="http://search.yahoo.co.jp/search?p=eclipse ���󥽡...">11</a> | <a href="https://web.archive.org/web/20070327112319/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">5</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.co.jp/search?hs=0h2&amp;hl=ja&amp;client=firefox&amp;rls=org.mozilla%3Aja%3Aofficial&amp;q=Eclipse+profiler+plugin%E3%80%80eclipse3.1&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=lang_ja" title="google����(Eclipse profiler plugin��eclipse3.1)">3</a> | <a href="https://web.archive.org/web/20070327112319/http://search.msn.co.jp/results.aspx?v=1&amp;RS=CHECKED&amp;CY=ja&amp;FORM=MSNH&amp;q=ONION%E8%A8%80%E8%AA%9E" title="msn����(ONION����)">3</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.fr/search?hl=fr&amp;q=org.eclipse.jem&amp;btnG=Rechercher&amp;meta=" title="http://www.google.fr/search?hl=fr&amp;q=org.eclipse.je...">2</a> | <a href="https://web.archive.org/web/20070327112319/http://tsumikigoya.blog13.fc2.com/blog-entry-107.html" title="http://tsumikigoya.blog13.fc2.com/blog-entry-107.h...">2</a> | <a href="https://web.archive.org/web/20070327112319/http://tsukuba4ac.ring.hatena.ne.jp/" title="http://tsukuba4ac.ring.hatena.ne.jp/">2</a> | <a href="./?date=20060123#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327112319/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">16</a> | <a href="https://web.archive.org/web/20070327112319/http://www.infoseek.co.jp/OTitles?lk=noframes&amp;qp=0&amp;st=10&amp;nh=10&amp;col=OW&amp;qt=Eclipse3.1+Profiler&amp;svp=SEEK&amp;svx=101981&amp;wd=0&amp;lg=all&amp;nc=1" title="Infoseek検索(Eclipse3.1 Profiler)">11</a> | <a href="https://web.archive.org/web/20070327112319/http://www.infoseek.co.jp/OTitles?lk=noframes&amp;qp=0&amp;st=0&amp;nh=10&amp;col=OW&amp;qt=Eclipse3.1+Profiler&amp;svp=SEEK&amp;svx=100600" title="Infoseek検索(Eclipse3.1 Profiler)">11</a> | <a href="https://web.archive.org/web/20070327112319/http://search.yahoo.co.jp/search?p=eclipse+%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%83%AB%E3%80%80%E8%A1%A8%E7%A4%BA%E3%81%95%E3%82%8C%E3%81%AA%E3%81%84&amp;ei=UTF-8&amp;fl=0&amp;meta=vc%3D&amp;pstart=1&amp;fr=moz2&amp;b=11" title="http://search.yahoo.co.jp/search?p=eclipse コンソ�...">11</a> | <a href="https://web.archive.org/web/20070327112319/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">5</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.co.jp/search?hs=0h2&amp;hl=ja&amp;client=firefox&amp;rls=org.mozilla%3Aja%3Aofficial&amp;q=Eclipse+profiler+plugin%E3%80%80eclipse3.1&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=lang_ja" title="google検索(Eclipse profiler plugin　eclipse3.1)">3</a> | <a href="https://web.archive.org/web/20070327112319/http://search.msn.co.jp/results.aspx?v=1&amp;RS=CHECKED&amp;CY=ja&amp;FORM=MSNH&amp;q=ONION%E8%A8%80%E8%AA%9E" title="msn検索(ONION言語)">3</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.fr/search?hl=fr&amp;q=org.eclipse.jem&amp;btnG=Rechercher&amp;meta=" title="http://www.google.fr/search?hl=fr&amp;q=org.eclipse.je...">2</a> | <a href="https://web.archive.org/web/20070327112319/http://tsumikigoya.blog13.fc2.com/blog-entry-107.html" title="http://tsumikigoya.blog13.fc2.com/blog-entry-107.h...">2</a> | <a href="https://web.archive.org/web/20070327112319/http://tsukuba4ac.ring.hatena.ne.jp/" title="http://tsukuba4ac.ring.hatena.ne.jp/">2</a> | <a href="./?date=20060123#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -477,22 +602,22 @@ if ... {
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060125#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]<a href="https://web.archive.org/web/20070327112319/http://event.seasar.org/tuigwaa/chiba20060224/">ʿ��17ǯ�پ��̤Ƨ���եȥ�������¤���� ����PM ��������</a></h3><p>
-<a href="https://web.archive.org/web/20070327112319/http://www.namikilab.tuat.ac.jp/~sasada/diary/">���������������</a>��ꡣ�Ԥ������Ĥ��ɡ���������̤Ƨ�桼������������ȽŤʤäƤ�������ʤ�orz
+<h3><a href="./?date=20060125#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]<a href="https://web.archive.org/web/20070327112319/http://event.seasar.org/tuigwaa/chiba20060224/">平成17年度上期未踏ソフトウェア創造事業 千葉PM 成果報告会</a></h3><p>
+<a href="https://web.archive.org/web/20070327112319/http://www.namikilab.tuat.ac.jp/~sasada/diary/">ささださんの日記</a>より。行きたい…けど、この日は未踏ユースの成果報告会と重なっているんだよなあorz
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��3��) [<a href="./?date=20060125#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全3件) [<a href="./?date=20060125#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20060125#c01"><span class="canchor">_</span></a>
-				<span class="commentator">������</span>&nbsp;[���졤��������ʤ��ä��Ρ�  ]</p>
+				<span class="commentator">ささだ</span>&nbsp;[あれ，土日じゃなかったの？  ]</p>
 				<p><a href="./?date=20060125#c02"><span class="canchor">_</span></a>
-				<span class="commentator">�ߤ�����</span>&nbsp;[�ɤ���顢�������餷���Ǥ�����ǰ��  ]</p>
+				<span class="commentator">みずしま</span>&nbsp;[どうやら、金土日らしいです。残念。  ]</p>
 				<p><a href="./?date=20060125#c03"><span class="canchor">_</span></a>
-				<span class="commentator">������</span>&nbsp;[����㡢�����ǰ��  ]</p>
+				<span class="commentator">ささだ</span>&nbsp;[ありゃ、俺も残念。  ]</p>
 		</div>
 </div>
 
@@ -503,7 +628,7 @@ if ... {
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060125%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">15</a> | <a href="https://web.archive.org/web/20070327112319/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">14</a> | <a href="https://web.archive.org/web/20070327112319/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">10</a> | <a href="https://web.archive.org/web/20070327112319/http://a.hatena.ne.jp/lethevert/" title="http://a.hatena.ne.jp/lethevert/">5</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.com/search?hl=ja&amp;lr=lang_ja&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=%E5%85%B1%E5%A4%89%E6%88%BB%E3%82%8A%E5%80%A4&amp;num=50" title="google����(���������)">4</a> | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/show_friend.pl?id=170835" title="http://mixi.jp/show_friend.pl?id=170835">4</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.co.jp/search?hl=ja&amp;q=jMechanic&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=lang_ja" title="google����(jMechanic)">3</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.co.jp/search?hl=ja&amp;ie=Shift_JIS&amp;oe=Shift_JIS&amp;q=jMechanic%81%40%8Eg%82%A2%95%FB&amp;btnG=Google+%8C%9F%8D%F5&amp;lr=lang_ja" title="google����(jMechanic���Ȥ���)">3</a> | <a href="https://web.archive.org/web/20070327112319/http://tsumikigoya.blog13.fc2.com/blog-entry-107.html" title="http://tsumikigoya.blog13.fc2.com/blog-entry-107.h...">3</a> | <a href="https://web.archive.org/web/20070327112319/http://tsukuba4ac.ring.hatena.ne.jp/" title="http://tsukuba4ac.ring.hatena.ne.jp/">3</a> | <a href="./?date=20060125#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060125%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">15</a> | <a href="https://web.archive.org/web/20070327112319/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">14</a> | <a href="https://web.archive.org/web/20070327112319/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">10</a> | <a href="https://web.archive.org/web/20070327112319/http://a.hatena.ne.jp/lethevert/" title="http://a.hatena.ne.jp/lethevert/">5</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.com/search?hl=ja&amp;lr=lang_ja&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=%E5%85%B1%E5%A4%89%E6%88%BB%E3%82%8A%E5%80%A4&amp;num=50" title="google検索(共変戻り値)">4</a> | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/show_friend.pl?id=170835" title="http://mixi.jp/show_friend.pl?id=170835">4</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.co.jp/search?hl=ja&amp;q=jMechanic&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=lang_ja" title="google検索(jMechanic)">3</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.co.jp/search?hl=ja&amp;ie=Shift_JIS&amp;oe=Shift_JIS&amp;q=jMechanic%81%40%8Eg%82%A2%95%FB&amp;btnG=Google+%8C%9F%8D%F5&amp;lr=lang_ja" title="google検索(jMechanic　使い方)">3</a> | <a href="https://web.archive.org/web/20070327112319/http://tsumikigoya.blog13.fc2.com/blog-entry-107.html" title="http://tsumikigoya.blog13.fc2.com/blog-entry-107.h...">3</a> | <a href="https://web.archive.org/web/20070327112319/http://tsukuba4ac.ring.hatena.ne.jp/" title="http://tsukuba4ac.ring.hatena.ne.jp/">3</a> | <a href="./?date=20060125#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -516,24 +641,24 @@ if ... {
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060130#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=Java">Java</a>][<a href="./?year=2006;month=1Q;category=Web%A5%A2%A5%D7%A5%EA%A5%B1%A1%BC%A5%B7%A5%E7%A5%F3">Web���ץꥱ�������</a>]<a href="https://web.archive.org/web/20070327112319/http://www.nextapp.com/platform/echo2/echo/">Echo2</a></h3><p>
-<a href="https://web.archive.org/web/20070327112319/http://d.hatena.ne.jp/kkos/">��Ԣ�������</a>��ͳ��
-Java��GUI�ץ������äݤ���Τ�񤱤С����줬(Ajax��Ȥä�)Web���ץꥱ�������ˤʤ�Ȥ����ե졼�����餷�������򤽤���´�������褿�顢���ٿ��äƤߤ����Ȥ�������
+<h3><a href="./?date=20060130#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=Java">Java</a>][<a href="./?year=2006;month=1Q;category=Web%A5%A2%A5%D7%A5%EA%A5%B1%A1%BC%A5%B7%A5%E7%A5%F3">Webアプリケーション</a>]<a href="https://web.archive.org/web/20070327112319/http://www.nextapp.com/platform/echo2/echo/">Echo2</a></h3><p>
+<a href="https://web.archive.org/web/20070327112319/http://d.hatena.ne.jp/kkos/">報國挺身日記</a>経由。
+JavaでGUIプログラムっぽいものを書けば、それが(Ajaxを使った)Webアプリケーションになるというフレームワークらしい。面白そう。卒論が出来たら、一度触ってみたいところだ。
 </p></div><div class="section">
-<h3><a href="./?date=20060130#p02"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=Onion">Onion</a>]�����������</h3><p>
-�ʤ󤫺Ƕᡢ��Onion �ߤ����ޡפȤ���Onion ����פθ�������Ƥ����ͤ������Ƥ��롣�������������Ƕᳫȯ���ʤ���Ƥ��ʤ��Τǡ��ʤ�����ߤ���ʵ�ʬ�ˤʤ롣´����̤Ƨ�桼��������äơ�3��ˤʤä��鳫ȯ��Ƴ����褦��
+<h3><a href="./?date=20060130#p02"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=Onion">Onion</a>]検索キーワード</h3><p>
+なんか最近、「Onion みずしま」とか「Onion 言語」の検索で来てくれる人が増えている。しかし、ここ最近開発が進められていないので、なんだかみじめな気分になる。卒論と未踏ユースが終わって、3月になったら開発を再開しよう。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��2��) [<a href="./?date=20060130#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全2件) [<a href="./?date=20060130#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20060130#c01"><span class="canchor">_</span></a>
-				<span class="commentator">uchi</span>&nbsp;[��äѹͤ��Ƥ���ͤϤ��ä����������ͤ�  ]</p>
+				<span class="commentator">uchi</span>&nbsp;[やっぱ考えている人はけっこういるんだねぇ  ]</p>
 				<p><a href="./?date=20060130#c02"><span class="canchor">_</span></a>
-				<span class="commentator">Ryo</span>&nbsp;[��ʸ�礬�������Ȥ����餹���������ء���  ]</p>
+				<span class="commentator">Ryo</span>&nbsp;[謳い文句が本当だとしたらすげー。うへー。  ]</p>
 		</div>
 </div>
 
@@ -544,7 +669,7 @@ Java��GUI�ץ������äݤ���Τ�񤱤С����줬(Ajax��Ȥä�)Web���ץꥱ��������
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327112319/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">32</a> | <a href="https://web.archive.org/web/20070327112319/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">8</a> | <a href="https://web.archive.org/web/20070327112319/http://www2.coins.tsukuba.ac.jp/~i021216/diary/?date=200605" title="http://www2.coins.tsukuba.ac.jp/~i021216/diary/?da...">5</a> | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060130%23p02&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">4</a> | <a href="https://web.archive.org/web/20070327112319/http://a.hatena.ne.jp/ucho/" title="http://a.hatena.ne.jp/ucho/">4</a> | <a href="https://web.archive.org/web/20070327112319/http://labs.ceek.jp/jblog/" title="http://labs.ceek.jp/jblog/">3</a> | <a href="https://web.archive.org/web/20070327112319/http://d.hatena.ne.jp/kkos/edit?date=20060128" title="http://d.hatena.ne.jp/kkos/edit?date=20060128">3</a> | <a href="https://web.archive.org/web/20070327112319/http://search.yahoo.co.jp/search?p=eclipse+%A5%EF%A1%BC%A5%AF%A5%B9%A5%DA%A1%BC%A5%B9%A1%A1%B8%DF%B4%B9%C0%AD&amp;fr=top&amp;src=top" title="http://search.yahoo.co.jp/search?p=eclipse ����...">2</a> | <a href="https://web.archive.org/web/20070327112319/http://search.yahoo.co.jp/search?p=Object%23getClass%28%29&amp;fr=top&amp;src=top" title="http://search.yahoo.co.jp/search?p=Object#getClass...">2</a> | <a href="https://web.archive.org/web/20070327112319/http://ikejisoft.com/" title="http://ikejisoft.com/">2</a> | <a href="./?date=20060130#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327112319/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">32</a> | <a href="https://web.archive.org/web/20070327112319/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">8</a> | <a href="https://web.archive.org/web/20070327112319/http://www2.coins.tsukuba.ac.jp/~i021216/diary/?date=200605" title="http://www2.coins.tsukuba.ac.jp/~i021216/diary/?da...">5</a> | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060130%23p02&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">4</a> | <a href="https://web.archive.org/web/20070327112319/http://a.hatena.ne.jp/ucho/" title="http://a.hatena.ne.jp/ucho/">4</a> | <a href="https://web.archive.org/web/20070327112319/http://labs.ceek.jp/jblog/" title="http://labs.ceek.jp/jblog/">3</a> | <a href="https://web.archive.org/web/20070327112319/http://d.hatena.ne.jp/kkos/edit?date=20060128" title="http://d.hatena.ne.jp/kkos/edit?date=20060128">3</a> | <a href="https://web.archive.org/web/20070327112319/http://search.yahoo.co.jp/search?p=eclipse+%A5%EF%A1%BC%A5%AF%A5%B9%A5%DA%A1%BC%A5%B9%A1%A1%B8%DF%B4%B9%C0%AD&amp;fr=top&amp;src=top" title="http://search.yahoo.co.jp/search?p=eclipse ワーク�...">2</a> | <a href="https://web.archive.org/web/20070327112319/http://search.yahoo.co.jp/search?p=Object%23getClass%28%29&amp;fr=top&amp;src=top" title="http://search.yahoo.co.jp/search?p=Object#getClass...">2</a> | <a href="https://web.archive.org/web/20070327112319/http://ikejisoft.com/" title="http://ikejisoft.com/">2</a> | <a href="./?date=20060130#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -557,15 +682,15 @@ Java��GUI�ץ������äݤ���Τ�񤱤С����줬(Ajax��Ȥä�)Web���ץꥱ��������
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060131#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%C2%B4%CF%C0">´��</a>]�����ڤ�ֶ�</h3><p>
-���褤��´���������ڤ꤬��Ť��Ƥ�����Ű�뤷�ƤǤ⡢������ˤʤ�Ȥ���ʸ��񤭾夲�Ƥ��ޤ�ʤ���С�
+<h3><a href="./?date=20060131#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%C2%B4%CF%C0">卒論</a>]締め切り間近</h3><p>
+いよいよ卒論の締め切りが近づいてきた。徹夜してでも、今晩中になんとか論文を書き上げてしまわなければ。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20060131#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20060131#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -575,7 +700,7 @@ Java��GUI�ץ������äݤ���Τ�񤱤С����줬(Ajax��Ȥä�)Web���ץꥱ��������
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327112319/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">8</a> | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060131%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">7</a> | <a href="https://web.archive.org/web/20070327112319/http://search.yahoo.co.jp/search?p=%E3%82%A8%E3%82%A2%E3%82%B3%E3%83%B3%E3%82%A8%E3%83%A9%E3%83%BC&amp;ei=UTF-8&amp;fr=top_v2&amp;x=wrt&amp;meta=vc%3D" title="http://search.yahoo.co.jp/search?p=�������󥨥顼&amp;...">5</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.com/search?num=50&amp;hl=ja&amp;q=Onion%E3%80%80%E3%81%BF%E3%81%9A%E3%81%97%E3%81%BE&amp;lr=lang_ja" title="google����(Onion���ߤ�����)">2</a> | <a href="https://web.archive.org/web/20070327112319/http://search.yahoo.co.jp/search?p=onion+%CF%C0%CA%B8&amp;fr=top_v2&amp;tid=top_v2&amp;search.x=1" title="http://search.yahoo.co.jp/search?p=onion ��ʸ&amp;fr=t...">2</a> | <a href="https://web.archive.org/web/20070327112319/http://search.yahoo.co.jp/search?p=%E3%82%A8%E3%82%A2%E3%82%B3%E3%83%B3%E3%82%A8%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8P&amp;ei=UTF-8&amp;fl=0&amp;meta=vc%3D&amp;pstart=1&amp;fr=top&amp;b=11" title="http://search.yahoo.co.jp/search?p=�������󥨥顼�...">2</a> | <a href="https://web.archive.org/web/20070327112319/http://labs.ceek.jp/jblog/" title="http://labs.ceek.jp/jblog/">2</a> | <a href="https://web.archive.org/web/20070327112319/http://images.google.co.jp/imgres?imgurl=http://www.coins.tsukuba.ac.jp/~i021216/images/hanabi04.jpg&amp;imgrefurl=http://www2.coins.tsukuba.ac.jp/~i021216/diary/&amp;h=1728&amp;w=2304&amp;sz=1303&amp;tbnid=8EDL6Xb2oIju1M:&amp;tbnh=112&amp;tbnw=150&amp;hl=ja&amp;start=47&amp;prev=/images%3Fq%3D%25E8%258A%25B1%25E7%2581%25AB%26start%3D40%26imgsz%3Dxxlarge%26svnum%3D10%26hl%3Dja%26lr%3D%26sa%3DN" title="http://images.google.co.jp/imgres?imgurl=http://ww...">2</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.com/search?hl=ja&amp;rls=RNWE%2CRNWE%3A2005-49%2CRNWE%3Aja&amp;q=Ruby%E3%80%80%E3%82%BD%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%80%80%E3%82%B3%E3%83%BC%E3%83%89&amp;lr=" title="google����(Ruby�������ƥ��󥰡�������)">1</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.com/search?hl=ja&amp;client=safari&amp;rls=ja-jp&amp;q=%E3%82%BD%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%B3%E3%83%BC%E3%83%89&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=" title="google����(�����ƥ��󥰥�����)">1</a> | <a href="./?date=20060131#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327112319/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">8</a> | <a href="https://web.archive.org/web/20070327112319/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060131%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">7</a> | <a href="https://web.archive.org/web/20070327112319/http://search.yahoo.co.jp/search?p=%E3%82%A8%E3%82%A2%E3%82%B3%E3%83%B3%E3%82%A8%E3%83%A9%E3%83%BC&amp;ei=UTF-8&amp;fr=top_v2&amp;x=wrt&amp;meta=vc%3D" title="http://search.yahoo.co.jp/search?p=エアコンエラー&amp;...">5</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.com/search?num=50&amp;hl=ja&amp;q=Onion%E3%80%80%E3%81%BF%E3%81%9A%E3%81%97%E3%81%BE&amp;lr=lang_ja" title="google検索(Onion　みずしま)">2</a> | <a href="https://web.archive.org/web/20070327112319/http://search.yahoo.co.jp/search?p=onion+%CF%C0%CA%B8&amp;fr=top_v2&amp;tid=top_v2&amp;search.x=1" title="http://search.yahoo.co.jp/search?p=onion 論文&amp;fr=t...">2</a> | <a href="https://web.archive.org/web/20070327112319/http://search.yahoo.co.jp/search?p=%E3%82%A8%E3%82%A2%E3%82%B3%E3%83%B3%E3%82%A8%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8P&amp;ei=UTF-8&amp;fl=0&amp;meta=vc%3D&amp;pstart=1&amp;fr=top&amp;b=11" title="http://search.yahoo.co.jp/search?p=エアコンエラー�...">2</a> | <a href="https://web.archive.org/web/20070327112319/http://labs.ceek.jp/jblog/" title="http://labs.ceek.jp/jblog/">2</a> | <a href="https://web.archive.org/web/20070327112319/http://images.google.co.jp/imgres?imgurl=http://www.coins.tsukuba.ac.jp/~i021216/images/hanabi04.jpg&amp;imgrefurl=http://www2.coins.tsukuba.ac.jp/~i021216/diary/&amp;h=1728&amp;w=2304&amp;sz=1303&amp;tbnid=8EDL6Xb2oIju1M:&amp;tbnh=112&amp;tbnw=150&amp;hl=ja&amp;start=47&amp;prev=/images%3Fq%3D%25E8%258A%25B1%25E7%2581%25AB%26start%3D40%26imgsz%3Dxxlarge%26svnum%3D10%26hl%3Dja%26lr%3D%26sa%3DN" title="http://images.google.co.jp/imgres?imgurl=http://ww...">2</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.com/search?hl=ja&amp;rls=RNWE%2CRNWE%3A2005-49%2CRNWE%3Aja&amp;q=Ruby%E3%80%80%E3%82%BD%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%80%80%E3%82%B3%E3%83%BC%E3%83%89&amp;lr=" title="google検索(Ruby　ソーティング　コード)">1</a> | <a href="https://web.archive.org/web/20070327112319/http://www.google.com/search?hl=ja&amp;client=safari&amp;rls=ja-jp&amp;q=%E3%82%BD%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%B3%E3%83%BC%E3%83%89&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=" title="google検索(ソーティングコード)">1</a> | <a href="./?date=20060131#t">TrackBack(0)</a>
 		</div>
 </div>
 

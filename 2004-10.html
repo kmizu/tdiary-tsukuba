@@ -1,43 +1,168 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="ja-JP">
-<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=Hk4-lkW3" charset="utf-8"></script>
-<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<head>
+
 <script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
-<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+
 <script type="text/javascript">
     __wm.init("https://web.archive.org/web");
   __wm.wombat("http://www2.coins.tsukuba.ac.jp:80/~i021216/diary/?date=200410","20041012161624","https://web.archive.org/","web","https://web-static.archive.org/_static/",
 	      "1097597784");
 </script>
-<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" />
-<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+
+
 <!-- End Wayback Rewrite JS Include -->
 
-	<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="generator" content="tDiary 2.0.0">
 	<meta http-equiv="Last-Modified" content="Tue, 12 Oct 2004 08:52:37 GMT">
-	<meta http-equiv="Content-Script-Type" content="text/javascript; charset=EUC-JP">
-	<meta name="author" content="���繨��">
+	<meta http-equiv="Content-Script-Type" content="text/javascript; charset=UTF-8">
+	<meta name="author" content="水島宏太">
 	<link rev="made" href="mailto:hau51010@tree.odn.ne.jp">
-	<link rel="index" title="�ȥå�" href="http://www2.coins.tsukuba.ac.jp/~i021216/">
-	<link rel="start" title="�ǿ�" href="./">
+	<link rel="index" title="トップ" href="http://www2.coins.tsukuba.ac.jp/~i021216/">
+	<link rel="start" title="最新" href="./">
 	<meta http-equiv="content-style-type" content="text/css">
 	<link rel="stylesheet" href="/web/20041012161624cs_/http://www2.coins.tsukuba.ac.jp/~i021216/diary/theme/base.css" type="text/css" media="all">
 	<link rel="stylesheet" href="/web/20041012161624cs_/http://www2.coins.tsukuba.ac.jp/~i021216/diary/theme/default/default.css" title="default" type="text/css" media="all">
-	<title>println '����'(2004-10)</title>
+	<title>println '日記'(2004-10)</title>
 	
 	<!--link rel="alternate" type="application/x-lirs" title="lirs" href="antenna.lirs"-->
-	<link rel="alternate" type="application/rss+xml" title="RSS" href="https://web.archive.org/web/20041012161624/http://www2.coins.tsukuba.ac.jp/~i021216/diary/index.rdf">
+	
+
+<style>
+    /* Modern Styling */
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.7;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        color: #333;
+    }
+    
+    h1 {
+        color: #2c3e50;
+        border-bottom: 3px solid #3498db;
+        padding-bottom: 12px;
+        font-size: 2em;
+        margin-top: 0;
+    }
+    
+    h2 {
+        color: #34495e;
+        border-left: 4px solid #3498db;
+        padding-left: 12px;
+        margin-top: 30px;
+    }
+    
+    h3 {
+        color: #555;
+        margin-top: 24px;
+    }
+    
+    .day {
+        background: white;
+        border-radius: 12px;
+        padding: 24px;
+        margin-bottom: 24px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .day:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    
+    .section {
+        margin: 16px 0;
+        padding: 12px;
+        border-left: 3px solid #e8e8e8;
+    }
+    
+    .date {
+        color: #3498db;
+        font-weight: 600;
+    }
+    
+    .title {
+        color: #2c3e50;
+        font-size: 1.3em;
+    }
+    
+    a {
+        color: #3498db;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    
+    a:hover {
+        color: #2980b9;
+        text-decoration: underline;
+    }
+    
+    pre {
+        background: #f8f9fa;
+        border: 1px solid #e9ecef;
+        border-radius: 6px;
+        padding: 16px;
+        overflow-x: auto;
+        font-size: 0.9em;
+    }
+    
+    code {
+        background: #f8f9fa;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .comment {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 16px;
+        margin-top: 20px;
+    }
+    
+    .adminmenu, .calendar, .todo {
+        background: white;
+        border-radius: 8px;
+        padding: 12px;
+        margin-bottom: 16px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .referer {
+        font-size: 0.85em;
+        color: #7f8c8d;
+        margin-top: 16px;
+        padding-top: 12px;
+        border-top: 1px solid #e8e8e8;
+    }
+    
+    /* Web Archive ツールバーを非表示 */
+    #wm-ipp-base, #wm-ipp, #donato {
+        display: none !important;
+    }
+    
+    hr.sep {
+        border: none;
+        border-top: 2px solid #e8e8e8;
+        margin: 30px 0;
+    }
+</style>
+
 </head>
 <body>
 
 
 <div class="adminmenu">
-<span class="adminmenu"><a href="https://web.archive.org/web/20041012161624/http://www2.coins.tsukuba.ac.jp/~i021216/">�ȥå�</a></span>
-<span class="adminmenu"><a href="./">�ǿ�</a></span>
-<span class="adminmenu"><a href="update.rb">�ɵ�</a></span>
+<span class="adminmenu"><a href="https://web.archive.org/web/20041012161624/http://www2.coins.tsukuba.ac.jp/~i021216/">トップ</a></span>
+<span class="adminmenu"><a href="./">最新</a></span>
+<span class="adminmenu"><a href="update.rb">追記</a></span>
 </div>
-<h1>println '����'</h1>
+<h1>println '日記'</h1>
 <div class="calendar">
 <div class="year">2004|<a href="./?date=200409">09</a>|<a href="./?date=200410">10</a>|</div>
 </div>
@@ -52,23 +177,23 @@
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20041001#p01"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]���祮��</h3><p>
-�롼�ף���(��5km)�����ä��������ϡ����ޤ����ʤ��ä���
+<h3><a href="./?date=20041001#p01"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]ジョギング</h3><p>
+ループ１周(約5km)を走った。今日は、あまり疲れなかった。
 </p></div><div class="section">
-<h3><a href="./?date=20041001#p02"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=Java">Java</a>]³��J2SE5.0</h3><p>
-�����������ǣ��󿨤줿�����ʤΤˤ⤫����餺�������ϲ��Τ��䤿��
-J2SE5.0�Ǹ���������Ƥ���ͤ�����Τǡ�<a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?q=J2SE5.0&amp;hl=ja&amp;lr=&amp;ie=UTF-8&amp;c2coff=1&amp;start=10&amp;sa=N">Google�Ǹ���</a>���Ƥߤ�������ȡ�663���桢15����(10/1 20:30��)����Ƥ��뤳�Ȥ��狼�ä��������ࡢ���Τ���ʤ˾�̤���Ƥ���Τ��������褯�狼���
+<h3><a href="./?date=20041001#p02"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=Java">Java</a>]続・J2SE5.0</h3><p>
+昨日の日記で１回触れただけなのにもかかわらず、今日は何故かやたら
+J2SE5.0で検索して来ている人がいるので、<a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?q=J2SE5.0&amp;hl=ja&amp;lr=&amp;ie=UTF-8&amp;c2coff=1&amp;start=10&amp;sa=N">Googleで検索</a>してみた。すると、663件中、15件目(10/1 20:30頃)に来ていることがわかった。うーむ、何故こんなに上位に来ているのだろう。よくわからん。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��1��) [<a href="./?date=20041001#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全1件) [<a href="./?date=20041001#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20041001#c01"><span class="canchor">_</span></a>
-				<span class="commentator">TELL</span>&nbsp;[�ط����뤫�ɤ����狼��ޤ��󤬡�
- ����ī���ॢ��ƥʤǡ���������ɽ����??????�ʤΤ˥ʥ������־�Ǥ���]</p>
+				<span class="commentator">TELL</span>&nbsp;[関係あるかどうかわかりませんが、
+ 筑波朝比奈アンテナで、更新日時表示が??????なのにナゼか一番上です。]</p>
 		</div>
 </div>
 
@@ -79,7 +204,7 @@ J2SE5.0�Ǹ���������Ƥ���ͤ�����Τǡ�<a href="https://web.archive.org/web/2004
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">60</a> | <a href="https://web.archive.org/web/20041012161624/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">6</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?hl=ja&amp;ie=UTF-8&amp;q=j2se5.0&amp;lr=lang_ja" title="google����(j2se5.0)">4</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?hl=ja&amp;ie=UTF-8&amp;c2coff=1&amp;q=J2SE5.0&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=lang_ja" title="google����(J2SE5.0)">4</a> | <a href="https://web.archive.org/web/20041012161624/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">2</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.com/search?hl=ja&amp;lr=lang_ja&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=J2SE5.0&amp;num=50" title="google����(J2SE5.0)">2</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?hl=ja&amp;ie=UTF-8&amp;q=J2SE5.0+%E6%A9%9F%E8%83%BD&amp;lr=lang_ja" title="google����(J2SE5.0 ��ꦿ)">2</a> | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~i031203/antenna/" title="http://www.coins.tsukuba.ac.jp/~i031203/antenna/">2</a> | <a href="https://web.archive.org/web/20041012161624/http://d.hatena.ne.jp/mayaqua/" title="http://d.hatena.ne.jp/mayaqua/">2</a> | <a href="https://web.archive.org/web/20041012161624/http://www.infoseek.co.jp/OTitles?col=OW&amp;qt=J2SE5.0&amp;svx=901908" title="Infoseek����(J2SE5.0)">1</a> | 
+		本日のリンク元 | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">60</a> | <a href="https://web.archive.org/web/20041012161624/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">6</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?hl=ja&amp;ie=UTF-8&amp;q=j2se5.0&amp;lr=lang_ja" title="google検索(j2se5.0)">4</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?hl=ja&amp;ie=UTF-8&amp;c2coff=1&amp;q=J2SE5.0&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=lang_ja" title="google検索(J2SE5.0)">4</a> | <a href="https://web.archive.org/web/20041012161624/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">2</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.com/search?hl=ja&amp;lr=lang_ja&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=J2SE5.0&amp;num=50" title="google検索(J2SE5.0)">2</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?hl=ja&amp;ie=UTF-8&amp;q=J2SE5.0+%E6%A9%9F%E8%83%BD&amp;lr=lang_ja" title="google検索(J2SE5.0 讖溯��)">2</a> | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~i031203/antenna/" title="http://www.coins.tsukuba.ac.jp/~i031203/antenna/">2</a> | <a href="https://web.archive.org/web/20041012161624/http://d.hatena.ne.jp/mayaqua/" title="http://d.hatena.ne.jp/mayaqua/">2</a> | <a href="https://web.archive.org/web/20041012161624/http://www.infoseek.co.jp/OTitles?col=OW&amp;qt=J2SE5.0&amp;svx=901908" title="Infoseek検索(J2SE5.0)">1</a> | 
 		</div>
 </div>
 
@@ -92,15 +217,15 @@ J2SE5.0�Ǹ���������Ƥ���ͤ�����Τǡ�<a href="https://web.archive.org/web/2004
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20041002#p01"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]�ߡ��ƥ���</h3><p>
-��������ǡ��������л��κǽ��ߡ��ƥ��󥰡������䥳����ʤɤΤο���ʬ���䡢������ŷ���ˤĤ��Ƥγ�ǧ�ʤɤ�Ԥä����Ȥꤢ����������Ϥʤ�Ȥ��ޤ�ǻ��Ĥ������Ȥ������Ȥǡ��л��Ϸ�ԤȤ������Ȥˤʤä���
+<h3><a href="./?date=20041002#p01"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]ミーティング</h3><p>
+サークルで、明日の登山の最終ミーティング。食料やコンロなどのの振り分けや、明日の天気についての確認などを行った。とりあえず、日中はなんとか曇りで持つだろうということで、登山は決行ということになった。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20041002#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20041002#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -110,7 +235,7 @@ J2SE5.0�Ǹ���������Ƥ���ͤ�����Τǡ�<a href="https://web.archive.org/web/2004
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">11</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?hl=ja&amp;ie=UTF-8&amp;q=J2SE5+%E3%82%A8%E3%83%A9%E3%83%BC&amp;lr=" title="google����(J2SE5 ��㦫��lr=)">5</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?hl=ja&amp;ie=UTF-8&amp;q=pnuts+groovy&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=" title="google����(pnuts groovy)">2</a> | <a href="https://web.archive.org/web/20041012161624/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">2</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.com/search?hl=ja&amp;lr=lang_ja&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=J2SE5.0+%E9%81%95%E3%81%84&amp;num=50" title="google����(J2SE5.0 �����)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.com/search?hl=ja&amp;lr=lang_ja&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=J2SE5.0&amp;num=50" title="google����(J2SE5.0)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?hl=ja&amp;ie=UTF-8&amp;q=j2se5.0&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=lang_ja" title="google����(j2se5.0)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~i021216/" title="http://www.coins.tsukuba.ac.jp/~i021216/">1</a> | <a href="https://web.archive.org/web/20041012161624/http://d.hatena.ne.jp/mayaqua/20041001" title="http://d.hatena.ne.jp/mayaqua/20041001">1</a> | <a href="https://web.archive.org/web/20041012161624/http://d.hatena.ne.jp/mayaqua/" title="http://d.hatena.ne.jp/mayaqua/">1</a> | 
+		本日のリンク元 | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">11</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?hl=ja&amp;ie=UTF-8&amp;q=J2SE5+%E3%82%A8%E3%83%A9%E3%83%BC&amp;lr=" title="google検索(J2SE5 繧�礒�繝lr=)">5</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?hl=ja&amp;ie=UTF-8&amp;q=pnuts+groovy&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=" title="google検索(pnuts groovy)">2</a> | <a href="https://web.archive.org/web/20041012161624/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">2</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.com/search?hl=ja&amp;lr=lang_ja&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=J2SE5.0+%E9%81%95%E3%81%84&amp;num=50" title="google検索(J2SE5.0 驕輔＞)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.com/search?hl=ja&amp;lr=lang_ja&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=J2SE5.0&amp;num=50" title="google検索(J2SE5.0)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?hl=ja&amp;ie=UTF-8&amp;q=j2se5.0&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=lang_ja" title="google検索(j2se5.0)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~i021216/" title="http://www.coins.tsukuba.ac.jp/~i021216/">1</a> | <a href="https://web.archive.org/web/20041012161624/http://d.hatena.ne.jp/mayaqua/20041001" title="http://d.hatena.ne.jp/mayaqua/20041001">1</a> | <a href="https://web.archive.org/web/20041012161624/http://d.hatena.ne.jp/mayaqua/" title="http://d.hatena.ne.jp/mayaqua/">1</a> | 
 		</div>
 </div>
 
@@ -123,24 +248,24 @@ J2SE5.0�Ǹ���������Ƥ���ͤ�����Τǡ�<a href="https://web.archive.org/web/2004
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20041003#p01"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]�л����</h3><p>
-�����ϡ��л����������ä��Ϥ��ʤΤ��������Ϥ��ն�ޤǹԤäơ���������������ǰ�Ȥ������Ȥˤʤä����ȤϤ������虜�虜�֤Ǳ󤯤ޤǽФ����Ƥ��ơ����ΤޤޤĤ��Ф˵���Ȥ����Τ⤢�ꤨ�ʤ��Ȥ������Ȥǡ��ɤ���ͷ�٤����õ�����Ȥˡ��ä��礤�η�̡�<a href="https://web.archive.org/web/20041012161624/http://www.kinugawa.org/facilities/palladium/palladium.html">������ϩ�ѥ�ǥ�����</a>�˹Ԥä��塢<a href="https://web.archive.org/web/20041012161624/http://www.ryuokyo.org/">ζ����</a>�˹Ԥ����Ȥˡ�
+<h3><a href="./?date=20041003#p01"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]登山中止</h3><p>
+今日は、登山の日、だったはずなのだが、現地の付近まで行って、雨が強いため断念ということになった。とはいえ、わざわざ車で遠くまで出かけてきて、そのままつくばに帰るというのもありえないということで、どこか遊べる場所を探すことに。話し合いの結果、<a href="https://web.archive.org/web/20041012161624/http://www.kinugawa.org/facilities/palladium/palladium.html">巨大迷路パラディアム</a>に行った後、<a href="https://web.archive.org/web/20041012161624/http://www.ryuokyo.org/">龍王峡</a>に行くことに。
 </p>
 <p>
-��������������ϩ�򽪤����ʳ��ǡ������Τ����ʤ�Ǩ��Ƥ��ޤä����ᡢζ��������ߤ��ơ������˹Ԥ����Ȥˡ������ϡ�Ϫŷ��Ϥ�Ȳ������Ϥξ�������ꡢ����⤭�줤�ǡ��ʤ��ʤ��ɤ�����ä�������ǡ������ʤ���кǹ���ä��Τ�����
+しかし、巨大迷路を終えた段階で、雨で体がかなり濡れてしまったため、龍王峡を中止して、温泉に行くことに。温泉は、露天風呂と屋内の風呂両方があり、館内もきれいで、なかなか良い所だった。これで、雨がなければ最高だったのだが。
 </p>
 <p>
-���������ä���ϡ����뤳�Ȥˡ��뤴�Ϥ�򿩤٤Ƥ��ʤ��ä����ᡢ��������ˡ����Եܤˤ�ä��Ҥ򿩤٤������ʤ��ʤ����ޤ��ä������������Ҥ�Į����
+温泉に入った後は、帰ることに。昼ごはんを食べていなかったため、帰る途中に、宇都宮によって餃子を食べたが、なかなかうまかった。さすが、餃子の町だ。
 </p>
 <p>
-�Ҥ򿩤٤���ϡ�������̵����19:00�᤮���ˤϤĤ��Ф˵��ä��褿�����θ塢ȿ�ʲ���ո��Ӥ򽪤��ơ�20:30�����򻶤�����
+餃子を食べた後は、何事も無く、19:00過ぎ頃にはつくばに帰って来た。その後、反省会と晩御飯を終えて、20:30頃、解散した。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20041003#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20041003#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -150,7 +275,7 @@ J2SE5.0�Ǹ���������Ƥ���ͤ�����Τǡ�<a href="https://web.archive.org/web/2004
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">11</a> | <a href="https://web.archive.org/web/20041012161624/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">8</a> | <a href="https://web.archive.org/web/20041012161624/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">2</a> | <a href="https://web.archive.org/web/20041012161624/http://www.h-yki.com/~rubylip/ebantenna/" title="http://www.h-yki.com/~rubylip/ebantenna/">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.com/search?q=SQLException+:+No+suitable+driver&amp;hl=ja&amp;lr=lang_ja&amp;ie=UTF-8&amp;start=10&amp;sa=N" title="google����(SQLException : No suitable driver)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?q=jdbc+++%E4%BB%95%E6%A7%98%E3%80%80ClassFormat&amp;hl=ja&amp;ie=UTF-8" title="google����(jdbc   �����lassFormat)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?q=java+No+suitable+driver&amp;hl=ja&amp;lr=lang_ja&amp;ie=UTF-8&amp;start=10&amp;sa=N" title="google����(java No suitable driver)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?q=j2se5&amp;ie=Shift-JIS&amp;oe=Shift-JIS&amp;hl=ja&amp;lr=lang_ja" title="google����(j2se5)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?q=Regex+java+compile&amp;hl=ja&amp;lr=lang_ja&amp;ie=UTF-8&amp;start=10&amp;sa=N" title="google����(Regex java compile)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?num=50&amp;hl=ja&amp;ie=UTF-8&amp;q=j2se5.0&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=lang_ja" title="google����(j2se5.0)">1</a> | 
+		本日のリンク元 | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">11</a> | <a href="https://web.archive.org/web/20041012161624/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">8</a> | <a href="https://web.archive.org/web/20041012161624/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">2</a> | <a href="https://web.archive.org/web/20041012161624/http://www.h-yki.com/~rubylip/ebantenna/" title="http://www.h-yki.com/~rubylip/ebantenna/">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.com/search?q=SQLException+:+No+suitable+driver&amp;hl=ja&amp;lr=lang_ja&amp;ie=UTF-8&amp;start=10&amp;sa=N" title="google検索(SQLException : No suitable driver)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?q=jdbc+++%E4%BB%95%E6%A7%98%E3%80%80ClassFormat&amp;hl=ja&amp;ie=UTF-8" title="google検索(jdbc   莉墓縲lassFormat)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?q=java+No+suitable+driver&amp;hl=ja&amp;lr=lang_ja&amp;ie=UTF-8&amp;start=10&amp;sa=N" title="google検索(java No suitable driver)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?q=j2se5&amp;ie=Shift-JIS&amp;oe=Shift-JIS&amp;hl=ja&amp;lr=lang_ja" title="google検索(j2se5)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?q=Regex+java+compile&amp;hl=ja&amp;lr=lang_ja&amp;ie=UTF-8&amp;start=10&amp;sa=N" title="google検索(Regex java compile)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?num=50&amp;hl=ja&amp;ie=UTF-8&amp;q=j2se5.0&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=lang_ja" title="google検索(j2se5.0)">1</a> | 
 		</div>
 </div>
 
@@ -163,18 +288,18 @@ J2SE5.0�Ǹ���������Ƥ���ͤ�����Τǡ�<a href="https://web.archive.org/web/2004
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20041004#p01"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%BC%F8%B6%C8">����</a>]���������</h3><p>
-������ŷ�����������ᤫ����������󥰤��Τ�ΤϤʤ������轵����Ϥޤ롢���ꥨ��ơ���󥰤ˤĤ��Ƥ������ʤɤ����ä��塢�򻶤�����
+<h3><a href="./?date=20041004#p01"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%BC%F8%B6%C8">授業</a>]サイクリング</h3><p>
+今週は天気が悪いためか、サイクリングそのものはなく、最来週から始まる、オリエンテーリングについての説明などがあった後、解散した。
 </p></div><div class="section">
-<h3><a href="./?date=20041004#p02"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=Pnuts">Pnuts</a>]<a href="https://web.archive.org/web/20041012161624/http://pnuts.org/~tomatsu/blog/index.pnut?category=&amp;date=2004-09-28">Pnuts���åץǡ���</a></h3><p>
-����������ɤ��Ƥߤ롣����ϡ�����{...}�䡢̤����ѿ��򥿥��ؿ��ˤ���nodeEdit()�ʤɤ��ɲä���Ƥ��롣
+<h3><a href="./?date=20041004#p02"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=Pnuts">Pnuts</a>]<a href="https://web.archive.org/web/20041012161624/http://pnuts.org/~tomatsu/blog/index.pnut?category=&amp;date=2004-09-28">Pnutsアップデート</a></h3><p>
+ダウンロードしてみる。今回は、配列式{...}や、未定義変数をタグ関数にするnodeEdit()などが追加されている。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20041004#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20041004#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -184,7 +309,7 @@ J2SE5.0�Ǹ���������Ƥ���ͤ�����Τǡ�<a href="https://web.archive.org/web/2004
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">5</a> | <a href="https://web.archive.org/web/20041012161624/http://www.blink.jp/go?page=Main&amp;path=35861066/36605445" title="http://www.blink.jp/go?page=Main&amp;path=35861066/366...">5</a> | <a href="https://web.archive.org/web/20041012161624/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.com/search?q=javacc+emacs+%E3%83%A2%E3%83%BC%E3%83%89&amp;sourceid=opera&amp;num=0&amp;ie=utf-8&amp;oe=utf-8" title="google����(javacc emacs ��㦾��sourceid=opera)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?sourceid=navclient&amp;hl=ja&amp;ie=UTF-8&amp;q=JavaCC+%E3%83%97%E3%83%AA%E3%83%97%E3%83%AD%E3%82%BB%E3%83%83%E3%82%B5" title="google����(JavaCC ���妬���妯������)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?q=pnuts+java&amp;hl=ja&amp;lr=lang_ja&amp;ie=UTF-8&amp;start=20&amp;sa=N" title="google����(pnuts java)">1</a> | 
+		本日のリンク元 | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">5</a> | <a href="https://web.archive.org/web/20041012161624/http://www.blink.jp/go?page=Main&amp;path=35861066/36605445" title="http://www.blink.jp/go?page=Main&amp;path=35861066/366...">5</a> | <a href="https://web.archive.org/web/20041012161624/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.com/search?q=javacc+emacs+%E3%83%A2%E3%83%BC%E3%83%89&amp;sourceid=opera&amp;num=0&amp;ie=utf-8&amp;oe=utf-8" title="google検索(javacc emacs 繝≪�上�sourceid=opera)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?sourceid=navclient&amp;hl=ja&amp;ie=UTF-8&amp;q=JavaCC+%E3%83%97%E3%83%AA%E3%83%97%E3%83%AD%E3%82%BB%E3%83%83%E3%82%B5" title="google検索(JavaCC 繝励Μ繝励Ο繧祉ャ繧)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?q=pnuts+java&amp;hl=ja&amp;lr=lang_ja&amp;ie=UTF-8&amp;start=20&amp;sa=N" title="google検索(pnuts java)">1</a> | 
 		</div>
 </div>
 
@@ -197,19 +322,19 @@ J2SE5.0�Ǹ���������Ƥ���ͤ�����Τǡ�<a href="https://web.archive.org/web/2004
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20041005#p01"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%BC%F8%B6%C8">����</a>]�ץ�����ߥ󥰸������</h3><p>
-����˰���³����yacc�λȤ����������ȡ����줫��½��Ǻ����������tinyC�ˤĤ��Ƥ������ʤɤ����ä��������ϵפ��֤�˥Ρ��ȥѥ��������äƤ����ʤ��ä��Τǡ����̤˼��Ȥ�ʹ�����Ȥˡ��ȤϤ�������Ϥ�����ʤΤǡ����椫��<a href="https://web.archive.org/web/20041012161624/http://www.amazon.co.jp/exec/obidos/ASIN/489471356X/249-3499096-3382716">Java���ۥޥ������</a>���ɤ���ꤷ�Ƥ�����
+<h3><a href="./?date=20041005#p01"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%BC%F8%B6%C8">授業</a>]プログラミング言語処理</h3><p>
+前回に引き続いてyaccの使い方の説明と、これから実習で作る言語処理系tinyCについての説明などがあった。今日は久しぶりにノートパソコンを持っていかなかったので、普通に授業を聞くことに。とはいえ、やはり退屈なので、途中から<a href="https://web.archive.org/web/20041012161624/http://www.amazon.co.jp/exec/obidos/ASIN/489471356X/249-3499096-3382716">Java仮想マシン仕様</a>を読んだりしていた。
 </p></div><div class="section">
-<h3><a href="./?date=20041005#p02"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%BC%F8%B6%C8">����</a>]���ͷ׻�</h3><p>
-����ϡ��ؿ��ζ������ˡ�ˤĤ��ơ��½��ϡ�������ˤ����Ƚ�������Ф��뤳�Ȥ��Ǥ������������ʤ����������μ½��ϡ�����䡢������
-�����ñ�ʵ������롣
+<h3><a href="./?date=20041005#p02"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%BC%F8%B6%C8">授業</a>]数値計算</h3><p>
+今回は、関数の近似の方法について。実習は、時間内にちゃんと終えて提出することができた。こころなしか、今日の実習は、前回や、前々回
+よりも簡単な気がする。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20041005#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20041005#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -219,7 +344,7 @@ J2SE5.0�Ǹ���������Ƥ���ͤ�����Τǡ�<a href="https://web.archive.org/web/2004
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">7</a> | <a href="https://web.archive.org/web/20041012161624/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">2</a> | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/gh.html" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/gh.html">2</a> | <a href="https://web.archive.org/web/20041012161624/http://www.blink.jp/go?page=Main&amp;path=35861066/36605445" title="http://www.blink.jp/go?page=Main&amp;path=35861066/366...">1</a> | <a href="https://web.archive.org/web/20041012161624/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">1</a> | <a href="https://web.archive.org/web/20041012161624/http://d.hatena.ne.jp/mayaqua/20041002" title="http://d.hatena.ne.jp/mayaqua/20041002">1</a> | 
+		本日のリンク元 | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">7</a> | <a href="https://web.archive.org/web/20041012161624/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">2</a> | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/gh.html" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/gh.html">2</a> | <a href="https://web.archive.org/web/20041012161624/http://www.blink.jp/go?page=Main&amp;path=35861066/36605445" title="http://www.blink.jp/go?page=Main&amp;path=35861066/366...">1</a> | <a href="https://web.archive.org/web/20041012161624/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">1</a> | <a href="https://web.archive.org/web/20041012161624/http://d.hatena.ne.jp/mayaqua/20041002" title="http://d.hatena.ne.jp/mayaqua/20041002">1</a> | 
 		</div>
 </div>
 
@@ -232,8 +357,8 @@ J2SE5.0�Ǹ���������Ƥ���ͤ�����Τǡ�<a href="https://web.archive.org/web/2004
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20041006#p01"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0">�ץ�����ߥ�</a>][<a href="./?year=2004;month=4Q;category=Java">Java</a>]�����</h3><p>
-<a href="https://web.archive.org/web/20041012161624/http://ikejisoft.com/?%BF%EC%B5%AD%2F2004-10-03">IkejiWiki</a>�ǡ���������ä��ФƤ����Τǡ��������򤤤Ƥߤ뤳�Ȥˤ��롣���르�ꥺ��Ȥ��Ƥϡ�����Ū�ˤ������������̵�̤ʷ׻��򤷤ʤ�����ˡ��޼���򤹤뤳�Ȥˤ������ޤ��������®�ٽŻ�Ȥ������Ȥǡ�Java��Ȥä��������ɤϰʲ����̤ꡣ
+<h3><a href="./?date=20041006#p01"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0">プログラミング</a>][<a href="./?year=2004;month=4Q;category=Java">Java</a>]虫食い算</h3><p>
+<a href="https://web.archive.org/web/20041012161624/http://ikejisoft.com/?%BF%EC%B5%AD%2F2004-10-03">IkejiWiki</a>で、虫食い算の話が出ていたので、こちらも解いてみることにする。アルゴリズムとしては、基本的には総当りだが、無駄な計算をしないために、枝狩りをすることにした。また、言語は速度重視ということで、Javaを使った。コードは以下の通り。
 </p>
 <pre>
 import static java.lang.Math.*;
@@ -317,7 +442,7 @@ class SimpleSolver extends MusikuisanSolver{
 }
 </pre>
 <p>
-�¹Է��(�¹ԴĶ�:Pentium M 1GHz, Memory 768MB J2RE1.5.0 on Windows XP)�ϡ�
+実行結果(実行環境:Pentium M 1GHz, Memory 768MB J2RE1.5.0 on Windows XP)は、
 </p>
 <pre>
 C:\java_example&gt;java Musikuisan
@@ -330,7 +455,7 @@ time = 625
 <br>
 </pre>
 <p>
-��������������äƤ��뤫�ɤ����������Ƥߤ�ȡ�
+一応、答えがあっているかどうか検算してみると、
 </p>
 <pre>
 C:\java_example&gt;pnuts
@@ -352,12 +477,12 @@ Java HotSpot(TM) Client VM (mixed mode, sharing)
 162002118648
 </pre>
 <p>
-�Ȥʤꡢ�����������Ǥ��뤳�Ȥ��狼�롣
+となり、正しい答えであることがわかる。
 </p>
 <p>
-�ɵ�:IKeJIWiki�ˤ���Ruby�Ǥ�ۤܤ��Τޤ�Java�˰ܿ����ơ�
-����ɽ���ǥޥå��󥰤�ԤäƤ����Ȥ����򡢿��ͱ黻��
-��Ӥ���褦���֤���������Τ��äƤߤ���
+追記:IKeJIWikiにあるRuby版をほぼそのままJavaに移植して、
+正規表現でマッチングを行っていたところを、数値演算で
+比較するように置き換えたものも作ってみた。
 </p>
 <pre>
 public class Calc{
@@ -401,7 +526,7 @@ public class Calc{
 }
 </pre>
 <p>
-�¹Է�̤ϡ�
+実行結果は、
 </p>
 <pre>
 C:\java_example&gt;java Calc
@@ -414,23 +539,23 @@ time = 203
 <br>
 </pre>
 <p>
-���η�̤򸫤�ȡ��ɤ����IKeJIWiki�Ǥ���������<s>����</s>��������Ѷ�Ū�˹ԤäƤ��뤿�ᤫ��®���褦���������⡢���򤤤��Ȥˡ�IKeJIWiki�ǤǤϡ�Server VM�ˤ��������٤��Ȥ�����̤��ФƤ��롣
+この結果を見ると、どうやらIKeJIWiki版の方が、枝<s>狩り</s>刈りをより積極的に行っているためか、速いようだ。しかも、面白いことに、IKeJIWiki版では、Server VMにした方が遅いという結果が出ている。
 </p></div><div class="section">
-<h3><a href="./?date=20041006#p02"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%BC%F8%B6%C8">����</a>]�׻��������ƥ�¸�</h3><p>
-����ϡ��¸���ʤ������ˡ��ץ�����ߥ󥰸�������β��ꣳ���äƤ��������β���ϡ�ñ�˻�§�黻���ѿ��ؤ������ܷ�̤�ɽ���ε�ǽ�Τߤ���ä����󥿥ץ꥿����Ȥ��������Τ�Τǡ��¸��λ�����˴�ñ�˺�뤳�Ȥ��Ǥ��������ʤߤˡ��������������ɤ�<a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~i021216/SimpleParser.jj">�����顣</a>
+<h3><a href="./?date=20041006#p02"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%BC%F8%B6%C8">授業</a>]計算機システム実験</h3><p>
+今回は、実験を進める代わりに、プログラミング言語処理の課題３をやっていた。この課題は、単に四則演算＋変数への代入＋結果の表示の機能のみを持ったインタプリタを作るというだけのもので、実験の時間中に簡単に作ることができた。ちなみに、作成したコードは<a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~i021216/SimpleParser.jj">こちら。</a>
 </p></div><div class="section">
-<h3><a href="./?date=20041006#p03"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]�Ͽ�</h3><p>
-��ۤɡ����ʤ��礭���Ͽ̤����ä����ƥ�Ӥǳ�ǧ���Ƥߤ�ȡ����٣���餷��������ʤ��礭���ɤ��и������Τϡ����Ƥ������ޤǤǷи������������礭���ɤ�ϡ������̺ҤΤȤ��������̸��Ϥ��������Υ��Ƥ����Τǡ����٣��ۤɤ��ä���
+<h3><a href="./?date=20041006#p03"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]地震</h3><p>
+先ほど、かなり大きな地震があった。テレビで確認してみると、震度５弱らしい。こんなに大きな揺れを経験したのは、初めてだ。今までで経験した、一番大きな揺れは、阪神大震災のときだが、震源地からだいぶ離れていたので、震度４ほどだった。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��1��) [<a href="./?date=20041006#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全1件) [<a href="./?date=20041006#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20041006#c01"><span class="canchor">_</span></a>
-				<span class="commentator">sugi</span>&nbsp;[�޼��ꤸ��ʤ��ƻ޴����]</p>
+				<span class="commentator">sugi</span>&nbsp;[枝狩りじゃなくて枝刈りな]</p>
 		</div>
 </div>
 
@@ -441,7 +566,7 @@ time = 203
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">45</a> | <a href="https://web.archive.org/web/20041012161624/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">7</a> | <a href="https://web.archive.org/web/20041012161624/http://www.h-yki.com/~rubylip/ebantenna/" title="http://www.h-yki.com/~rubylip/ebantenna/">3</a> | <a href="https://web.archive.org/web/20041012161624/http://d.hatena.ne.jp/mayaqua/" title="http://d.hatena.ne.jp/mayaqua/">3</a> | <a href="https://web.archive.org/web/20041012161624/http://d.hatena.ne.jp/kkanda/" title="http://d.hatena.ne.jp/kkanda/">3</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.com/search?q=scheme+%E3%83%9E%E3%82%AF%E3%83%AD&amp;num=50&amp;hl=ja&amp;lr=lang_ja&amp;ie=UTF-8&amp;start=50&amp;sa=N" title="google����(scheme ���失��num=50)">2</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?num=50&amp;lr=lang_ja&amp;q=%22%6A%61%76%61%2E%73%71%6C%2E%53%51%4C%45%78%63%65%70%74%69%6F%6E%3A%20%4E%6F%20%73%75%69%74%61%62%6C%65%20%64%72%69%76%65%72%22%20%45%63%6C%69%70%73%65" title="google����(&quot;java.sql.SQLException: No suitable driver&quot; Eclipse)">2</a> | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/gh.html" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/gh.html">2</a> | <a href="https://web.archive.org/web/20041012161624/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www2.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www2.coins.tsukuba.ac.jp/~hdk/hina/">1</a> | 
+		本日のリンク元 | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">45</a> | <a href="https://web.archive.org/web/20041012161624/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">7</a> | <a href="https://web.archive.org/web/20041012161624/http://www.h-yki.com/~rubylip/ebantenna/" title="http://www.h-yki.com/~rubylip/ebantenna/">3</a> | <a href="https://web.archive.org/web/20041012161624/http://d.hatena.ne.jp/mayaqua/" title="http://d.hatena.ne.jp/mayaqua/">3</a> | <a href="https://web.archive.org/web/20041012161624/http://d.hatena.ne.jp/kkanda/" title="http://d.hatena.ne.jp/kkanda/">3</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.com/search?q=scheme+%E3%83%9E%E3%82%AF%E3%83%AD&amp;num=50&amp;hl=ja&amp;lr=lang_ja&amp;ie=UTF-8&amp;start=50&amp;sa=N" title="google検索(scheme 繝槭け繝num=50)">2</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?num=50&amp;lr=lang_ja&amp;q=%22%6A%61%76%61%2E%73%71%6C%2E%53%51%4C%45%78%63%65%70%74%69%6F%6E%3A%20%4E%6F%20%73%75%69%74%61%62%6C%65%20%64%72%69%76%65%72%22%20%45%63%6C%69%70%73%65" title="google検索(&quot;java.sql.SQLException: No suitable driver&quot; Eclipse)">2</a> | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/gh.html" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/gh.html">2</a> | <a href="https://web.archive.org/web/20041012161624/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www2.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www2.coins.tsukuba.ac.jp/~hdk/hina/">1</a> | 
 		</div>
 </div>
 
@@ -454,15 +579,15 @@ time = 203
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20041007#p01"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0">�ץ�����ߥ�</a>][<a href="./?year=2004;month=4Q;category=Java">Java</a>]³�������</h3><p>
-�Ĥ����ä������Ĥ����Τ����������Υץ������ϡ�����¹Ԥ��Ƥ��λ��֤�פ�����ʤΤǡ���¬������������θ�����äƤ��ʤ����Ȥ����櫓�ǡ���Ǥ����ޤ�ƺ��ٷ�¬��ľ���Ƥߤ뤳�Ȥˤ��롣
+<h3><a href="./?date=20041007#p01"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0">プログラミング</a>][<a href="./?year=2004;month=4Q;category=Java">Java</a>]続・虫食い算</h3><p>
+ついさっき気がついたのだが、昨日のプログラムは、１回実行してその時間を計るだけなので、計測誤差が全く考慮に入っていない。というわけで、後でそれを含めて再度計測し直してみることにする。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20041007#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20041007#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -472,7 +597,7 @@ time = 203
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">16</a> | <a href="https://web.archive.org/web/20041012161624/http://www.h-yki.com/~rubylip/ebantenna/" title="http://www.h-yki.com/~rubylip/ebantenna/">2</a> | <a href="https://web.archive.org/web/20041012161624/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">2</a> | <a href="https://web.archive.org/web/20041012161624/http://d.hatena.ne.jp/mayaqua/" title="http://d.hatena.ne.jp/mayaqua/">2</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?q=DATE%E5%9E%8B%E3%80%80%E4%BB%A3%E5%85%A5%E3%80%80%E6%99%82%E9%96%93%E3%80%80sql&amp;hl=ja&amp;lr=lang_ja&amp;start=10&amp;sa=N" title="google����(DATE����代媧���������sql)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?hl=ja&amp;q=J2SE5.0+%E7%92%B0%E5%A2%83%E5%A4%89%E6%95%B0&amp;lr=" title="google����(J2SE5.0 ���ꦲ�ʲ)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?hl=ja&amp;inlang=ja&amp;ie=Shift_JIS&amp;oe=Shift_JIS&amp;q=groovy+j2se5.0&amp;lr=lang_ja" title="google����(groovy j2se5.0)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?hl=ja&amp;c2coff=1&amp;q=java+matcher+group&amp;lr=lang_ja" title="google����(java matcher group)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.blink.jp/go?page=Main&amp;path=35861066/36605445" title="http://www.blink.jp/go?page=Main&amp;path=35861066/366...">1</a> | <a href="https://web.archive.org/web/20041012161624/http://d.hatena.ne.jp/kkanda/" title="http://d.hatena.ne.jp/kkanda/">1</a> | 
+		本日のリンク元 | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">16</a> | <a href="https://web.archive.org/web/20041012161624/http://www.h-yki.com/~rubylip/ebantenna/" title="http://www.h-yki.com/~rubylip/ebantenna/">2</a> | <a href="https://web.archive.org/web/20041012161624/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">2</a> | <a href="https://web.archive.org/web/20041012161624/http://d.hatena.ne.jp/mayaqua/" title="http://d.hatena.ne.jp/mayaqua/">2</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?q=DATE%E5%9E%8B%E3%80%80%E4%BB%A3%E5%85%A5%E3%80%80%E6%99%82%E9%96%93%E3%80%80sql&amp;hl=ja&amp;lr=lang_ja&amp;start=10&amp;sa=N" title="google検索(DATE蝙九篁ｅ�у��蔆碌�薙sql)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?hl=ja&amp;q=J2SE5.0+%E7%92%B0%E5%A2%83%E5%A4%89%E6%95%B0&amp;lr=" title="google検索(J2SE5.0 迺医螟画焚)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?hl=ja&amp;inlang=ja&amp;ie=Shift_JIS&amp;oe=Shift_JIS&amp;q=groovy+j2se5.0&amp;lr=lang_ja" title="google検索(groovy j2se5.0)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?hl=ja&amp;c2coff=1&amp;q=java+matcher+group&amp;lr=lang_ja" title="google検索(java matcher group)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.blink.jp/go?page=Main&amp;path=35861066/36605445" title="http://www.blink.jp/go?page=Main&amp;path=35861066/366...">1</a> | <a href="https://web.archive.org/web/20041012161624/http://d.hatena.ne.jp/kkanda/" title="http://d.hatena.ne.jp/kkanda/">1</a> | 
 		</div>
 </div>
 
@@ -486,7 +611,7 @@ time = 203
 
 <div class="section">
 <h3><a href="./?date=20041008#p01"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=Nice">Nice</a>]Nice0.9.9</h3><p>
-���ΥС������Ǥϡ�instanceof�ˤ�뷿��Ƚ��򥳥�ѥ��餬��Ū�˸��Ф��ơ����뷿�Ǥ��뤳�Ȥ��μ¤Ǥ����ϰ���ǡ����㥹�Ȥʤ��ǡ����η��Ȥ��ư������Ȥ���ǽ�ˤʤäƤ��롣�㤨�С��ʲ��Υ����ɤϡ�����ѥ���ˤ������å����̲ᤷ�ơ�����˼¹Ԥ���롣
+このバージョンでは、instanceofによる型の判定をコンパイラが静的に検出して、ある型であることが確実である範囲内で、キャストなしで、その型として扱うことが可能になっている。例えば、以下のコードは、コンパイラによるチェックを通過して、正常に実行される。
 </p>
 <pre>
 package ex;
@@ -497,7 +622,7 @@ void main(String[] args){
 }
 </pre>
 <p>
-��̤ϡ��ʲ��Τ褦�ˤʤ롣
+結果は、以下のようになる。
 </p>
 <pre>
 C:\nice_programs&gt;nicec ex
@@ -508,7 +633,7 @@ C:\nice_programs&gt;java ex.fun
 hello
 </pre>
 <p>
-�ޤ���assertʸ�����Ǥʤ���ifʸ��Ȥäƥ����å��򤹤뤳�Ȥ��ǽ�ˤʤäƤ��롣
+また、assert文だけでなく、if文を使ってチェックをすることも可能になっている。
 <p>
 <pre>
 package ex2;
@@ -520,20 +645,20 @@ void main(String[] args){
 }
 </pre>
 <p>
-���Τ褦�˥���ѥ���ˤ����Ū�ʥ����å��򡢸���ν���������������˻ȤäƤ�����Ϥ��ޤ긫�����Ȥ�̵���Τǡ��ʤ��ʤ���������
+このようにコンパイラによる静的なチェックを、言語の柔軟性を増すために使っている例はあまり見たことが無いので、なかなか新鮮だ。
 </p></div><div class="section">
-<h3><a href="./?date=20041008#p02"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]���祮��</h3><p>
-�롼�ף���(��5km)�����ä����������⤢��ޤ����ʤ��ä��������ִ���Ƥ����Τ��⡣
+<h3><a href="./?date=20041008#p02"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]ジョギング</h3><p>
+ループ１周(約5km)を走ったが、今日もあんまり疲れなかった。だいぶ慣れてきたのかも。
 </p></div><div class="section">
-<h3><a href="./?date=20041008#p03"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%BC%F8%B6%C8">����</a>]�ٹ�</h3><p>
-�����ܤμ��Ȥ����붵���˹ԤäƤߤ뤬��ï�⤤�ʤ��ġ����������С��轵�μ��Ȥǡ������ϵٹ֤��ȸ��äƤ����褦�ʵ������롣���٤Τ��Ȥ��������ĵٹ֤��Ϥ����Ȼ����˥�⤷�Ƥ����ʤ���С�
+<h3><a href="./?date=20041008#p03"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%BC%F8%B6%C8">授業</a>]休講</h3><p>
+１限目の授業がある教室に行ってみるが、誰もいない…。そういえば、先週の授業で、今週は休講だと言っていたような気がする。毎度のことだが、いつ休講かはちゃんと事前にメモしておかなければ。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20041008#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20041008#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -543,7 +668,7 @@ void main(String[] args){
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">10</a> | <a href="https://web.archive.org/web/20041012161624/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">2</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?sourceid=navclient&amp;hl=ja&amp;ie=UTF-8&amp;q=eclipse+3+JVM+is+not+suitable&amp;meta=cr%3DcountryJP" title="google����(eclipse 3 JVM is not suitable)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?q=java.sql.SQLException:+No+suitable+driver&amp;hl=ja&amp;lr=lang_ja&amp;start=10&amp;sa=N" title="google����(java.sql.SQLException: No suitable driver)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?q=java+Matcher+%E4%BE%8B&amp;hl=ja&amp;lr=&amp;start=20&amp;sa=N" title="google����(java Matcher ��hl=ja)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/gh.html" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/gh.html">1</a> | 
+		本日のリンク元 | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">10</a> | <a href="https://web.archive.org/web/20041012161624/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">2</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?sourceid=navclient&amp;hl=ja&amp;ie=UTF-8&amp;q=eclipse+3+JVM+is+not+suitable&amp;meta=cr%3DcountryJP" title="google検索(eclipse 3 JVM is not suitable)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?q=java.sql.SQLException:+No+suitable+driver&amp;hl=ja&amp;lr=lang_ja&amp;start=10&amp;sa=N" title="google検索(java.sql.SQLException: No suitable driver)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?q=java+Matcher+%E4%BE%8B&amp;hl=ja&amp;lr=&amp;start=20&amp;sa=N" title="google検索(java Matcher 萓hl=ja)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/gh.html" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/gh.html">1</a> | 
 		</div>
 </div>
 
@@ -556,15 +681,15 @@ void main(String[] args){
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20041009#p01"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]����</h3><p>
-ŷ������򸫤�ȡ��������ܶᤷ�Ƥ��Ƥ��롣���⤫�ʤ걫��������������Ĵ�Ҥ��ȡ�ͼ�����ˤϡ���äȰ�ŷ���ˤʤꤽ������
+<h3><a href="./?date=20041009#p01"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]台風</h3><p>
+天気情報を見ると、台風が接近してきている。今もかなり雨が強いが、この調子だと、夕方頃には、もっと悪天候になりそうだ。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20041009#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20041009#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -574,7 +699,7 @@ void main(String[] args){
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">9</a> | <a href="https://web.archive.org/web/20041012161624/http://www2.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www2.coins.tsukuba.ac.jp/~hdk/hina/">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?q=ruby+substring+string&amp;hl=ja&amp;lr=lang_ja&amp;start=10&amp;sa=N" title="google����(ruby substring string)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?ie=UTF-8&amp;oe=UTF-8&amp;hl=ja&amp;lr=lang_ja&amp;q=J2SE5" title="google����(J2SE5)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~i031203/antenna/" title="http://www.coins.tsukuba.ac.jp/~i031203/antenna/">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~i021216/" title="http://www.coins.tsukuba.ac.jp/~i021216/">1</a> | <a href="https://web.archive.org/web/20041012161624/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">1</a> | 
+		本日のリンク元 | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">9</a> | <a href="https://web.archive.org/web/20041012161624/http://www2.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www2.coins.tsukuba.ac.jp/~hdk/hina/">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?q=ruby+substring+string&amp;hl=ja&amp;lr=lang_ja&amp;start=10&amp;sa=N" title="google検索(ruby substring string)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?ie=UTF-8&amp;oe=UTF-8&amp;hl=ja&amp;lr=lang_ja&amp;q=J2SE5" title="google検索(J2SE5)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~i031203/antenna/" title="http://www.coins.tsukuba.ac.jp/~i031203/antenna/">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~i021216/" title="http://www.coins.tsukuba.ac.jp/~i021216/">1</a> | <a href="https://web.archive.org/web/20041012161624/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">1</a> | 
 		</div>
 </div>
 
@@ -587,18 +712,18 @@ void main(String[] args){
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20041010#p01"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]�ر��</h3><p>
-�����Ϻ�������ϤޤäƤ���Ϥ����ä����������Τ��ᣱ���ܤ���ߤˤʤä��Τǡ��������¼�Ū�˽����Ȥ������Ȥˤʤ롣
+<h3><a href="./?date=20041010#p01"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]学園祭</h3><p>
+本当は昨日から始まっているはずだったが、台風のため１日目は中止になったので、今日が実質的に初日ということになる。
 </p>
 <p>
-��ʬ�ϡ��ر�׼¹԰Ѱ�OB�Ȥ��ƤΥ��եȤ����ꡢ���򸫤�ˤϤۤȤ��̵���ä��������ϡ�����Ƥ��ɤޤȤޤä����֤εٷƤ����ꤽ���ʤΤǡ����ΤȤ��ˤɤ������˹Ԥ�����
+自分は、学園祭実行委員OBとしてのシフトがあり、企画を見る暇はほとんど無かった。明日は、あるていどまとまった時間の休憩がありそうなので、そのときにどこか見に行くか。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20041010#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20041010#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -608,7 +733,7 @@ void main(String[] args){
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">10</a> | <a href="https://web.archive.org/web/20041012161624/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">3</a> | <a href="https://web.archive.org/web/20041012161624/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">3</a> | <a href="https://web.archive.org/web/20041012161624/http://www.h-yki.com/~rubylip/ebantenna/" title="http://www.h-yki.com/~rubylip/ebantenna/">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.com/search?q=String%E5%9E%8B%E3%81%AE%E5%88%A4%E5%AE%9A&amp;sourceid=opera&amp;num=0&amp;ie=utf-8&amp;oe=utf-8" title="google����(String���墰���)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?sourceid=navclient&amp;hl=ja&amp;ie=UTF-8&amp;q=scheme+kawa" title="google����(scheme kawa)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?q=pnuts+java&amp;hl=ja&amp;lr=&amp;ie=UTF-8&amp;inlang=ja&amp;start=80&amp;sa=N" title="google����(pnuts java)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?q=Pnuts+JAVA&amp;hl=ja&amp;lr=&amp;c2coff=1&amp;start=80&amp;sa=N" title="google����(Pnuts JAVA)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://d.hatena.ne.jp/kkanda/" title="http://d.hatena.ne.jp/kkanda/">1</a> | 
+		本日のリンク元 | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">10</a> | <a href="https://web.archive.org/web/20041012161624/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">3</a> | <a href="https://web.archive.org/web/20041012161624/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">3</a> | <a href="https://web.archive.org/web/20041012161624/http://www.h-yki.com/~rubylip/ebantenna/" title="http://www.h-yki.com/~rubylip/ebantenna/">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.com/search?q=String%E5%9E%8B%E3%81%AE%E5%88%A4%E5%AE%9A&amp;sourceid=opera&amp;num=0&amp;ie=utf-8&amp;oe=utf-8" title="google検索(String蝙九�育茲�)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?sourceid=navclient&amp;hl=ja&amp;ie=UTF-8&amp;q=scheme+kawa" title="google検索(scheme kawa)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?q=pnuts+java&amp;hl=ja&amp;lr=&amp;ie=UTF-8&amp;inlang=ja&amp;start=80&amp;sa=N" title="google検索(pnuts java)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?q=Pnuts+JAVA&amp;hl=ja&amp;lr=&amp;c2coff=1&amp;start=80&amp;sa=N" title="google検索(Pnuts JAVA)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://d.hatena.ne.jp/kkanda/" title="http://d.hatena.ne.jp/kkanda/">1</a> | 
 		</div>
 </div>
 
@@ -621,21 +746,21 @@ void main(String[] args){
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20041011#p01"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]�ر�פ��Σ�</h3><p>
-�������ǽ�������ɡ����ä����εٷƻ��֤ϡ����뤳�Ȥ˻ȤäƤ��ޤä����ᡢ���򸫤Ʋ�뤳�ȤϤǤ��ʤ��ä�������ʤ˸�������褬���ä��櫓�Ǥ�ʤ������ޤ���������
+<h3><a href="./?date=20041011#p01"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]学園祭その２</h3><p>
+今日が最終日。結局、せっかくの休憩時間は、寝ることに使ってしまったため、企画を見て回ることはできなかった。そんなに見たい企画があったわけでもないし、まあいいか。
 </p>
 <p>
-���Ȥϡ������ǥѥ������ʤɡ����ޤ�������Ѥ��ʤ��ä������ǽ����ʤΤǡ������դ�������ʬ������������줿�������롣
+あとは、案内所でパンフ販売など、あまり昨日と変わらなかったが、最終日なので、後片付けがある分、昨日よりも疲れた気がする。
 </p></div><div class="section">
-<h3><a href="./?date=20041011#p02"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0">�ץ�����ߥ�</a>]</h3><p>
-�Ƕᡢ���äȤ�ץ�����ߥ󥰸���κ������ʤ�Ǥ��ʤ������ΤޤޤǤϡ�12���ȯɽ�˴֤˹��ʤ��������Ƥ������ʤ�Ȥ����ʤ���С��Ȥꤢ�������轵��˰쵤�˿ʤ�Ƥ��ޤ����Ȥˤ��褦��
+<h3><a href="./?date=20041011#p02"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0">プログラミング</a>]</h3><p>
+最近、ちっともプログラミング言語の作成が進んでいない。このままでは、12月の発表に間に合わない気がしてきた。なんとかしなければ。とりあえず、来週中に一気に進めてしまうことにしよう。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20041011#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20041011#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -645,7 +770,7 @@ void main(String[] args){
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">8</a> | <a href="https://web.archive.org/web/20041012161624/http://www.h-yki.com/~rubylip/ebantenna/" title="http://www.h-yki.com/~rubylip/ebantenna/">2</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?q=c%E8%A8%80%E8%AA%9E+%E8%99%AB%E9%A3%9F%E3%81%84%E7%AE%97&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;hl=ja" title="google����(c�� �������)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/gh.html" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/gh.html">1</a> | <a href="https://web.archive.org/web/20041012161624/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">1</a> | <a href="https://web.archive.org/web/20041012161624/http://d.hatena.ne.jp/kkanda/20041004" title="http://d.hatena.ne.jp/kkanda/20041004">1</a> | 
+		本日のリンク元 | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">8</a> | <a href="https://web.archive.org/web/20041012161624/http://www.h-yki.com/~rubylip/ebantenna/" title="http://www.h-yki.com/~rubylip/ebantenna/">2</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.co.jp/search?q=c%E8%A8%80%E8%AA%9E+%E8%99%AB%E9%A3%9F%E3%81%84%E7%AE%97&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;hl=ja" title="google検索(c險�� 陌�蜈瓱�)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/gh.html" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/gh.html">1</a> | <a href="https://web.archive.org/web/20041012161624/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">1</a> | <a href="https://web.archive.org/web/20041012161624/http://d.hatena.ne.jp/kkanda/20041004" title="http://d.hatena.ne.jp/kkanda/20041004">1</a> | 
 		</div>
 </div>
 
@@ -658,15 +783,15 @@ void main(String[] args){
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20041012#p01"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%BC%F8%B6%C8">����</a>]���ͷ׻�ˡ</h3><p>
-�����ϡ��������������β�ˡ�ˤĤ��ơ��Ȥ��äƤ⡢�ºݤ˰��ä��Τϡ��ۤܥ˥塼�ȥ�ˡ�������ä���¾�ˤϤɤ�ʲ�ˡ������Τ���������
+<h3><a href="./?date=20041012#p01"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=4Q;category=%BC%F8%B6%C8">授業</a>]数値計算法</h3><p>
+今日は、非線型方程式の解法について。といっても、実際に扱ったのは、ほぼニュートン法だけだった。他にはどんな解法があるのだろうか。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20041012#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20041012#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -676,7 +801,7 @@ void main(String[] args){
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">12</a> | <a href="https://web.archive.org/web/20041012161624/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">3</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.com/search?sourceid=navclient&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=print+URL%2EopenStream" title="google����(print URL.openStream)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.com/search?hl=ja&amp;q=Pattern+Matcher+%E5%B0%8F%E6%95%B0&amp;lr=" title="google����(Pattern Matcher 겾�ʲ)">1</a> | 
+		本日のリンク元 | <a href="https://web.archive.org/web/20041012161624/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">12</a> | <a href="https://web.archive.org/web/20041012161624/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">3</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.com/search?sourceid=navclient&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=print+URL%2EopenStream" title="google検索(print URL.openStream)">1</a> | <a href="https://web.archive.org/web/20041012161624/http://www.google.com/search?hl=ja&amp;q=Pattern+Matcher+%E5%B0%8F%E6%95%B0&amp;lr=" title="google検索(Pattern Matcher 蟆乗焚)">1</a> | 
 		</div>
 </div>
 

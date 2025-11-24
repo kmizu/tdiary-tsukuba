@@ -1,43 +1,168 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="ja-JP">
-<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=Hk4-lkW3" charset="utf-8"></script>
-<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<head>
+
 <script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
-<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+
 <script type="text/javascript">
     __wm.init("https://web.archive.org/web");
   __wm.wombat("http://www.coins.tsukuba.ac.jp:80/~i021216/diary/?date=200602","20070327065535","https://web.archive.org/","web","https://web-static.archive.org/_static/",
 	      "1174978535");
 </script>
-<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" />
-<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+
+
 <!-- End Wayback Rewrite JS Include -->
 
-	<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="generator" content="tDiary 2.0.0">
 	<meta http-equiv="Last-Modified" content="Tue, 06 Mar 2007 11:57:17 GMT">
-	<meta http-equiv="Content-Script-Type" content="text/javascript; charset=EUC-JP">
-	<meta name="author" content="���繨��">
+	<meta http-equiv="Content-Script-Type" content="text/javascript; charset=UTF-8">
+	<meta name="author" content="水島宏太">
 	<link rev="made" href="mailto:hau51010{at}tree.odn.ne.jp">
-	<link rel="index" title="�ȥå�" href="http://www.coins.tsukuba.ac.jp/~i021216/">
-	<link rel="start" title="�ǿ�" href="./">
+	<link rel="index" title="トップ" href="http://www.coins.tsukuba.ac.jp/~i021216/">
+	<link rel="start" title="最新" href="./">
 	<meta http-equiv="content-style-type" content="text/css">
 	<link rel="stylesheet" href="/web/20070327065535cs_/http://www.coins.tsukuba.ac.jp/~i021216/diary/theme/base.css" type="text/css" media="all">
 	<link rel="stylesheet" href="/web/20070327065535cs_/http://www.coins.tsukuba.ac.jp/~i021216/diary/theme/another_blue/another_blue.css" title="another_blue" type="text/css" media="all">
-	<title>Onion��ȯ����(2006-02)</title>
+	<title>Onion開発日記(2006-02)</title>
 	
 	<!--link rel="alternate" type="application/x-lirs" title="lirs" href="antenna.lirs"-->
-	<link rel="alternate" type="application/rss+xml" title="RSS" href="https://web.archive.org/web/20070327065535/http://www.coins.tsukuba.ac.jp/~i021216/diary/index.rdf">
+	
+
+<style>
+    /* Modern Styling */
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.7;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        color: #333;
+    }
+    
+    h1 {
+        color: #2c3e50;
+        border-bottom: 3px solid #3498db;
+        padding-bottom: 12px;
+        font-size: 2em;
+        margin-top: 0;
+    }
+    
+    h2 {
+        color: #34495e;
+        border-left: 4px solid #3498db;
+        padding-left: 12px;
+        margin-top: 30px;
+    }
+    
+    h3 {
+        color: #555;
+        margin-top: 24px;
+    }
+    
+    .day {
+        background: white;
+        border-radius: 12px;
+        padding: 24px;
+        margin-bottom: 24px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .day:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    
+    .section {
+        margin: 16px 0;
+        padding: 12px;
+        border-left: 3px solid #e8e8e8;
+    }
+    
+    .date {
+        color: #3498db;
+        font-weight: 600;
+    }
+    
+    .title {
+        color: #2c3e50;
+        font-size: 1.3em;
+    }
+    
+    a {
+        color: #3498db;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    
+    a:hover {
+        color: #2980b9;
+        text-decoration: underline;
+    }
+    
+    pre {
+        background: #f8f9fa;
+        border: 1px solid #e9ecef;
+        border-radius: 6px;
+        padding: 16px;
+        overflow-x: auto;
+        font-size: 0.9em;
+    }
+    
+    code {
+        background: #f8f9fa;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .comment {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 16px;
+        margin-top: 20px;
+    }
+    
+    .adminmenu, .calendar, .todo {
+        background: white;
+        border-radius: 8px;
+        padding: 12px;
+        margin-bottom: 16px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .referer {
+        font-size: 0.85em;
+        color: #7f8c8d;
+        margin-top: 16px;
+        padding-top: 12px;
+        border-top: 1px solid #e8e8e8;
+    }
+    
+    /* Web Archive ツールバーを非表示 */
+    #wm-ipp-base, #wm-ipp, #donato {
+        display: none !important;
+    }
+    
+    hr.sep {
+        border: none;
+        border-top: 2px solid #e8e8e8;
+        margin: 30px 0;
+    }
+</style>
+
 </head>
 <body>
 
 
 <div class="adminmenu">
-<span class="adminmenu"><a href="https://web.archive.org/web/20070327065535/http://www.coins.tsukuba.ac.jp/~i021216/">�ȥå�</a></span>
-<span class="adminmenu"><a href="./">�ǿ�</a></span>
-<span class="adminmenu"><a href="update.rb">�ɵ�</a></span>
+<span class="adminmenu"><a href="https://web.archive.org/web/20070327065535/http://www.coins.tsukuba.ac.jp/~i021216/">トップ</a></span>
+<span class="adminmenu"><a href="./">最新</a></span>
+<span class="adminmenu"><a href="update.rb">追記</a></span>
 </div>
-<h1>Onion��ȯ����</h1>
+<h1>Onion開発日記</h1>
 <div class="calendar">
 <div class="year">2004|<a href="./?date=200409">09</a>|<a href="./?date=200410">10</a>|<a href="./?date=200411">11</a>|<a href="./?date=200412">12</a>|</div>
 <div class="year">2005|<a href="./?date=200501">01</a>|<a href="./?date=200502">02</a>|<a href="./?date=200503">03</a>|<a href="./?date=200504">04</a>|<a href="./?date=200505">05</a>|<a href="./?date=200506">06</a>|<a href="./?date=200507">07</a>|<a href="./?date=200508">08</a>|<a href="./?date=200509">09</a>|<a href="./?date=200510">10</a>|<a href="./?date=200511">11</a>|<a href="./?date=200512">12</a>|</div>
@@ -66,29 +191,29 @@
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060201#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=Java">Java</a>]Java��Mixin��ɤ�</h3><p>
-<a href="https://web.archive.org/web/20070327065535/http://www.programmers-paradise.com/tdiary/?date=20060131">�ץ�����ޡ�������<s>1/3</s>1/31�Υ���ȥ�</a>�����ѡ�
+<h3><a href="./?date=20060201#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=Java">Java</a>]JavaでMixinもどき</h3><p>
+<a href="https://web.archive.org/web/20070327065535/http://www.programmers-paradise.com/tdiary/?date=20060131">プログラマー日記の<s>1/3</s>1/31のエントリ</a>より引用：
 </p>
 <blockquote>
-����Ф狼��ޤ����������ΰѾ��Ǥ����������ʤ餳��ǺѤ󤸤㤦�Τǡ���äȤ����������ΰѾ�����¸��Ǥ��ʤ����Ȥ��¸��Ǥ��뤾�Ȥ����㤬�ߤ����Ǥ���
+見ればわかりますが、ただの委譲です。今回の例ならこれで済んじゃうので、もっとこう、ただの委譲じゃ実現できないことが実現できるぞという例がみたいです。
 </blockquote>
 <p>
-����ʴ����Ǥ������Ǥ��礦����Ruby��Enumerable�Τ褦�ʤ�Τ�Java�Ǽ������Ƥߤޤ������������ñ�ʤ�Ѿ��Ǥϼ¸�����Τ����ݤ��Ȼפ��ޤ���
-���ȡ�MyList�Υե������mixin��Enumerable��������˼��useEnumerable���Ϥ��Ƥ����ˤ����դ��Ƥ���������
+こんな感じでいかがでしょうか。RubyのEnumerableのようなものをJavaで実装してみました。これだと単なる委譲では実現するのは面倒だと思います。
+あと、MyListのフィールドmixinをEnumerable型を引数に取るuseEnumerableに渡している所にも注意してください。
 </p>
 <pre>
 import java.util.*;
 public class UseMixin {
-  //Enumerable��ȤäƲ�������
+  //Enumerableを使って何かする
   static void useEnumerable(Enumerable&lt;Integer&gt; enumerable){
-    //���������Ǥ���Ϥ���
+    //全部の要素を出力する
     enumerable.each(new Procedure&lt;Integer&gt;(){
       public void call(Integer arg){
         System.out.println(arg);
       }
     });
 <br>
-    //�ꥹ�Ȥ����Ƥ����Ǥ�2�ܤ���
+    //リストの全ての要素を2倍する
     List&lt;Integer&gt; list = enumerable.collect(new Function&lt;Integer, Integer&gt;(){
       public Integer call(Integer arg){
         return arg * 2;
@@ -96,7 +221,7 @@ public class UseMixin {
     });  
     System.out.println("list = " + list);
 <br>
-    //�ꥹ�Ȥγ����Ǥ��¤�׻�����
+    //リストの各要素の和を計算する
     int sum = enumerable.inject(0, new Function2&lt;Integer, Integer, Integer&gt;(){
       public Integer call(Integer arg1, Integer arg2){
         return arg1 + arg2;
@@ -110,7 +235,7 @@ public class UseMixin {
     for(int i = 1; i &lt;= 10; i++){
       nums.add(i);
     }
-    useEnumerable(nums.mixin);//((Enumerable)nums)������
+    useEnumerable(nums.mixin);//((Enumerable)nums)に相当
   }
 }
 <br>
@@ -126,7 +251,7 @@ interface Procedure&lt;T&gt; {
   void call(T arg);
 }
 <br>
-//�ѹ���ǽ��T�����ͤ��뤿��Υ��饹
+//変更可能なT型の値を作るためのクラス
 class Mutable&lt;T&gt; {
   T value;
   Mutable(T value) { this.value = value; }
@@ -156,10 +281,10 @@ abstract class Enumerable&lt;E&gt; {
   }
 }
 <br>
-//<s>Enumerable�����</s>Enumerable��Mixin
+//<s>Enumerableを使用</s>EnumerableをMixin
 class MyList&lt;T&gt; extends ArrayList&lt;T&gt; {
   Enumerable&lt;T&gt; mixin = new Enumerable&lt;T&gt;(){
-    //collect��inject�ϼ������ʤ���OK
+    //collectとinjectは実装しなくてOK
     public void each(Procedure&lt;T&gt; proc){
       for(T t : MyList.this){
         proc.call(t);
@@ -169,7 +294,7 @@ class MyList&lt;T&gt; extends ArrayList&lt;T&gt; {
 }
 </pre>
 <p>
-���Ϸ�̡�
+出力結果：
 </p>
 <pre>
 1
@@ -190,16 +315,16 @@ sum(1..10) = 55
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��4��) [<a href="./?date=20060201#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全4件) [<a href="./?date=20060201#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20060201#c01"><span class="canchor">_</span></a>
-				<span class="commentator">nt</span>&nbsp;[�ʤ󤫤���󤱤ɤ������ʡ�  mix-in�ä��פ���ˤɤ�������Ū�γ�ǰ�ʤ�  ]</p>
+				<span class="commentator">nt</span>&nbsp;[なんかしらんけどすごいな．  mix-inって要するにどういう目的の概念なん？  ]</p>
 				<p><a href="./?date=20060201#c02"><span class="canchor">_</span></a>
-				<span class="commentator">maeda</span>&nbsp;[nums.mixin���nums.asEnumerable()�������ɤ��ʤ��� ��ǡ�asEnumerable()��..]</p>
+				<span class="commentator">maeda</span>&nbsp;[nums.mixinよりnums.asEnumerable()の方が良くない？ んで、asEnumerable()を..]</p>
 				<p><a href="./?date=20060201#c03"><span class="canchor">_</span></a>
-				<span class="commentator">�ߤ�����</span>&nbsp;[&gt; nums.mixin���nums.asEnumerable()�������ɤ��ʤ���  �Τ��ˤ����Ǥ��͡�mixin��..]</p>
+				<span class="commentator">みずしま</span>&nbsp;[&gt; nums.mixinよりnums.asEnumerable()の方が良くない？  確かにそうですね。mixinが..]</p>
 				<p><a href="./?date=20060201#c04"><span class="canchor">_</span></a>
-				<span class="commentator">�ߤ�����</span>&nbsp;[nt���� &gt; mix-in�ä��פ���ˤɤ�������Ū�γ�ǰ�ʤ�  �ֻ��٤��ʤäƤ���󡣰���Ǹ����ȡ����饹��¿�ŷ�..]</p>
+				<span class="commentator">みずしま</span>&nbsp;[ntさん &gt; mix-inって要するにどういう目的の概念なん？  返事遅くなってごめん。一言で言うと、クラスの多重継..]</p>
 		</div>
 </div>
 
@@ -210,7 +335,7 @@ sum(1..10) = 55
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065535/http://www.programmers-paradise.com/tdiary/?date=20060131" title="http://www.programmers-paradise.com/tdiary/?date=2...">50</a> | <a href="https://web.archive.org/web/20070327065535/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060201%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">18</a> | <a href="https://web.archive.org/web/20070327065535/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">17</a> | <a href="https://web.archive.org/web/20070327065535/http://a.hatena.ne.jp/lethevert/" title="http://a.hatena.ne.jp/lethevert/">6</a> | <a href="https://web.archive.org/web/20070327065535/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">4</a> | <a href="https://web.archive.org/web/20070327065535/http://a.hatena.ne.jp/ucho/" title="http://a.hatena.ne.jp/ucho/">4</a> | <a href="https://web.archive.org/web/20070327065535/http://www.coins.tsukuba.ac.jp/~i021216/diary/?date=200602" title="http://www.coins.tsukuba.ac.jp/~i021216/diary/?dat...">3</a> | <a href="https://web.archive.org/web/20070327065535/http://labs.ceek.jp/jblog/" title="http://labs.ceek.jp/jblog/">3</a> | <a href="https://web.archive.org/web/20070327065535/http://www.google.com/search?hl=ja&amp;lr=lang_ja&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=Eclipse+profiler&amp;num=50" title="google����(Eclipse profiler)">2</a> | <a href="https://web.archive.org/web/20070327065535/http://www.google.co.jp/search?hl=ja&amp;newwindow=1&amp;q=java1.5+ArrayList%3C&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=lang_ja" title="google����(java1.5 ArrayList<)">2</a> | <a href="./?date=20060201#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065535/http://www.programmers-paradise.com/tdiary/?date=20060131" title="http://www.programmers-paradise.com/tdiary/?date=2...">50</a> | <a href="https://web.archive.org/web/20070327065535/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060201%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">18</a> | <a href="https://web.archive.org/web/20070327065535/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">17</a> | <a href="https://web.archive.org/web/20070327065535/http://a.hatena.ne.jp/lethevert/" title="http://a.hatena.ne.jp/lethevert/">6</a> | <a href="https://web.archive.org/web/20070327065535/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">4</a> | <a href="https://web.archive.org/web/20070327065535/http://a.hatena.ne.jp/ucho/" title="http://a.hatena.ne.jp/ucho/">4</a> | <a href="https://web.archive.org/web/20070327065535/http://www.coins.tsukuba.ac.jp/~i021216/diary/?date=200602" title="http://www.coins.tsukuba.ac.jp/~i021216/diary/?dat...">3</a> | <a href="https://web.archive.org/web/20070327065535/http://labs.ceek.jp/jblog/" title="http://labs.ceek.jp/jblog/">3</a> | <a href="https://web.archive.org/web/20070327065535/http://www.google.com/search?hl=ja&amp;lr=lang_ja&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=Eclipse+profiler&amp;num=50" title="google検索(Eclipse profiler)">2</a> | <a href="https://web.archive.org/web/20070327065535/http://www.google.co.jp/search?hl=ja&amp;newwindow=1&amp;q=java1.5+ArrayList%3C&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=lang_ja" title="google検索(java1.5 ArrayList<)">2</a> | <a href="./?date=20060201#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -223,16 +348,16 @@ sum(1..10) = 55
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060202#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=Java">Java</a>]³��Java��Mixin��ɤ�</h3><p>
-<a href="https://web.archive.org/web/20070327065535/http://www2.coins.tsukuba.ac.jp/~i021216/diary/?date=20060201#c">maeda���󤫤�Υĥå���</a>�����ä��Τǡ�����������
-<a href="https://web.archive.org/web/20070327065535/http://www2.coins.tsukuba.ac.jp/~i021216/diary/?date=20060201">��������</a>����ɤ��Ƥߤ����ޤ����������ɤ�������Ǥ����򤯤ʤ��Τǡ�File���饹��Ѿ��������饹�ˤ�Mixin���Ƥߤ���
+<h3><a href="./?date=20060202#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=Java">Java</a>]続・JavaでMixinもどき</h3><p>
+<a href="https://web.archive.org/web/20070327065535/http://www2.coins.tsukuba.ac.jp/~i021216/diary/?date=20060201#c">maedaさんからのツッコミ</a>があったので、それを受けて
+<a href="https://web.archive.org/web/20070327065535/http://www2.coins.tsukuba.ac.jp/~i021216/diary/?date=20060201">昨日の例</a>を改良してみた。また、ただ改良するだけでは面白くないので、Fileクラスを継承したクラスにもMixinしてみた。
 </p>
 <pre>
 import java.io.*;
 import java.util.*;
 <br>
 public class UseMixin {
-  //�ǥ��쥯�ȥ�ľ���Υե����륵�����ι�פ�Ĵ�٤�
+  //ディレクトリ直下のファイルサイズの合計を調べる
   static long sumSize(EnumerableSrc&lt;File&gt; src){
     return src.asEnumerable().inject(0L, new Function2&lt;File, Long, Long&gt;(){
       public Long call(File f, Long r){ 
@@ -241,39 +366,39 @@ public class UseMixin {
     });
   }
 <br>
-  //�ե����륵�����ȥե�����̾��Ĥʤ���ʸ����Υꥹ�Ȥ��֤�
+  //ファイルサイズとファイル名をつなげた文字列のリストを返す
   static List&lt;String&gt; fileSizeAndNames(EnumerableSrc&lt;File&gt; src){
     return src.asEnumerable().collect(new Function&lt;File, String&gt;(){
       public String call(File f){ 
-        return "�ե����륵����: " + f.length() + " �Х���\t" +  
-      "�ե�����̾: " + f.getName();
+        return "ファイルサイズ: " + f.length() + " バイト\t" +  
+      "ファイル名: " + f.getName();
       }
     });
   }
 <br>
   public static void main(String[] args){
     EnumerableFile file = new EnumerableFile(".");
-    System.out.printf("��ץ�����: %d%n", sumSize(file));
+    System.out.printf("合計サイズ: %d%n", sumSize(file));
     for(String s : fileSizeAndNames(file)) System.out.println(s);
   }
 }
 <br>
-//1�����δؿ���ɽ�����󥿥ե�����
+//1引数の関数を表すインタフェース
 interface Function&lt;T, R&gt; {
   R call(T arg);
 }
 <br>
-//2�����δؿ���ɽ�����󥿥ե�����
+//2引数の関数を表すインタフェース
 interface Function2&lt;T1, T2, R&gt; {
   R call(T1 arg1, T2 arg2);
 }
 <br>
-//1�����μ�³����ɽ�����󥿥ե�����
+//1引数の手続きを表すインタフェース
 interface Procedure&lt;T&gt; {
   void call(T arg);
 }
 <br>
-//�ѹ���ǽ��T�����ͤ��뤿��Υ��饹
+//変更可能なT型の値を作るためのクラス
 class Var&lt;T&gt; {
   private T value;
   private Var(T value) { this.value = value; }
@@ -312,11 +437,11 @@ abstract class Enumerable&lt;E&gt; {
   }
 }
 <br>
-//�ǥ��쥯�ȥ�����Ǥ�����ǽ��File
+//ディレクトリの要素を列挙可能なFile
 class EnumerableFile extends File implements EnumerableSrc&lt;File&gt; {
   EnumerableFile(String path){ super(path); }
   private Enumerable&lt;File&gt; enumerable = new Enumerable&lt;File&gt;(){
-    //collect��inject�ϼ������ʤ���OK
+    //collectとinjectは実装しなくてOK
     public void each(Procedure&lt;File&gt; proc){
       for(File f : EnumerableFile.this.listFiles()){
         proc.call(f);
@@ -327,31 +452,31 @@ class EnumerableFile extends File implements EnumerableSrc&lt;File&gt; {
 }
 </pre>
 <p>
-�¹Է�̡�
+実行結果：
 </p>
 <pre>
-��ץ�����: 11371
-�ե����륵����: 819 �Х���      �ե�����̾: Enumerable$1.class
-�ե����륵����: 841 �Х���      �ե�����̾: Enumerable$2.class
-�ե����륵����: 1006 �Х���     �ե�����̾: Enumerable.class
-�ե����륵����: 652 �Х���      �ե�����̾: EnumerableFile$1.class
-�ե����륵����: 609 �Х���      �ե�����̾: EnumerableFile.class
-�ե����륵����: 235 �Х���      �ե�����̾: EnumerableSrc.class
-�ե����륵����: 255 �Х���      �ե�����̾: Function.class
-�ե����륵����: 301 �Х���      �ե�����̾: Function2.class
-�ե����륵����: 217 �Х���      �ե�����̾: Procedure.class
-�ե����륵����: 777 �Х���      �ե�����̾: UseMixin$1.class
-�ե����륵����: 967 �Х���      �ե�����̾: UseMixin$2.class
-�ե����륵����: 1536 �Х���     �ե�����̾: UseMixin.class
-�ե����륵����: 2528 �Х���     �ե�����̾: UseMixin.java
-�ե����륵����: 628 �Х���      �ե�����̾: Var.class
+合計サイズ: 11371
+ファイルサイズ: 819 バイト      ファイル名: Enumerable$1.class
+ファイルサイズ: 841 バイト      ファイル名: Enumerable$2.class
+ファイルサイズ: 1006 バイト     ファイル名: Enumerable.class
+ファイルサイズ: 652 バイト      ファイル名: EnumerableFile$1.class
+ファイルサイズ: 609 バイト      ファイル名: EnumerableFile.class
+ファイルサイズ: 235 バイト      ファイル名: EnumerableSrc.class
+ファイルサイズ: 255 バイト      ファイル名: Function.class
+ファイルサイズ: 301 バイト      ファイル名: Function2.class
+ファイルサイズ: 217 バイト      ファイル名: Procedure.class
+ファイルサイズ: 777 バイト      ファイル名: UseMixin$1.class
+ファイルサイズ: 967 バイト      ファイル名: UseMixin$2.class
+ファイルサイズ: 1536 バイト     ファイル名: UseMixin.class
+ファイルサイズ: 2528 バイト     ファイル名: UseMixin.java
+ファイルサイズ: 628 バイト      ファイル名: Var.class
 </pre></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20060202#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20060202#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -361,7 +486,7 @@ class EnumerableFile extends File implements EnumerableSrc&lt;File&gt; {
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065535/http://www.programmers-paradise.com/tdiary/?date=20060131" title="http://www.programmers-paradise.com/tdiary/?date=2...">19</a> | <a href="https://web.archive.org/web/20070327065535/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">14</a> | <a href="https://web.archive.org/web/20070327065535/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">9</a> | <a href="https://web.archive.org/web/20070327065535/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060201%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">6</a> | <a href="https://web.archive.org/web/20070327065535/http://a.hatena.ne.jp/lethevert/" title="http://a.hatena.ne.jp/lethevert/">4</a> | <a href="https://web.archive.org/web/20070327065535/http://www.cmt.phys.kyushu-u.ac.jp/%7EM.Sakurai/cgi-bin/tdiary/?date=20050716" title="http://www.cmt.phys.kyushu-u.ac.jp/~M.Sakurai/cgi-...">3</a> | <a href="https://web.archive.org/web/20070327065535/http://search.yahoo.co.jp/search?p=java%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89&amp;src=top&amp;search_x=4&amp;search_y=14&amp;ei=UTF-8&amp;pstart=1&amp;fr=top&amp;b=901" title="http://search.yahoo.co.jp/search?p=java�����������...">3</a> | <a href="https://web.archive.org/web/20070327065535/http://a.hatena.ne.jp/ytqwerty/" title="http://a.hatena.ne.jp/ytqwerty/">3</a> | <a href="https://web.archive.org/web/20070327065535/http://www.programmers-paradise.com/tdiary/" title="http://www.programmers-paradise.com/tdiary/">2</a> | <a href="https://web.archive.org/web/20070327065535/http://www.google.com/search?num=50&amp;hl=ja&amp;safe=off&amp;q=Pugs+Perl&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=lang_ja" title="google����(Pugs Perl)">2</a> | <a href="./?date=20060202#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065535/http://www.programmers-paradise.com/tdiary/?date=20060131" title="http://www.programmers-paradise.com/tdiary/?date=2...">19</a> | <a href="https://web.archive.org/web/20070327065535/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">14</a> | <a href="https://web.archive.org/web/20070327065535/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">9</a> | <a href="https://web.archive.org/web/20070327065535/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060201%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">6</a> | <a href="https://web.archive.org/web/20070327065535/http://a.hatena.ne.jp/lethevert/" title="http://a.hatena.ne.jp/lethevert/">4</a> | <a href="https://web.archive.org/web/20070327065535/http://www.cmt.phys.kyushu-u.ac.jp/%7EM.Sakurai/cgi-bin/tdiary/?date=20050716" title="http://www.cmt.phys.kyushu-u.ac.jp/~M.Sakurai/cgi-...">3</a> | <a href="https://web.archive.org/web/20070327065535/http://search.yahoo.co.jp/search?p=java%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89&amp;src=top&amp;search_x=4&amp;search_y=14&amp;ei=UTF-8&amp;pstart=1&amp;fr=top&amp;b=901" title="http://search.yahoo.co.jp/search?p=javaソースコー�...">3</a> | <a href="https://web.archive.org/web/20070327065535/http://a.hatena.ne.jp/ytqwerty/" title="http://a.hatena.ne.jp/ytqwerty/">3</a> | <a href="https://web.archive.org/web/20070327065535/http://www.programmers-paradise.com/tdiary/" title="http://www.programmers-paradise.com/tdiary/">2</a> | <a href="https://web.archive.org/web/20070327065535/http://www.google.com/search?num=50&amp;hl=ja&amp;safe=off&amp;q=Pugs+Perl&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=lang_ja" title="google検索(Pugs Perl)">2</a> | <a href="./?date=20060202#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -374,17 +499,17 @@ class EnumerableFile extends File implements EnumerableSrc&lt;File&gt; {
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060205#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=Java">Java</a>]̵̾���饹���鳰¦�Υ������פΥ��������ѿ����ѹ�����</h3><p>
-Java�Ǥϡ�̵̾���饹���鳰¦�Υ������פΥ��������ѿ��˥������������硢final�����Ҥ�Ĥ���ɬ�פ����롢�Ĥޤꡢ̵̾���饹���鳰¦�Υ������פΥ��������ѿ����ѹ����뤳�ȤϤǤ��ʤ���¿���Υ������Ǥϡ����������ѿ����ͤ��ѹ����ʤ��Ƥ�ʤ�Ȥ��ʤ�Τǡ����뤳�ȤϰƳ����ʤ������������Ȥ��ɤ�̵̾���饹���鳰¦�Υ������פΥ��������ѿ��˥����������������⤢�롣�����ǡ��ɤΤ褦�ˤ��Ƥ��Τ褦�ʤ��Ȥ�¸�������ɤ����Ȥ����Τ�����Τ��á�
+<h3><a href="./?date=20060205#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=Java">Java</a>]無名クラスから外側のスコープのローカル変数を変更する</h3><p>
+Javaでは、無名クラスから外側のスコープのローカル変数にアクセスする場合、final修飾子をつける必要がある、つまり、無名クラスから外側のスコープのローカル変数を変更することはできない。多くのケースでは、ローカル変数の値を変更しなくてもなんとかなるので、困ることは案外少ない。しかし、ときどき無名クラスから外側のスコープのローカル変数にアクセスしたい場合もある。そこで、どのようにしてそのようなことを実現すれば良いかというのが今回のお話。
 </p>
 <p>
-�����ϡ��ѹ��Ǥ��ʤ��Τϡ֥��������ѿ��פǤ��äơ����������ѿ���
-�ͤȤʤäƤ���֥��֥������ȡ׼��Τ��ѹ���ǽ�Ǥ���Ȥ������Ȥ���
+要点は、変更できないのは「ローカル変数」であって、ローカル変数の
+値となっている「オブジェクト」自体は変更可能であるということだ。
 </p>
-<h4>��1: �����Ȥ�</h4>
+<h4>案1: 配列を使う</h4>
 <p>
-�ѹ����������������ѿ��򤢤餫��������Ȥ���������Ƥ����Ȥ�����ˡ��
-�����Java�˺ǽ餫���Ȥ߹��ޤ�Ƥ���ΤǼ�ڤ˰�����Ȥ������������뤬�����Τ���������ȤäƤ���Τ��������ɤ�Ѥäȸ��������Ǥ��İ����ˤ����Ȥ������������롣
+変更したいローカル変数をあらかじめ配列として宣言しておくという方法。
+配列はJavaに最初から組み込まれているので手軽に扱えるという利点があるが、何のために配列を使っているのか、コードをぱっと見ただけでは把握しにくいという欠点がある。
 </p>
 <pre>
 class Main {
@@ -401,17 +526,17 @@ class Main {
 }
 </pre>
 <pre>
-�¹Է��:
+実行結果:
 <br>
 var: false
 var: true
 </pre>
-<h4>��2: ���饹��Ȥ�</h4>
+<h4>案2: クラスを使う</h4>
 <p>
-�ѹ������������ͤ��åפ��륯�饹���ꡢ̵̾���饹����Ϥ��Υ��֥������Ȥ��ͳ�����ѿ����ͤ򻲾Ȥ���Ȥ�����ˡ��Ŭ�ڤʥ��饹̾���դ��뤳�Ȥˤ�äơ��տޤ������䤹���ʤ�(����)�Ȥ����Τ����������������Ȥ�������٤ơ����饹��1��;�פ��������ɬ�פ�����Τ���������
+変更したい型の値をラップするクラスを作り、無名クラスからはそのオブジェクトを経由して変数の値を参照するという方法。適切なクラス名を付けることによって、意図が伝わりやすくなる(かも)というのが利点だが、配列を使う場合に比べて、クラスを1つ余計に定義する必要があるのが欠点か。
 </p>
 <pre>
-//Boolean�����ͤ��åפ��륯�饹
+//Boolean型の値をラップするクラス
 class BooleanVar {
   boolean value;
   BooleanVar(boolean value){
@@ -433,10 +558,10 @@ class Main {
 }
 </pre>
 <p>
-Java5��Ƴ�����줿Generics��Ȥ��С����Τ褦�˷��˰�¸���ʤ����ǥ�å��ѤΥ��饹��������뤳�Ȥ�Ǥ��롣����ʤ饯�饹�ϰ��٤���������Ƥ����Ф����Τǡ���ʬ�ڤ���
+Java5で導入されたGenericsを使えば、次のように型に依存しない形でラップ用のクラスを定義することもできる。これならクラスは一度だけ定義しておけばいいので、随分楽だ。
 </p>
 <pre>
-//Ǥ�դ�T�����ͤ��åײ�ǽ�ʥ��饹
+//任意のT型の値をラップ可能なクラス
 class Var&lt;T&gt; {
   T value;
   Var(T value){ this.value = value; }
@@ -456,18 +581,18 @@ class Main {
 }
 </pre>
 <p>
-Var���Υ��֥������Ȥ���������Ȥ��ˡ�new Var&lt;T&gt;(value)�Τ褦�ˤ���Τ����ݤʤ�С����Τ褦��Generic�᥽�åɤ�Ȥäƴ�ά�����뤳�Ȥ�Ǥ��롣
+Var型のオブジェクトを生成するときに、new Var&lt;T&gt;(value)のようにするのが面倒ならば、次のようにGenericメソッドを使って簡略化することもできる。
 </p>
 <pre>
 class Var&lt;T&gt; {
   T value;
   Var(T value){ this.value = value; }
-  //Generic�᥽�å�
+  //Genericメソッド
   static &lt;T&gt; Var&lt;T&gt; ref(T value){ return new Var&lt;T&gt;(value); }
 }
 </pre>
 <p>
-����ʤ餤������new Var&lt;T&gt;(value)�Τ褦�ˤ��ʤ��Ƥ⡢Var.ref(value)�Ȥ���������ɤ���
+これならいちいちnew Var&lt;T&gt;(value)のようにしなくても、Var.ref(value)とするだけで良い。
 </p>
 <pre>
 class Main {
@@ -484,7 +609,7 @@ class Main {
 }
 </pre>
 <p>
-����ˡ�Java 5��Ƴ�����줿static import��Ȥ��С���äȴ�ά�����뤳�Ȥ��Ǥ��롣���ʤߤˡ����Υץ�������package����򤷤Ƥ���Τϡ�static import��̵̾�ѥå������Υ��饹��static�᥽�åɤ�����ळ�Ȥ��Ǥ��ʤ��ä��������
+さらに、Java 5で導入されたstatic importを使えば、もっと簡略化することができる。ちなみに、このプログラムでpackage宣言をしているのは、static importで無名パッケージのクラスのstaticメソッドを取り込むことができなかったためだ。
 </p>
 <pre>
 package example;
@@ -510,15 +635,15 @@ class Main {
   }
 }
 </pre></div><div class="section">
-<h3><a href="./?date=20060205#p02"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%B8%C0%B8%EC">����</a>]��elisp�����?</h3><p>
-Web�ڡ����򸫤Ƥ���ȡ�Emacs Lisp�Υץ��������뤳�Ȥ�ؤ��ơ���elisp����פ��Emacs Lisp����ס����뤤�Ϻ�ä�Emacs Lisp�Υץ������Τ��Ȥ�ؤ��ơ�elisp�פ��Emacs Lisp�פȽ񤤤Ƥ���Τ�Ȥ��ɤ���������Τ���������ϲ��ΤʤΤ���������¾�θ��졢�㤨��Java��Ruby�Υץ��������뤳�Ȥ�ؤ��ơ�Java����ס���Ruby����פȤϸ��ä��ꤷ�ʤ��Ȼפ��Τ�����
+<h3><a href="./?date=20060205#p02"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%B8%C0%B8%EC">言語</a>]「elispを作る」?</h3><p>
+Webページを見ていると、Emacs Lispのプログラムを作ることを指して、「elispを作る」や「Emacs Lispを作る」、あるいは作ったEmacs Lispのプログラムのことを指して「elisp」や「Emacs Lisp」と書いているのをときどき見かけるのだが、これは何故なのだろうか？他の言語、例えばJavaやRubyのプログラムを作ることを指して「Javaを作る」、「Rubyを作る」とは言ったりしないと思うのだが。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��11��) [<a href="./?date=20060205#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全11件) [<a href="./?date=20060205#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 			<p><a href="./?date=20060205#c01">Before...</a></p>
 				<p><a href="./?date=20060205#c07"><span class="canchor">_</span></a>
@@ -541,7 +666,7 @@ Web�ڡ����򸫤Ƥ���ȡ�Emacs Lisp�Υץ��������뤳�Ȥ�ؤ��ơ���elisp�����
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065535/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">15</a> | <a href="https://web.archive.org/web/20070327065535/http://cappuccino.jp/keisuken/logbook/" title="http://cappuccino.jp/keisuken/logbook/">15</a> | <a href="https://web.archive.org/web/20070327065535/http://cappuccino.jp/keisuken/logbook/20060205.html" title="http://cappuccino.jp/keisuken/logbook/20060205.htm...">13</a> | <a href="https://web.archive.org/web/20070327065535/http://www.google.com/" title="http://www.google.com">11</a> | <a href="https://web.archive.org/web/20070327065535/http://d.hatena.ne.jp/quintia/20060206" title="http://d.hatena.ne.jp/quintia/20060206">10</a> | <a href="https://web.archive.org/web/20070327065535/http://feedbringer.net/feed" title="http://feedbringer.net/feed">9</a> | <a href="https://web.archive.org/web/20070327065535/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060205%23p02&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">8</a> | <a href="https://web.archive.org/web/20070327065535/http://google.com/" title="http://google.com">8</a> | <a href="https://web.archive.org/web/20070327065535/http://shakenbu.org/yanagi/d/20060206.html" title="http://shakenbu.org/yanagi/d/20060206.html">5</a> | <a href="https://web.archive.org/web/20070327065535/http://cappuccino.jp/keisuken/logbook/20060207-7.html" title="http://cappuccino.jp/keisuken/logbook/20060207-7.h...">5</a> | <a href="./?date=20060205#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065535/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">15</a> | <a href="https://web.archive.org/web/20070327065535/http://cappuccino.jp/keisuken/logbook/" title="http://cappuccino.jp/keisuken/logbook/">15</a> | <a href="https://web.archive.org/web/20070327065535/http://cappuccino.jp/keisuken/logbook/20060205.html" title="http://cappuccino.jp/keisuken/logbook/20060205.htm...">13</a> | <a href="https://web.archive.org/web/20070327065535/http://www.google.com/" title="http://www.google.com">11</a> | <a href="https://web.archive.org/web/20070327065535/http://d.hatena.ne.jp/quintia/20060206" title="http://d.hatena.ne.jp/quintia/20060206">10</a> | <a href="https://web.archive.org/web/20070327065535/http://feedbringer.net/feed" title="http://feedbringer.net/feed">9</a> | <a href="https://web.archive.org/web/20070327065535/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060205%23p02&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">8</a> | <a href="https://web.archive.org/web/20070327065535/http://google.com/" title="http://google.com">8</a> | <a href="https://web.archive.org/web/20070327065535/http://shakenbu.org/yanagi/d/20060206.html" title="http://shakenbu.org/yanagi/d/20060206.html">5</a> | <a href="https://web.archive.org/web/20070327065535/http://cappuccino.jp/keisuken/logbook/20060207-7.html" title="http://cappuccino.jp/keisuken/logbook/20060207-7.h...">5</a> | <a href="./?date=20060205#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -554,53 +679,53 @@ Web�ڡ����򸫤Ƥ���ȡ�Emacs Lisp�Υץ��������뤳�Ȥ�ؤ��ơ���elisp�����
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060206#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=Java">Java</a>]Java 5.0�Υ����ɤ�1.4��VM��ư�����</h3><p>
-<a href="https://web.archive.org/web/20070327065535/http://db-www.aist-nara.ac.jp/~makoto-y/tdiary/?date=200511">A Diary Which Heads for Convergence (Naist branch)</a>��ꡣ
+<h3><a href="./?date=20060206#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=Java">Java</a>]Java 5.0のコードを1.4のVMで動作させる</h3><p>
+<a href="https://web.archive.org/web/20070327065535/http://db-www.aist-nara.ac.jp/~makoto-y/tdiary/?date=200511">A Diary Which Heads for Convergence (Naist branch)</a>より。
 </p>
 <p>
-javac��-target���ץ�����jsr14�Ȼ��ꤹ��С�Java 5.0�ε�ǽ��Ȥä������������ɤ򥳥�ѥ��뤷�������ɤ�1.4��VM���ư���褦������®��Ƥߤ��Ȥ������Τ��˥���ѥ��뤷�������ɤ�1.4��VM��ư����뤳�Ȥ��Ǥ�������������ץ����Τ褦������Java5.0�ε�ǽ��Ȥä������������ɤ�1.4��ư����������ˤϻȤ��뤫�⤷��ʤ���
+javacの-targetオプションでjsr14と指定すれば、Java 5.0の機能を使ったソースコードをコンパイルしたコードが1.4のVM上で動作するようだ。早速試してみたところ、確かにコンパイルしたコードを1.4のVMで動作させることができた。非公開オプションのようだが、Java5.0の機能を使ったソースコードを1.4で動作させたい場合には使えるかもしれない。
 </p>
 <p>
-�ɵ�����������������Typesafe Enum�Τ褦��5.0�ǿ������ɲä��줿API��ȤäƤ�����ϼ¹ԤǤ��ʤ���Generics��static improt����ĥforʸ�ʤɤϿ�����API��ȤäƤ��ʤ��Τǡ�ư��롣
+追記：当たり前だが、Typesafe Enumのように5.0で新しく追加されたAPIを使っている場合は実行できない。Generics、static improt、拡張for文などは新しいAPIを使っていないので、動作する。
 </p></div><div class="section">
-<h3><a href="./?date=20060206#p02"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=Java">Java</a>][<a href="./?year=2006;month=1Q;category=%B8%C0%B8%EC">����</a>]DI Container������٥��</h3><p>
-<a href="https://web.archive.org/web/20070327065535/http://d.hatena.ne.jp/hiuchida/20051228#1135766855">�ʥ󥻥����국</a>�����ѡ�
+<h3><a href="./?date=20060206#p02"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=Java">Java</a>][<a href="./?year=2006;month=1Q;category=%B8%C0%B8%EC">言語</a>]DI Containerを言語レベルで</h3><p>
+<a href="https://web.archive.org/web/20070327065535/http://d.hatena.ne.jp/hiuchida/20051228#1135766855">ナンセンス不定記</a>より引用。
 </p>
 <blockquote>
-java�ǥ��󥹥��󥹤���������ݤˡ��������饹��new����ΤǤϤʤ������󥿡��ե�������new���롣
+javaでインスタンスを生成する際に、実装クラスをnewするのではなく、インターフェイスをnewする。
 <br>
-������
+・・・
 <br>
-DI����ƥʤ�ҤȤĤγ����饤�֥��Ȥ���ΤǤϤʤ�����������ΰ����Ȥ��롣�ĤޤꡢDI�϶����Τ褦�ʤ�Ρ�
+DIコンテナをひとつの外部ライブラリとするのではなく、言語実装の一部とする。つまり、DIは空気のようなもの。
 <br>
 </blockquote>
 <p>
-��������򤤤��⡣�����ä�ư���Ͼ����㤦����
+これは面白いかも。元の話と動機は少し違うが、
 </p>
 <pre>
 List list = new ArrayList();
 </pre>
 <p>
-�Τ褦�ʥ����ɤ�񤯤Ȥ��äơ�����ξ�硢�������饹��ArrayList�Ǥ���äƤ����ΤϤɤ��Ǥ⤤���ΤǤ��äơ����������Ȥ���
+のようなコードを書くときって、大抵の場合、実装クラスがArrayListであるっていうのはどうでもいいのであって、そういうときに
 </p>
 <pre>
 List list = new List();
 </pre>
 <p>
-�Τ褦�˽񤱤�ȵ������褵������
+のように書けると気持ちよさそう。
 </p>
 <blockquote>
-�⤷�ʤ��Τʤ顢���줳��������JavaSE��٥���ߤ�����ǽ���Ȼפ�������ɤ͡�
+もしないのなら、これこそすぐにJavaSEレベルで欲しい機能だと思うんだけどね。
 </blockquote>
 <p>
-Java��Ƴ������Τϡ���¸�Υ����������ɤθߴ������ݤ�̵�������ʤΤǡ��񤷤��ΤǤϤʤ�����������
+Javaに導入するのは、既存のソースコードの互換性を保て無さそうなので、難しいのではないだろうか。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��18��) [<a href="./?date=20060206#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全18件) [<a href="./?date=20060206#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 			<p><a href="./?date=20060206#c01">Before...</a></p>
 				<p><a href="./?date=20060206#c14"><span class="canchor">_</span></a>
@@ -623,7 +748,7 @@ Java��Ƴ������Τϡ���¸�Υ����������ɤθߴ������ݤ�̵�������ʤΤǡ��񤷤��ΤǤ�
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065535/http://www.kmonos.net/wlog/" title="http://www.kmonos.net/wlog/">203</a> | <a href="https://web.archive.org/web/20070327065535/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">60</a> | <a href="https://web.archive.org/web/20070327065535/http://www.kmonos.net/wlog/58.php" title="http://www.kmonos.net/wlog/58.php">41</a> | <a href="https://web.archive.org/web/20070327065535/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">24</a> | <a href="https://web.archive.org/web/20070327065535/http://d.hatena.ne.jp/lethevert/20060207/p1" title="http://d.hatena.ne.jp/lethevert/20060207/p1">24</a> | <a href="https://web.archive.org/web/20070327065535/http://a.hatena.ne.jp/lethevert/" title="http://a.hatena.ne.jp/lethevert/">21</a> | <a href="https://web.archive.org/web/20070327065535/http://www.kmonos.net/r/" title="http://www.kmonos.net/r/">15</a> | <a href="https://web.archive.org/web/20070327065535/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060206%23p02&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">11</a> | <a href="https://web.archive.org/web/20070327065535/http://d.hatena.ne.jp/quintia/20060206" title="http://d.hatena.ne.jp/quintia/20060206">10</a> | <a href="https://web.archive.org/web/20070327065535/http://cappuccino.jp/keisuken/logbook/" title="http://cappuccino.jp/keisuken/logbook/">9</a> | <a href="./?date=20060206#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065535/http://www.kmonos.net/wlog/" title="http://www.kmonos.net/wlog/">203</a> | <a href="https://web.archive.org/web/20070327065535/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">60</a> | <a href="https://web.archive.org/web/20070327065535/http://www.kmonos.net/wlog/58.php" title="http://www.kmonos.net/wlog/58.php">41</a> | <a href="https://web.archive.org/web/20070327065535/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">24</a> | <a href="https://web.archive.org/web/20070327065535/http://d.hatena.ne.jp/lethevert/20060207/p1" title="http://d.hatena.ne.jp/lethevert/20060207/p1">24</a> | <a href="https://web.archive.org/web/20070327065535/http://a.hatena.ne.jp/lethevert/" title="http://a.hatena.ne.jp/lethevert/">21</a> | <a href="https://web.archive.org/web/20070327065535/http://www.kmonos.net/r/" title="http://www.kmonos.net/r/">15</a> | <a href="https://web.archive.org/web/20070327065535/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060206%23p02&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">11</a> | <a href="https://web.archive.org/web/20070327065535/http://d.hatena.ne.jp/quintia/20060206" title="http://d.hatena.ne.jp/quintia/20060206">10</a> | <a href="https://web.archive.org/web/20070327065535/http://cappuccino.jp/keisuken/logbook/" title="http://cappuccino.jp/keisuken/logbook/">9</a> | <a href="./?date=20060206#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -636,23 +761,23 @@ Java��Ƴ������Τϡ���¸�Υ����������ɤθߴ������ݤ�̵�������ʤΤǡ��񤷤��ΤǤ�
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060213#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%C2%B4%CF%C0">´��</a>]ȯɽ</h3><p>
-���褤��ȯɽ�������˲����ȯɽ�����򤷤ơ�������ü�ĤΤϤ����ä��Τ������ºݤ˼�ʬ���֤ˤʤ�ȡ����ʤꤢ����ޤ��롣�������ǡ����Υ��饤�ɤؤΤĤʤ��θ��դ�����Ȥ��ˡ��ְ㤨�Ƽ��μ��Υ��饤�ɤؤΤĤʤ��θ��դ���äƤ��ޤ��Ȥ�����ݥ����餫���Ƥ��ޤä���
+<h3><a href="./?date=20060213#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%C2%B4%CF%C0">卒論</a>]発表</h3><p>
+いよいよ発表。事前に何回も発表練習をして、準備万端…のはずだったのだが、実際に自分の番になると、かなりあがりまくる。おかげで、次のスライドへのつなぎの言葉を言うときに、間違えて次の次のスライドへのつなぎの言葉を言ってしまうという大ポカをやらかしてしまった。
 </p>
 <p>
-�Ȥ⤢�졢ȯɽ��̵��(?)����äơ��ۤäȤ���������Ǽ�ʬ�ˤȤäƤ���ش�Ϣ�ιԻ��ϤۤȤ�ɽ���ä����Ȥˤʤ롣
+ともあれ、発表も無事(?)終わって、ほっとした。これで自分にとっての大学関連の行事はほとんど終わったことになる。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��2��) [<a href="./?date=20060213#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全2件) [<a href="./?date=20060213#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20060213#c01"><span class="canchor">_</span></a>
-				<span class="commentator">������</span>&nbsp;[���Ĥ��졼��  ]</p>
+				<span class="commentator">ささだ</span>&nbsp;[おつかれー。  ]</p>
 				<p><a href="./?date=20060213#c02"><span class="canchor">_</span></a>
-				<span class="commentator">�ߤ�����</span>&nbsp;[�٤��ʤ�ޤ��������ɤ��⤢�꤬�Ȥ��������ޤ��� �ץ쥼��ν���Ϻ���ĤǤ��������Ȥꤢ��������ä� �ۤäȤ��ޤ�����..]</p>
+				<span class="commentator">みずしま</span>&nbsp;[遅くなりましたが、どうもありがとうございます。 プレゼンの出来は今一つでしたが、とりあえず終わって ほっとしました。..]</p>
 		</div>
 </div>
 
@@ -663,7 +788,7 @@ Java��Ƴ������Τϡ���¸�Υ����������ɤθߴ������ݤ�̵�������ʤΤǡ��񤷤��ΤǤ�
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065535/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">1</a> | <a href="https://web.archive.org/web/20070327065535/http://r.hatena.ne.jp/quintia/ABC%E6%AE%BA%E4%BA%BA%E4%BA%8B%E4%BB%B6/http://www2.coins.tsukuba.ac.jp/~i021216/diary/index.rdf" title="http://r.hatena.ne.jp/quintia/ABC���ͻ���/http://w...">1</a> | <a href="https://web.archive.org/web/20070327065535/http://72.14.235.104/search?q=cache:E4_rfWu5zE8J:www2.coins.tsukuba.ac.jp/~i021216/diary/%3Fcategory%3DALL+Ultimate+%E8%AA%AC%E6%98%8E%E3%80%80%E9%96%8B%E7%99%BA%E3%80%80C%E8%A8%80%E8%AA%9E+%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0&amp;hl=ja&amp;gl=jp&amp;ct=clnk&amp;cd=10" title="http://72.14.235.104/search?q=cache:E4_rfWu5zE8J:w...">1</a> | <a href="https://web.archive.org/web/20070327065535/http://72.14.203.104/search?q=cache:V_Z-fH2KylMJ:www.coins.tsukuba.ac.jp/~i021216/diary/%3Fdate%3D20060206+lethevert&amp;hl=ja&amp;gl=jp&amp;ct=clnk&amp;cd=42" title="http://72.14.203.104/search?q=cache:V_Z-fH2KylMJ:w...">1</a> | <a href="./?date=20060213#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065535/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">1</a> | <a href="https://web.archive.org/web/20070327065535/http://r.hatena.ne.jp/quintia/ABC%E6%AE%BA%E4%BA%BA%E4%BA%8B%E4%BB%B6/http://www2.coins.tsukuba.ac.jp/~i021216/diary/index.rdf" title="http://r.hatena.ne.jp/quintia/ABC殺人事件/http://w...">1</a> | <a href="https://web.archive.org/web/20070327065535/http://72.14.235.104/search?q=cache:E4_rfWu5zE8J:www2.coins.tsukuba.ac.jp/~i021216/diary/%3Fcategory%3DALL+Ultimate+%E8%AA%AC%E6%98%8E%E3%80%80%E9%96%8B%E7%99%BA%E3%80%80C%E8%A8%80%E8%AA%9E+%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0&amp;hl=ja&amp;gl=jp&amp;ct=clnk&amp;cd=10" title="http://72.14.235.104/search?q=cache:E4_rfWu5zE8J:w...">1</a> | <a href="https://web.archive.org/web/20070327065535/http://72.14.203.104/search?q=cache:V_Z-fH2KylMJ:www.coins.tsukuba.ac.jp/~i021216/diary/%3Fdate%3D20060206+lethevert&amp;hl=ja&amp;gl=jp&amp;ct=clnk&amp;cd=42" title="http://72.14.203.104/search?q=cache:V_Z-fH2KylMJ:w...">1</a> | <a href="./?date=20060213#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -676,24 +801,24 @@ Java��Ƴ������Τϡ���¸�Υ����������ɤθߴ������ݤ�̵�������ʤΤǡ��񤷤��ΤǤ�
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060215#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">���祮��</a>]3km,23ʬ</h3><p>
-��2����֤ꡣ�������ˤ�������֤������ȡ����ʤ����Ϥ�����Ƥ��ޤ��褦�ǡ��ʤ��ʤ�����ɤ��ä�������������ǰ���Ƥ�����ɨ���ˤߤϺ�ȯ���ʤ��ä��Τǡ��ۤäȤ�����
+<h3><a href="./?date=20060215#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">ジョギング</a>]3km,23分</h3><p>
+約2ヶ月ぶり。さすがにこれだけ間が空くと、かなり体力が落ちてしまうようで、なかなかしんどかった。しかし、懸念していた右膝の痛みは再発しなかったので、ほっとした。
 </p></div><div class="section">
 <h3><a href="./?date=20060215#p02"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=Groovy">Groovy</a>]<a href="https://web.archive.org/web/20070327065535/http://docs.codehaus.org/display/GROOVY/2006/02/13/Groovy+JSR-05+released">Groovy JSR-05 released</a></h3><p>
-<a href="https://web.archive.org/web/20070327065535/http://machine.homeunix.org/weblog/archives/cat_script_on_java.html">��������������� Script_on_Java</a>��ͳ��
+<a href="https://web.archive.org/web/20070327065535/http://machine.homeunix.org/weblog/archives/cat_script_on_java.html">こんな毎日・・・ Script_on_Java</a>経由。
 </p>
 <blockquote>
 Warning: there is an important change in scripts between "def-ed" variables and not "def-ed" variables. Defining a variable with the def keyword or with a concrete type creates a local variable which won't be stored in the binding. However, if you assign a variable which wasn't defined in your script, it will be stored in the binding of the script.
 </blockquote>
 <p>
-�Ȥ����Τ����ˤʤ롣def����������ѿ��ϡ�Java VM�Υ��������ѿ���ȤäƼ��������Ȥ������Ȥ���������
+というのが気になる。defで宣言した変数は、Java VMのローカル変数を使って実装されるということだろうか？
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��18��) [<a href="./?date=20060215#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全18件) [<a href="./?date=20060215#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 			<p><a href="./?date=20060215#c01">Before...</a></p>
 				<p><a href="./?date=20060215#c14"><span class="canchor">_</span></a>
@@ -716,7 +841,7 @@ Warning: there is an important change in scripts between "def-ed" variables and 
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065535/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">20</a> | <a href="https://web.archive.org/web/20070327065535/http://www.google.com/" title="http://www.google.com">9</a> | <a href="https://web.archive.org/web/20070327065535/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">7</a> | <a href="https://web.archive.org/web/20070327065535/http://www.coins.tsukuba.ac.jp/?date=20060215" title="http://www.coins.tsukuba.ac.jp/?date=20060215">6</a> | <a href="https://web.archive.org/web/20070327065535/http://google.com/" title="http://google.com">4</a> | <a href="https://web.archive.org/web/20070327065535/http://www.kmonos.net/wlog/" title="http://www.kmonos.net/wlog/">3</a> | <a href="https://web.archive.org/web/20070327065535/http://www.google.com/search?q=sexyxxx+photo&amp;hl=fa&amp;lr=&amp;start=10&amp;sa=N" title="google����(sexyxxx photo)">3</a> | <a href="https://web.archive.org/web/20070327065535/http://a.hatena.ne.jp/lethevert/" title="http://a.hatena.ne.jp/lethevert/">3</a> | <a href="https://web.archive.org/web/20070327065535/http://www.tdiary.net/20010104.html" title="tDiary.Net">2</a> | <a href="https://web.archive.org/web/20070327065535/http://www.kmonos.net/wlog/58.php" title="http://www.kmonos.net/wlog/58.php">2</a> | <a href="./?date=20060215#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065535/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">20</a> | <a href="https://web.archive.org/web/20070327065535/http://www.google.com/" title="http://www.google.com">9</a> | <a href="https://web.archive.org/web/20070327065535/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">7</a> | <a href="https://web.archive.org/web/20070327065535/http://www.coins.tsukuba.ac.jp/?date=20060215" title="http://www.coins.tsukuba.ac.jp/?date=20060215">6</a> | <a href="https://web.archive.org/web/20070327065535/http://google.com/" title="http://google.com">4</a> | <a href="https://web.archive.org/web/20070327065535/http://www.kmonos.net/wlog/" title="http://www.kmonos.net/wlog/">3</a> | <a href="https://web.archive.org/web/20070327065535/http://www.google.com/search?q=sexyxxx+photo&amp;hl=fa&amp;lr=&amp;start=10&amp;sa=N" title="google検索(sexyxxx photo)">3</a> | <a href="https://web.archive.org/web/20070327065535/http://a.hatena.ne.jp/lethevert/" title="http://a.hatena.ne.jp/lethevert/">3</a> | <a href="https://web.archive.org/web/20070327065535/http://www.tdiary.net/20010104.html" title="tDiary.Net">2</a> | <a href="https://web.archive.org/web/20070327065535/http://www.kmonos.net/wlog/58.php" title="http://www.kmonos.net/wlog/58.php">2</a> | <a href="./?date=20060215#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -729,22 +854,22 @@ Warning: there is an important change in scripts between "def-ed" variables and 
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060216#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%A5%C7%A5%B6%A5%A4%A5%F3%A5%D1%A5%BF%A1%BC%A5%F3">�ǥ�����ѥ�����</a>]�ե����ȥ꡼�᥽�å�</h3><p>
-�ե����ȥ꡼�᥽�åɤȸ����ȡ����ä����ñ�˥��󥹥��󥹤���������᥽�åɡפȤ�����̣�ˤʤäƤ��ޤä���������Τ��������Τ����ʤä��Τ����������֥ե����ȥ꡼�᥽�åɡפν�ŵ�Ȼפ���GoF�ܤǤϡ�ñ�˥��󥹥��󥹤���������᥽�åɤΤ��Ȥ�ե����ȥ꡼�᥽�åɤȸƤ�Ǥ����櫓�ǤϤʤ��Ϥ��ʤ�����ɡ�
+<h3><a href="./?date=20060216#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=%A5%C7%A5%B6%A5%A4%A5%F3%A5%D1%A5%BF%A1%BC%A5%F3">デザインパターン</a>]ファクトリーメソッド</h3><p>
+ファクトリーメソッドと言うと、すっかり「単にインスタンスを生成するメソッド」という意味になってしまった感があるのだが、何故こうなったのだろうか。「ファクトリーメソッド」の出典と思われるGoF本では、単にインスタンスを生成するメソッドのことをファクトリーメソッドと呼んでいたわけではないはずなんだけど。
 </p>
 <p>
-�ޤ����ե����ȥ꡼�᥽�åɤ�ñ�˥��󥹥��󥹤���������᥽�åɤȤ�����̣�ǻȤäƤ⡢���켫�Τ��礷�ƺ��ä����ȤǤ�̵�����⤷��ʤ������������֥ե����ȥ꡼�᥽�åɡפ�GoF�Ρ֥ե����ȥ꡼�᥽�åɥѥ�����פ�Ʊ���ơ��֥ե����ȥ꡼�᥽�åɥѥ�����פ�ñ�ˡ֥��󥹥��󥹤���������᥽�åɤ�Ȥ��ѥ�����פΰ�̣�ǻȤ��ΤϤɤ����Ȼפ���
+まあ、ファクトリーメソッドを単にインスタンスを生成するメソッドという意味で使っても、それ自体は大して困ったことでは無いかもしれない。しかし、「ファクトリーメソッド」とGoFの「ファクトリーメソッドパターン」を混同して、「ファクトリーメソッドパターン」を単に「インスタンスを生成するメソッドを使うパターン」の意味で使うのはどうかと思う。
 </p></div><div class="section">
 <h3><a href="./?date=20060216#p02"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=Groovy">Groovy</a>]"def-ed" Variables and not "def-ed" Variables</h3><p>
-2/15�Υ���ȥ�ǽ񤤤��郎���ˤʤä��Τǡ�����ä�Ĵ�٤Ƥߤ���
-�ޤ��ϡ��ѿ������def��Ĥ�����硣
+2/15のエントリで書いた件が気になったので、ちょっと調べてみた。
+まずは、変数宣言にdefをつけた場合。
 </p>
-<h4>�ץ������</h4>
+<h4>プログラム</h4>
 <pre>
 def x = "Hello"
 x
 </pre>
-<h4>�ե�����֥���</h4>
+<h4>逆アセンブル結果</h4>
 <pre>
 public java.lang.Object run();
   Code:
@@ -754,14 +879,14 @@ public java.lang.Object run();
    4:	areturn
 </pre>
 <p>
-���ϡ��ѿ������def��Ĥ��ʤ���硣
+次は、変数宣言にdefをつけない場合。
 </p>
-<h4>�ץ������</h4>
+<h4>プログラム</h4>
 <pre>
 x = "Hello"
 x
 </pre>
-<h4>�ե�����֥���</h4>
+<h4>逆アセンブル結果</h4>
 <pre>
 public java.lang.Object run();
   Code:
@@ -777,14 +902,14 @@ public java.lang.Object run();
    16:	areturn
 </pre>
 <p>
-�����η�̤򸫤�ȡ�"def"���դ����ѿ���Java VM���̾�Υ��������ѿ��Ȥ�����¸���졢"def"���դ��ʤ��ѿ��ϥ��֥������ȤΥץ��ѥƥ��Ȥ�����¸����롢�Ȥ������ȤΤ褦����
+これらの結果を見ると、"def"を付けた変数はJava VMの通常のローカル変数として保存され、"def"を付けない変数はオブジェクトのプロパティとして保存される、ということのようだ。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20060216#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20060216#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -794,7 +919,7 @@ public java.lang.Object run();
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065535/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">16</a> | <a href="https://web.archive.org/web/20070327065535/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">8</a> | <a href="https://web.archive.org/web/20070327065535/http://www.kmonos.net/wlog/" title="http://www.kmonos.net/wlog/">6</a> | <a href="https://web.archive.org/web/20070327065535/http://r.hatena.ne.jp/quintia/ABC%E6%AE%BA%E4%BA%BA%E4%BA%8B%E4%BB%B6/" title="http://r.hatena.ne.jp/quintia/ABC���ͻ���/">5</a> | <a href="https://web.archive.org/web/20070327065535/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060216%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">5</a> | <a href="https://web.archive.org/web/20070327065535/http://materia.jp/blog/20060216.html" title="http://materia.jp/blog/20060216.html">3</a> | <a href="https://web.archive.org/web/20070327065535/http://a.hatena.ne.jp/soutaro/" title="http://a.hatena.ne.jp/soutaro/">3</a> | <a href="https://web.archive.org/web/20070327065535/http://a.hatena.ne.jp/lethevert/" title="http://a.hatena.ne.jp/lethevert/">3</a> | <a href="https://web.archive.org/web/20070327065535/http://www.google.com/search?hl=ja&amp;c2coff=1&amp;q=Eclipse+profiler&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=lang_ja" title="google����(Eclipse profiler)">2</a> | <a href="https://web.archive.org/web/20070327065535/http://www.google.co.jp/search?hl=ja&amp;q=VC%2B%2B+%E3%83%95%E3%82%A1%E3%82%AF%E3%83%88%E3%83%AA+%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89&amp;lr=lang_ja" title="google����(VC++ �ե����ȥ� �᥽�å�)">2</a> | <a href="./?date=20060216#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065535/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">16</a> | <a href="https://web.archive.org/web/20070327065535/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">8</a> | <a href="https://web.archive.org/web/20070327065535/http://www.kmonos.net/wlog/" title="http://www.kmonos.net/wlog/">6</a> | <a href="https://web.archive.org/web/20070327065535/http://r.hatena.ne.jp/quintia/ABC%E6%AE%BA%E4%BA%BA%E4%BA%8B%E4%BB%B6/" title="http://r.hatena.ne.jp/quintia/ABC殺人事件/">5</a> | <a href="https://web.archive.org/web/20070327065535/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060216%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">5</a> | <a href="https://web.archive.org/web/20070327065535/http://materia.jp/blog/20060216.html" title="http://materia.jp/blog/20060216.html">3</a> | <a href="https://web.archive.org/web/20070327065535/http://a.hatena.ne.jp/soutaro/" title="http://a.hatena.ne.jp/soutaro/">3</a> | <a href="https://web.archive.org/web/20070327065535/http://a.hatena.ne.jp/lethevert/" title="http://a.hatena.ne.jp/lethevert/">3</a> | <a href="https://web.archive.org/web/20070327065535/http://www.google.com/search?hl=ja&amp;c2coff=1&amp;q=Eclipse+profiler&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=lang_ja" title="google検索(Eclipse profiler)">2</a> | <a href="https://web.archive.org/web/20070327065535/http://www.google.co.jp/search?hl=ja&amp;q=VC%2B%2B+%E3%83%95%E3%82%A1%E3%82%AF%E3%83%88%E3%83%AA+%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89&amp;lr=lang_ja" title="google検索(VC++ ファクトリ メソッド)">2</a> | <a href="./?date=20060216#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -807,14 +932,14 @@ public java.lang.Object run();
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060218#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=Java">Java</a>]<a href="https://web.archive.org/web/20070327065535/http://secure.ddo.jp/~kaku/tdiary/20060217.html">Yahoo!�ƥ����������ǡ֤̤�ݡפ����ͱ���������ȡ�����</a></h3><p>
-<a href="https://web.archive.org/web/20070327065535/http://secure.ddo.jp/~kaku/tdiary/">����󥸥˥塼��</a>��ͳ��Yahoo!�ƥ����������ǡ֤̤�ݡפ�������������ȡĤȤ������ꡣ��®���֤̤�ݡפ����Ϥ��ƻ�Ƥߤ��Ȥ������֥��áפ�ɽ�����줿���褯���ʤ�(��)���Ȥ����ǡ����������Τ�<a href="https://web.archive.org/web/20070327065535/http://e-words.jp/w/E382A4E383BCE382B9E382BFE383BCE382A8E38383E382B0.html">�������������å�</a>�ȸ����Τ���������
+<h3><a href="./?date=20060218#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=Java">Java</a>]<a href="https://web.archive.org/web/20070327065535/http://secure.ddo.jp/~kaku/tdiary/20060217.html">Yahoo!テキスト翻訳で「ぬるぽ」を日⇒英翻訳すると・・・</a></h3><p>
+<a href="https://web.archive.org/web/20070327065535/http://secure.ddo.jp/~kaku/tdiary/">オレンジニュース</a>経由。Yahoo!テキスト翻訳で「ぬるぽ」を日英翻訳すると…という話題。早速、「ぬるぽ」と入力して試してみたところ、「ガッ」と表示された。よくやるなあ(笑)。ところで、こういうのも<a href="https://web.archive.org/web/20070327065535/http://e-words.jp/w/E382A4E383BCE382B9E382BFE383BCE382A8E38383E382B0.html">イースターエッグ</a>と言うのだろうか。
 </p>
 <p>
-�ɵ���Excite�����Ǥ⡢Ʊ�����Ȥ��Ƥߤ����֤̤�ݡפΤޤޤ��ä�����ǰ��
+追記：Excite翻訳でも、同じことを試してみたが「ぬるぽ」のままだった。残念。
 </p></div><div class="section">
-<h3><a href="./?date=20060218#p02"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=Groovy">Groovy</a>]<a href="https://web.archive.org/web/20070327065535/http://article.gmane.org/gmane.comp.lang.groovy.user/7250">�Ƶ��ؿ��򥯥�������Ȥ����������</a></h3><p>
-�Ȥ������꤬groovy-user ML�ˤ��ä����Ȥꤢ�������ΥС��������ȡ�����ʴ����ǽ񤱤�褦����
+<h3><a href="./?date=20060218#p02"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=1Q;category=Groovy">Groovy</a>]<a href="https://web.archive.org/web/20070327065535/http://article.gmane.org/gmane.comp.lang.groovy.user/7250">再帰関数をクロージャとして定義する</a></h3><p>
+という話題がgroovy-user MLにあった。とりあえず今のバージョンだと、こんな感じで書けるようだ。
 </p>
 <pre>
 def fact = {x -&gt;
@@ -822,7 +947,7 @@ def fact = {x -&gt;
 }
 </pre>
 <p>
-������groovy-user ML�Ǥξ���ˤ��ȡ�1.0�ޤǤ˥������������this�λ��ͤ��Ѥ��餷�������Υ����ɤϾ���Ū�ˤ�ư���ʤ��ʤ�餷������褹��ˤϡ����Τ褦�ˤ���Ф����ȤΤ��ȡ�
+ただ、groovy-user MLでの情報によると、1.0までにクロージャ中のthisの仕様が変わるらしく、このコードは将来的には動かなくなるらしい。解決するには、次のようにすればいいとのこと。
 </p>
 <pre>
 def fact = {}
@@ -831,7 +956,7 @@ fact = {x -&gt;
 }
 </pre>
 <p>
-�Ƶ��ؿ�������������ˡ����������ѿ���������ƽ�������Ƥ���Τ��ݥ���ȡ����Τ褦�ˤ�����硢�������������fact�θƤӽФ��ǥ��顼�ˤʤäƤ��ޤ���
+再帰関数を定義する前に、代入する変数を宣言して初期化しているのがポイント。次のようにした場合、クロージャ中のfactの呼び出しでエラーになってしまう。
 </p>
 <pre>
 def fact = {x -&gt;
@@ -843,7 +968,7 @@ def fact = {x -&gt;
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��2��) [<a href="./?date=20060218#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全2件) [<a href="./?date=20060218#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20060218#c01"><span class="canchor">_</span></a>
 				<span class="commentator">ojli hwvrbsou</span>&nbsp;[fzey lwzpaqvio zhqranl qwhren hpdyzxigs ybdqg qvln  ]</p>
@@ -859,7 +984,7 @@ def fact = {x -&gt;
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065535/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">35</a> | <a href="https://web.archive.org/web/20070327065535/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">24</a> | <a href="https://web.archive.org/web/20070327065535/http://www.kmonos.net/wlog/" title="http://www.kmonos.net/wlog/">14</a> | <a href="https://web.archive.org/web/20070327065535/http://tsumikigoya.blog13.fc2.com/blog-entry-107.html" title="http://tsumikigoya.blog13.fc2.com/blog-entry-107.h...">12</a> | <a href="https://web.archive.org/web/20070327065535/http://a.hatena.ne.jp/lethevert/" title="http://a.hatena.ne.jp/lethevert/">8</a> | <a href="https://web.archive.org/web/20070327065535/http://www.google.com/" title="http://www.google.com">7</a> | <a href="https://web.archive.org/web/20070327065535/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060218%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">7</a> | <a href="https://web.archive.org/web/20070327065535/http://labs.ceek.jp/jblog/" title="http://labs.ceek.jp/jblog/">7</a> | <a href="https://web.archive.org/web/20070327065535/http://google.com/" title="http://google.com">7</a> | <a href="https://web.archive.org/web/20070327065535/http://www.kmonos.net/r/" title="http://www.kmonos.net/r/">6</a> | <a href="./?date=20060218#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065535/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">35</a> | <a href="https://web.archive.org/web/20070327065535/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">24</a> | <a href="https://web.archive.org/web/20070327065535/http://www.kmonos.net/wlog/" title="http://www.kmonos.net/wlog/">14</a> | <a href="https://web.archive.org/web/20070327065535/http://tsumikigoya.blog13.fc2.com/blog-entry-107.html" title="http://tsumikigoya.blog13.fc2.com/blog-entry-107.h...">12</a> | <a href="https://web.archive.org/web/20070327065535/http://a.hatena.ne.jp/lethevert/" title="http://a.hatena.ne.jp/lethevert/">8</a> | <a href="https://web.archive.org/web/20070327065535/http://www.google.com/" title="http://www.google.com">7</a> | <a href="https://web.archive.org/web/20070327065535/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060218%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">7</a> | <a href="https://web.archive.org/web/20070327065535/http://labs.ceek.jp/jblog/" title="http://labs.ceek.jp/jblog/">7</a> | <a href="https://web.archive.org/web/20070327065535/http://google.com/" title="http://google.com">7</a> | <a href="https://web.archive.org/web/20070327065535/http://www.kmonos.net/r/" title="http://www.kmonos.net/r/">6</a> | <a href="./?date=20060218#t">TrackBack(0)</a>
 		</div>
 </div>
 

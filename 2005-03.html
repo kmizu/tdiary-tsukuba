@@ -1,43 +1,168 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="ja-JP">
-<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=Hk4-lkW3" charset="utf-8"></script>
-<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<head>
+
 <script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
-<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+
 <script type="text/javascript">
     __wm.init("https://web.archive.org/web");
   __wm.wombat("http://www2.coins.tsukuba.ac.jp:80/~i021216/diary/?date=200503","20050309002058","https://web.archive.org/","web","https://web-static.archive.org/_static/",
 	      "1110327658");
 </script>
-<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" />
-<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+
+
 <!-- End Wayback Rewrite JS Include -->
 
-	<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="generator" content="tDiary 2.0.0">
 	<meta http-equiv="Last-Modified" content="Tue, 8 Mar 2005 10:32:19 GMT">
-	<meta http-equiv="Content-Script-Type" content="text/javascript; charset=EUC-JP">
-	<meta name="author" content="���繨��">
+	<meta http-equiv="Content-Script-Type" content="text/javascript; charset=UTF-8">
+	<meta name="author" content="水島宏太">
 	<link rev="made" href="mailto:hau51010@tree.odn.ne.jp">
-	<link rel="index" title="�ȥå�" href="http://www2.coins.tsukuba.ac.jp/~i021216/">
-	<link rel="start" title="�ǿ�" href="./">
+	<link rel="index" title="トップ" href="http://www2.coins.tsukuba.ac.jp/~i021216/">
+	<link rel="start" title="最新" href="./">
 	<meta http-equiv="content-style-type" content="text/css">
 	<link rel="stylesheet" href="/web/20050309002058cs_/http://www2.coins.tsukuba.ac.jp/~i021216/diary/theme/base.css" type="text/css" media="all">
 	<link rel="stylesheet" href="/web/20050309002058cs_/http://www2.coins.tsukuba.ac.jp/~i021216/diary/theme/default/default.css" title="default" type="text/css" media="all">
-	<title>Onion��ȯ����(2005-03)</title>
+	<title>Onion開発日記(2005-03)</title>
 	
 	<!--link rel="alternate" type="application/x-lirs" title="lirs" href="antenna.lirs"-->
-	<link rel="alternate" type="application/rss+xml" title="RSS" href="https://web.archive.org/web/20050309002058/http://www2.coins.tsukuba.ac.jp/~i021216/diary/index.rdf">
+	
+
+<style>
+    /* Modern Styling */
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.7;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        color: #333;
+    }
+    
+    h1 {
+        color: #2c3e50;
+        border-bottom: 3px solid #3498db;
+        padding-bottom: 12px;
+        font-size: 2em;
+        margin-top: 0;
+    }
+    
+    h2 {
+        color: #34495e;
+        border-left: 4px solid #3498db;
+        padding-left: 12px;
+        margin-top: 30px;
+    }
+    
+    h3 {
+        color: #555;
+        margin-top: 24px;
+    }
+    
+    .day {
+        background: white;
+        border-radius: 12px;
+        padding: 24px;
+        margin-bottom: 24px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .day:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    
+    .section {
+        margin: 16px 0;
+        padding: 12px;
+        border-left: 3px solid #e8e8e8;
+    }
+    
+    .date {
+        color: #3498db;
+        font-weight: 600;
+    }
+    
+    .title {
+        color: #2c3e50;
+        font-size: 1.3em;
+    }
+    
+    a {
+        color: #3498db;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    
+    a:hover {
+        color: #2980b9;
+        text-decoration: underline;
+    }
+    
+    pre {
+        background: #f8f9fa;
+        border: 1px solid #e9ecef;
+        border-radius: 6px;
+        padding: 16px;
+        overflow-x: auto;
+        font-size: 0.9em;
+    }
+    
+    code {
+        background: #f8f9fa;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .comment {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 16px;
+        margin-top: 20px;
+    }
+    
+    .adminmenu, .calendar, .todo {
+        background: white;
+        border-radius: 8px;
+        padding: 12px;
+        margin-bottom: 16px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .referer {
+        font-size: 0.85em;
+        color: #7f8c8d;
+        margin-top: 16px;
+        padding-top: 12px;
+        border-top: 1px solid #e8e8e8;
+    }
+    
+    /* Web Archive ツールバーを非表示 */
+    #wm-ipp-base, #wm-ipp, #donato {
+        display: none !important;
+    }
+    
+    hr.sep {
+        border: none;
+        border-top: 2px solid #e8e8e8;
+        margin: 30px 0;
+    }
+</style>
+
 </head>
 <body>
 
 
 <div class="adminmenu">
-<span class="adminmenu"><a href="https://web.archive.org/web/20050309002058/http://www2.coins.tsukuba.ac.jp/~i021216/">�ȥå�</a></span>
-<span class="adminmenu"><a href="./">�ǿ�</a></span>
-<span class="adminmenu"><a href="update.rb">�ɵ�</a></span>
+<span class="adminmenu"><a href="https://web.archive.org/web/20050309002058/http://www2.coins.tsukuba.ac.jp/~i021216/">トップ</a></span>
+<span class="adminmenu"><a href="./">最新</a></span>
+<span class="adminmenu"><a href="update.rb">追記</a></span>
 </div>
-<h1>Onion��ȯ����</h1>
+<h1>Onion開発日記</h1>
 <div class="calendar">
 <div class="year">2004|<a href="./?date=200409">09</a>|<a href="./?date=200410">10</a>|<a href="./?date=200411">11</a>|<a href="./?date=200412">12</a>|</div>
 <div class="year">2005|<a href="./?date=200501">01</a>|<a href="./?date=200502">02</a>|<a href="./?date=200503">03</a>|</div>
@@ -48,9 +173,9 @@
 	</div>
 	<div class="todo-body">
 <ul>
-<li><span class="todo-priority"></span> ����ѥ���¸��Υ�ݡ������
-(��3/9 <span class="todo-today">����</span>)</li>
-<li><span class="todo-priority"></span> Onion��beta�С���������(��4/10 <span class="todo-in-time">����32��</span>)</li>
+<li><span class="todo-priority"></span> コンパイラ実験のレポート提出
+(〜3/9 <span class="todo-today">今日</span>)</li>
+<li><span class="todo-priority"></span> Onionのbetaバージョン公開(〜4/10 <span class="todo-in-time">あと32日</span>)</li>
 </ul>
 
 	</div>
@@ -67,22 +192,22 @@
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20050301#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=1Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">���祮��</a>]5km</h3><p>
-�פ��֤�����ä����������㴳©�줷���ä���
+<h3><a href="./?date=20050301#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=1Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">ジョギング</a>]5km</h3><p>
+久しぶりに走ったせいか、若干息苦しかった。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��2��) [<a href="./?date=20050301#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全2件) [<a href="./?date=20050301#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20050301#c01"><span class="canchor">_</span></a>
-				<span class="commentator">Sumashi</span>&nbsp;[����Ū�˱�ư³����Τäơ��񤷤���͡�
- ��ء��⹻����ؤȤ�äȶ����ϤΤ�������������褫�ä����⡣
- �ޤ�����ʬ..]</p>
+				<span class="commentator">Sumashi</span>&nbsp;[自主的に運動続けるのって、難しいよね。
+ 中学、高校、大学ともっと強制力のある部活の方がよかったかも。
+ まぁ、自分..]</p>
 				<p><a href="./?date=20050301#c02"><span class="canchor">_</span></a>
-				<span class="commentator">�ߤ�����</span>&nbsp;[�Τ��ˡ��񤷤���͡���ʬ�ξ�硢��ư�򤹤�Τϥ��ȥ쥹��ä��ͤƤ��뤷�����֤ϼ�ʬ�Ƿ�᤿���Τǡ������ϤΤ�������..]</p>
+				<span class="commentator">みずしま</span>&nbsp;[確かに、難しいよね。自分の場合、運動をするのはストレス解消を兼ねているし、時間は自分で決めたいので、強制力のある部活..]</p>
 		</div>
 </div>
 
@@ -93,7 +218,7 @@
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20050309002058/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">15</a> | <a href="https://web.archive.org/web/20050309002058/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">4</a> | <a href="https://web.archive.org/web/20050309002058/http://a.hatena.ne.jp/Sumashi/?gid=115292" title="http://a.hatena.ne.jp/Sumashi/?gid=115292">3</a> | <a href="https://web.archive.org/web/20050309002058/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">2</a> | <a href="https://web.archive.org/web/20050309002058/http://www.coins.tsukuba.ac.jp/~hdk/hina/gh.html" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/gh.html">2</a> | <a href="https://web.archive.org/web/20050309002058/http://www2.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www2.coins.tsukuba.ac.jp/~hdk/hina/">1</a> | <a href="https://web.archive.org/web/20050309002058/http://www.highprofitclub.com/world-poker-tour.html" title="http://www.highprofitclub.com/world-poker-tour.htm...">1</a> | <a href="https://web.archive.org/web/20050309002058/http://www.highprofitclub.com/texas-holdem-poker.html" title="http://www.highprofitclub.com/texas-holdem-poker.h...">1</a> | <a href="https://web.archive.org/web/20050309002058/http://www.highprofitclub.com/poker-tournaments.html" title="http://www.highprofitclub.com/poker-tournaments.ht...">1</a> | <a href="https://web.archive.org/web/20050309002058/http://www.highprofitclub.com/poker-tables.html" title="http://www.highprofitclub.com/poker-tables.html">1</a> | <a href="./?date=20050301#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20050309002058/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">15</a> | <a href="https://web.archive.org/web/20050309002058/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">4</a> | <a href="https://web.archive.org/web/20050309002058/http://a.hatena.ne.jp/Sumashi/?gid=115292" title="http://a.hatena.ne.jp/Sumashi/?gid=115292">3</a> | <a href="https://web.archive.org/web/20050309002058/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">2</a> | <a href="https://web.archive.org/web/20050309002058/http://www.coins.tsukuba.ac.jp/~hdk/hina/gh.html" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/gh.html">2</a> | <a href="https://web.archive.org/web/20050309002058/http://www2.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www2.coins.tsukuba.ac.jp/~hdk/hina/">1</a> | <a href="https://web.archive.org/web/20050309002058/http://www.highprofitclub.com/world-poker-tour.html" title="http://www.highprofitclub.com/world-poker-tour.htm...">1</a> | <a href="https://web.archive.org/web/20050309002058/http://www.highprofitclub.com/texas-holdem-poker.html" title="http://www.highprofitclub.com/texas-holdem-poker.h...">1</a> | <a href="https://web.archive.org/web/20050309002058/http://www.highprofitclub.com/poker-tournaments.html" title="http://www.highprofitclub.com/poker-tournaments.ht...">1</a> | <a href="https://web.archive.org/web/20050309002058/http://www.highprofitclub.com/poker-tables.html" title="http://www.highprofitclub.com/poker-tables.html">1</a> | <a href="./?date=20050301#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -106,21 +231,21 @@
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20050302#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=1Q;category=%BC%F8%B6%C8">����</a>]����ѥ���¸�</h3><p>
-�����ǥ���ѥ���¸��ϺǸ塣��Ф�3/9�ޤǤʤΤǡ�����������ݡ��Ȥ�񤫤ʤ���Ф����ʤ���
+<h3><a href="./?date=20050302#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=1Q;category=%BC%F8%B6%C8">授業</a>]コンパイラ実験</h3><p>
+今日でコンパイラ実験は最後。提出が3/9までなので、そろそろレポートを書かなければいけない。
 </p>
 <p>
-���������ץ�����༫�ΤϤܴۤ������Ƥ����ΤΡ�����������ݡ��ȤˤޤȤ�褦�Ȥ���ȡ��ʤ��ʤ��ʤޤʤ����ȤϤ�������ФޤǤ��ȣ����֤����ʤ������ƥ��Ȥ⤢��Τǡ����ޤ�Ǻ��Ǥ⤤���ʤ����ᤤ�Ȥ����񤭾夲�Ƥ��ޤ�ʤ���С�
+しかし、プログラム自体はほぼ完成しているものの、いざそれをレポートにまとめようとすると、なかなか進まない。とはいえ、提出まであと１週間しかないし、テストもあるので、あまり悩んでもいられない。早いところ書き上げてしまわなければ。
 </p></div><div class="section">
-<h3><a href="./?date=20050302#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=1Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">���祮��</a>]5km,35ʬ</h3><p>
-ī�Ͽ��Τ����뤫�ä��Τǡ�ͼ�������ä�����ݡ��Ȳ���ˤĤ��ƹͤ��ʤ������ä��������������Ϥ��ޤ����ϴ����ʤ��ä���
+<h3><a href="./?date=20050302#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=1Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">ジョギング</a>]5km,35分</h3><p>
+朝は身体がだるかったので、夕方に走った。レポート課題について考えながら走ったせいか、今日はあまり疲れは感じなかった。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20050302#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20050302#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -130,7 +255,7 @@
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20050309002058/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">8</a> | <a href="https://web.archive.org/web/20050309002058/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">2</a> | <a href="https://web.archive.org/web/20050309002058/http://a.hatena.ne.jp/Sumashi/?gid=115292" title="http://a.hatena.ne.jp/Sumashi/?gid=115292">1</a> | <a href="./?date=20050302#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20050309002058/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">8</a> | <a href="https://web.archive.org/web/20050309002058/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">2</a> | <a href="https://web.archive.org/web/20050309002058/http://a.hatena.ne.jp/Sumashi/?gid=115292" title="http://a.hatena.ne.jp/Sumashi/?gid=115292">1</a> | <a href="./?date=20050302#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -143,15 +268,15 @@
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20050303#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=1Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">���祮��</a>]5km</h3><p>
-���祮�󥰤�Ƴ����Ƥ���3���ܤˤʤ뤬����Ϥ�����Τϵ�����������Τ���3��˷��ˤʤ�ʤ��褦�ˡ����줫����³���Ƥ�������
+<h3><a href="./?date=20050303#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=1Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">ジョギング</a>]5km</h3><p>
+ジョギングを再開してから3日目になるが、やはり走るのは気持ちいいものだ。3日坊主にならないように、これからも継続していこう。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20050303#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20050303#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -161,7 +286,7 @@
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20050309002058/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">16</a> | <a href="https://web.archive.org/web/20050309002058/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">3</a> | <a href="https://web.archive.org/web/20050309002058/http://www.highprofitclub.com/buy-poker-chips.html" title="http://www.highprofitclub.com/buy-poker-chips.html...">2</a> | <a href="https://web.archive.org/web/20050309002058/http://a.hatena.ne.jp/Sumashi/?gid=115292" title="http://a.hatena.ne.jp/Sumashi/?gid=115292">2</a> | <a href="https://web.archive.org/web/20050309002058/http://www.highprofitclub.com/texas-hold-em-tournament.html" title="http://www.highprofitclub.com/texas-hold-em-tourna...">1</a> | <a href="https://web.archive.org/web/20050309002058/http://www.highprofitclub.com/texas-hold-em-for-dummies.html" title="http://www.highprofitclub.com/texas-hold-em-for-du...">1</a> | <a href="https://web.archive.org/web/20050309002058/http://www.highprofitclub.com/how-to-play-texas-holdem-poker.html" title="http://www.highprofitclub.com/how-to-play-texas-ho...">1</a> | <a href="https://web.archive.org/web/20050309002058/http://www.google.com/search?hl=ja&amp;lr=lang_ja&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF%E3%83%95%E3%83%A9%E3%82%B0&amp;num=50" title="google����(꡶����������妫��num=50)">1</a> | <a href="https://web.archive.org/web/20050309002058/http://www.google.co.jp/search?q=java.util.regex+%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89&amp;hl=ja&amp;lr=&amp;start=30&amp;sa=N" title="google����(java.util.regex ��夨��㦯����)">1</a> | <a href="https://web.archive.org/web/20050309002058/http://www.doobu.com/personal-loan.html" title="http://www.doobu.com/personal-loan.html">1</a> | <a href="./?date=20050303#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20050309002058/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">16</a> | <a href="https://web.archive.org/web/20050309002058/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">3</a> | <a href="https://web.archive.org/web/20050309002058/http://www.highprofitclub.com/buy-poker-chips.html" title="http://www.highprofitclub.com/buy-poker-chips.html...">2</a> | <a href="https://web.archive.org/web/20050309002058/http://a.hatena.ne.jp/Sumashi/?gid=115292" title="http://a.hatena.ne.jp/Sumashi/?gid=115292">2</a> | <a href="https://web.archive.org/web/20050309002058/http://www.highprofitclub.com/texas-hold-em-tournament.html" title="http://www.highprofitclub.com/texas-hold-em-tourna...">1</a> | <a href="https://web.archive.org/web/20050309002058/http://www.highprofitclub.com/texas-hold-em-for-dummies.html" title="http://www.highprofitclub.com/texas-hold-em-for-du...">1</a> | <a href="https://web.archive.org/web/20050309002058/http://www.highprofitclub.com/how-to-play-texas-holdem-poker.html" title="http://www.highprofitclub.com/how-to-play-texas-ho...">1</a> | <a href="https://web.archive.org/web/20050309002058/http://www.google.com/search?hl=ja&amp;lr=lang_ja&amp;ie=UTF-8&amp;oe=UTF-8&amp;q=%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF%E3%83%95%E3%83%A9%E3%82%B0&amp;num=50" title="google検索(蝓九ａ霎若∩繝輔Λ繧num=50)">1</a> | <a href="https://web.archive.org/web/20050309002058/http://www.google.co.jp/search?q=java.util.regex+%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89&amp;hl=ja&amp;lr=&amp;start=30&amp;sa=N" title="google検索(java.util.regex 繝�紊�繝潟Ο繝若ラ)">1</a> | <a href="https://web.archive.org/web/20050309002058/http://www.doobu.com/personal-loan.html" title="http://www.doobu.com/personal-loan.html">1</a> | <a href="./?date=20050303#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -174,13 +299,13 @@
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20050306#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=1Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">���祮��</a>]5km</h3><p></p></div>
+<h3><a href="./?date=20050306#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=1Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">ジョギング</a>]5km</h3><p></p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20050306#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20050306#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -190,7 +315,7 @@
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20050309002058/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">19</a> | <a href="https://web.archive.org/web/20050309002058/http://a.hatena.ne.jp/Sumashi/?gid=115292" title="http://a.hatena.ne.jp/Sumashi/?gid=115292">5</a> | <a href="https://web.archive.org/web/20050309002058/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">4</a> | <a href="https://web.archive.org/web/20050309002058/http://meta.ii2.cc/_/ebantenna/" title="http://meta.ii2.cc/_/ebantenna/">2</a> | <a href="https://web.archive.org/web/20050309002058/http://www.doobu.com/no-fax-payday-loans.html" title="http://www.doobu.com/no-fax-payday-loans.html">1</a> | <a href="https://web.archive.org/web/20050309002058/http://www.doobu.com/mortgage-calculator.html" title="http://www.doobu.com/mortgage-calculator.html">1</a> | <a href="https://web.archive.org/web/20050309002058/http://www.doobu.com/home-improvement-loan.html" title="http://www.doobu.com/home-improvement-loan.html">1</a> | <a href="https://web.archive.org/web/20050309002058/http://www.doobu.com/home-equity-loans.html" title="http://www.doobu.com/home-equity-loans.html">1</a> | <a href="https://web.archive.org/web/20050309002058/http://www.doobu.com/faxless-payday-loan.html" title="http://www.doobu.com/faxless-payday-loan.html">1</a> | <a href="https://web.archive.org/web/20050309002058/http://www.coins.tsukuba.ac.jp/~hdk/hina/gh.html" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/gh.html">1</a> | <a href="./?date=20050306#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20050309002058/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">19</a> | <a href="https://web.archive.org/web/20050309002058/http://a.hatena.ne.jp/Sumashi/?gid=115292" title="http://a.hatena.ne.jp/Sumashi/?gid=115292">5</a> | <a href="https://web.archive.org/web/20050309002058/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">4</a> | <a href="https://web.archive.org/web/20050309002058/http://meta.ii2.cc/_/ebantenna/" title="http://meta.ii2.cc/_/ebantenna/">2</a> | <a href="https://web.archive.org/web/20050309002058/http://www.doobu.com/no-fax-payday-loans.html" title="http://www.doobu.com/no-fax-payday-loans.html">1</a> | <a href="https://web.archive.org/web/20050309002058/http://www.doobu.com/mortgage-calculator.html" title="http://www.doobu.com/mortgage-calculator.html">1</a> | <a href="https://web.archive.org/web/20050309002058/http://www.doobu.com/home-improvement-loan.html" title="http://www.doobu.com/home-improvement-loan.html">1</a> | <a href="https://web.archive.org/web/20050309002058/http://www.doobu.com/home-equity-loans.html" title="http://www.doobu.com/home-equity-loans.html">1</a> | <a href="https://web.archive.org/web/20050309002058/http://www.doobu.com/faxless-payday-loan.html" title="http://www.doobu.com/faxless-payday-loan.html">1</a> | <a href="https://web.archive.org/web/20050309002058/http://www.coins.tsukuba.ac.jp/~hdk/hina/gh.html" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/gh.html">1</a> | <a href="./?date=20050306#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -203,23 +328,23 @@
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20050308#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=1Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">���祮��</a>]5km,34ʬ</h3><p>
-����­��̣�Τ������������Ϸ빽��줿�������롣
+<h3><a href="./?date=20050308#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=1Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">ジョギング</a>]5km,34分</h3><p>
+寝不足気味のせいか、今日は結構疲れた気がする。
 </p></div><div class="section">
-<h3><a href="./?date=20050308#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=1Q;category=%BC%F8%B6%C8">����</a>]�����</h3><p>
-�����ϡ��̿��ͥåȥ�������ڥ졼�ƥ��󥰥����ƥࣲ��ʬ�������ƥ�Σ��ġ���ԣ��Ĥϻ������߲ĤǤ��뤳�Ȥ⤢�äơ����Ū��ñ���ä������̿��ͥåȥ���Ϥ��ʤ���������ä�������ǡ�ñ�̤������������ġ�
+<h3><a href="./?date=20050308#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=1Q;category=%BC%F8%B6%C8">授業</a>]期末試験</h3><p>
+今日は、通信ネットワーク、オペレーティングシステム２、分散システムの３つ。後者２つは持ち込み可であることもあって、比較的簡単だったが、通信ネットワークはかなりダメダメだった。これで、単位が来るだろうか…。
 </p>
 <p>
-�Ȥ⤢�졢���ȣ�������ڤ�С��褦�䤯�յ٤ߤ���롣Onion�γ�ȯ��Ƴ��Ǥ��롣
+ともあれ、あと１日乗り切れば、ようやく春休みが来る。Onionの開発も再開できる。
 </p></div><div class="section">
-<h3><a href="./?date=20050308#p03"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=1Q;category=Onion">Onion</a>]�ײ�</h3><p>
-�ɤ��⺣�ޤǥɥ�����Ȥθ������ʤޤʤ��ä������Ϥ����Ȥ����ײ��Ω�Ƥʤ��ä������ʤΤǤϤʤ����Ȥ������Ȥǡ��ɥ�����Ȥθ����˴ؤ���ײ��Ω�ƤƤߤ롣��ۤɤΤ��Ȥ�̵���¤ꡢ���Υ������塼��ˤ��äƥɥ�����Ȥ�������Ƥ�����褦�ˤ�������
+<h3><a href="./?date=20050308#p03"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=1Q;category=Onion">Onion</a>]計画</h3><p>
+どうも今までドキュメントの公開が進まなかった原因はちゃんとした計画を立てなかったせいなのではないかということで、ドキュメントの公開に関する計画を立ててみる。よほどのことが無い限り、このスケジュールにそってドキュメントを公開していけるようにしたい。
 </p>
 <ul>
-<li>3/12 �饤����</li>
-<li>3/17 �������</li>
-<li>3/21 �����ϤλȤ���������</li>
-<li>3/25 ���塼�ȥꥢ��</li>
+<li>3/12 ライセンス</li>
+<li>3/17 言語仕様</li>
+<li>3/21 処理系の使い方の説明</li>
+<li>3/25 チュートリアル</li>
 <li>3/38 FAQ</li>
 </ul>
 </ul></div>
@@ -228,7 +353,7 @@
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20050308#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20050308#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -238,7 +363,7 @@
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20050309002058/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">8</a> | <a href="https://web.archive.org/web/20050309002058/http://www.coins.tsukuba.ac.jp/~i031203/rantenna/index.rdf" title="http://www.coins.tsukuba.ac.jp/~i031203/rantenna/i...">2</a> | <a href="https://web.archive.org/web/20050309002058/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">1</a> | <a href="https://web.archive.org/web/20050309002058/http://12.163.72.13/" title="http://12.163.72.13/">1</a> | <a href="./?date=20050308#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20050309002058/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">8</a> | <a href="https://web.archive.org/web/20050309002058/http://www.coins.tsukuba.ac.jp/~i031203/rantenna/index.rdf" title="http://www.coins.tsukuba.ac.jp/~i031203/rantenna/i...">2</a> | <a href="https://web.archive.org/web/20050309002058/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">1</a> | <a href="https://web.archive.org/web/20050309002058/http://12.163.72.13/" title="http://12.163.72.13/">1</a> | <a href="./?date=20050308#t">TrackBack(0)</a>
 		</div>
 </div>
 

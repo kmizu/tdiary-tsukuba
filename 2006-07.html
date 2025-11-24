@@ -1,43 +1,168 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="ja-JP">
-<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=Hk4-lkW3" charset="utf-8"></script>
-<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<head>
+
 <script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
-<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+
 <script type="text/javascript">
     __wm.init("https://web.archive.org/web");
   __wm.wombat("http://www.coins.tsukuba.ac.jp:80/~i021216/diary/?date=200607","20070327112218","https://web.archive.org/","web","https://web-static.archive.org/_static/",
 	      "1174994538");
 </script>
-<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" />
-<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+
+
 <!-- End Wayback Rewrite JS Include -->
 
-	<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="generator" content="tDiary 2.0.0">
 	<meta http-equiv="Last-Modified" content="Sat, 17 Mar 2007 04:45:57 GMT">
-	<meta http-equiv="Content-Script-Type" content="text/javascript; charset=EUC-JP">
-	<meta name="author" content="���繨��">
+	<meta http-equiv="Content-Script-Type" content="text/javascript; charset=UTF-8">
+	<meta name="author" content="水島宏太">
 	<link rev="made" href="mailto:hau51010{at}tree.odn.ne.jp">
-	<link rel="index" title="�ȥå�" href="http://www.coins.tsukuba.ac.jp/~i021216/">
-	<link rel="start" title="�ǿ�" href="./">
+	<link rel="index" title="トップ" href="http://www.coins.tsukuba.ac.jp/~i021216/">
+	<link rel="start" title="最新" href="./">
 	<meta http-equiv="content-style-type" content="text/css">
 	<link rel="stylesheet" href="/web/20070327112218cs_/http://www.coins.tsukuba.ac.jp/~i021216/diary/theme/base.css" type="text/css" media="all">
 	<link rel="stylesheet" href="/web/20070327112218cs_/http://www.coins.tsukuba.ac.jp/~i021216/diary/theme/another_blue/another_blue.css" title="another_blue" type="text/css" media="all">
-	<title>Onion��ȯ����(2006-07)</title>
+	<title>Onion開発日記(2006-07)</title>
 	
 	<!--link rel="alternate" type="application/x-lirs" title="lirs" href="antenna.lirs"-->
-	<link rel="alternate" type="application/rss+xml" title="RSS" href="https://web.archive.org/web/20070327112218/http://www.coins.tsukuba.ac.jp/~i021216/diary/index.rdf">
+	
+
+<style>
+    /* Modern Styling */
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.7;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        color: #333;
+    }
+    
+    h1 {
+        color: #2c3e50;
+        border-bottom: 3px solid #3498db;
+        padding-bottom: 12px;
+        font-size: 2em;
+        margin-top: 0;
+    }
+    
+    h2 {
+        color: #34495e;
+        border-left: 4px solid #3498db;
+        padding-left: 12px;
+        margin-top: 30px;
+    }
+    
+    h3 {
+        color: #555;
+        margin-top: 24px;
+    }
+    
+    .day {
+        background: white;
+        border-radius: 12px;
+        padding: 24px;
+        margin-bottom: 24px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .day:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    
+    .section {
+        margin: 16px 0;
+        padding: 12px;
+        border-left: 3px solid #e8e8e8;
+    }
+    
+    .date {
+        color: #3498db;
+        font-weight: 600;
+    }
+    
+    .title {
+        color: #2c3e50;
+        font-size: 1.3em;
+    }
+    
+    a {
+        color: #3498db;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    
+    a:hover {
+        color: #2980b9;
+        text-decoration: underline;
+    }
+    
+    pre {
+        background: #f8f9fa;
+        border: 1px solid #e9ecef;
+        border-radius: 6px;
+        padding: 16px;
+        overflow-x: auto;
+        font-size: 0.9em;
+    }
+    
+    code {
+        background: #f8f9fa;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .comment {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 16px;
+        margin-top: 20px;
+    }
+    
+    .adminmenu, .calendar, .todo {
+        background: white;
+        border-radius: 8px;
+        padding: 12px;
+        margin-bottom: 16px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .referer {
+        font-size: 0.85em;
+        color: #7f8c8d;
+        margin-top: 16px;
+        padding-top: 12px;
+        border-top: 1px solid #e8e8e8;
+    }
+    
+    /* Web Archive ツールバーを非表示 */
+    #wm-ipp-base, #wm-ipp, #donato {
+        display: none !important;
+    }
+    
+    hr.sep {
+        border: none;
+        border-top: 2px solid #e8e8e8;
+        margin: 30px 0;
+    }
+</style>
+
 </head>
 <body>
 
 
 <div class="adminmenu">
-<span class="adminmenu"><a href="https://web.archive.org/web/20070327112218/http://www.coins.tsukuba.ac.jp/~i021216/">�ȥå�</a></span>
-<span class="adminmenu"><a href="./">�ǿ�</a></span>
-<span class="adminmenu"><a href="update.rb">�ɵ�</a></span>
+<span class="adminmenu"><a href="https://web.archive.org/web/20070327112218/http://www.coins.tsukuba.ac.jp/~i021216/">トップ</a></span>
+<span class="adminmenu"><a href="./">最新</a></span>
+<span class="adminmenu"><a href="update.rb">追記</a></span>
 </div>
-<h1>Onion��ȯ����</h1>
+<h1>Onion開発日記</h1>
 <div class="calendar">
 <div class="year">2004|<a href="./?date=200409">09</a>|<a href="./?date=200410">10</a>|<a href="./?date=200411">11</a>|<a href="./?date=200412">12</a>|</div>
 <div class="year">2005|<a href="./?date=200501">01</a>|<a href="./?date=200502">02</a>|<a href="./?date=200503">03</a>|<a href="./?date=200504">04</a>|<a href="./?date=200505">05</a>|<a href="./?date=200506">06</a>|<a href="./?date=200507">07</a>|<a href="./?date=200508">08</a>|<a href="./?date=200509">09</a>|<a href="./?date=200510">10</a>|<a href="./?date=200511">11</a>|<a href="./?date=200512">12</a>|</div>
@@ -66,15 +191,15 @@
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060702#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=Eclipse">Eclipse</a>]<a href="https://web.archive.org/web/20070327112218/http://www.eclipse.org/">Eclipse3.2</a>��꡼��</h3><p>
-���Ĥδ֤ˤ��ФƤ����͡����ä�������������ɤ��Ƥߤ뤳�Ȥˤ��褦��
+<h3><a href="./?date=20060702#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=Eclipse">Eclipse</a>]<a href="https://web.archive.org/web/20070327112218/http://www.eclipse.org/">Eclipse3.2</a>リリース</h3><p>
+いつの間にか出てた模様。さっそくダウンロードしてみることにしよう。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��1��) [<a href="./?date=20060702#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全1件) [<a href="./?date=20060702#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20060702#c01"><span class="canchor">_</span></a>
 				<span class="commentator">stjyax ljytez</span>&nbsp;[wnisg thneoz yijor faxlmrcu ujhdmk wpzmth nreyv  ]</p>
@@ -88,7 +213,7 @@
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327112218/http://azolina.muvc.net/" title="http://azolina.muvc.net">6315</a> | <a href="https://web.archive.org/web/20070327112218/http://sadox.muvc.net/" title="http://sadox.muvc.net">3165</a> | <a href="https://web.archive.org/web/20070327112218/http://www2.coins.tsukuba.ac.jp:80/~i021216/diary/?date=20060102" title="http://www2.coins.tsukuba.ac.jp:80/~i021216/diary/...">222</a> | <a href="https://web.archive.org/web/20070327112218/http://www.coins.tsukuba.ac.jp/" title="http://www.coins.tsukuba.ac.jp">199</a> | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/navsegda/" title="http://www.hpfree.com/navsegda/">78</a> | <a href="https://web.archive.org/web/20070327112218/http://zoner.pimp.fc2.com/" title="http://zoner.pimp.fc2.com">71</a> | <a href="https://web.archive.org/web/20070327112218/http://2style.net/zalamo/" title="http://2style.net/zalamo/">69</a> | <a href="https://web.archive.org/web/20070327112218/http://zapadlo.pink-no1.net/" title="http://zapadlo.pink-no1.net">68</a> | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/zabito/" title="http://www.hpfree.com/zabito/">68</a> | <a href="https://web.archive.org/web/20070327112218/http://lexy.pimp.fc2.com/" title="http://lexy.pimp.fc2.com">65</a> | <a href="./?date=20060702#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327112218/http://azolina.muvc.net/" title="http://azolina.muvc.net">6315</a> | <a href="https://web.archive.org/web/20070327112218/http://sadox.muvc.net/" title="http://sadox.muvc.net">3165</a> | <a href="https://web.archive.org/web/20070327112218/http://www2.coins.tsukuba.ac.jp:80/~i021216/diary/?date=20060102" title="http://www2.coins.tsukuba.ac.jp:80/~i021216/diary/...">222</a> | <a href="https://web.archive.org/web/20070327112218/http://www.coins.tsukuba.ac.jp/" title="http://www.coins.tsukuba.ac.jp">199</a> | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/navsegda/" title="http://www.hpfree.com/navsegda/">78</a> | <a href="https://web.archive.org/web/20070327112218/http://zoner.pimp.fc2.com/" title="http://zoner.pimp.fc2.com">71</a> | <a href="https://web.archive.org/web/20070327112218/http://2style.net/zalamo/" title="http://2style.net/zalamo/">69</a> | <a href="https://web.archive.org/web/20070327112218/http://zapadlo.pink-no1.net/" title="http://zapadlo.pink-no1.net">68</a> | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/zabito/" title="http://www.hpfree.com/zabito/">68</a> | <a href="https://web.archive.org/web/20070327112218/http://lexy.pimp.fc2.com/" title="http://lexy.pimp.fc2.com">65</a> | <a href="./?date=20060702#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -101,15 +226,15 @@
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060706#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=Eclipse">Eclipse</a>]Javaʸˡ�ѥ����󸡺�</h3><p>
-Eclipse�ǥ����ɤ�񤤤Ƥ��ơ�ñ�ʤ�ʸ����ѥ�����ǤϤʤ���Java����μ���ʸ�Υѥ�������Ф��ơ��������ִ����Ǥ����������ʤΤˤȻפ����Ȥ����롣����ɽ�������Ǥ�Ȥ��ʤ���̵���Τ�������̤��ͥ��Ȥ��Ƥ�����ʤɤϡ�����ɽ���Ǥϼ���館�ʤ��Τǡ�Java�����ʸˡ�Υѥ�����򵭽ҤǤ���ɬ�פ����롣�����ޤǹͤ��ơ��դȤɤ����Ǥ���ʤ��Ȥ�ʹ�����ʡ��Ȼפ��֤��Ƥߤ�ȡ�NetBeans��<a href="https://web.archive.org/web/20070327112218/http://jackpot.netbeans.org/index.html">Jackpot</a>���ޤ��ˤ��Τ褦�����ӤΤ���Υġ���ʵ������Ƥ�����Jackpot�Ǥϡ����ѤΥ롼�������Ѥ��ơ��ޥå�������Java����Υ������Υѥ�����ȡ������ɤΤ褦���֤������뤫�򵭽ҤǤ��롣�ޤ��ˡ���ʬ����Ū�ˤ��äƤĤ������ˤ���餯�ϡ����줬NetBeans�ѤǤ��äơ�Eclipse�ѤˤϻȤ��ʤ����Ȥ���
+<h3><a href="./?date=20060706#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=Eclipse">Eclipse</a>]Java文法パターン検索</h3><p>
+Eclipseでコードを書いていて、単なる文字列パターンではなく、Java言語の式や文のパターンに対して、検索・置換ができたら便利なのにと思うことがある。正規表現検索でも使えなくは無いのだが、括弧がネストしている場合などは、正規表現では手に負えないので、Java言語の文法のパターンを記述できる必要がある。ここまで考えて、ふとどこかでそんなことを聞いたな、と思い返してみると、NetBeansの<a href="https://web.archive.org/web/20070327112218/http://jackpot.netbeans.org/index.html">Jackpot</a>がまさにそのような用途のためのツールな気がしてきた。Jackpotでは、専用のルール言語を用いて、マッチさせるJava言語のソースのパターンと、それをどのように置き換えるかを記述できる。まさに、自分の目的にうってつけだ。惜しむらくは、これがNetBeans用であって、Eclipse用には使えないことか。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20060706#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20060706#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -119,7 +244,7 @@ Eclipse�ǥ����ɤ�񤤤Ƥ��ơ�ñ�ʤ�ʸ����ѥ�����ǤϤʤ���Java����μ���ʸ�Υѥ
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/navsegda/" title="http://www.hpfree.com/navsegda/">77</a> | <a href="https://web.archive.org/web/20070327112218/http://zoner.pimp.fc2.com/" title="http://zoner.pimp.fc2.com">74</a> | <a href="https://web.archive.org/web/20070327112218/http://zapadlo.pink-no1.net/" title="http://zapadlo.pink-no1.net">68</a> | <a href="https://web.archive.org/web/20070327112218/http://2style.net/zalamo/" title="http://2style.net/zalamo/">68</a> | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/zabito/" title="http://www.hpfree.com/zabito/">67</a> | <a href="https://web.archive.org/web/20070327112218/http://lexy.pimp.fc2.com/" title="http://lexy.pimp.fc2.com">63</a> | <a href="https://web.archive.org/web/20070327112218/http://2style.net/zander/" title="http://2style.net/zander/">63</a> | <a href="https://web.archive.org/web/20070327112218/http://lomimsya.pink-no1.net/" title="http://lomimsya.pink-no1.net">55</a> | <a href="https://web.archive.org/web/20070327112218/http://azolina.muvc.net/" title="http://azolina.muvc.net">26</a> | <a href="https://web.archive.org/web/20070327112218/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">24</a> | <a href="./?date=20060706#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/navsegda/" title="http://www.hpfree.com/navsegda/">77</a> | <a href="https://web.archive.org/web/20070327112218/http://zoner.pimp.fc2.com/" title="http://zoner.pimp.fc2.com">74</a> | <a href="https://web.archive.org/web/20070327112218/http://zapadlo.pink-no1.net/" title="http://zapadlo.pink-no1.net">68</a> | <a href="https://web.archive.org/web/20070327112218/http://2style.net/zalamo/" title="http://2style.net/zalamo/">68</a> | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/zabito/" title="http://www.hpfree.com/zabito/">67</a> | <a href="https://web.archive.org/web/20070327112218/http://lexy.pimp.fc2.com/" title="http://lexy.pimp.fc2.com">63</a> | <a href="https://web.archive.org/web/20070327112218/http://2style.net/zander/" title="http://2style.net/zander/">63</a> | <a href="https://web.archive.org/web/20070327112218/http://lomimsya.pink-no1.net/" title="http://lomimsya.pink-no1.net">55</a> | <a href="https://web.archive.org/web/20070327112218/http://azolina.muvc.net/" title="http://azolina.muvc.net">26</a> | <a href="https://web.archive.org/web/20070327112218/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">24</a> | <a href="./?date=20060706#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -132,15 +257,15 @@ Eclipse�ǥ����ɤ�񤤤Ƥ��ơ�ñ�ʤ�ʸ����ѥ�����ǤϤʤ���Java����μ���ʸ�Υѥ
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060707#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">���祮��</a>]���祮�󥰴ط��ε��Ҥ�ܹ�</h3><p>
-���ޤꥸ�祮�󥰴ط����ä򤳤������˽񤤤Ƥ�ʤ�ʤΤǡ����祮�󥰴ط��ε��Ҥ�<a href="https://web.archive.org/web/20070327112218/http://www.coins.tsukuba.ac.jp/~i021216/jog_diary/">����������</a>�˰ܤ��������줫��ϡ����祮�󥰤ʤɤα�ư�ط��Τ��ȤˤĤ��Ƥϡ����ä��˽񤯤��Ȥˤ��롣
+<h3><a href="./?date=20060707#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">ジョギング</a>]ジョギング関係の記述を移行</h3><p>
+あまりジョギング関係の話をこの日記に書いてもなんなので、ジョギング関係の記述は<a href="https://web.archive.org/web/20070327112218/http://www.coins.tsukuba.ac.jp/~i021216/jog_diary/">新しい日記</a>に移した。これからは、ジョギングなどの運動関係のことについては、そっちに書くことにする。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��6��) [<a href="./?date=20060707#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全6件) [<a href="./?date=20060707#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 			<p><a href="./?date=20060707#c01">Before...</a></p>
 				<p><a href="./?date=20060707#c02"><span class="canchor">_</span></a>
@@ -163,7 +288,7 @@ Eclipse�ǥ����ɤ�񤤤Ƥ��ơ�ñ�ʤ�ʸ����ѥ�����ǤϤʤ���Java����μ���ʸ�Υѥ
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327112218/http://www.hostones.com/websites/fetish/zamnoy/" title="http://www.hostones.com/websites/fetish/zamnoy/">122</a> | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/navsegda/" title="http://www.hpfree.com/navsegda/">79</a> | <a href="https://web.archive.org/web/20070327112218/http://zoner.pimp.fc2.com/" title="http://zoner.pimp.fc2.com">73</a> | <a href="https://web.archive.org/web/20070327112218/http://www.hostones.com/websites/amateurs/zaebun/" title="http://www.hostones.com/websites/amateurs/zaebun/">72</a> | <a href="https://web.archive.org/web/20070327112218/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">70</a> | <a href="https://web.archive.org/web/20070327112218/http://zapadlo.pink-no1.net/" title="http://zapadlo.pink-no1.net">69</a> | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/zabito/" title="http://www.hpfree.com/zabito/">67</a> | <a href="https://web.archive.org/web/20070327112218/http://2style.net/zalamo/" title="http://2style.net/zalamo/">67</a> | <a href="https://web.archive.org/web/20070327112218/http://lexy.pimp.fc2.com/" title="http://lexy.pimp.fc2.com">64</a> | <a href="https://web.archive.org/web/20070327112218/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">63</a> | <a href="./?date=20060707#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327112218/http://www.hostones.com/websites/fetish/zamnoy/" title="http://www.hostones.com/websites/fetish/zamnoy/">122</a> | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/navsegda/" title="http://www.hpfree.com/navsegda/">79</a> | <a href="https://web.archive.org/web/20070327112218/http://zoner.pimp.fc2.com/" title="http://zoner.pimp.fc2.com">73</a> | <a href="https://web.archive.org/web/20070327112218/http://www.hostones.com/websites/amateurs/zaebun/" title="http://www.hostones.com/websites/amateurs/zaebun/">72</a> | <a href="https://web.archive.org/web/20070327112218/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">70</a> | <a href="https://web.archive.org/web/20070327112218/http://zapadlo.pink-no1.net/" title="http://zapadlo.pink-no1.net">69</a> | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/zabito/" title="http://www.hpfree.com/zabito/">67</a> | <a href="https://web.archive.org/web/20070327112218/http://2style.net/zalamo/" title="http://2style.net/zalamo/">67</a> | <a href="https://web.archive.org/web/20070327112218/http://lexy.pimp.fc2.com/" title="http://lexy.pimp.fc2.com">64</a> | <a href="https://web.archive.org/web/20070327112218/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">63</a> | <a href="./?date=20060707#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -176,18 +301,18 @@ Eclipse�ǥ����ɤ�񤤤Ƥ��ơ�ñ�ʤ�ʸ����ѥ�����ǤϤʤ���Java����μ���ʸ�Υѥ
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060719#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=%A5%D1%A1%BC%A5%B6">�ѡ���</a>][<a href="./?year=2006;month=3Q;category=%A5%D1%A1%BC%A5%B6%A5%B8%A5%A7%A5%CD%A5%EC%A1%BC%A5%BF">�ѡ��������ͥ졼��</a>]LL(*)</h3><p>
-��ʸ����ˡ�˴ؤ�������Ĵ�٤Ƥ����Ȥ�����LL(*)(LL star�ȸƤ֤餷��)�Ȥ�����ʸ���ϥ��르�ꥺ�ब���뤳�Ȥ��Τä���<a href="https://web.archive.org/web/20070327112218/http://www.antlr.org/workshop/ANTLR2005/presentations/LL-Star.ppt">LL(*)�˴ؤ����������饤��</a>��Ф��ɤߤ��������Ǥϡ�LL(k)�����ɤߤǤ���ȡ�������ϸ���Ĺ���ä��Τ��Ф��ơ�LL(*)�Ǥϡ�̵��Ĺ�Υȡ���������ɤߤǤ��뤿�ᡢLL(*) ������ۤ����ʤ��ɡ��� LL(k)�Ȥ������ȤΤ褦����
+<h3><a href="./?date=20060719#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=%A5%D1%A1%BC%A5%B6">パーザ</a>][<a href="./?year=2006;month=3Q;category=%A5%D1%A1%BC%A5%B6%A5%B8%A5%A7%A5%CD%A5%EC%A1%BC%A5%BF">パーザジェネレータ</a>]LL(*)</h3><p>
+構文解析法に関する情報を調べていたところ、LL(*)(LL starと呼ぶらしい)という構文解析アルゴリズムがあることを知った。<a href="https://web.archive.org/web/20070327112218/http://www.antlr.org/workshop/ANTLR2005/presentations/LL-Star.ppt">LL(*)に関する説明スライド</a>を斜め読みした感じでは、LL(k)で先読みできるトークン数は固定長だったのに対して、LL(*)では、無限長のトークンを先読みできるため、LL(*) ＞＞＞＞＞越えられない壁＞＞＞ LL(k)ということのようだ。
 </p>
 <p>
-�㤨�С����Τ褦��ʸˡ�����ä��Ȥ���arg��Ǥ�ղ󷫤��֤����ᡢLL(k)�ˤ�����Ĺ�����ɤߤǤ����ܤ�����LL(*)�ʤ���Ϥ��뤳�Ȥ��Ǥ��롣
+例えば、次のような文法があったとき、argは任意回繰り返すため、LL(k)による固定長の先読みでは駄目だが、LL(*)なら解析することができる。
 </p>
 <pre>
 fun : type ID "(" (arg)* ")" ;
 fun : type ID "(" (arg)* ")" "{" body "}"
 </pre>
 <p>
-������LL(*)�Ǥϡ����������ɽ���Ǥ����ϰϤǤ������ɤߤ��Ǥ��ʤ����ᡢ���Τ褦�˺Ƶ�Ū�ʹ�¤�����ɤߤ���ɬ�פ������硢LL(*)�Ǥ����������ϤǤ��ʤ��Ȥ��������⤢��褦����
+ただ、LL(*)では、正規言語で表現できる範囲でしか先読みができないため、次のように再帰的な構造を先読みする必要がある場合、LL(*)では正しく解析できないという弱点もあるようだ。
 </p>
 <pre>
 a : b X
@@ -203,7 +328,7 @@ b : A
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��19��) [<a href="./?date=20060719#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全19件) [<a href="./?date=20060719#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 			<p><a href="./?date=20060719#c01">Before...</a></p>
 				<p><a href="./?date=20060719#c15"><span class="canchor">_</span></a>
@@ -226,7 +351,7 @@ b : A
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/navsegda/" title="http://www.hpfree.com/navsegda/">972</a> | <a href="https://web.archive.org/web/20070327112218/http://zoner.pimp.fc2.com/" title="http://zoner.pimp.fc2.com">967</a> | <a href="https://web.archive.org/web/20070327112218/http://zapadlo.pink-no1.net/" title="http://zapadlo.pink-no1.net">966</a> | <a href="https://web.archive.org/web/20070327112218/http://2style.net/zalamo/" title="http://2style.net/zalamo/">960</a> | <a href="https://web.archive.org/web/20070327112218/http://lexy.pimp.fc2.com/" title="http://lexy.pimp.fc2.com">958</a> | <a href="https://web.archive.org/web/20070327112218/http://2style.net/zander/" title="http://2style.net/zander/">954</a> | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/zabito/" title="http://www.hpfree.com/zabito/">953</a> | <a href="https://web.archive.org/web/20070327112218/http://lomimsya.pink-no1.net/" title="http://lomimsya.pink-no1.net">934</a> | <a href="https://web.archive.org/web/20070327112218/http://azolina.muvc.net/" title="http://azolina.muvc.net">775</a> | <a href="https://web.archive.org/web/20070327112218/http://sadox.muvc.net/" title="http://sadox.muvc.net">390</a> | <a href="./?date=20060719#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/navsegda/" title="http://www.hpfree.com/navsegda/">972</a> | <a href="https://web.archive.org/web/20070327112218/http://zoner.pimp.fc2.com/" title="http://zoner.pimp.fc2.com">967</a> | <a href="https://web.archive.org/web/20070327112218/http://zapadlo.pink-no1.net/" title="http://zapadlo.pink-no1.net">966</a> | <a href="https://web.archive.org/web/20070327112218/http://2style.net/zalamo/" title="http://2style.net/zalamo/">960</a> | <a href="https://web.archive.org/web/20070327112218/http://lexy.pimp.fc2.com/" title="http://lexy.pimp.fc2.com">958</a> | <a href="https://web.archive.org/web/20070327112218/http://2style.net/zander/" title="http://2style.net/zander/">954</a> | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/zabito/" title="http://www.hpfree.com/zabito/">953</a> | <a href="https://web.archive.org/web/20070327112218/http://lomimsya.pink-no1.net/" title="http://lomimsya.pink-no1.net">934</a> | <a href="https://web.archive.org/web/20070327112218/http://azolina.muvc.net/" title="http://azolina.muvc.net">775</a> | <a href="https://web.archive.org/web/20070327112218/http://sadox.muvc.net/" title="http://sadox.muvc.net">390</a> | <a href="./?date=20060719#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -239,15 +364,15 @@ b : A
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060721#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=Eclipse">Eclipse</a>]����Υ������ݡ���/����ݡ���</h3><p>
-����������Eclipse��������̤������ե�����˥������ݡ���/����ݡ��ȤǤ��뤳�Ȥ��Τä�����ˡ�ϴ�ñ�ǡ���˥塼����֥ե�����(F)�ע� �֥���ݡ���(I)�פޤ��ϡ֥������ݡ���(O)�פ����ӡ��ꥹ�Ȥ��椫�������פ����֤���������ǡ�����PC����ؤθ��漼��Eclipse�������ͭ���뤳�Ȥ���ñ�ˤǤ��롣�褫�ä��褫�ä���
+<h3><a href="./?date=20060721#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=Eclipse">Eclipse</a>]設定のエクスポート/インポート</h3><p>
+今更だが、Eclipseの設定画面の設定をファイルにエクスポート/インポートできることを知った。方法は簡単で、メニューから「ファイル(F)」→ 「インポート(I)」または「エクスポート(O)」を選び、リストの中から「設定」を選ぶだけ。これで、自宅PCと大学の研究室でEclipseの設定を共有することが簡単にできる。よかったよかった。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��7��) [<a href="./?date=20060721#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全7件) [<a href="./?date=20060721#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 			<p><a href="./?date=20060721#c01">Before...</a></p>
 				<p><a href="./?date=20060721#c03"><span class="canchor">_</span></a>
@@ -270,7 +395,7 @@ b : A
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327112218/http://zoner.pimp.fc2.com/" title="http://zoner.pimp.fc2.com">94</a> | <a href="https://web.archive.org/web/20070327112218/http://zapadlo.pink-no1.net/" title="http://zapadlo.pink-no1.net">85</a> | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/navsegda/" title="http://www.hpfree.com/navsegda/">83</a> | <a href="https://web.archive.org/web/20070327112218/http://2style.net/zander/" title="http://2style.net/zander/">79</a> | <a href="https://web.archive.org/web/20070327112218/http://lexy.pimp.fc2.com/" title="http://lexy.pimp.fc2.com">72</a> | <a href="https://web.archive.org/web/20070327112218/http://2style.net/zalamo/" title="http://2style.net/zalamo/">66</a> | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/zabito/" title="http://www.hpfree.com/zabito/">65</a> | <a href="https://web.archive.org/web/20070327112218/http://lomimsya.pink-no1.net/" title="http://lomimsya.pink-no1.net">54</a> | <a href="https://web.archive.org/web/20070327112218/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">34</a> | <a href="https://web.archive.org/web/20070327112218/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">26</a> | <a href="./?date=20060721#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327112218/http://zoner.pimp.fc2.com/" title="http://zoner.pimp.fc2.com">94</a> | <a href="https://web.archive.org/web/20070327112218/http://zapadlo.pink-no1.net/" title="http://zapadlo.pink-no1.net">85</a> | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/navsegda/" title="http://www.hpfree.com/navsegda/">83</a> | <a href="https://web.archive.org/web/20070327112218/http://2style.net/zander/" title="http://2style.net/zander/">79</a> | <a href="https://web.archive.org/web/20070327112218/http://lexy.pimp.fc2.com/" title="http://lexy.pimp.fc2.com">72</a> | <a href="https://web.archive.org/web/20070327112218/http://2style.net/zalamo/" title="http://2style.net/zalamo/">66</a> | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/zabito/" title="http://www.hpfree.com/zabito/">65</a> | <a href="https://web.archive.org/web/20070327112218/http://lomimsya.pink-no1.net/" title="http://lomimsya.pink-no1.net">54</a> | <a href="https://web.archive.org/web/20070327112218/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">34</a> | <a href="https://web.archive.org/web/20070327112218/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">26</a> | <a href="./?date=20060721#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -283,8 +408,8 @@ b : A
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060722#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=%A5%D1%A1%BC%A5%B6">�ѡ���</a>][<a href="./?year=2006;month=3Q;category=%A5%D1%A1%BC%A5%B6%A5%B8%A5%A7%A5%CD%A5%EC%A1%BC%A5%BF">�ѡ��������ͥ졼��</a>][<a href="./?year=2006;month=3Q;category=JavaCC">JavaCC</a>][<a href="./?year=2006;month=3Q;category=Onion">Onion</a>]foreachʸ��Semantic Lookahead</h3><p>
-Onion�Ǥϡ�foreachʸ�����Τ褦�˴����ǵ��ҤǤ��롣
+<h3><a href="./?date=20060722#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=%A5%D1%A1%BC%A5%B6">パーザ</a>][<a href="./?year=2006;month=3Q;category=%A5%D1%A1%BC%A5%B6%A5%B8%A5%A7%A5%CD%A5%EC%A1%BC%A5%BF">パーザジェネレータ</a>][<a href="./?year=2006;month=3Q;category=JavaCC">JavaCC</a>][<a href="./?year=2006;month=3Q;category=Onion">Onion</a>]foreach文とSemantic Lookahead</h3><p>
+Onionでは、foreach文が次のように感じで記述できる。
 </p>
 <pre>
 foreach x :String &lt;&lt; ["A", "B", "C"] {
@@ -292,42 +417,42 @@ foreach x :String &lt;&lt; ["A", "B", "C"] {
 }
 </pre>
 <p>
-������"&lt;&lt;"��Ȥ��Τ����ܰդǡ������¾�θ���Ǥ褯�Ȥ��륭����ɤǤ���"in"�ˤ������ȹͤ��Ƥ������������������ñ��˼���������礭�����꤬���뤿�ᡢ���ޤǤϤ��ʤ�"&lt;&lt;"��ȤäƤ������Ȥ����Τϡ�"in"��Ȥ���褦�ˤ���ˤϡ�Lexer��ͽ���"in"��ä���ɬ�פ�����Τ������������Ƥ��ޤ��ȡ����̻ҤȤ���"in"���Ȥ��ʤ��ʤäƤ��ޤ��������
+ただ、"&lt;&lt;"を使うのは不本意で、本来は他の言語でよく使われるキーワードである"in"にしたいと考えていた。しかし、これを単純に実装すると大きな問題があるため、今まではやむなく"&lt;&lt;"を使っていた。というのは、"in"を使えるようにするには、Lexerに予約語"in"を加える必要があるのだが、そうしてしまうと、識別子として"in"が使えなくなってしまうためだ。
 </p>
 <p>
-������󡢤�������ʤ��礷�������̵����in�Ȥ����ѿ�̾��Ȥ�ʤ���Ф��������Τ��Ȥ����������������Java��ɸ��饤�֥��Ǥ���System���饹�ˤϡ�ɸ�����Ϥ�ɽ��in�Ȥ���static�ե�����ɤ����뤿�ᡢOnion�Υץ��������ǡ�System::in���Ȥ��ʤ��ʤäƤ��ޤ�������ϡ�Java�Υ饤�֥��˴�ñ�˥��������Ǥ��뤳�Ȥ����פǤ���Onion�Ȥ��Ƥϵ��ƤǤ��ʤ���
+もちろん、これだけなら大した問題は無い。inという変数名を使わなければいいだけのことだからだ。しかし、Javaの標準ライブラリであるSystemクラスには、標準入力を表すinというstaticフィールドがあるため、Onionのプログラム中で、System::inが使えなくなってしまう。これは、Javaのライブラリに簡単にアクセスできることが重要であるOnionとしては許容できない。
 </p>
 <p>
-��������JavaCC�ˤ���Semantic Lookahead�Ȥ�����ǽ��Ȥ����Ȥǡ������������Ǥ��뤳�Ȥ˺Ƕᵤ���Ĥ����Τǡ��������Ƥߤ뤳�Ȥˤ�����
+しかし、JavaCCにあるSemantic Lookaheadという機能を使うことで、この問題を解決できることに最近気がついたので、実装してみることにした。
 </p>
 <p>
-Semantic Lookahead�Ȥϴ�ñ�˸����ȡ��桼������᥽�åɤ������֤����ɤ����ˤ�äơ����빽ʸ��§�����򤹤뤫�ɤ��������Ǥ��뵡ǽ�Ǥ��롣�����Ȥ����Ȥˤ�äơ�ͽ���Ǥ�̵����Τ������ʸ̮�ǤΤߡ�ͽ���Ǥ��뤫�Τ褦�˰������Ȥʤɤ���ñ�ˤǤ��롣
+Semantic Lookaheadとは簡単に言うと、ユーザ定義メソッドが真を返すかどうかによって、ある構文規則を選択するかどうかを決定できる機能である。これを使うことによって、予約語では無いものを、特定の文脈でのみ、予約語であるかのように扱うことなどが簡単にできる。
 </p>
 <p>
-���ε�ǽ��Ȥ����Ȥǡ�foreach ... in ...�Τ褦��ʸ��ɽ������JavaCC�ι�ʸ��§�ϼ��Τ褦�˵��Ҥ��뤳�Ȥ��Ǥ�����
+この機能を使うことで、foreach ... in ...のような文を表現するJavaCCの構文規則は次のように記述することができた。
 </p>
 <pre>
-/* s�����Υȡ������ʸ����Ȱ��פ��뤫�ɤ�����Ĵ�٤� */
+/* sが次のトークンの文字列と一致するかどうかを調べる */
 boolean la(String s) {
   return getToken(1).image.equals(s);
 }
 <br>
 ...
 <br>
-/* foreachʸ�ι�ʸ��§ */
+/* foreach文の構文規則 */
 foreach_stmt() :{}{
  "foreach" var_decl (LOOKAHEAD({la("in")}) &lt;ID&gt;) expr block
 }
 </pre>
 <p>
-�ݥ���Ȥϡ�LOOKAHEAD({la("in")} &lt;ID&gt;�Ȥ�����ʬ�Ǥ��롣�����ǡ�&lt;ID&gt;�����ʤ顢���̻Ҥʤ�ɤ�Ǥ�ޥå����Ƥ��ޤ��Τ�����LOOKAHEAD({la("in")}�Ȥ����Τ������֤����Ȥǡ�la("in")�������֤����ˤΤߡ����Ϥ��������롣�����ơ�la�ϼ��Υȡ������ʸ���󤬰����Ȱ��פ�����ˤΤ߿����֤��᥽�åɤȤ���������Ƥ��뤿�ᡢ���Υȡ�����"in"�Ǥ�����ˤΤߡ����Ϥ���������褦�ˤʤ롣
+ポイントは、LOOKAHEAD({la("in")} &lt;ID&gt;という部分である。ここで、&lt;ID&gt;だけなら、識別子ならどれでもマッチしてしまうのだが、LOOKAHEAD({la("in")}というのを前に置くことで、la("in")が真を返す場合にのみ、解析が成功する。そして、laは次のトークンの文字列が引数と一致する場合にのみ真を返すメソッドとして定義してあるため、次のトークンが"in"である場合にのみ、解析が成功するようになる。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20060722#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20060722#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -337,7 +462,7 @@ foreach_stmt() :{}{
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/navsegda/" title="http://www.hpfree.com/navsegda/">8446</a> | <a href="https://web.archive.org/web/20070327112218/http://2style.net/zander/" title="http://2style.net/zander/">7823</a> | <a href="https://web.archive.org/web/20070327112218/http://2style.net/zalamo/" title="http://2style.net/zalamo/">7791</a> | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/zabito/" title="http://www.hpfree.com/zabito/">7785</a> | <a href="https://web.archive.org/web/20070327112218/http://zoner.pimp.fc2.com/" title="http://zoner.pimp.fc2.com">7759</a> | <a href="https://web.archive.org/web/20070327112218/http://lexy.pimp.fc2.com/" title="http://lexy.pimp.fc2.com">7123</a> | <a href="https://web.archive.org/web/20070327112218/http://zapadlo.pink-no1.net/" title="http://zapadlo.pink-no1.net">7114</a> | <a href="https://web.archive.org/web/20070327112218/http://lomimsya.pink-no1.net/" title="http://lomimsya.pink-no1.net">6001</a> | <a href="https://web.archive.org/web/20070327112218/http://www2.coins.tsukuba.ac.jp:80/~i021216/diary/?date=20060102" title="http://www2.coins.tsukuba.ac.jp:80/~i021216/diary/...">123</a> | <a href="https://web.archive.org/web/20070327112218/http://www.coins.tsukuba.ac.jp/" title="http://www.coins.tsukuba.ac.jp">85</a> | <a href="./?date=20060722#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/navsegda/" title="http://www.hpfree.com/navsegda/">8446</a> | <a href="https://web.archive.org/web/20070327112218/http://2style.net/zander/" title="http://2style.net/zander/">7823</a> | <a href="https://web.archive.org/web/20070327112218/http://2style.net/zalamo/" title="http://2style.net/zalamo/">7791</a> | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/zabito/" title="http://www.hpfree.com/zabito/">7785</a> | <a href="https://web.archive.org/web/20070327112218/http://zoner.pimp.fc2.com/" title="http://zoner.pimp.fc2.com">7759</a> | <a href="https://web.archive.org/web/20070327112218/http://lexy.pimp.fc2.com/" title="http://lexy.pimp.fc2.com">7123</a> | <a href="https://web.archive.org/web/20070327112218/http://zapadlo.pink-no1.net/" title="http://zapadlo.pink-no1.net">7114</a> | <a href="https://web.archive.org/web/20070327112218/http://lomimsya.pink-no1.net/" title="http://lomimsya.pink-no1.net">6001</a> | <a href="https://web.archive.org/web/20070327112218/http://www2.coins.tsukuba.ac.jp:80/~i021216/diary/?date=20060102" title="http://www2.coins.tsukuba.ac.jp:80/~i021216/diary/...">123</a> | <a href="https://web.archive.org/web/20070327112218/http://www.coins.tsukuba.ac.jp/" title="http://www.coins.tsukuba.ac.jp">85</a> | <a href="./?date=20060722#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -350,24 +475,24 @@ foreach_stmt() :{}{
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060723#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]��Ĵ����1</h3><p>
-��ī���롼��ƻϩ���⤷�Ƥ����Ȥ����������椰�餤�˺����ݤ��ä��Ȥ����ǡ��ޤ˷㤷��ưة�˽���줿��Ω�äƤ����ʤ��ʤꡢ���Ф餯�������ޤäƤ����Ȥ�������ʬ��ˤϤȤꤢ�����������������θ塢�Ȥ˸����ä��⤭³���Ƥ����Ȥ������Ƥӷ㤷��ưة�������٤ϡ������˼��ޤꤽ����̵������Ф������ȴ��������ᡢ�̤��ʤ���ߵ޼֤�Ƥ����
+<h3><a href="./?date=20060723#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]体調不良1</h3><p>
+早朝、ループ道路を散歩していたところ、真ん中ぐらいに差し掛かったところで、急に激しい動悸に襲われた。立っていられなくなり、しばらくうずくまっていたところ、数分後にはとりあえず回復した。その後、家に向かって歩き続けていたところ、再び激しい動悸が。今度は、すぐに収まりそうに無く、やばそうだと感じたため、震えながら救急車を呼んだ。
 </p>
 <p>
-��ʬ��ˤϡ��ߵ޼֤����夷�ơ�����±��˸����ä���������뤳�Ȥˤʤä�������������ǡ���­��餬�ɤ�ɤ󤷤Ӥ����ơ��ޥ��ǻ�̤ΤǤϤʤ����Ȥ��������԰´��˽���줿���±��οͤˡ���̤褦�ʾɾ��ǤϤʤ��������������ס��԰¤ˤʤ�Фʤ�ۤɾɾ����㤷���ʤ�Τǡ�����夤�Ƥ�ä���Ƶۤ���褦�ˡ��ȸ���줿�������������Ƥ⤽�������˵��������ڤ��ؤ�����櫓��ʤ����Ӥ��Ƶۤ򷫤��֤��Ф��ꡣ�פ��֤��Ƥߤ�ȡ����ΤȤ��μ�ʬ�ϡ������˾𤱤ʤ��ä���
+数分後には、救急車が到着して、大学病院に向かって搬送されることになったが、その途中で、手足や顔がどんどんしびれて来て、マジで死ぬのではないかという強い不安感に襲われた。病院の人に、死ぬような症状ではないから大丈夫大丈夫、不安になればなるほど症状が激しくなるので、落ち着いてゆっくり呼吸するように、と言われたが、そう言われてもそうすぐに気持ちが切り替えられるわけもなく、荒い呼吸を繰り返すばかり。思い返してみると、このときの自分は、本当に情けなかった。
 </p>
 <p>
-���Ф餯���ơ��±������塣�η�俴�ſ޸������찵�θ������Ԥ�줿�������δ֤�ʤ��ʤ��԰¤����ޤ餺����­�Τ��Ӥ줬���ʤ��ä����ӥˡ����ޤ���ˤ��Ƥ�(�������̩���Ϥ��ʤ���)�������˸����äƤ�ä���Ƶۤ���褦�˸����ơ������̤�ˤ��Ƥ���ȡ����Ф餯������ʬ�ɾ������ޤäƤ��������Ȥ��Τä��Τ�����������ˡ�ϡ��ᴹ���ɸ����ȸƤФ��ɾ����Ф��Ȥ����н�ˡ�ǡ��ڡ��ѡ��Хå�ˡ�ȸ����餷����
+しばらくして、病院に到着。採血や心電図検査、血圧の検査が行われたが、その間もなかなか不安が治まらず、手足のしびれが取れなかった。ビニール袋を口にあてて(もちろん密封はしないで)、そこに向かってゆっくり呼吸するように言われて、その通りにしていると、しばらくして大分症状が治まってきた。あとで知ったのだが、この方法は、過換気症候群と呼ばれる症状が出たときの対処法で、ペーパーバッグ法と言うらしい。
 </p>
 <p>
-���줫�餷�Ф餯���ơ������η�̤��Ф���ΤΡ����ꥦ�ब�㴳��­��̣�Ǥ���ʳ��ϡ��ä˰۾��̵���Ȥ������Ȥȡ��ɾ��⤢�����ټ��ޤäƤ������ᡢ�����ν۴Ĵ���ʤ�ͽ����äơ����ٲȤ˵��뤳�Ȥˤʤä���(³��)
+それからしばらくして、検査の結果が出たものの、カリウムが若干不足気味である以外は、特に異常は無いということと、症状もある程度収まってきたため、翌日の循環器内科の予約を取って、一度家に帰ることになった。(続く)
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��4��) [<a href="./?date=20060723#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全4件) [<a href="./?date=20060723#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20060723#c01"><span class="canchor">_</span></a>
 				<span class="commentator">Yuppy Tippy</span>&nbsp;[Poem is a strange type of literature, isnt it?  ]</p>
@@ -387,7 +512,7 @@ foreach_stmt() :{}{
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/navsegda/" title="http://www.hpfree.com/navsegda/">1796</a> | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/zabito/" title="http://www.hpfree.com/zabito/">1404</a> | <a href="https://web.archive.org/web/20070327112218/http://lomimsya.pink-no1.net/" title="http://lomimsya.pink-no1.net">1389</a> | <a href="https://web.archive.org/web/20070327112218/http://zapadlo.pink-no1.net/" title="http://zapadlo.pink-no1.net">1375</a> | <a href="https://web.archive.org/web/20070327112218/http://2style.net/zalamo/" title="http://2style.net/zalamo/">1355</a> | <a href="https://web.archive.org/web/20070327112218/http://2style.net/zander/" title="http://2style.net/zander/">931</a> | <a href="https://web.archive.org/web/20070327112218/http://lexy.pimp.fc2.com/" title="http://lexy.pimp.fc2.com">921</a> | <a href="https://web.archive.org/web/20070327112218/http://zoner.pimp.fc2.com/" title="http://zoner.pimp.fc2.com">904</a> | <a href="https://web.archive.org/web/20070327112218/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">33</a> | <a href="https://web.archive.org/web/20070327112218/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">29</a> | <a href="./?date=20060723#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/navsegda/" title="http://www.hpfree.com/navsegda/">1796</a> | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/zabito/" title="http://www.hpfree.com/zabito/">1404</a> | <a href="https://web.archive.org/web/20070327112218/http://lomimsya.pink-no1.net/" title="http://lomimsya.pink-no1.net">1389</a> | <a href="https://web.archive.org/web/20070327112218/http://zapadlo.pink-no1.net/" title="http://zapadlo.pink-no1.net">1375</a> | <a href="https://web.archive.org/web/20070327112218/http://2style.net/zalamo/" title="http://2style.net/zalamo/">1355</a> | <a href="https://web.archive.org/web/20070327112218/http://2style.net/zander/" title="http://2style.net/zander/">931</a> | <a href="https://web.archive.org/web/20070327112218/http://lexy.pimp.fc2.com/" title="http://lexy.pimp.fc2.com">921</a> | <a href="https://web.archive.org/web/20070327112218/http://zoner.pimp.fc2.com/" title="http://zoner.pimp.fc2.com">904</a> | <a href="https://web.archive.org/web/20070327112218/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">33</a> | <a href="https://web.archive.org/web/20070327112218/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">29</a> | <a href="./?date=20060723#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -400,15 +525,15 @@ foreach_stmt() :{}{
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060724#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]��Ĵ����2</h3><p>
-��������٤�ȡ���Ĵ�����Ū�ɹ��������ߵ޿��Ť������ʬ������ʧ�����ߤȡ�����������뤿��˺�������±��ء���ñ�ʿǻ���������塢�η졦���ȥ��󡦿��ſ޸���������Ƥ��顢���𡣸�����̤ϡ�8��˶����Ƥ�館��餷�����ǻ����Ƥ��ä������ˤ��С������θ�����̤򸫤�¤�Ǥϡ��ä˰۾郎����褦�ˤϸ����ʤ��ȤΤ��ȡ�
+<h3><a href="./?date=20060724#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]体調不良2</h3><p>
+昨日に比べると、体調は比較的良好。昨日救急診療を受けた分の料金払い込みと、検査を受けるために再度大学病院へ。簡単な診察を受けた後、採血・レントゲン・心電図検査を受けてから、帰宅。検査結果は、8月に教えてもらえるらしい。診察してもらった先生によれば、昨日の検査結果を見る限りでは、特に異常があるようには見えないとのこと。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20060724#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20060724#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -418,7 +543,7 @@ foreach_stmt() :{}{
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327112218/http://zoner.pimp.fc2.com/" title="http://zoner.pimp.fc2.com">32</a> | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/navsegda/" title="http://www.hpfree.com/navsegda/">29</a> | <a href="https://web.archive.org/web/20070327112218/http://zapadlo.pink-no1.net/" title="http://zapadlo.pink-no1.net">26</a> | <a href="https://web.archive.org/web/20070327112218/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">25</a> | <a href="https://web.archive.org/web/20070327112218/http://lexy.pimp.fc2.com/" title="http://lexy.pimp.fc2.com">25</a> | <a href="https://web.archive.org/web/20070327112218/http://www2.coins.tsukuba.ac.jp/?date=20060724" title="http://www2.coins.tsukuba.ac.jp/?date=20060724">24</a> | <a href="https://web.archive.org/web/20070327112218/http://2style.net/zander/" title="http://2style.net/zander/">24</a> | <a href="https://web.archive.org/web/20070327112218/http://2style.net/zalamo/" title="http://2style.net/zalamo/">24</a> | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/zabito/" title="http://www.hpfree.com/zabito/">21</a> | <a href="https://web.archive.org/web/20070327112218/http://lomimsya.pink-no1.net/" title="http://lomimsya.pink-no1.net">20</a> | <a href="./?date=20060724#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327112218/http://zoner.pimp.fc2.com/" title="http://zoner.pimp.fc2.com">32</a> | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/navsegda/" title="http://www.hpfree.com/navsegda/">29</a> | <a href="https://web.archive.org/web/20070327112218/http://zapadlo.pink-no1.net/" title="http://zapadlo.pink-no1.net">26</a> | <a href="https://web.archive.org/web/20070327112218/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">25</a> | <a href="https://web.archive.org/web/20070327112218/http://lexy.pimp.fc2.com/" title="http://lexy.pimp.fc2.com">25</a> | <a href="https://web.archive.org/web/20070327112218/http://www2.coins.tsukuba.ac.jp/?date=20060724" title="http://www2.coins.tsukuba.ac.jp/?date=20060724">24</a> | <a href="https://web.archive.org/web/20070327112218/http://2style.net/zander/" title="http://2style.net/zander/">24</a> | <a href="https://web.archive.org/web/20070327112218/http://2style.net/zalamo/" title="http://2style.net/zalamo/">24</a> | <a href="https://web.archive.org/web/20070327112218/http://www.hpfree.com/zabito/" title="http://www.hpfree.com/zabito/">21</a> | <a href="https://web.archive.org/web/20070327112218/http://lomimsya.pink-no1.net/" title="http://lomimsya.pink-no1.net">20</a> | <a href="./?date=20060724#t">TrackBack(0)</a>
 		</div>
 </div>
 

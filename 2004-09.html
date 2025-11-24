@@ -1,41 +1,166 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="ja-JP">
-<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=Hk4-lkW3" charset="utf-8"></script>
-<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<head>
+
 <script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
-<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+
 <script type="text/javascript">
     __wm.init("https://web.archive.org/web");
   __wm.wombat("http://www2.coins.tsukuba.ac.jp:80/~i021216/diary/?date=200409","20040912163845","https://web.archive.org/","web","https://web-static.archive.org/_static/",
 	      "1095007125");
 </script>
-<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" />
-<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+
+
 <!-- End Wayback Rewrite JS Include -->
 
-	<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="generator" content="tDiary 2.0.0">
 	<meta http-equiv="Last-Modified" content="Sun, 12 Sep 2004 07:49:31 GMT">
-	<meta http-equiv="Content-Script-Type" content="text/javascript; charset=EUC-JP">
-	<meta name="author" content="���繨��">
+	<meta http-equiv="Content-Script-Type" content="text/javascript; charset=UTF-8">
+	<meta name="author" content="水島宏太">
 	<link rev="made" href="mailto:hau51010@tree.odn.ne.jp">
-	<link rel="index" title="�ȥå�" href="http://www2.coins.tsukuba.ac.jp/~i021216/">
-	<link rel="start" title="�ǿ�" href="./">
+	<link rel="index" title="トップ" href="http://www2.coins.tsukuba.ac.jp/~i021216/">
+	<link rel="start" title="最新" href="./">
 	<meta http-equiv="content-style-type" content="text/css">
 	<link rel="stylesheet" href="/web/20040912163845cs_/http://www2.coins.tsukuba.ac.jp/~i021216/diary/theme/base.css" type="text/css" media="all">
 	<link rel="stylesheet" href="/web/20040912163845cs_/http://www2.coins.tsukuba.ac.jp/~i021216/diary/theme/default/default.css" title="default" type="text/css" media="all">
-	<title>println '����'(2004-09)</title>
+	<title>println '日記'(2004-09)</title>
 	
+
+<style>
+    /* Modern Styling */
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.7;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        color: #333;
+    }
+    
+    h1 {
+        color: #2c3e50;
+        border-bottom: 3px solid #3498db;
+        padding-bottom: 12px;
+        font-size: 2em;
+        margin-top: 0;
+    }
+    
+    h2 {
+        color: #34495e;
+        border-left: 4px solid #3498db;
+        padding-left: 12px;
+        margin-top: 30px;
+    }
+    
+    h3 {
+        color: #555;
+        margin-top: 24px;
+    }
+    
+    .day {
+        background: white;
+        border-radius: 12px;
+        padding: 24px;
+        margin-bottom: 24px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .day:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    
+    .section {
+        margin: 16px 0;
+        padding: 12px;
+        border-left: 3px solid #e8e8e8;
+    }
+    
+    .date {
+        color: #3498db;
+        font-weight: 600;
+    }
+    
+    .title {
+        color: #2c3e50;
+        font-size: 1.3em;
+    }
+    
+    a {
+        color: #3498db;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    
+    a:hover {
+        color: #2980b9;
+        text-decoration: underline;
+    }
+    
+    pre {
+        background: #f8f9fa;
+        border: 1px solid #e9ecef;
+        border-radius: 6px;
+        padding: 16px;
+        overflow-x: auto;
+        font-size: 0.9em;
+    }
+    
+    code {
+        background: #f8f9fa;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .comment {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 16px;
+        margin-top: 20px;
+    }
+    
+    .adminmenu, .calendar, .todo {
+        background: white;
+        border-radius: 8px;
+        padding: 12px;
+        margin-bottom: 16px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .referer {
+        font-size: 0.85em;
+        color: #7f8c8d;
+        margin-top: 16px;
+        padding-top: 12px;
+        border-top: 1px solid #e8e8e8;
+    }
+    
+    /* Web Archive ツールバーを非表示 */
+    #wm-ipp-base, #wm-ipp, #donato {
+        display: none !important;
+    }
+    
+    hr.sep {
+        border: none;
+        border-top: 2px solid #e8e8e8;
+        margin: 30px 0;
+    }
+</style>
+
 </head>
 <body>
 
 
 <div class="adminmenu">
-<span class="adminmenu"><a href="https://web.archive.org/web/20040912163845/http://www2.coins.tsukuba.ac.jp/~i021216/">�ȥå�</a></span>
-<span class="adminmenu"><a href="./">�ǿ�</a></span>
-<span class="adminmenu"><a href="update.rb">�ɵ�</a></span>
+<span class="adminmenu"><a href="https://web.archive.org/web/20040912163845/http://www2.coins.tsukuba.ac.jp/~i021216/">トップ</a></span>
+<span class="adminmenu"><a href="./">最新</a></span>
+<span class="adminmenu"><a href="update.rb">追記</a></span>
 </div>
-<h1>println '����'</h1>
+<h1>println '日記'</h1>
 <div class="calendar">
 <div class="year">2004|<a href="./?date=200409">09</a>|</div>
 </div>
@@ -45,34 +170,34 @@
 
 	
 <div class="day">
-<h2><span class="date"><a href="./?date=20040909">2004-09-09</a></span> <span class="title">������Ϥ�뤳�Ȥˤ���</span></h2>
+<h2><span class="date"><a href="./?date=20040909">2004-09-09</a></span> <span class="title">日記を始めることにする</span></h2>
 
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20040909#p01"><span class="sanchor">_</span></a> ������Ϥ�뤳�Ȥˤ���</h3><p>����������������Ϥ�뤳�Ȥˤ��������Groovy��Pnuts�ʤɤ�Java�ϥ�����ץȸ���ط��Τ��Ȥ��ͽ�ꡣ</p></div><div class="section">
+<h3><a href="./?date=20040909#p01"><span class="sanchor">_</span></a> 日記を始めることにする</h3><p>今更だが、日記を始めることにした。主にGroovy、PnutsなどのJava系スクリプト言語関係のことを書く予定。</p></div><div class="section">
 <h3><a href="./?date=20040909#p02"><span class="sanchor">_</span></a> Nice                                                           </h3><p>
-�����ˤ���äȤ������äƤߤ�<a href="https://web.archive.org/web/20040912163845/http://nice.sourceforge.net/">Nice</a>�ˤĤ���Ĵ�٤Ƥߤ롣
-��Nice�ϡ�Java��١����˹ⳬ�ؿ����ޥ���᥽�åɡ��ѥ�᡼������������ɰ�������ά��ǽ������Option Types�ʤɤε�ǽ���ɲä�������ǡ������Ϥϡ�Java VM�ѤΥ����ɤ��Ǥ�����ѥ���ȤʤäƤ��롣
+以前にちょっとだけ触ってみた<a href="https://web.archive.org/web/20040912163845/http://nice.sourceforge.net/">Nice</a>について調べてみる。
+　Niceは、Javaをベースに高階関数、マルチメソッド、パラメータ型、キーワード引数、省略可能引数、Option Typesなどの機能を追加した言語で、処理系は、Java VM用のコードを吐くコンパイラとなっている。
 </p>
 <p>
-�ޥ���᥽�åɡ�������ɰ����ʤɤϡ�¾�θ���Ǥ�褯�������뤬��        
- <a href="https://web.archive.org/web/20040912163845/http://nice.sourceforge.net/manual.html#optionTypes">Option Types</a>�ϡ�¾�θ���ǤϤ��ޤ긫�����ʤ���ǽ����Option Types�Ȥϡ��ͤȤ���null��������ǡ������������ȡ���������ʤ�Ȥ�ʤ��Τ�����Nice�Ǥ����򤤤��Ȥˡ��ѿ��η��ϥǥե���Ȥ�null�������Ǥ��ʤ��Τ����㤨�С��ʲ��Τ褦�ʥ����ɤ�񤯤ȡ�s��null�������Ǥ��ʤ����ˤʤꡢ�⤷s��null��������������褦�ʥ����ɤ�񤯤ȡ�����ѥ��륨�顼�ˤʤ롣
-</p>
-<pre>
-let String s = "Hello";//null�������Ǥ��ʤ�
-</pre>
-<p>
-�⤷��null��������ǽ�ˤ�������С���̾��Ƭ��'?'���դ��ơ����Τ褦��������롣
+マルチメソッド、キーワード引数などは、他の言語でもよく見かけるが、        
+ <a href="https://web.archive.org/web/20040912163845/http://nice.sourceforge.net/manual.html#optionTypes">Option Types</a>は、他の言語ではあまり見かけない機能だ。Option Typesとは、値としてnullを許す型で、それだけ見ると、珍しくもなんともないのだが、Niceでは面白いことに、変数の型はデフォルトでnullを代入できないのだ。例えば、以下のようなコードを書くと、sはnullを代入できない型になり、もしsにnullが代入され得るようなコードを書くと、コンパイルエラーになる。
 </p>
 <pre>
-let ?String s = "Hello";//null��������ǽ
+let String s = "Hello";//nullは代入できない
 </pre>
 <p>
-���ε�ǽ�ϡ��������򤤵�ǽ�ʤ󤸤�ʤ����Ȼפ����㤨�С�Map�˥�����Ϳ�����ͤ��������Ȥ����֤ä��褿�ͤ�null���ɤ���������å�����ɬ�פ��������¿���������ε�ǽ������С��⤷����null���ɤ����Υ����å���˺�줿�Ȥ��Ƥ⡢����ѥ��륨�顼�ˤʤäƤ���롣
+もし、nullを代入可能にしたければ、型名の頭に'?'を付けて、次のように宣言する。
+</p>
+<pre>
+let ?String s = "Hello";//nullが代入可能
+</pre>
+<p>
+この機能は、大変面白い機能なんじゃないかと思う。例えば、Mapにキーを与えて値を取得するとき、返って来た値がnullかどうかをチェックする必要がある場合は多いが、この機能があれば、もし仮にnullかどうかのチェックを忘れたとしても、コンパイルエラーになってくれる。
 </p>
 <p>
-�����������Υ����å���ǽ���ɤ��ޤǤ�����Ư���Τ��������������Τ���뤿��ˡ��ʲ��Υ����ɤ�񤤤Ƽ¸����Ƥߤ뤳�Ȥˤ��������Υ����ɤǤϡ�ifʸ����Ǥϡ�value�����Ф�null�ˤʤ����ʤ���������򥳥�ѥ��餬Ƚ�ǤǤ��뤫�ɤ�����
+しかし、このチェック機能、どこまでちゃんと働くのだろうか。それを確かめるために、以下のコードを書いて実験してみることにした。このコードでは、if文の中では、valueは絶対にnullになり得ないが、それをコンパイラが判断できるかどうか。
 </p>
 <pre>
 void main(String[] args){
@@ -87,24 +212,24 @@ void main(String[] args){
 }
 </pre>
 <p>
-���Υ����ɤ򥳥�ѥ��뤷�Ƥߤ�ȡ��ʲ��Υ��顼��å����������Ϥ��줿��
+このコードをコンパイルしてみると、以下のエラーメッセージが出力された。
 </p>
 <pre>
 nice.lang: parsing
 example: parsing
 example: typechecking
-��<br>
+　<br>
 C:\programs\nice\.\example\option_type.nice: line 8, column 21:
 Unused local variable value2
-��<br>
+　<br>
 C:\programs\nice\.\example\option_type.nice: line 8, column 21:
 The value value cannot be assigned to value2 because it might be null.
-��<br>
+　<br>
 To allow value2 to contain the null value, it should be declared as:
 ?nice.lang.int value2
 </pre>
 <p>
-�ɤ���顢����������ȤޤǤϸ��Ƥ��餺��null���ɤ�����Ƚ�Ǥ��뼰(value != null)��¾�μ�����||�ǤĤʤ���Ƥ��뤫�ɤ��������򸫤Ƥ���褦�����Ȥʤ�ȡ�&amp;&amp;�ξ��Ϥɤ��ʤ�����������ʲ��Υ����ɤ⡢��ۤɤ�Ʊ����ifʸ����Ǥ�value��null�ˤʤ����ʤ�������ۤɤȰ�äơ��黻�Ҥμ���(&amp;&amp;��||��)�����򸫤�Ф����Ƚ�ǲ�ǽ�ˤʤäƤ��롣
+どうやら、論理式の中身までは見ておらず、nullかどうかを判断する式(value != null)と他の式が、||でつながれているかどうかだけを見ているようだ。となると、&amp;&amp;の場合はどうなるだろうか。以下のコードも、先ほどと同じくif文の中ではvalueはnullになり得ないが、先ほどと違って、演算子の種類(&amp;&amp;か||か)だけを見ればそれを判断可能になっている。
 </p>
 <pre>
 void main(String[] args){
@@ -119,19 +244,19 @@ void main(String[] args){
 }
 </pre>
 <p>
-���Υ����ɤ򥳥�ѥ��뤹��ȡ����٤ϡ����⥨�顼���Ф��˥���ѥ�����̤ä�����Ϥꡢ�黻�Ҥμ���򸫤�Ƚ�Ǥ��Ƥ���褦����
+このコードをコンパイルすると、今度は、何もエラーが出ずにコンパイルを通った。やはり、演算子の種類を見て判断しているようだ。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��2��) [<a href="./?date=20040909#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全2件) [<a href="./?date=20040909#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20040909#c01"><span class="canchor">_</span></a>
-				<span class="commentator">IKeJI</span>&nbsp;[���줬�ɤ�������ǽ�ǡ��ʤ����顼���Ф�Τ����������Ƥ��줿�����桼�����ե��ɥ꡼�Ǥ���]</p>
+				<span class="commentator">IKeJI</span>&nbsp;[それがどういう機能で、なぜエラーが出るのかを説明してくれた方がユーザーフレンドリーです。]</p>
 				<p><a href="./?date=20040909#c02"><span class="canchor">_</span></a>
-				<span class="commentator">mizu</span>&nbsp;[�������ɲä��Ƥߤޤ�����]</p>
+				<span class="commentator">mizu</span>&nbsp;[説明を追加してみました。]</p>
 		</div>
 </div>
 
@@ -142,7 +267,7 @@ void main(String[] args){
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20040912163845/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">14</a> | <a href="https://web.archive.org/web/20040912163845/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">9</a> | <a href="https://web.archive.org/web/20040912163845/http://www.coins.tsukuba.ac.jp/~i021216/" title="http://www.coins.tsukuba.ac.jp/~i021216/">4</a> | <a href="https://web.archive.org/web/20040912163845/http://www2.coins.tsukuba.ac.jp/~i021149/mirror/antenna/" title="http://www2.coins.tsukuba.ac.jp/~i021149/mirror/an...">3</a> | 
+		本日のリンク元 | <a href="https://web.archive.org/web/20040912163845/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">14</a> | <a href="https://web.archive.org/web/20040912163845/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">9</a> | <a href="https://web.archive.org/web/20040912163845/http://www.coins.tsukuba.ac.jp/~i021216/" title="http://www.coins.tsukuba.ac.jp/~i021216/">4</a> | <a href="https://web.archive.org/web/20040912163845/http://www2.coins.tsukuba.ac.jp/~i021149/mirror/antenna/" title="http://www2.coins.tsukuba.ac.jp/~i021149/mirror/an...">3</a> | 
 		</div>
 </div>
 
@@ -155,35 +280,35 @@ void main(String[] args){
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20040910#p01"><span class="sanchor">_</span></a> <a href="https://web.archive.org/web/20040912163845/http://pnuts.org/1.1/snapshot/20040908/doc.ja/lang.html#generator">Pnuts�Υ����ͥ졼��</a></h3><p>
-Pnuts1.1�ˤϡ������ͥ졼���Ȥ�����ǽ�����롣����ϡ��ؿ��������ˡ�'yield' ��������뤳�Ȥǡ����δؿ���ƤӽФ����Ȥ��ˡ��ؿ����¹Ԥ���뤫���˥����ͥ졼�����֤��Ȥ�����Τǡ����Υ����ͥ졼����forʸ��ǡ�</p>
+<h3><a href="./?date=20040910#p01"><span class="sanchor">_</span></a> <a href="https://web.archive.org/web/20040912163845/http://pnuts.org/1.1/snapshot/20040908/doc.ja/lang.html#generator">Pnutsのジェネレータ</a></h3><p>
+Pnuts1.1には、ジェネレータという機能がある。これは、関数定義の中に、'yield' 式を入れることで、その関数を呼び出したときに、関数が実行されるかわりにジェネレータを返すというもので、このジェネレータを、for文中で、</p>
 <pre>
-for(�ѿ�̾ : �����ͥ졼��){
+for(変数名 : ジェネレータ){
   ...
 }
 </pre>
 <p>
-�Τ褦�˻Ȥ��ȡ�yield��ɾ�����������ͤ����Ĥ����ѿ����������졢
-�����٤�...���¹Ԥ���롣�㤨�С�range()�ؿ��ϡ���1��������
-��2�����ޤǤ��ͤ���yield���른���ͥ졼���ǡ����Τ褦�ˤ���
-���Ѥ��롣
+のように使うと、yieldで評価した式の値が１つずつ変数に代入され、
+その度に...が実行される。例えば、range()関数は、第1引数から
+第2引数までの値を順にyieldするジェネレータで、次のようにして
+使用する。
 </p>
 <pre>
 for(i : range(1, 3)) print(i)
 </pre>
 <p>
-�¹Է�̤ϰʲ��Τ褦�ˤʤ롣
+実行結果は以下のようになる。
 </p>
 <pre>
 C:\programs\pnuts&gt;pnuts range.pnut
 123
 </pre>
 <p>
-���ơ����Υ����ͥ졼����Pnuts�Υ饤�֥��Ǥϡ���˥롼��
-�Τ���˻��Ѥ���Ƥ��뤬������롼�פΤ���ˤ����Ȥ��ʤ��櫓�ǤϤʤ����㤨�С�<a href="https://web.archive.org/web/20040912163845/http://pnuts.org/~tomatsu/blog/index.pnut">PnutsBlog</a>�Ǥϡ��ե������μ¤�close���뤿��˻Ȥ��㤬�ܤäƤ��롣
+さて、このジェネレータ、Pnutsのライブラリでは、主にループ
+のために使用されているが、何もループのためにしか使えないわけではない。例えば、<a href="https://web.archive.org/web/20040912163845/http://pnuts.org/~tomatsu/blog/index.pnut">PnutsBlog</a>では、ファイルを確実にcloseするために使う例が載っている。
 </p>
 <p>
-�ޤ���¾�α�����Ȥ��ơ������Ȥ���Ӿ�����ꤹ�뤿��˻Ȥ����Ȥ�ͤ����롣�ʲ��Υ����ɤϡ������ȥ��르�ꥺ����ǡ���������Ǥ�yield������̤򸵤˥����ƥ��󥰤�Ԥ��褦�ˤ��뤳�Ȥǡ�forʸ�Υ֥��å�����Ӿ������Ǥ���褦�ˤ��Ƥ��롣
+また、他の応用例として、ソートの比較条件を指定するために使うことも考えられる。以下のコードは、ソートアルゴリズム中で、配列の要素をyieldした結果を元にソーティングを行うようにすることで、for文のブロックで比較条件を指定できるようにしている。
 </p>
 <pre>
 function bubble_sort(lst){
@@ -214,7 +339,7 @@ for(pair : bubble_sort(array)) pair.right - pair.left
 println(join(" ", array))
 </pre>
 <p>
-�¹Է�̤ϡ��ʲ����̤ꡣ
+実行結果は、以下の通り。
 </p>
 <pre>
 C:\programs\pnuts&gt;pnuts sort.pnut
@@ -227,7 +352,7 @@ C:\programs\pnuts&gt;pnuts sort.pnut
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20040910#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20040910#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -237,7 +362,7 @@ C:\programs\pnuts&gt;pnuts sort.pnut
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20040912163845/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">2</a> | <a href="https://web.archive.org/web/20040912163845/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">2</a> | <a href="https://web.archive.org/web/20040912163845/http://www.coins.tsukuba.ac.jp/~i021216/" title="http://www.coins.tsukuba.ac.jp/~i021216/">1</a> | <a href="https://web.archive.org/web/20040912163845/http://pnuts.org/~tomatsu/blog/index.pnut" title="http://pnuts.org/~tomatsu/blog/index.pnut">1</a> | 
+		本日のリンク元 | <a href="https://web.archive.org/web/20040912163845/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">2</a> | <a href="https://web.archive.org/web/20040912163845/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">2</a> | <a href="https://web.archive.org/web/20040912163845/http://www.coins.tsukuba.ac.jp/~i021216/" title="http://www.coins.tsukuba.ac.jp/~i021216/">1</a> | <a href="https://web.archive.org/web/20040912163845/http://pnuts.org/~tomatsu/blog/index.pnut" title="http://pnuts.org/~tomatsu/blog/index.pnut">1</a> | 
 		</div>
 </div>
 
@@ -251,35 +376,35 @@ C:\programs\pnuts&gt;pnuts sort.pnut
 
 <div class="section">
 <h3><a href="./?date=20040911#p01"><span class="sanchor">_</span></a> [<a href="./?year=2004;month=3Q;category=Java">Java</a>]tiny C</h3><p>
-���ץ�����ߥ󥰸�������μ��Ȳ���Ǥ��롢tiny C�Υѡ�����񤯡��Ȥ��äƤ⡢tiny C��񤯲���ϡ��ޤ�����ä������񤯤���Υץ�����ߥ󥰸���ϲ��Ǥ⤤���ȸ��äƤ����Τǡ�<a href="https://web.archive.org/web/20040912163845/https://javacc.dev.java.net/">JavaCC</a>��Ȥ����Ȥˤ�����yacc��ȤäƤ⤤���Τ�����C�ǽ񤯤Τ����ݤ������Τǡ�
+　プログラミング言語処理の授業課題である、tiny Cのパーサを書く。といっても、tiny Cを書く課題は、まだ先の話だが。書くためのプログラミング言語は何でもいいと言っていたので、<a href="https://web.archive.org/web/20040912163845/https://javacc.dev.java.net/">JavaCC</a>を使うことにした。yaccを使ってもいいのだが、Cで書くのが面倒くさいので。
 </p>
 <p>
-��JavaCC��LL�ʥѡ��������ͥ졼���ǡ�JJTree�Ȥ���JavaCC����°�Υץ�ץ����å���Ȥ��С���ʸ�ڤ�ư�������뤳�Ȥ�Ǥ��뤬�������JJTree��Ȥ鷺�ˡ�JavaCC�����ǽ񤯤��Ȥˤ�����������ͳ�Ϥ����Ĥ����뤬��JJTree���������빽ʸ�ڤη����Ǥϡ��ҥΡ��ɤ˥�����������Τ˥���ǥå�����Ȥ�ʤ���Фʤ�ʤ��Ȥ����Τ��������礭�ʤȤ��������㤨�С�ifʸ��ɽ���Ρ��ɤ����Ｐ��ɽ���Ρ��ɤ��������Ȥ���
+　JavaCCはLLなパーザジェネレータで、JJTreeというJavaCCに付属のプリプロセッサを使えば、構文木を自動生成することもできるが、今回はJJTreeを使わずに、JavaCCだけで書くことにした。その理由はいくつかあるが、JJTreeの生成する構文木の形式では、子ノードにアクセスするのにインデックスを使わなければならないというのが、一番大きなところだ。例えば、if文を表すノードから条件式を表すノードを取得するとき、
 </p>
 <pre>
 node.getCondition()
 </pre>
 <p>
-�Τ褦�ʷ��ǽ񤱤�ȴ򤷤��Τ�����JJTree���������줿�Ρ��ɤǤϡ�
+のような形で書けると嬉しいのだが、JJTreeで生成されたノードでは、
 </p>
 <pre>
 node.jjtGetChild(0)
 </pre>
 <p>
-�Τ褦�ʷ��ǽ񤫤ʤ���Ф����ʤ�������ϡ����������̤���Ǥ�����򤱤������Ȥ����櫓�ǡ�JavaCC�ǽ񤤤Ƥߤ�ȡ���������ʸˡ����ñ�ʤΤǡ����Ȥ�����ʸˡ����ե�����ϴ���������
+のような形で書かなければいけない。これは、可読性の面からできれば避けたい。というわけで、JavaCCで書いてみると、さすがに文法が簡単なので、わりとすぐに文法定義ファイルは完成した。
 </p>
 <p>
-���ʤߤˡ���ä�ʸˡ����ե�����(tinyc.jj)��<a href="https://web.archive.org/web/20040912163845/http://www.coins.tsukuba.ac.jp/~i021216/tinyc.jj">�����顣</a>
+ちなみに、作った文法定義ファイル(tinyc.jj)は<a href="https://web.archive.org/web/20040912163845/http://www.coins.tsukuba.ac.jp/~i021216/tinyc.jj">こちら。</a>
 </p>
 <p>
-����ʸˡ����ե�����ˤϡ���ʸ�ڤ��ۤ��륳���ɤ����äƤ��ʤ���������Ϥ��줫���ɲä���ͽ�ꡣ
+この文法定義ファイルには、構文木を構築するコードが入っていないが、それはこれから追加する予定。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20040911#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20040911#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -289,7 +414,7 @@ node.jjtGetChild(0)
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20040912163845/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">8</a> | <a href="https://web.archive.org/web/20040912163845/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">3</a> | <a href="https://web.archive.org/web/20040912163845/http://pnuts.org/~tomatsu/blog/" title="http://pnuts.org/~tomatsu/blog/">2</a> | <a href="https://web.archive.org/web/20040912163845/http://www2.coins.tsukuba.ac.jp/~i021149/mirror/antenna/" title="http://www2.coins.tsukuba.ac.jp/~i021149/mirror/an...">1</a> | <a href="https://web.archive.org/web/20040912163845/http://www.coins.tsukuba.ac.jp/~i021216/" title="http://www.coins.tsukuba.ac.jp/~i021216/">1</a> | <a href="https://web.archive.org/web/20040912163845/http://pnuts.org/~tomatsu/blog/?category=pnuts" title="http://pnuts.org/~tomatsu/blog/?category=pnuts">1</a> | 
+		本日のリンク元 | <a href="https://web.archive.org/web/20040912163845/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">8</a> | <a href="https://web.archive.org/web/20040912163845/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">3</a> | <a href="https://web.archive.org/web/20040912163845/http://pnuts.org/~tomatsu/blog/" title="http://pnuts.org/~tomatsu/blog/">2</a> | <a href="https://web.archive.org/web/20040912163845/http://www2.coins.tsukuba.ac.jp/~i021149/mirror/antenna/" title="http://www2.coins.tsukuba.ac.jp/~i021149/mirror/an...">1</a> | <a href="https://web.archive.org/web/20040912163845/http://www.coins.tsukuba.ac.jp/~i021216/" title="http://www.coins.tsukuba.ac.jp/~i021216/">1</a> | <a href="https://web.archive.org/web/20040912163845/http://pnuts.org/~tomatsu/blog/?category=pnuts" title="http://pnuts.org/~tomatsu/blog/?category=pnuts">1</a> | 
 		</div>
 </div>
 
@@ -302,9 +427,9 @@ node.jjtGetChild(0)
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20040912#p01"><span class="sanchor">_</span></a> ³�������ͥ졼��</h3><p>
-Pnuts1.1�Υ����ͥ졼����Ȥäơ�foldl��������Ƥߤ롣�����ɤ�
-�ʲ����̤ꡣ
+<h3><a href="./?date=20040912#p01"><span class="sanchor">_</span></a> 続・ジェネレータ</h3><p>
+Pnuts1.1のジェネレータを使って、foldlを実装してみる。コードは
+以下の通り。
 </p>
 <pre>
 function foldl(init, lst){
@@ -318,31 +443,31 @@ function foldl(init, lst){
 }
 </pre>
 <p>
-�¹Ԥ���Ȥ��ϡ��ʲ��Τ褦�˽񤯡�
+実行するときは、以下のように書く。
 </p>
 <pre>
 sum = for(p : foldl(0, [1,2,3,4,5,6])) p.x + p.y
 println("sum:"+sum)
 </pre>
 <p>
-�¹Է�̤ϰʲ����̤ꡣ
+実行結果は以下の通り。
 </p>
 <pre>
 C:\programs\pnuts&gt;pnuts foldl.pnut
 sum:21
 </pre>
 <p>
-������������ʤ�Τ�Ȥ����餤�ʤ顢���̤ˡ�<a href="https://web.archive.org/web/20040912163845/http://pnuts.org/1.1/snapshot/20040908/extensions/functional/doc.ja/index.html">functional�⥸�塼��</a>��foldl��Ȥä������ɤ����⤹�롣���ä��������Ȥ��ä��顢���������������̤����뤯�餤����
+しかし、こんなものを使うくらいなら、普通に、<a href="https://web.archive.org/web/20040912163845/http://pnuts.org/1.1/snapshot/20040908/extensions/functional/doc.ja/index.html">functionalモジュール</a>のfoldlを使った方が良い気もする。こっちの利点といったら、少しだけタイプ量が減るくらいか。
 </p></div><div class="section">
-<h3><a href="./?date=20040912#p02"><span class="sanchor">_</span></a> �����������ؤ�</h3><p>
-ͧ�ͤ��ȤäƤ��륵�����ѥޥ����٤�����Ȥ������Ȥǡ��Ȥ�;�äƤ����ޥ���򤢤��뤳�Ȥˡ������ؤ������ʬ®���ʤä��褦�ǡ��ʤˤ�ꡣ
+<h3><a href="./?date=20040912#p02"><span class="sanchor">_</span></a> サーバ入れ替え</h3><p>
+友人が使っているサーバ用マシンが遅すぎるということで、家で余っていたマシンをあげることに。入れ替え後は大分速くなったようで、なにより。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20040912#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20040912#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -352,7 +477,7 @@ sum:21
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20040912163845/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">7</a> | <a href="https://web.archive.org/web/20040912163845/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">3</a> | <a href="https://web.archive.org/web/20040912163845/http://www.coins.tsukuba.ac.jp/~i021216/" title="http://www.coins.tsukuba.ac.jp/~i021216/">1</a> | 
+		本日のリンク元 | <a href="https://web.archive.org/web/20040912163845/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">7</a> | <a href="https://web.archive.org/web/20040912163845/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">3</a> | <a href="https://web.archive.org/web/20040912163845/http://www.coins.tsukuba.ac.jp/~i021216/" title="http://www.coins.tsukuba.ac.jp/~i021216/">1</a> | 
 		</div>
 </div>
 

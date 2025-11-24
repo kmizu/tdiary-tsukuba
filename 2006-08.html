@@ -1,43 +1,168 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="ja-JP">
-<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=Hk4-lkW3" charset="utf-8"></script>
-<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<head>
+
 <script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
-<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+
 <script type="text/javascript">
     __wm.init("https://web.archive.org/web");
   __wm.wombat("http://www.coins.tsukuba.ac.jp:80/~i021216/diary/?date=200608","20070326102650","https://web.archive.org/","web","https://web-static.archive.org/_static/",
 	      "1174904810");
 </script>
-<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" />
-<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+
+
 <!-- End Wayback Rewrite JS Include -->
 
-	<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="generator" content="tDiary 2.0.0">
 	<meta http-equiv="Last-Modified" content="Sat, 17 Mar 2007 12:25:39 GMT">
-	<meta http-equiv="Content-Script-Type" content="text/javascript; charset=EUC-JP">
-	<meta name="author" content="���繨��">
+	<meta http-equiv="Content-Script-Type" content="text/javascript; charset=UTF-8">
+	<meta name="author" content="水島宏太">
 	<link rev="made" href="mailto:hau51010{at}tree.odn.ne.jp">
-	<link rel="index" title="�ȥå�" href="http://www.coins.tsukuba.ac.jp/~i021216/">
-	<link rel="start" title="�ǿ�" href="./">
+	<link rel="index" title="トップ" href="http://www.coins.tsukuba.ac.jp/~i021216/">
+	<link rel="start" title="最新" href="./">
 	<meta http-equiv="content-style-type" content="text/css">
 	<link rel="stylesheet" href="/web/20070326102650cs_/http://www.coins.tsukuba.ac.jp/~i021216/diary/theme/base.css" type="text/css" media="all">
 	<link rel="stylesheet" href="/web/20070326102650cs_/http://www.coins.tsukuba.ac.jp/~i021216/diary/theme/another_blue/another_blue.css" title="another_blue" type="text/css" media="all">
-	<title>Onion��ȯ����(2006-08)</title>
+	<title>Onion開発日記(2006-08)</title>
 	
 	<!--link rel="alternate" type="application/x-lirs" title="lirs" href="antenna.lirs"-->
-	<link rel="alternate" type="application/rss+xml" title="RSS" href="https://web.archive.org/web/20070326102650/http://www.coins.tsukuba.ac.jp/~i021216/diary/index.rdf">
+	
+
+<style>
+    /* Modern Styling */
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.7;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        color: #333;
+    }
+    
+    h1 {
+        color: #2c3e50;
+        border-bottom: 3px solid #3498db;
+        padding-bottom: 12px;
+        font-size: 2em;
+        margin-top: 0;
+    }
+    
+    h2 {
+        color: #34495e;
+        border-left: 4px solid #3498db;
+        padding-left: 12px;
+        margin-top: 30px;
+    }
+    
+    h3 {
+        color: #555;
+        margin-top: 24px;
+    }
+    
+    .day {
+        background: white;
+        border-radius: 12px;
+        padding: 24px;
+        margin-bottom: 24px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .day:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    
+    .section {
+        margin: 16px 0;
+        padding: 12px;
+        border-left: 3px solid #e8e8e8;
+    }
+    
+    .date {
+        color: #3498db;
+        font-weight: 600;
+    }
+    
+    .title {
+        color: #2c3e50;
+        font-size: 1.3em;
+    }
+    
+    a {
+        color: #3498db;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    
+    a:hover {
+        color: #2980b9;
+        text-decoration: underline;
+    }
+    
+    pre {
+        background: #f8f9fa;
+        border: 1px solid #e9ecef;
+        border-radius: 6px;
+        padding: 16px;
+        overflow-x: auto;
+        font-size: 0.9em;
+    }
+    
+    code {
+        background: #f8f9fa;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .comment {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 16px;
+        margin-top: 20px;
+    }
+    
+    .adminmenu, .calendar, .todo {
+        background: white;
+        border-radius: 8px;
+        padding: 12px;
+        margin-bottom: 16px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .referer {
+        font-size: 0.85em;
+        color: #7f8c8d;
+        margin-top: 16px;
+        padding-top: 12px;
+        border-top: 1px solid #e8e8e8;
+    }
+    
+    /* Web Archive ツールバーを非表示 */
+    #wm-ipp-base, #wm-ipp, #donato {
+        display: none !important;
+    }
+    
+    hr.sep {
+        border: none;
+        border-top: 2px solid #e8e8e8;
+        margin: 30px 0;
+    }
+</style>
+
 </head>
 <body>
 
 
 <div class="adminmenu">
-<span class="adminmenu"><a href="https://web.archive.org/web/20070326102650/http://www.coins.tsukuba.ac.jp/~i021216/">�ȥå�</a></span>
-<span class="adminmenu"><a href="./">�ǿ�</a></span>
-<span class="adminmenu"><a href="update.rb">�ɵ�</a></span>
+<span class="adminmenu"><a href="https://web.archive.org/web/20070326102650/http://www.coins.tsukuba.ac.jp/~i021216/">トップ</a></span>
+<span class="adminmenu"><a href="./">最新</a></span>
+<span class="adminmenu"><a href="update.rb">追記</a></span>
 </div>
-<h1>Onion��ȯ����</h1>
+<h1>Onion開発日記</h1>
 <div class="calendar">
 <div class="year">2004|<a href="./?date=200409">09</a>|<a href="./?date=200410">10</a>|<a href="./?date=200411">11</a>|<a href="./?date=200412">12</a>|</div>
 <div class="year">2005|<a href="./?date=200501">01</a>|<a href="./?date=200502">02</a>|<a href="./?date=200503">03</a>|<a href="./?date=200504">04</a>|<a href="./?date=200505">05</a>|<a href="./?date=200506">06</a>|<a href="./?date=200507">07</a>|<a href="./?date=200508">08</a>|<a href="./?date=200509">09</a>|<a href="./?date=200510">10</a>|<a href="./?date=200511">11</a>|<a href="./?date=200512">12</a>|</div>
@@ -66,18 +191,18 @@
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060821#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]����?</h3><p>
-�Ƕ�ˤʤäơ��褦�䤯��Ĵ���������Ƥ�����������̤ϴ���Ū�˰۾�̵�����ä�������äѤ�����Ū�ʤ�Τ��������ä��Τ����ȤϤ������ä˥��ȥ쥹�θ��Ȥʤ�褦�ʻ������ä��Ȥϻפ��ʤ��Τ��������Ф���̵���Ȥ����ǡ��������ȥ쥹������Ƥ��Τ��⤷��ʤ�������Ĵ�ҤǴ���������ɤ��Τ�����
+<h3><a href="./?date=20060821#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]復活?</h3><p>
+最近になって、ようやく体調が回復してきた。検査結果は基本的に異常無しだったし、やっぱり精神的なものが原因だったのか。とはいえ、特にストレスの元となるような事があったとは思えないのだが、自覚して無いところで、何かストレスを貯めてたのかもしれない。この調子で完治すれば良いのだが。
 </p></div><div class="section">
-<h3><a href="./?date=20060821#p02"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]�����ȥ��ѥ�</h3><p>
-�������ڤäƤ�֤ˡ������ȥ��ѥब�����̤ˤʤäƤ롣���ä��Ȳ����к��򤷤ʤ���С�Ĵ�٤Ƥߤ�ȡ�tDiary�Ѥ�<a href="https://web.archive.org/web/20070326102650/http://www20.big.or.jp/~rin_ne/soft/tdiary/commentkey.htm">�����ȥ��ѥ��ѤΥե��륿�ץ饰����</a>������褦�ʤΤǡ������ȤäƤߤ뤫��
+<h3><a href="./?date=20060821#p02"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]コメントスパム</h3><p>
+更新が滞ってる間に、コメントスパムが凄い量になってる。さっさと何か対策をしなければ。調べてみると、tDiary用に<a href="https://web.archive.org/web/20070326102650/http://www20.big.or.jp/~rin_ne/soft/tdiary/commentkey.htm">コメントスパム用のフィルタプラグイン</a>があるようなので、これを使ってみるか。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20060821#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20060821#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -87,7 +212,7 @@
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070326102650/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">1143</a> | <a href="https://web.archive.org/web/20070326102650/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">797</a> | <a href="https://web.archive.org/web/20070326102650/http://vsemoe.sultryserver.com/" title="http://vsemoe.sultryserver.com/">769</a> | <a href="https://web.archive.org/web/20070326102650/http://www2.xfreehosting.com/hardcore/navsegda/" title="http://www2.xfreehosting.com/hardcore/navsegda/">763</a> | <a href="https://web.archive.org/web/20070326102650/http://glazam.sultryserver.com/" title="http://glazam.sultryserver.com/">753</a> | <a href="https://web.archive.org/web/20070326102650/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">748</a> | <a href="https://web.archive.org/web/20070326102650/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">747</a> | <a href="https://web.archive.org/web/20070326102650/http://zakovka.porkyhost.com/" title="http://zakovka.porkyhost.com/">725</a> | <a href="https://web.archive.org/web/20070326102650/http://search.live.com/results.aspx?mkt=it-it&amp;FORM=TOOLBR&amp;q=www.rocco+siffredi.i" title="http://search.live.com/results.aspx?mkt=it-it&amp;FORM...">92</a> | <a href="https://web.archive.org/web/20070326102650/http://www.google.it/search?hl=it&amp;q=www.videoporno.it&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.videoporno...">45</a> | <a href="./?date=20060821#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070326102650/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">1143</a> | <a href="https://web.archive.org/web/20070326102650/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">797</a> | <a href="https://web.archive.org/web/20070326102650/http://vsemoe.sultryserver.com/" title="http://vsemoe.sultryserver.com/">769</a> | <a href="https://web.archive.org/web/20070326102650/http://www2.xfreehosting.com/hardcore/navsegda/" title="http://www2.xfreehosting.com/hardcore/navsegda/">763</a> | <a href="https://web.archive.org/web/20070326102650/http://glazam.sultryserver.com/" title="http://glazam.sultryserver.com/">753</a> | <a href="https://web.archive.org/web/20070326102650/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">748</a> | <a href="https://web.archive.org/web/20070326102650/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">747</a> | <a href="https://web.archive.org/web/20070326102650/http://zakovka.porkyhost.com/" title="http://zakovka.porkyhost.com/">725</a> | <a href="https://web.archive.org/web/20070326102650/http://search.live.com/results.aspx?mkt=it-it&amp;FORM=TOOLBR&amp;q=www.rocco+siffredi.i" title="http://search.live.com/results.aspx?mkt=it-it&amp;FORM...">92</a> | <a href="https://web.archive.org/web/20070326102650/http://www.google.it/search?hl=it&amp;q=www.videoporno.it&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.videoporno...">45</a> | <a href="./?date=20060821#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -100,20 +225,20 @@
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060822#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=Java">Java</a>][<a href="./?year=2006;month=3Q;category=%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0">�ץ�����ߥ�</a>]<a href="https://web.archive.org/web/20070326102650/http://gafter.blogspot.com/2006/08/closures-for-java.html">Closures for Java</a></h3><p>
-Dolphin(JDK 7)���ɲõ�ǽ�Ȥ��ơ����������㤬��Ƥ��줿�Ȥ������á���������Dolphin�˥��������㤬�ܤ�Ȥ����äϤ��ä������ɤΤ褦�ʷ�����ܤ����Τ��Ϥ狼��ʤ��ä���������ڤ���Ƥ���Ƥϡ�������Ū�ʤ�ΤˤʤäƤ��롣
+<h3><a href="./?date=20060822#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=Java">Java</a>][<a href="./?year=2006;month=3Q;category=%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0">プログラミング</a>]<a href="https://web.archive.org/web/20070326102650/http://gafter.blogspot.com/2006/08/closures-for-java.html">Closures for Java</a></h3><p>
+Dolphin(JDK 7)の追加機能として、クロージャが提案されたというお話。以前からDolphinにクロージャが載るという話はあったが、どのような形で搭載されるのかはわからなかった。今回言及されている案は、より具体的なものになっている。
 </p>
 <p>
-���ΰƤǼ�ʬŪ�˰��ִ򤷤��Τϡ����Ȥ��ƿ�����Function Type��Ƴ������뤳�ȡ�C#�Υǥꥲ���Ȥ��ȡ����뷿�δؿ����㤨��int�����ͤ������ä�int�����ͤ��֤��ؿ��Τ褦�ʤ�Τ��ͤȤ��ư���������硢����delegate int intFunc(int);�Τ褦��������ʤ���Ф����ʤ��Τ������ä��Τǡ�Java��Ʊ���褦�ˤʤ�ʤ��ä��Τ��ɤ��ä��Ȼפ���
+この案で自分的に一番嬉しいのは、型として新しくFunction Typeが導入されること。C#のデリゲートだと、ある型の関数、例えばint型の値を受け取ってint型の値を返す関数のようなものを値として扱いたい場合、一度delegate int intFunc(int);のように宣言しなければいけないのが嫌だったので、Javaが同じようにならなかったのは良かったと思う。
 </p>
 <p>
-���ˤʤ�Τ�Non-local transfer�ι�ǡ����������㤫�餽���Ϥ�᥽�åɤγ�¦��return���뤿�����ˡ�ˤĤ��Ƹ��ڤ���Ƥ��뤳�ȡ��ɤ���顢
+気になるのはNon-local transferの項で、クロージャからそれを囲むメソッドの外側へreturnするための方法について言及されていること。どうやら、
 </p>
 <pre>
-return �᥽�å�̾:��;
+return メソッド名:式;
 </pre>
 <p>
-�Τ褦�ʷ��ǥ��������㤫�餽���Ϥ�᥽�åɤγ�¦��return�Ǥ���褦�ˤʤ�餷��������ϳΤ����ߤ�����ǽ�ʤΤ������ɤ���äƼ�������Τ�������������ߤ�Java VM������ˤ���ʤ顢��ñ�˼�������ˤ��㳰��Ȥä��������פ��⤫�֤Τ��������������ǽ���Фʤ�����������
+のような形でクロージャからそれを囲むメソッドの外側へreturnできるようになるらしい。これは確かに欲しい機能なのだが、どうやって実装するのかが疑問だ。現在のJava VMを前提にするなら、簡単に実装するには例外を使った実装が思い浮かぶのだが、それだと性能が出ないだろうし、
 </p>
 <pre>
 String indexOfHoge(List&lt;String&gt; lst){
@@ -125,32 +250,32 @@ String indexOfHoge(List&lt;String&gt; lst){
     });
   }catch(Throwable e){
     /* 
-     * �⤷�㳰��Ȥä�Non-local transfer���¸������ʤ顢
-     * ������catch����Ƥ��ޤ��褦�ʵ�����
+     * もし例外を使ってNon-local transferが実現されるなら、
+     * ここでcatchされてしまうような気が…
      */
     ...
   }
 }
 </pre>
 <p>
-�ߤ����ʥ����ɤ�񤫤줿��ɤ��ʤ��������Ȥ�������⤢�롣���ʤߤˡ������������᥽�åɤγ�¦�ػ������Ф�ơ�return�оݤΥ᥽�åɤ������å��������̵���ʤäƤ���褦�ʾ��ϡ�UnmatchedNonlocalTransfer�㳰��ȯ������褦�ʤΤǡ�����ˤĤ��ƤϿ��ۤϤ���ʤ��褦����
+みたいなコードを書かれたらどうなるんだろうという疑問もある。ちなみに、クロージャをメソッドの外側へ持ち運ばれて、return対象のメソッドがスタックから既に無くなっているような場合は、UnmatchedNonlocalTransfer例外が発生するようなので、それについては心配はいらないようだ。
 </p>
 <p>
-�������򤽤��ʤΤϡ�̵̾�ؿ��Υ�ƥ�� -&gt; �᥽�å�1�ĤΥ��󥿥ե������ؤμ�ư�Ѵ������ε�ǽ�ϡ�����Onion��Ƴ�����褦����<a href="https://web.archive.org/web/20070326102650/http://www.coins.tsukuba.ac.jp/~i021216/diary/?date=20041225">��Ƥ����</a>���Ȥ����ä������ʤ��������Ƿ�ɼ������Ƥ��ʤ������Ȥ�Function Type(�䥯��������)��Ƴ�����Ƥ⡢��ɡ������ͭ���˳��Ѥ����饤�֥�꤬��������ʤ���Ф��ޤ��̣��̵���Τǡ���¸�Υ饤�֥��Ǥ⥯�����������ѤǤ��뤳�ε�ǽ�ϡ�����Ȥ�¸������ߤ����Ȼפ���
+あと面白そうなのは、無名関数のリテラル -&gt; メソッド1つのインタフェースへの自動変換。この機能は、以前Onionに導入しようかと<a href="https://web.archive.org/web/20070326102650/http://www.coins.tsukuba.ac.jp/~i021216/diary/?date=20041225">検討した</a>ことがあったが、なんだかんだで結局実装していない。たとえFunction Type(やクロージャ)を導入しても、結局、それを有効に活用したライブラリが整備されなければあまり意味が無いので、既存のライブラリでもクロージャを活用できるこの機能は、是非とも実現して欲しいと思う。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��3��) [<a href="./?date=20060822#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全3件) [<a href="./?date=20060822#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20060822#c01"><span class="canchor">_</span></a>
-				<span class="commentator">������</span>&nbsp;[�¤�call/cc���ä��ꤷ�ơ�  ]</p>
+				<span class="commentator">ささだ</span>&nbsp;[実はcall/ccだったりして。  ]</p>
 				<p><a href="./?date=20060822#c02"><span class="canchor">_</span></a>
-				<span class="commentator">M��</span>&nbsp;[Throwable�Υ��󥹥��󥹤���Ӥ��ơ���äƤ����catch����椫��throw���ʤ����ФǤ����Ǥϡ�  ]</p>
+				<span class="commentator">M田</span>&nbsp;[Throwableのインスタンスを比較して、違っていればcatch節の中からthrowしなおせばできるんでは。  ]</p>
 				<p><a href="./?date=20060822#c03"><span class="canchor">_</span></a>
-				<span class="commentator">�ߤ�����</span>&nbsp;[&gt; ���������� call/cc���ä����Ф����Ǥ��ʡ��̤�����VM�ѹ�̵����&amp;������ͤθߴ������ݤä��ޤ޼¸��Ǥ���..]</p>
+				<span class="commentator">みずしま</span>&nbsp;[&gt; ささださん call/ccだったらやばすぎですな。果たしてVM変更無しで&amp;言語仕様の互換性を保ったまま実現できる..]</p>
 		</div>
 </div>
 
@@ -161,7 +286,7 @@ String indexOfHoge(List&lt;String&gt; lst){
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070326102650/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">7</a> | <a href="https://web.archive.org/web/20070326102650/http://glazam.sultryserver.com/" title="http://glazam.sultryserver.com/">7</a> | <a href="https://web.archive.org/web/20070326102650/http://zakovka.porkyhost.com/" title="http://zakovka.porkyhost.com/">6</a> | <a href="https://web.archive.org/web/20070326102650/http://vsemoe.sultryserver.com/" title="http://vsemoe.sultryserver.com/">6</a> | <a href="https://web.archive.org/web/20070326102650/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">6</a> | <a href="https://web.archive.org/web/20070326102650/http://www2.xfreehosting.com/hardcore/navsegda/" title="http://www2.xfreehosting.com/hardcore/navsegda/">5</a> | <a href="https://web.archive.org/web/20070326102650/http://www.google.ro/search?q=clipuri+porno&amp;hl=ro&amp;lr=&amp;rls=RNWM,RNWM:2000-47,RNWM:en&amp;start=90&amp;sa=N" title="http://www.google.ro/search?q=clipuri porno&amp;hl=ro&amp;...">5</a> | <a href="https://web.archive.org/web/20070326102650/http://d.hatena.ne.jp/lethevert/" title="http://d.hatena.ne.jp/lethevert/">5</a> | <a href="https://web.archive.org/web/20070326102650/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">4</a> | <a href="https://web.archive.org/web/20070326102650/http://www.google.ro/search?q=clipuri+porno&amp;hl=ro&amp;lr=&amp;start=30&amp;sa=N" title="http://www.google.ro/search?q=clipuri porno&amp;hl=ro&amp;...">4</a> | <a href="./?date=20060822#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070326102650/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">7</a> | <a href="https://web.archive.org/web/20070326102650/http://glazam.sultryserver.com/" title="http://glazam.sultryserver.com/">7</a> | <a href="https://web.archive.org/web/20070326102650/http://zakovka.porkyhost.com/" title="http://zakovka.porkyhost.com/">6</a> | <a href="https://web.archive.org/web/20070326102650/http://vsemoe.sultryserver.com/" title="http://vsemoe.sultryserver.com/">6</a> | <a href="https://web.archive.org/web/20070326102650/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">6</a> | <a href="https://web.archive.org/web/20070326102650/http://www2.xfreehosting.com/hardcore/navsegda/" title="http://www2.xfreehosting.com/hardcore/navsegda/">5</a> | <a href="https://web.archive.org/web/20070326102650/http://www.google.ro/search?q=clipuri+porno&amp;hl=ro&amp;lr=&amp;rls=RNWM,RNWM:2000-47,RNWM:en&amp;start=90&amp;sa=N" title="http://www.google.ro/search?q=clipuri porno&amp;hl=ro&amp;...">5</a> | <a href="https://web.archive.org/web/20070326102650/http://d.hatena.ne.jp/lethevert/" title="http://d.hatena.ne.jp/lethevert/">5</a> | <a href="https://web.archive.org/web/20070326102650/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">4</a> | <a href="https://web.archive.org/web/20070326102650/http://www.google.ro/search?q=clipuri+porno&amp;hl=ro&amp;lr=&amp;start=30&amp;sa=N" title="http://www.google.ro/search?q=clipuri porno&amp;hl=ro&amp;...">4</a> | <a href="./?date=20060822#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -174,15 +299,15 @@ String indexOfHoge(List&lt;String&gt; lst){
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060824#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]�����ȥ��ѥ��к�</h3><p>
-<a href="https://web.archive.org/web/20070326102650/http://www.coins.tsukuba.ac.jp/~i021216/diary/?date=20060821">3�����������Ǹ��ڤ���</a>�̤ꡢ�Ȥꤢ����<a href="https://web.archive.org/web/20070326102650/http://www20.big.or.jp/~rin_ne/soft/tdiary/commentkey.htm">�����ȥ��ѥ��ѤΥե��륿�ץ饰����</a>������Ƥߤ���
+<h3><a href="./?date=20060824#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]コメントスパム対策</h3><p>
+<a href="https://web.archive.org/web/20070326102650/http://www.coins.tsukuba.ac.jp/~i021216/diary/?date=20060821">3日前の日記で言及した</a>通り、とりあえず<a href="https://web.archive.org/web/20070326102650/http://www20.big.or.jp/~rin_ne/soft/tdiary/commentkey.htm">コメントスパム用のフィルタプラグイン</a>を入れてみた。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20060824#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20060824#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -192,7 +317,7 @@ String indexOfHoge(List&lt;String&gt; lst){
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070326102650/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">2190</a> | <a href="https://web.archive.org/web/20070326102650/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">1915</a> | <a href="https://web.archive.org/web/20070326102650/http://glazam.sultryserver.com/" title="http://glazam.sultryserver.com/">1806</a> | <a href="https://web.archive.org/web/20070326102650/http://www2.xfreehosting.com/hardcore/navsegda/" title="http://www2.xfreehosting.com/hardcore/navsegda/">1468</a> | <a href="https://web.archive.org/web/20070326102650/http://zakovka.porkyhost.com/" title="http://zakovka.porkyhost.com/">1078</a> | <a href="https://web.archive.org/web/20070326102650/http://vsemoe.sultryserver.com/" title="http://vsemoe.sultryserver.com/">1077</a> | <a href="https://web.archive.org/web/20070326102650/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">1076</a> | <a href="https://web.archive.org/web/20070326102650/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">1053</a> | <a href="https://web.archive.org/web/20070326102650/http://www.coins.tsukuba.ac.jp/" title="http://www.coins.tsukuba.ac.jp">21</a> | <a href="https://web.archive.org/web/20070326102650/http://www.google.com.tr/search?hl=tr&amp;q=wwwporna++sex&amp;btnG=Google%27da+Ara&amp;meta=" title="http://www.google.com.tr/search?hl=tr&amp;q=wwwporna  ...">13</a> | <a href="./?date=20060824#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070326102650/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">2190</a> | <a href="https://web.archive.org/web/20070326102650/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">1915</a> | <a href="https://web.archive.org/web/20070326102650/http://glazam.sultryserver.com/" title="http://glazam.sultryserver.com/">1806</a> | <a href="https://web.archive.org/web/20070326102650/http://www2.xfreehosting.com/hardcore/navsegda/" title="http://www2.xfreehosting.com/hardcore/navsegda/">1468</a> | <a href="https://web.archive.org/web/20070326102650/http://zakovka.porkyhost.com/" title="http://zakovka.porkyhost.com/">1078</a> | <a href="https://web.archive.org/web/20070326102650/http://vsemoe.sultryserver.com/" title="http://vsemoe.sultryserver.com/">1077</a> | <a href="https://web.archive.org/web/20070326102650/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">1076</a> | <a href="https://web.archive.org/web/20070326102650/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">1053</a> | <a href="https://web.archive.org/web/20070326102650/http://www.coins.tsukuba.ac.jp/" title="http://www.coins.tsukuba.ac.jp">21</a> | <a href="https://web.archive.org/web/20070326102650/http://www.google.com.tr/search?hl=tr&amp;q=wwwporna++sex&amp;btnG=Google%27da+Ara&amp;meta=" title="http://www.google.com.tr/search?hl=tr&amp;q=wwwporna  ...">13</a> | <a href="./?date=20060824#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -205,18 +330,18 @@ String indexOfHoge(List&lt;String&gt; lst){
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060825#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]<a href="https://web.archive.org/web/20070326102650/http://labs.cybozu.co.jp/">�����ܥ������</a>����</h3><p>
-�ڻ�����LLRing�Τ��������������&amp;�����ܥ�����ܤ򸫳ؤ����Ȥ������Ȥǡ�������ؾ褷�ƥ����ܥ�����ܤ򸫳ؤ����Ƥ��ä���soutaro����ȤĤ��бؤǹ�ή�����塢Tex������ء������ܥ�����ܤ򸫳ؤ����ΤϺ��󤬽��Ƥ����������Ȥ��Ƥ��Ʋ�Ŭ�����ǡ��������褯�Ż����Ǥ������ʴĶ��˻פ��������ظ�ϥ����ܥ�����ܤ�Ω���ѡ��ƥ���(?)���ڻ�����<a href="https://web.archive.org/web/20070326102650/http://labs.cybozu.co.jp/blog/takesako/">��������</a>��<a href="https://web.archive.org/web/20070326102650/http://d.hatena.ne.jp/soutaro/">soutaro����</a>��<a href="https://web.archive.org/web/20070326102650/http://www.kmonos.net/">k.inaba����</a>��<a href="https://web.archive.org/web/20070326102650/http://d.hatena.ne.jp/sumii/">sumii����</a>��<a href="https://web.archive.org/web/20070326102650/http://www.atdot.net/~ko1/diary/">����������</a>��<a href="https://web.archive.org/web/20070326102650/http://www.rubyist.net/~matz/">�ޤĤ�Ȥ���</a>��Ϥ���Ȥ����������Ȥ��񤤤��뤳�Ȥ��Ǥ��ơ������������ä򤹤뤳�Ȥ��Ǥ��ơ����ѳڤ����ä����Ŀ�Ū�ˤϡ��⤦����ä��ä�ʹ���Ƥ������ä��������Ť���Ť��Ƥ��Ƥ���������⤢��Τǡ�23:00���˲򻶤��뤳�Ȥˡ�
+<h3><a href="./?date=20060825#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]<a href="https://web.archive.org/web/20070326102650/http://labs.cybozu.co.jp/">サイボウズラボ</a>見学</h3><p>
+木山さんがLLRingのために前日から上京&amp;サイボウズラボを見学されるということで、それに便乗してサイボウズラボを見学させてもらった。soutaroさんとつくば駅で合流した後、Texで東京へ。サイボウズラボを見学したのは今回が初めてだが、広々としていて快適そうで、気持ちよく仕事ができそうな環境に思えた。見学後はサイボウズラボで立食パーティー(?)。木山さん、<a href="https://web.archive.org/web/20070326102650/http://labs.cybozu.co.jp/blog/takesako/">竹迫さん</a>、<a href="https://web.archive.org/web/20070326102650/http://d.hatena.ne.jp/soutaro/">soutaroさん</a>、<a href="https://web.archive.org/web/20070326102650/http://www.kmonos.net/">k.inabaさん</a>、<a href="https://web.archive.org/web/20070326102650/http://d.hatena.ne.jp/sumii/">sumiiさん</a>、<a href="https://web.archive.org/web/20070326102650/http://www.atdot.net/~ko1/diary/">ささださん</a>、<a href="https://web.archive.org/web/20070326102650/http://www.rubyist.net/~matz/">まつもとさん</a>をはじめとする方たちとお会いすることができて、いろいろな話をすることができて、大変楽しかった。個人的には、もうちょっと話を聞いていたかったが、終電が近づいてきている＆明日もあるので、23:00頃に解散することに。
 </p></div><div class="section">
-<h3><a href="./?date=20060825#p02"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]���󥿡��ͥåȵ������</h3><p>
-���٤Ĥ��Ф˵��äƤ��ɤ��ä��Τ������ɤ����ޤ�������LLRing�Τ������������Τ˵���Τ����ݤ������Τǡ����ո��Υ��󥿡��ͥåȵ���ǰ��ղᤴ�����Ȥˤ�������ޤä��Τ�<a href="https://web.archive.org/web/20070326102650/http://www.monkey.co.jp/net/">��󤭡��ͤä�</a>�Ȥ������󥿡��ͥåȵ���ǡ��Ƽ掠���ӥ������¤��Ƥ��ơ��ʤ��ʤ��ᤴ���䤹�����٥åɥ������ʤ�������ޤäƤ����Τǡ����̤��ʤǿ��ʤ���Фʤ餺���㴳���줷���ä������ʤ�Ȥ�����ʤ�˿�̲���뤳�Ȥ��Ǥ�����
+<h3><a href="./?date=20060825#p02"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]インターネット喫茶宿泊</h3><p>
+一度つくばに帰っても良かったのだが、どうせまた明日、LLRingのために東京に来るのに帰るのは面倒くさいので、秋葉原のインターネット喫茶で一晩過ごすことにした。泊まったのは<a href="https://web.archive.org/web/20070326102650/http://www.monkey.co.jp/net/">もんきーねっと</a>というインターネット喫茶で、各種サービスが充実していて、なかなか過ごしやすい。ベッドチェア席が既に埋まっていたので、普通の席で寝なければならず、若干寝苦しかったが、なんとかそれなりに睡眠を取ることができた。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��2��) [<a href="./?date=20060825#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全2件) [<a href="./?date=20060825#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20060825#c01"><span class="canchor">_</span></a>
 				<span class="commentator">Non viagra</span>&nbsp;[Hey, men! Where you take so cool clog script? I want it to..]</p>
@@ -232,7 +357,7 @@ String indexOfHoge(List&lt;String&gt; lst){
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070326102650/http://zakovka.porkyhost.com/" title="http://zakovka.porkyhost.com/">22</a> | <a href="https://web.archive.org/web/20070326102650/http://glazam.sultryserver.com/" title="http://glazam.sultryserver.com/">21</a> | <a href="https://web.archive.org/web/20070326102650/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">20</a> | <a href="https://web.archive.org/web/20070326102650/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">17</a> | <a href="https://web.archive.org/web/20070326102650/http://vsemoe.sultryserver.com/" title="http://vsemoe.sultryserver.com/">17</a> | <a href="https://web.archive.org/web/20070326102650/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">16</a> | <a href="https://web.archive.org/web/20070326102650/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">14</a> | <a href="https://web.archive.org/web/20070326102650/http://www2.xfreehosting.com/hardcore/navsegda/" title="http://www2.xfreehosting.com/hardcore/navsegda/">12</a> | <a href="https://web.archive.org/web/20070326102650/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060825%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www.coins....">12</a> | <a href="https://web.archive.org/web/20070326102650/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060825%23p02&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www.coins....">8</a> | <a href="./?date=20060825#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070326102650/http://zakovka.porkyhost.com/" title="http://zakovka.porkyhost.com/">22</a> | <a href="https://web.archive.org/web/20070326102650/http://glazam.sultryserver.com/" title="http://glazam.sultryserver.com/">21</a> | <a href="https://web.archive.org/web/20070326102650/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">20</a> | <a href="https://web.archive.org/web/20070326102650/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">17</a> | <a href="https://web.archive.org/web/20070326102650/http://vsemoe.sultryserver.com/" title="http://vsemoe.sultryserver.com/">17</a> | <a href="https://web.archive.org/web/20070326102650/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">16</a> | <a href="https://web.archive.org/web/20070326102650/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">14</a> | <a href="https://web.archive.org/web/20070326102650/http://www2.xfreehosting.com/hardcore/navsegda/" title="http://www2.xfreehosting.com/hardcore/navsegda/">12</a> | <a href="https://web.archive.org/web/20070326102650/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060825%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www.coins....">12</a> | <a href="https://web.archive.org/web/20070326102650/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20060825%23p02&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www.coins....">8</a> | <a href="./?date=20060825#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -245,179 +370,179 @@ String indexOfHoge(List&lt;String&gt; lst){
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060826#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=%BD%F1%C0%D2">����</a>]<a href="https://web.archive.org/web/20070326102650/http://www.amazon.co.jp/gp/product/4894714655/503-6490910-8171163?v=glance&amp;n=465392">Perl�ͥåȥ���ץ�����ߥ�</a></h3><p>
-LLRing�δ��ۤϡ��ޤ���ǽ񤯤�������ϤȤ⤫���Ȥ��ơ�LLRing�Υ饹�Ȥ������񤬤��ꡢɽ����ܤ������ä�����������ʬ��Perl�������Ȥ�ʤ��Τǡ��������äƤ���ľ�Ȥ�ƻ��̵���ʤ��ĤȻפäƤ��ޤ��ΤǤ��ä���
+<h3><a href="./?date=20060826#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=%BD%F1%C0%D2">書籍</a>]<a href="https://web.archive.org/web/20070326102650/http://www.amazon.co.jp/gp/product/4894714655/503-6490910-8171163?v=glance&amp;n=465392">Perlネットワークプログラミング</a></h3><p>
+LLRingの感想は、また後で書くが、それはともかくとして。LLRingのラストに抽選会があり、表題の本があたった。ただ、自分はPerlは全然使わないので、これをもらっても正直使い道が無いなあ…と思ってしまうのであった。
 </p></div><div class="section">
-<h3><a href="./?date=20060826#p02"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0">�ץ�����ߥ�</a>][<a href="./?year=2006;month=3Q;category=%B8%C0%B8%EC">����</a>]<a href="https://web.archive.org/web/20070326102650/http://ll.jus.or.jp/2006/">LLRing</a></h3><p>
-9:00���˥��󥿡��ͥåȵ�����ȯ���ơ����ո��Ǿ������֤�Ĥ֤�����ˡ��ϲ�Ŵ�ǿ��ھ�ء����ھ�����夷�Ʊؤ��鳰�˽Ф��Ȥ����ǡ�soutaro����ȶ�����ή���ơ����ء�
+<h3><a href="./?date=20060826#p02"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0">プログラミング</a>][<a href="./?year=2006;month=3Q;category=%B8%C0%B8%EC">言語</a>]<a href="https://web.archive.org/web/20070326102650/http://ll.jus.or.jp/2006/">LLRing</a></h3><p>
+9:00頃にインターネット喫茶を出発して、秋葉原で少し時間をつぶした後に、地下鉄で新木場へ。新木場に到着して駅から外に出たところで、soutaroさんと偶然合流して、会場へ。
 </p>
 <h4>Language Update</h4>
 <p>
-��ľ����ǯ�Τ��Ȥǡ���������˰���Ƥ������⤢��Language Update���ºݤ�ȯɽ���֤Ͻ���Ʊ�ʤΤ����ա�
+正直、毎年のことで、そろそろ飽きてきた感もあるLanguage Update。実際の発表順番は順不同なので注意。
 </p>
 <ul>
 <li>
-Scripting for Java Platform	ݯ�� ʹ��	�����ŵ�
+Scripting for Java Platform	櫻庭 祐一	横河電機
 <p>
-Dukulele���Ĥ餷�ʤ����ȯɽ�����Ƥϡ�JDK 6��Java���饹����ץȸ����ƤӽФ������API��ɸ��饤�֥��˼����ޤ���Ȥ������á����ƤˤĤ��Ƥϡ������ΤäƤ����ä��ä��Τ��ä˰��ݤϻĤ�ʤ��ä�����Dukulele���Ƥ����Ȥ����ΤϿ������ä����������Ȥ줬���ä��Τ������椫��ȡ�������󤷤Ƥ����褦�ʤΤϻ�ǰ��
+Dukuleleを鳴らしながらの発表。内容は、JDK 6でJavaからスクリプト言語を呼び出すためのAPIが標準ライブラリに取り込まれるよというお話。内容については、既に知っている話だったので特に印象は残らなかったが、Dukuleleで弾き語りというのは新鮮だった。ただ、照れがあったのか、途中からトーンダウンしていたようなのは残念。
 </p>
 </li>
 <li>
-FORTH	���� ����	��¤�ײ踦���
+FORTH	別府 政通	構造計画研究所
 <p>
-FORTH�ϳ�ĥ�����⤯�������⤷�䤹�������������Ǥ⸽�����Ȥ����褦�ʴ������Ŀ�Ū�ˤϡ�FORTH�������Ȼפ鷺���äƤ��ޤ��褦�ʤΤ���Ԥ��Ƥ����Τ��������������ΤǤ�̵���ä�����ǰ��
+FORTHは拡張性が高く、実装もしやすい言語だよ＆今でも現役だよというような感じ。個人的には、FORTHスゲーと思わず言ってしまうようなのを期待していたのだが、そういうのでは無かった。残念。
 </p>
 </li>
 <li>
-awk	��ƣ ��ʸ	���� GNU AWK �桼������
+awk	斉藤 博文	日本 GNU AWK ユーザー会
 <p>
-��ǯ��ȯɽ�����Ƥ����ʤ꤫�֤äƤ������Ȥ⤢�äơ����ޤ���ݤ˻ĤäƤ��ʤ���
+去年の発表と内容がかなりかぶっていたこともあって、あまり印象に残っていない。
 </p>
 </li>
 <li>	
-ActionScript ��� ����	���ɥӥ����ƥॺ��
+ActionScript 上条 晃宏	アドビシステムズ社
 </li>
 <li>
-Scheme (Gauche)	��� ��ϯ Scheme Arts �ϥ磻���������
+Scheme (Gauche)	川合 史朗 Scheme Arts ハワイから生中継
 <p>
-ͣ�졢�ϥ磻��������ѤȤ������Ǥ�ȯɽ�����Ƥϡ��⤦�������λ��ͤǤ���R6RS���Ф�衼���Ȥ������á������ˤ�äƥ��饤���ڤ��ؤ��λؼ���ԤäƤ��������ǡ��ڤ��ؤ��Υ�����饰��ȯ�����Ƥ����Τ���䵤�ˤʤä���
+唯一、ハワイから生中継という形での発表。内容は、もうすぐ次の仕様であるR6RSが出るよー、というお話。音声によってスライド切り替えの指示を行っていたせいで、切り替えのタイムラグが発生していたのがやや気になった。
 </li>
 <li>
-Python ���� ��	�����֥���/����Python�桼����	
+Python 柴田 淳	ウェブコア/日本Pythonユーザ会	
 </li>
 <li>
-Squeak ��߷ ���ˡ���ë ���	Squeak-ja
+Squeak 梅澤 真史、南谷 千城	Squeak-ja
 <p>
-����⤽�����ä����������¿��ʥǥ�򤷤Ʋ���ͯ�����Ƥ��������ʤߤ˺���Υǥ�ϡ�Croquet��Ȥä����ۡ��ڥ��ץ�����ߥ󥰡�
+前回もそうだったが、今回も斬新なデモをして会場を湧かせていた。ちなみに今回のデモは、Croquetを使った仮想？ペアプログラミング。
 </li>
 <li> 	
-Haskell	��� ��͵	������������ر�
+Haskell	酒井 政裕	慶應義塾大学大学院
 <p>
-���ּ���ä����������ʤ��ĥ����Ƥ����褦�ǡ���Τ�����������ä������Ƽ��ΤϤդĤ���Haskell�ξҲ�Ȥ��ä��������ä���
+一番手だったせいかかなり緊張されていたようで、ものすごい早口だった。内容自体はふつうのHaskellの紹介といった感じだった。
 </p>
 </li>
 <li>
-OCaml	���� ����Ϻ	���������ر�	�黲��
+OCaml	松本 宗太郎	筑波大学大学院	初参戦
 <p>
-��?(��˥饯����Ƚ��)�����ʪ�򤫤֤äƻ��ȯɽ���饤�ɤν�°����ٻΥ��ե���ѡ����פˤʤäƤ��������Ƽ��ΤϤ����դġ���OCaml�ξҲ���ä���������ǻ���ˤʤäƶ줷�������ä��Τ������ξФ���Ͷ�äƤ���������ͣ�졢�Τ�ĥ�ä���ȯɽ���ä��褦�˻פ���
+馬?(後にラクダと判明)の被り物をかぶって参戦。発表スライドの所属も「富士サファリパーク」になっていた。内容自体はごくふつーのOCamlの紹介だったが、途中で酸欠になって苦しそうだったのが、会場の笑いを誘っていた。今回唯一、体を張った？発表だったように思う。
 </li>
 <li>
-PHP ע�� ��	����PHP�桼����
+PHP 廣川 類	日本PHPユーザ会
 </li>
 <li>
-Ruby	�ޤĤ�Ȥ椭�Ҥ�	�ͥåȥ�������̿������
+Ruby	まつもとゆきひろ	ネットワーク応用通信研究所
 <p>
-��ǯ�Τ褦�˵����롢�ץ쥼��μ����Ϻ�ǯ�ϵ�����ʤ��ä����͡�
-���Ƥϡ�Ruby1.8.5��꡼�����ޤ����Ȥ�����Τǡ������äƤդġ���
+毎年のように起こる、プレゼンの呪いは今年は起こらなかった模様。
+内容は、Ruby1.8.5リリースしましたというもので、いたってふつー。
 </p>
 </li>
 <li>
-JavaScript ŷ�� �λ� �������å���/Shibuya.js �黲��
+JavaScript 天野 仁史 ガイアックス/Shibuya.js 初参戦
 </li>
 <li>
 <li>
-Perl ���� ���� �����ܥ��������/Shibuya.pm
+Perl 竹迫 良範 サイボウズ・ラボ/Shibuya.pm
 <p>
 <pre>use Dan::Kogai;</pre>
-����ˤĤ��롣
+これにつきる。
 </p>
 </li>
 <li>
-Lisp ��¼ ����Ϻ ����ƥʥϥ����ܼҥ��롼�ץޥ͡�����
+Lisp 中村 正三郎 アンテナハウス本社グループマネージャ
 <p>
-���Ƥϰ���Ǥ����ȡ���Lisp���������ס�
+内容は一言でいうと、「Lispサイコー」。
 </p>
 </li>
-<h4>LL�Ǵؿ��ץ�����ߥ�</h4>
+<h4>LLで関数プログラミング</h4>
 <p>
-�ؿ����ץ�����ߥ󥰤�����䤽�Υ��åȡ��ǥ��åȤʤɤˤĤ��ƥ��ԡ��������ǥ������å���󤹤륻�å����Lisp�Ϥοͤ�Ocaml��Haskell��(�Ȥ�����Τ����������Ϥ狼��ʤ���)�οͤǡ��ؿ����ץ�����ߥ󥰤��Ф���ǧ���ΰ㤤������줿�Τ����򤫤ä��������������λ������ޤ����ä��Τ���������ȯ�����������ä��Τϥ��ޥ������ä���
+関数型プログラミングの定義やそのメリット・デメリットなどについてスピーカーがディスカッションするセッション。Lisp系の人とOcamlやHaskell系(とくくるのが正しいかはわからないが)の人で、関数型プログラミングに対する認識の違いが見られたのは面白かったが、議題の設定の仕方がまずかったのか、議論が発散しがちだったのはイマイチだった。
 </p>
-<h4>����֤���󤱤�2.0��</h4>
+<h4>対戦「じゃんけん2.0」</h4>
 <p>
-Ruby,ActionScript,JavaScript,awk,Python��5�Ĥθ���ǽ񤫤줿����󤱤�����ץ������ˤĤ��ơ����ߤ������蘆���ƾ��Ԥ򶥤��Ȥ������å����Python�οͤ����饤�ʡ��ǽ񤤤Ƥ��ꡢawk���ͥ������äƤ����Τ�����Ū���ä����դ˸����Хͥ�������ʤ��������ߤˤ�����Ȥ�����롣ͣ�졩�ͥ������餺���Ĥ���Υ��르�ꥺ���������Ƥ���JavaScript��������Ū�ʶ�����ͥ�����Ƥ�����
+Ruby,ActionScript,JavaScript,awk,Pythonの5つの言語で書かれたじゃんけん対戦プログラムについて、お互いに対戦させて勝敗を競うというセッション。Pythonの人がワンライナーで書いてたり、awkがネタに走っていたのが印象的だった。逆に言えばネタに走らなければ面白みにかけるとも言える。唯一？ネタに走らず勝つためのアルゴリズムを実装してきたJavaScriptが、圧倒的な強さで優勝していた。
 </p>
-<h4>���ߤʤ�ɤ���</h4>
+<h4>キミならどう書く</h4>
 <p>
-��ľ�����ȡ����ʤꥦ�ȥ��Ȥ��Ƥ�������ʬ��Web���ץꥱ�������ե졼�����Ȥ�����Τˤ��ޤ궽̣�����Ƥʤ��Τ��⤷��ʤ������ƤˤĤ��Ƥϡ����ޤ�褯�Ф��Ƥ��ʤ��Τǡ��ä˥�����̵����
+正直言うと、かなりウトウトしていた。自分はWebアプリケーションフレームワークというものにあまり興味が持てないのかもしれない。内容については、あまりよく覚えていないので、特にコメント無し。
 </p>
 <h4>LL Gong</h4>
 <p>
-LL�Ǻ�ä����ʤ������륻�å����Lightning Talk�ߤ����ʤ�Τ���
-ȯɽ�Ԥˤ������Խ��褬���ַ㤷�����å������ä���
+LLで作った作品を自慢するセッション。Lightning Talkみたいなものか。
+発表者による出来不出来が一番激しいセッションだった。
 </p>
 <li>
 c-wrapper
 Gauche
-���� ľ��
-���륷���ƥॺ	�ȤäƤ�ʰפ�Gauche��FFI�ˤ�볰���饤�֥��ƤӽФ���ǥ�
+小黒 直樹
+ウルシステムズ	とっても簡易なGaucheのFFIによる外部ライブラリ呼び出しをデモ
 <p>
-Gauche����C�饤�֥����ͳ����Ruby��ƤӽФ��ǥ�Ϸ����ʤꥦ������
+GaucheからCライブラリを経由してRubyを呼び出すデモは傑作。かなりウケた。
 </p>
 </li>
 <li>
-����١����Υ��˥᡼�����������MEPHISTO
+制約ベースのアニメーション生成系MEPHISTO
 Gauche
-�װ� ��
-�����ͥå������ǥ륿	Gauche-gl��Ȥä�3D���˥᡼���������������ƥ��ǥ�
+久井 亨
+クロネッカーズデルタ	Gauche-glを使った3Dアニメーションの生成システムをデモ
 <p>
-��ǯ��LLDN��̤Ƨ�桼������ȯɽ��ʤɤǡ����٤⸫�Ƥ��뤻�������ޥ�������̣�ˤ�������ȯɽ���Τ��ɤ��ä��Ȼפ���
+去年のLLDNや未踏ユース成果発表会などで、何度も見ているせいかイマイチ新鮮味にかけた。発表自体は良かったと思う。
 </p>
 </li>
 <li>
 every spam is sacred...?
 Python
-̾�� ��
-��������ر�
-̵�̤˥���ե������spam�к������python�ץ饰�����ǥ�
+名取 伸
+東京大学大学院
+無駄にグラフィカルなspam対策およびpythonプラグインをデモ
 </li>
 <li>
-�ȼ��CGI�ץ�����ߥ󥰤ξＱ����Ｑ
+脆弱なCGIプログラミングの常識・非常識
 Perl
-�����¹�
-����Ruby�β�
-�ȼ����Τ���ץ�����ब�����˽񤫤�䤹�������ɤ��н褹�뤫��ǥ�
+西山和広
+日本Rubyの会
+脆弱性のあるプログラムがいかに書かれやすいか、どう対処するかをデモ
 <p>
-�����󡣤��Υ��٥�Ȥλ��üԤϡ����٤ɤ�����ʹ�������Ȥ�����󤸤�ʤ����ʤ����Ȥ������Ȥ��꤭������äФä�����ä��Τ���ǰ��
+うーん。このイベントの参加者は、一度どこかで聞いたことがあるんじゃないかなあ、ということありきたりな話ばっかりだったのが残念。
 </p>
 </li>
 <li>
-Haskell��GUI Haskell shelarcy 
-I/O Monad�˰�¸�������ؿ�������ʤ�ǤϤ�GUI�ץ�����ߥ󥰤��Ǥ��뤳�Ȥ�ǥ�
+HaskellでGUI Haskell shelarcy 
+I/O Monadに依存せず、関数型言語ならではのGUIプログラミングができることをデモ
 <p>
-�ü��Τ϶�̣�����Τ�����ȯɽ����̿Ū�ˤޤ����褦�˻פ����������꡼��˾������ե���Ȥǽ񤫤줿���̤Υ����ɤ�ɽ�����ơ������������ʤäơ��Ȥ���������Ƥ�狼��ʤ���
+話自体は興味深いのだが、発表が致命的にまずいように思えた。スクリーンに小さいフォントで書かれた大量のコードを表示して、ここがこうなって〜とか説明されてもわからない。
 </p>
 </li>
 <li>
-����Linux�����ͥ����������	C (binfmtc / realksh.c)	���� ���	Debian Project	C����ǤΥ����ͥ�ץ�����ߥ󥰤�ʷ�ϵ������饤�ȥ������Ȥˤ��Ƥߤޤ���
+真のLinuxカーネル向けシェル	C (binfmtc / realksh.c)	上川 純一	Debian Project	C言語でのカーネルプログラミングを雰囲気だけライトウェイトにしてみました
 <p>
-tcsh -&gt; realcsh��ksh -&gt; realksh�ؤ��äα����������Ѥ��ޤ���
+tcsh -&gt; realcsh、ksh -&gt; realkshへの話の運び方が大変うまい。
 </p>
 </li>
 <li>
-�����β̤Ƥ�������Ѵ�! Sumibi.org	Gauche	���� ����	Sumibi Project	http:/www.sumibi.org/ ��ǥ⤷�ޤ������ä�5ʬ�ʤΤ��񤷤����ȤϤ��ޤ���
+世界の果てから漢字変換! Sumibi.org	Gauche	西山 清香	Sumibi Project	http:/www.sumibi.org/ をデモします。たった5分なので難しいことはやりません
 <p>
-��ǽŪ�ˤ����������������ꥹ�ȥܥå��������Ѵ���������򤹤�ΤϤ���äȻȤ��ˤ����褦�ʵ���������AjaxIME�ߤ����ʥ��󥿥ե������ˤ��뤳�ȤϤǤ��ʤ��Τ��ʡ�
+機能的には便利そうだが、リストボックスから変換候補を選択するのはちょっと使いにくいような気がした。AjaxIMEみたいなインタフェースにすることはできないのかな。
 </p>
 </li>
 <li>
-Plagger is a LL	Plagger	���� ����	Shibuya.pl	Plagger��˭�٤ʥץ饰����ȸ�����ͤˤĤ��Ʋ���
+Plagger is a LL	Plagger	竹迫 良範	Shibuya.pl	Plaggerの豊富なプラグインと言語仕様について解説
 <p>
-�ʤ�Ǥ�Plagger�����̤Υ��饤�ɤ�û�����֤Ǿ��񤷤Ĥġ��������뤳�Ȥ�褷��˺��ʤ������˰��������Υ��å����ǰ��ֳڤ��᤿�ץ쥼����ä���
+なんでもPlagger。大量のスライドを短い時間で消費しつつ、ウケを取ることを決して忘れない姿勢に圧巻。このセッションで一番楽しめたプレゼンだった。
 </p>
 </li>
-<h4>������</h4>
+<h4>抽選会</h4>
 <p>
-��󥰾夫���ꤲ��줿�ܡ���򤦤ޤ�������줿�顢���ʤ��館��Ȥ��������񡣼�ʬ�Ͼ�˽񤤤�Perl�ͥåȥ���ץ�����ߥ󥰤Ȥ����ܤ������ä���
+リング上から投げられたボールをうまく受け取れたら、景品をもらえるという抽選会。自分は上に書いたPerlネットワークプログラミングという本があたった。
 </p>
 <p>
-�ɵ�:LLRing�Υ����Ȥ˴��ۥȥ�å��Хå�������Ȥ��˥ߥ��äơ���ʸ�Ǻܤ���Ƥ��ޤä������㡼��
+追記:LLRingのサイトに感想トラックバックを送るときにミスって、全文掲載されてしまった。ギャー。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��21��) [<a href="./?date=20060826#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全21件) [<a href="./?date=20060826#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 			<p><a href="./?date=20060826#c01">Before...</a></p>
 				<p><a href="./?date=20060826#c17"><span class="canchor">_</span></a>
@@ -440,7 +565,7 @@ Plagger is a LL	Plagger	���� ����	Shibuya.pl	Plagger��˭�٤ʥץ饰����ȸ������
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070326102650/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">428</a> | <a href="https://web.archive.org/web/20070326102650/http://vsemoe.sultryserver.com/" title="http://vsemoe.sultryserver.com/">383</a> | <a href="https://web.archive.org/web/20070326102650/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">380</a> | <a href="https://web.archive.org/web/20070326102650/http://glazam.sultryserver.com/" title="http://glazam.sultryserver.com/">373</a> | <a href="https://web.archive.org/web/20070326102650/http://zakovka.porkyhost.com/" title="http://zakovka.porkyhost.com/">369</a> | <a href="https://web.archive.org/web/20070326102650/http://www.asahi-net.or.jp/~ki4s-nkmr/" title="http://www.asahi-net.or.jp/~ki4s-nkmr/">107</a> | <a href="https://web.archive.org/web/20070326102650/http://search.yahoo.com/search?p=wwwunivicion.com&amp;fr=yfp-t-501&amp;toggle=1&amp;cop=mss&amp;ei=UTF-8" title="http://search.yahoo.com/search?p=wwwunivicion.com&amp;...">21</a> | <a href="https://web.archive.org/web/20070326102650/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">20</a> | <a href="https://web.archive.org/web/20070326102650/http://search.msn.com/results.aspx?q=WWWUNIVICION&amp;FORM=MSNH&amp;setlang=es-us" title="http://search.msn.com/results.aspx?q=WWWUNIVICION&amp;...">19</a> | <a href="https://web.archive.org/web/20070326102650/http://reader.livedoor.com/reader/" title="http://reader.livedoor.com/reader/">17</a> | <a href="./?date=20060826#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070326102650/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">428</a> | <a href="https://web.archive.org/web/20070326102650/http://vsemoe.sultryserver.com/" title="http://vsemoe.sultryserver.com/">383</a> | <a href="https://web.archive.org/web/20070326102650/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">380</a> | <a href="https://web.archive.org/web/20070326102650/http://glazam.sultryserver.com/" title="http://glazam.sultryserver.com/">373</a> | <a href="https://web.archive.org/web/20070326102650/http://zakovka.porkyhost.com/" title="http://zakovka.porkyhost.com/">369</a> | <a href="https://web.archive.org/web/20070326102650/http://www.asahi-net.or.jp/~ki4s-nkmr/" title="http://www.asahi-net.or.jp/~ki4s-nkmr/">107</a> | <a href="https://web.archive.org/web/20070326102650/http://search.yahoo.com/search?p=wwwunivicion.com&amp;fr=yfp-t-501&amp;toggle=1&amp;cop=mss&amp;ei=UTF-8" title="http://search.yahoo.com/search?p=wwwunivicion.com&amp;...">21</a> | <a href="https://web.archive.org/web/20070326102650/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">20</a> | <a href="https://web.archive.org/web/20070326102650/http://search.msn.com/results.aspx?q=WWWUNIVICION&amp;FORM=MSNH&amp;setlang=es-us" title="http://search.msn.com/results.aspx?q=WWWUNIVICION&amp;...">19</a> | <a href="https://web.archive.org/web/20070326102650/http://reader.livedoor.com/reader/" title="http://reader.livedoor.com/reader/">17</a> | <a href="./?date=20060826#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -453,15 +578,15 @@ Plagger is a LL	Plagger	���� ����	Shibuya.pl	Plagger��˭�٤ʥץ饰����ȸ������
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060828#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=Java">Java</a>][<a href="./?year=2006;month=3Q;category=Ruby">Ruby</a>]ruby��<a href="https://web.archive.org/web/20070326102650/http://javanews.jp/">Java News</a></h3><p>
-������<a href="https://web.archive.org/web/20070326102650/http://javanews.jp/">Java News</a>�򸫤Ƥߤ��顢���Τ�Ruby1.8.5����꡼�����줿���Ȥ��Ҳ𤵤�Ƥ�������������Firefox�ˤĤ��ƤΥ˥塼����jruby�ˤĤ��Ƥʤɡ�Java�˴ط���̵�����Ȥ�̵�������ʼ��դ��������夲���뤳�Ȥ����ä�����Ruby�Υ�꡼������ˤĤ��ƤϺ��ޤǸ������Ȥ�̵���ä����������Ruby�����ܤ���Ƥ��Ƥ��롢�Ȥ������ȤʤΤ���������Ruby�ˤĤ��Ƥϼ�ʬ��ñ�ʤ�1�桼���ʤΤǡ��̤ˤ�����ɤ��Ȥ����櫓�Ǥ�̵������
+<h3><a href="./?date=20060828#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=Java">Java</a>][<a href="./?year=2006;month=3Q;category=Ruby">Ruby</a>]rubyと<a href="https://web.archive.org/web/20070326102650/http://javanews.jp/">Java News</a></h3><p>
+今日、<a href="https://web.archive.org/web/20070326102650/http://javanews.jp/">Java News</a>を見てみたら、何故かRuby1.8.5がリリースされたことが紹介されていた。前々からFirefoxについてのニュースやjrubyについてなど、Javaに関係が無いことも無さそうな周辺の話題も取り上げられることがあったが、Rubyのリリース情報については今まで見たことが無かった。それだけRubyが注目されてきている、ということなのだろうか。Rubyについては自分は単なる1ユーザなので、別にだからどうというわけでは無いが。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��1��) [<a href="./?date=20060828#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全1件) [<a href="./?date=20060828#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20060828#c01"><span class="canchor">_</span></a>
 				<span class="commentator">vipsticks</span>&nbsp;[Hey guys, there's another English person about, :)  I'm a ..]</p>
@@ -475,7 +600,7 @@ Plagger is a LL	Plagger	���� ����	Shibuya.pl	Plagger��˭�٤ʥץ饰����ȸ������
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070326102650/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">1100</a> | <a href="https://web.archive.org/web/20070326102650/http://vsemoe.sultryserver.com/" title="http://vsemoe.sultryserver.com/">912</a> | <a href="https://web.archive.org/web/20070326102650/http://www2.xfreehosting.com/hardcore/navsegda/" title="http://www2.xfreehosting.com/hardcore/navsegda/">729</a> | <a href="https://web.archive.org/web/20070326102650/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">724</a> | <a href="https://web.archive.org/web/20070326102650/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">717</a> | <a href="https://web.archive.org/web/20070326102650/http://zakovka.porkyhost.com/" title="http://zakovka.porkyhost.com/">361</a> | <a href="https://web.archive.org/web/20070326102650/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">359</a> | <a href="https://web.archive.org/web/20070326102650/http://glazam.sultryserver.com/" title="http://glazam.sultryserver.com/">349</a> | <a href="https://web.archive.org/web/20070326102650/http://www.coins.tsukuba.ac.jp/?date=20060828" title="http://www.coins.tsukuba.ac.jp/?date=20060828">24</a> | <a href="https://web.archive.org/web/20070326102650/http://search.yahoo.co.jp/search?p=japansex&amp;tid=top_v2&amp;search_x=1&amp;y=13&amp;ei=UTF-8&amp;pstart=1&amp;fr=top_v2&amp;b=71" title="http://search.yahoo.co.jp/search?p=japansex&amp;tid=to...">15</a> | <a href="./?date=20060828#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070326102650/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">1100</a> | <a href="https://web.archive.org/web/20070326102650/http://vsemoe.sultryserver.com/" title="http://vsemoe.sultryserver.com/">912</a> | <a href="https://web.archive.org/web/20070326102650/http://www2.xfreehosting.com/hardcore/navsegda/" title="http://www2.xfreehosting.com/hardcore/navsegda/">729</a> | <a href="https://web.archive.org/web/20070326102650/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">724</a> | <a href="https://web.archive.org/web/20070326102650/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">717</a> | <a href="https://web.archive.org/web/20070326102650/http://zakovka.porkyhost.com/" title="http://zakovka.porkyhost.com/">361</a> | <a href="https://web.archive.org/web/20070326102650/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">359</a> | <a href="https://web.archive.org/web/20070326102650/http://glazam.sultryserver.com/" title="http://glazam.sultryserver.com/">349</a> | <a href="https://web.archive.org/web/20070326102650/http://www.coins.tsukuba.ac.jp/?date=20060828" title="http://www.coins.tsukuba.ac.jp/?date=20060828">24</a> | <a href="https://web.archive.org/web/20070326102650/http://search.yahoo.co.jp/search?p=japansex&amp;tid=top_v2&amp;search_x=1&amp;y=13&amp;ei=UTF-8&amp;pstart=1&amp;fr=top_v2&amp;b=71" title="http://search.yahoo.co.jp/search?p=japansex&amp;tid=to...">15</a> | <a href="./?date=20060828#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -488,25 +613,25 @@ Plagger is a LL	Plagger	���� ����	Shibuya.pl	Plagger��˭�٤ʥץ饰����ȸ������
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20060829#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0">�ץ�����ߥ�</a>]<a href="https://web.archive.org/web/20070326102650/http://shibuyajs.org/articles/2006/08/28/development-environment-conference">Development Environment Conference</a></h3><p>
-���ԡ��������ڤ���������Ū�ˤ⼫ʬ�ζ�̣������Τǿ�������Ǥߤ뤳�Ȥˡ�����ϡ���ǯ��Binary 2.0����ե���󥹤ΤȤ��ζ������������ơ��������ߤ��ϤޤäƤ��餹���˿������ळ�Ȥˤ�����
+<h3><a href="./?date=20060829#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=3Q;category=%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0">プログラミング</a>]<a href="https://web.archive.org/web/20070326102650/http://shibuyajs.org/articles/2006/08/28/development-environment-conference">Development Environment Conference</a></h3><p>
+スピーカーも豪華だし、内容的にも自分の興味があるので申し込んでみることに。今回は、去年のBinary 2.0カンファレンスのときの教訓を生かして、申し込みが始まってからすぐに申し込むことにした。
 </p>
 <p>
-�ǡ�12:00�ˤʤä��ִ֡����ä�̾����E-mail���ɥ쥹�������Ȥ�񤤤����ꡢ�������ळ�Ȥ����������������������θ塢����٤����Ȥ����ʤ�ȡ����٥ڡ����������ɤ����顢�����ã�����Τǿ������ߤ��Ĥ��ڤä��Ȥ���ɽ�������������߳��Ϥ��Ƥ��顢2��3ʬ�����ФäƤʤ��Τˡ����ޤ����͵�����
+で、12:00になった瞬間、さっと名前とE-mailアドレス、コメントを書いて送り、申し込むことに成功した。しかし、その後、恐るべきことが。なんと、再度ページをリロードしたら、定員に達したので申し込みを閉め切ったという表示が。申し込み開始してから、2〜3分しか経ってないのに、凄まじい人気だ。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��4��) [<a href="./?date=20060829#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全4件) [<a href="./?date=20060829#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20060829#c01"><span class="canchor">_</span></a>
-				<span class="commentator">soutaro</span>&nbsp;[����������www ����12�����礦�ɤ˷��Ӥ��鿽��������Τ�����פǤ�����  ]</p>
+				<span class="commentator">soutaro</span>&nbsp;[すげーーーwww 俺も12時ちょうどに携帯から申し込んだので大丈夫でした。  ]</p>
 				<p><a href="./?date=20060829#c02"><span class="canchor">_</span></a>
-				<span class="commentator">IKeJI</span>&nbsp;[�ز񤫤鵢�äƤ����齪��äƤ���  ]</p>
+				<span class="commentator">IKeJI</span>&nbsp;[学会から帰ってきたら終わってた。  ]</p>
 				<p><a href="./?date=20060829#c03"><span class="canchor">_</span></a>
-				<span class="commentator">IKeJI</span>&nbsp;[�����Ϥ�Ϥꡢ������Ǽ�Ť��뤷����  ]</p>
+				<span class="commentator">IKeJI</span>&nbsp;[ここはやはり、筑波大で主催するしか。  ]</p>
 				<p><a href="./?date=20060829#c04"><span class="canchor">_</span></a>
 				<span class="commentator">vipsticks</span>&nbsp;[Hey guys, there's another English person about, :)  I'm a ..]</p>
 		</div>
@@ -519,7 +644,7 @@ Plagger is a LL	Plagger	���� ����	Shibuya.pl	Plagger��˭�٤ʥץ饰����ȸ������
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070326102650/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">4395</a> | <a href="https://web.archive.org/web/20070326102650/http://glazam.sultryserver.com/" title="http://glazam.sultryserver.com/">3925</a> | <a href="https://web.archive.org/web/20070326102650/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">3570</a> | <a href="https://web.archive.org/web/20070326102650/http://zakovka.porkyhost.com/" title="http://zakovka.porkyhost.com/">3208</a> | <a href="https://web.archive.org/web/20070326102650/http://vsemoe.sultryserver.com/" title="http://vsemoe.sultryserver.com/">2500</a> | <a href="https://web.archive.org/web/20070326102650/http://www2.xfreehosting.com/hardcore/navsegda/" title="http://www2.xfreehosting.com/hardcore/navsegda/">2211</a> | <a href="https://web.archive.org/web/20070326102650/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">2143</a> | <a href="https://web.archive.org/web/20070326102650/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">2122</a> | <a href="https://web.archive.org/web/20070326102650/http://www.hostones.com/websites/fetish/zamnoy/" title="http://www.hostones.com/websites/fetish/zamnoy/">1436</a> | <a href="https://web.archive.org/web/20070326102650/http://www.hostones.com/websites/amateurs/zaebun/" title="http://www.hostones.com/websites/amateurs/zaebun/">1218</a> | <a href="./?date=20060829#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070326102650/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">4395</a> | <a href="https://web.archive.org/web/20070326102650/http://glazam.sultryserver.com/" title="http://glazam.sultryserver.com/">3925</a> | <a href="https://web.archive.org/web/20070326102650/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">3570</a> | <a href="https://web.archive.org/web/20070326102650/http://zakovka.porkyhost.com/" title="http://zakovka.porkyhost.com/">3208</a> | <a href="https://web.archive.org/web/20070326102650/http://vsemoe.sultryserver.com/" title="http://vsemoe.sultryserver.com/">2500</a> | <a href="https://web.archive.org/web/20070326102650/http://www2.xfreehosting.com/hardcore/navsegda/" title="http://www2.xfreehosting.com/hardcore/navsegda/">2211</a> | <a href="https://web.archive.org/web/20070326102650/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">2143</a> | <a href="https://web.archive.org/web/20070326102650/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">2122</a> | <a href="https://web.archive.org/web/20070326102650/http://www.hostones.com/websites/fetish/zamnoy/" title="http://www.hostones.com/websites/fetish/zamnoy/">1436</a> | <a href="https://web.archive.org/web/20070326102650/http://www.hostones.com/websites/amateurs/zaebun/" title="http://www.hostones.com/websites/amateurs/zaebun/">1218</a> | <a href="./?date=20060829#t">TrackBack(0)</a>
 		</div>
 </div>
 

@@ -33,32 +33,157 @@
     <!-- is_embedded: False; context:  -->
     <!-- navbar https://archive.org/web/navbar.php 0.08105s -->
     <!-- navbar script -->
-    <script src="//archive.org/includes/athena.js?v=11e75e73" type="text/javascript"></script>
-    <script src="//archive.org/includes/apollo.js?v=11e75e73" type="text/javascript"></script>
-    <script src="//archive.org/components/npm/lit/polyfill-support.js?v=11e75e73" type="text/javascript"></script>
-    <script src="//archive.org/components/npm/@webcomponents/webcomponentsjs/webcomponents-bundle.js?v=11e75e73" type="text/javascript"></script>
-    <script src="//archive.org/includes/build/js/ia-topnav.min.js?v=11e75e73" type="text/javascript"></script>
-    <script src="//archive.org/includes/build/js/archive.min.js?v=11e75e73" type="text/javascript"></script>
+    
+    
+    
+    
+    
+    
     <!-- navbar styles -->
-    <link href="//archive.org/includes/build/css/archive.min.css?v=11e75e73" rel="stylesheet" type="text/css"/>
+    
     <!-- navbar meta -->
     <meta property="mediatype" content="">
     <meta property="primary_collection" content="">
     <!-- navbar end -->
     <script type="text/javascript">if('archive_analytics' in window){var v=archive_analytics.values;v.path='/web';v.service='wb';v.server_name='wwwb-app217.us.archive.org';v.server_ms=3185;archive_analytics.send_pageview_on_load()}</script>
-    <link href="https://web-static.archive.org/_static/images/archive.ico" rel="shortcut icon">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/styles.css?v=HdpcXpRm" />
-    <script type="text/javascript" src="https://web-static.archive.org/_static/js/ui.js?v=7LYlZ-C2" charset="utf-8"></script>
+    
+    
     <base target="_top">
-<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/web.css">
+
 <script type="text/javascript">
 if (window!=window.top) {
   $(document).ready(function(){ document.body.classList.add('wb_embedded') });
 }
 </script>
-  </head>
+  
+<style>
+    /* Modern Styling */
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.7;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        color: #333;
+    }
+    
+    h1 {
+        color: #2c3e50;
+        border-bottom: 3px solid #3498db;
+        padding-bottom: 12px;
+        font-size: 2em;
+        margin-top: 0;
+    }
+    
+    h2 {
+        color: #34495e;
+        border-left: 4px solid #3498db;
+        padding-left: 12px;
+        margin-top: 30px;
+    }
+    
+    h3 {
+        color: #555;
+        margin-top: 24px;
+    }
+    
+    .day {
+        background: white;
+        border-radius: 12px;
+        padding: 24px;
+        margin-bottom: 24px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .day:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    
+    .section {
+        margin: 16px 0;
+        padding: 12px;
+        border-left: 3px solid #e8e8e8;
+    }
+    
+    .date {
+        color: #3498db;
+        font-weight: 600;
+    }
+    
+    .title {
+        color: #2c3e50;
+        font-size: 1.3em;
+    }
+    
+    a {
+        color: #3498db;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    
+    a:hover {
+        color: #2980b9;
+        text-decoration: underline;
+    }
+    
+    pre {
+        background: #f8f9fa;
+        border: 1px solid #e9ecef;
+        border-radius: 6px;
+        padding: 16px;
+        overflow-x: auto;
+        font-size: 0.9em;
+    }
+    
+    code {
+        background: #f8f9fa;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .comment {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 16px;
+        margin-top: 20px;
+    }
+    
+    .adminmenu, .calendar, .todo {
+        background: white;
+        border-radius: 8px;
+        padding: 12px;
+        margin-bottom: 16px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .referer {
+        font-size: 0.85em;
+        color: #7f8c8d;
+        margin-top: 16px;
+        padding-top: 12px;
+        border-top: 1px solid #e8e8e8;
+    }
+    
+    /* Web Archive ツールバーを非表示 */
+    #wm-ipp-base, #wm-ipp, #donato {
+        display: none !important;
+    }
+    
+    hr.sep {
+        border: none;
+        border-top: 2px solid #e8e8e8;
+        margin: 30px 0;
+    }
+</style>
+
+</head>
   <body class="navia">
 
                     <div class="ia-banners">
@@ -1894,7 +2019,7 @@ if (window!=window.top) {
               aria-labelledby="logoTitleID logoDescID">
               <title id="logoTitleID" class="style-scope primary-nav">Internet Archive logo</title>
               <desc id="logoDescID" class="style-scope primary-nav">A line drawing of the Internet Archive headquarters
-                building façade.</desc>
+                building fa巽ade.</desc>
               <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" class="style-scope primary-nav">
                 <mask id="mask-2" fill="white" class="style-scope primary-nav">
                   <path

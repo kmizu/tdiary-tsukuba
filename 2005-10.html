@@ -1,43 +1,168 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="ja-JP">
-<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=Hk4-lkW3" charset="utf-8"></script>
-<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<head>
+
 <script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
-<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+
 <script type="text/javascript">
     __wm.init("https://web.archive.org/web");
   __wm.wombat("http://www.coins.tsukuba.ac.jp:80/~i021216/diary/?date=200510","20070327065738","https://web.archive.org/","web","https://web-static.archive.org/_static/",
 	      "1174978658");
 </script>
-<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" />
-<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+
+
 <!-- End Wayback Rewrite JS Include -->
 
-	<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="generator" content="tDiary 2.0.0">
 	<meta http-equiv="Last-Modified" content="Fri, 16 Mar 2007 20:33:46 GMT">
-	<meta http-equiv="Content-Script-Type" content="text/javascript; charset=EUC-JP">
-	<meta name="author" content="���繨��">
+	<meta http-equiv="Content-Script-Type" content="text/javascript; charset=UTF-8">
+	<meta name="author" content="水島宏太">
 	<link rev="made" href="mailto:hau51010{at}tree.odn.ne.jp">
-	<link rel="index" title="�ȥå�" href="http://www.coins.tsukuba.ac.jp/~i021216/">
-	<link rel="start" title="�ǿ�" href="./">
+	<link rel="index" title="トップ" href="http://www.coins.tsukuba.ac.jp/~i021216/">
+	<link rel="start" title="最新" href="./">
 	<meta http-equiv="content-style-type" content="text/css">
 	<link rel="stylesheet" href="/web/20070327065738cs_/http://www.coins.tsukuba.ac.jp/~i021216/diary/theme/base.css" type="text/css" media="all">
 	<link rel="stylesheet" href="/web/20070327065738cs_/http://www.coins.tsukuba.ac.jp/~i021216/diary/theme/another_blue/another_blue.css" title="another_blue" type="text/css" media="all">
-	<title>Onion��ȯ����(2005-10)</title>
+	<title>Onion開発日記(2005-10)</title>
 	
 	<!--link rel="alternate" type="application/x-lirs" title="lirs" href="antenna.lirs"-->
-	<link rel="alternate" type="application/rss+xml" title="RSS" href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~i021216/diary/index.rdf">
+	
+
+<style>
+    /* Modern Styling */
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.7;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        color: #333;
+    }
+    
+    h1 {
+        color: #2c3e50;
+        border-bottom: 3px solid #3498db;
+        padding-bottom: 12px;
+        font-size: 2em;
+        margin-top: 0;
+    }
+    
+    h2 {
+        color: #34495e;
+        border-left: 4px solid #3498db;
+        padding-left: 12px;
+        margin-top: 30px;
+    }
+    
+    h3 {
+        color: #555;
+        margin-top: 24px;
+    }
+    
+    .day {
+        background: white;
+        border-radius: 12px;
+        padding: 24px;
+        margin-bottom: 24px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .day:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    
+    .section {
+        margin: 16px 0;
+        padding: 12px;
+        border-left: 3px solid #e8e8e8;
+    }
+    
+    .date {
+        color: #3498db;
+        font-weight: 600;
+    }
+    
+    .title {
+        color: #2c3e50;
+        font-size: 1.3em;
+    }
+    
+    a {
+        color: #3498db;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    
+    a:hover {
+        color: #2980b9;
+        text-decoration: underline;
+    }
+    
+    pre {
+        background: #f8f9fa;
+        border: 1px solid #e9ecef;
+        border-radius: 6px;
+        padding: 16px;
+        overflow-x: auto;
+        font-size: 0.9em;
+    }
+    
+    code {
+        background: #f8f9fa;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .comment {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 16px;
+        margin-top: 20px;
+    }
+    
+    .adminmenu, .calendar, .todo {
+        background: white;
+        border-radius: 8px;
+        padding: 12px;
+        margin-bottom: 16px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .referer {
+        font-size: 0.85em;
+        color: #7f8c8d;
+        margin-top: 16px;
+        padding-top: 12px;
+        border-top: 1px solid #e8e8e8;
+    }
+    
+    /* Web Archive ツールバーを非表示 */
+    #wm-ipp-base, #wm-ipp, #donato {
+        display: none !important;
+    }
+    
+    hr.sep {
+        border: none;
+        border-top: 2px solid #e8e8e8;
+        margin: 30px 0;
+    }
+</style>
+
 </head>
 <body>
 
 
 <div class="adminmenu">
-<span class="adminmenu"><a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~i021216/">�ȥå�</a></span>
-<span class="adminmenu"><a href="./">�ǿ�</a></span>
-<span class="adminmenu"><a href="update.rb">�ɵ�</a></span>
+<span class="adminmenu"><a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~i021216/">トップ</a></span>
+<span class="adminmenu"><a href="./">最新</a></span>
+<span class="adminmenu"><a href="update.rb">追記</a></span>
 </div>
-<h1>Onion��ȯ����</h1>
+<h1>Onion開発日記</h1>
 <div class="calendar">
 <div class="year">2004|<a href="./?date=200409">09</a>|<a href="./?date=200410">10</a>|<a href="./?date=200411">11</a>|<a href="./?date=200412">12</a>|</div>
 <div class="year">2005|<a href="./?date=200501">01</a>|<a href="./?date=200502">02</a>|<a href="./?date=200503">03</a>|<a href="./?date=200504">04</a>|<a href="./?date=200505">05</a>|<a href="./?date=200506">06</a>|<a href="./?date=200507">07</a>|<a href="./?date=200508">08</a>|<a href="./?date=200509">09</a>|<a href="./?date=200510">10</a>|<a href="./?date=200511">11</a>|<a href="./?date=200512">12</a>|</div>
@@ -66,33 +191,33 @@
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20051001#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=Java">Java</a>]Generic����</h3><p>
-Java5�ˤʤä�Generics��Ƴ�����줿���ᡢ��������Υ��饹�ڤӥ᥽�åɤ�Generics�б��ˤʤä���java.lang.Object��getClass()�᥽�åɤ⤽�Σ��Ĥǡ����Υ᥽�åɤ���ޤǤϡ�
+<h3><a href="./?date=20051001#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=Java">Java</a>]Genericの謎</h3><p>
+Java5になってGenericsが導入されたため、たくさんのクラス及びメソッドがGenerics対応になった。java.lang.ObjectのgetClass()メソッドもその１つで、このメソッドそれまでは、
 </p>
 <pre>
   Object getClass()
 </pre>
 <p>
-���ä��Τ�����Java5�Ǥϡ�
+だったのだが、Java5では、
 </p>
 <pre>
   Class&lt;? extends Object&gt; getClass()
 </pre>
 <p>
-�ȤʤäƤ��롣���η����Τϡ��̤˲�������Ǥ�̵��������ʤΤ�API�ɥ�����Ȥε��Ҥǡ������֤��ͷ��ˤĤ��ơ�<a href="https://web.archive.org/web/20070327065738/http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html#getClass()">Object#getClass()��API�ɥ������</a>�Ǥϡ�
+となっている。この型自体は、別に何も問題では無い。問題なのはAPIドキュメントの記述で、この返り値型について、<a href="https://web.archive.org/web/20070327065738/http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html#getClass()">Object#getClass()のAPIドキュメント</a>では、
 </p>
 <blockquote>
     The java.lang.Class object that represents the runtime class of the object. The result is of type Class&lt;? extends X&gt; where X is the erasure of the static type of the expression on which getClass is called.
 </blockquote>
 <p>
-�Ƚ񤫤�Ƥ��롣����ϡ��㤨��String����<s>���󥹥��󥹤��ݻ����Ƥ���</s>�ѿ�str�����ä��顢str.getClass()���ͤ���Class&lt;? extends String&gt;�ˤʤ�Ȥ������Ȥ��Ȼפ��������Object���饹��getClass()������򸫤Ƥ⡢�֤��ͤη���Class&lt;? extends Object&gt;�Ȥ����������Ƥ��ʤ������ϡ���������ͷ��ε�ǽ��Ȥäƥ��֥��饹�ǥ����С��饤�ɤ��Ƥ���Τ��Ȼפä�����Object#getClass()��final�Ǥ��ꡢ���֥��饹�ǥ����С��饤�ɤǤ���櫓��̵������˼�ʬ�Ǽ��Τ褦�ʥ����ɤ�񤤤Ƽ¸����ƤߤƤ⡢����ѥ��륨�顼�ˤʤ�������ä���
+と書かれている。これは、例えばString型の<s>インスタンスを保持している</s>変数strがあったら、str.getClass()の値が、Class&lt;? extends String&gt;になるということだと思うんだが、ObjectクラスのgetClass()の宣言を見ても、返り値の型はClass&lt;? extends Object&gt;としか宣言されていない。初めは、共変戻り値型の機能を使ってサブクラスでオーバーライドしているのかと思ったが、Object#getClass()はfinalであり、サブクラスでオーバーライドできるわけが無い。試しに自分で次のようなコードを書いて実験してみても、コンパイルエラーになるだけだった。
 </p>
 <pre>
 public class Main {
 	public static void main(String[] args) {
 	       B b = new B();
-                Class&lt;? extends B&gt; classB1 = b.getClass();//�����OK
-	       Class&lt;? extends B&gt; classB2 = b.call();//����ѥ��륨�顼
+                Class&lt;? extends B&gt; classB1 = b.getClass();//これはOK
+	       Class&lt;? extends B&gt; classB2 = b.call();//コンパイルエラー
 	}
 }
 class A {
@@ -102,20 +227,20 @@ class B extends A {
 }
 </pre>
 <p>
-���Ρ�java.lang.Object#getClass()�������֤��ͤη������֥��饹�Ǿ�����Ѥ��Τ�������������ġ�����äȡ�<a href="https://web.archive.org/web/20070327065738/http://java.sun.com/docs/books/jls/third_edition/html/j3TOC.html">JLS</a>
-��Ĵ�٤Ƥߤ褦��
+何故、java.lang.Object#getClass()だけ、返り値の型がサブクラスで勝手に変わるのだろうか？謎だ…。ちょっと、<a href="https://web.archive.org/web/20070327065738/http://java.sun.com/docs/books/jls/third_edition/html/j3TOC.html">JLS</a>
+を調べてみよう。
 </p></div><div class="section">
-<h3><a href="./?date=20051001#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]����������</h3><p>
-<a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~word/">WORD</a>�δ��ǡ������������Ԥä����Ѥ���������ϡ����������顢�������åȥ��������顢�ڥץ���Dr.�ڥåѡ�������ʤʤ�10���ࡣ3�Ĥۤ��ðۤ�̣�Τ�Τ�����¾�ϡ��ۤȤ�ɶ��̤Ǥ��ʤ��ä����ᡢ�ƥ��ȡ��˽񤤤���������Ǥ����Τϡ�Dr.�ڥåѡ����Ĥ������ä������ʤߤˡ�ͥ���Ԥϡ����Ĥ����Ƥ����褯����������Ƥ����Τ���
+<h3><a href="./?date=20051001#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]利きコーラ</h3><p>
+<a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~word/">WORD</a>の企画で、利きコーラを行った。用いたコーラは、コカコーラ、ダイエットコカコーラ、ペプシ、Dr.ペッパー、ガラナなど10種類。3つほど特異な味のものがある他は、ほとんど区別できなかったため、テキトーに書いたが、正解できたのは、Dr.ペッパー１つだけだった。ちなみに、優勝者は、７つも当てた。よくそれだけ当てられるものだ。
 </p>
 <p>
-̣����٤뤿��ˡ�������Ф�����ޤʤ��ƤϤʤ�ʤ��ä����ᡢ����ä���ϡ����Ф餯��ʢ�������������ä��������äס������������θ����Ԥ˹Ԥ��ʤ��ƤϤʤ�ʤ��Ȥ����Τˡ���ʬ�ϰ��β����äƤ���Τ������ġ�
+味を比べるために、コーラばかり飲まなくてはならなかったため、終わった後は、しばらくお腹が気持ち悪かった。うえっぷ。しかし、この後歯医者に行かなくてはならないというのに、自分は一体何をやっているのだろう…。
 </p></div><div class="section">
-<h3><a href="./?date=20051001#p03"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]�����</h3><p>
-Ⱦ��ۤ�����������ˤ�Τǡ�����Ԥء�����ʰ�Ԥˤ�������ˤ����ʤΤǡ����餫����Web��Ĵ�٤ơ�ɾȽ���ɤ����ʽ�˹Ԥä����ԤäƤߤ�ȡ��ɤ����ɾȽ�Ͽ��¤��ä��褦�ǡ��б����ɤ��������������Ť������ˤ��ʤ��ä��������˼��Ť���ˤϡ����ȿ����̤�ɬ�פ����뤬������ʤ鵤�ڤ��̤���������
+<h3><a href="./?date=20051001#p03"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]歯医者</h3><p>
+半月ほど前から歯が痛むので、歯医者へ。下手な医者にかかると痛そうなので、あらかじめWebで調べて、評判が良さげな所に行った。行ってみると、どうやら評判は真実だったようで、対応も良い感じだし、治療も全然痛くなかった。完全に治療するには、あと数回通う必要があるが、これなら気楽に通えそうだ。
 </p></div><div class="section">
-<h3><a href="./?date=20051001#p04"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]�ڱ��ֲ����</h3><p>
-��ʬ���碌�ƣ��ͤǡ��ڱ��ֲ����˹ԤäƤ�����������ͧã�μ֤Ǹ��˹Ԥä����ȤϤ��ä�������ž�֤ǹԤ��ΤϽ��Ƥ����󣱻��֤ۤɼ�ž�֤򤳤��ǡ�18:00���˲ֲ����Τ�����ζ᤯�����塣20:00�᤮�ޤǡ���2���֤ۤɲֲФ򸫤ơ��ޤä���Ȳᤴ������
+<h3><a href="./?date=20051001#p04"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]土浦花火大会</h3><p>
+自分を合わせて４人で、土浦花火大会に行ってきた。以前、友達の車で見に行ったことはあったが、自転車で行くのは初めてだ。約１時間ほど自転車をこいで、18:00頃に花火大会のある場所の近くへ到着。20:00過ぎまで、約2時間ほど花火を見て、まったりと過ごした。
 </p>
 <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~i021216/images/hanabi01.jpg">
 <img src="https://web.archive.org/web/20070327065738im_/http://www.coins.tsukuba.ac.jp/~i021216/images/hanabi01_thumbnail.jpg">
@@ -134,7 +259,7 @@ class B extends A {
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��4��) [<a href="./?date=20051001#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全4件) [<a href="./?date=20051001#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20051001#c01"><span class="canchor">_</span></a>
 				<span class="commentator">sexy raconti erotici</span>&nbsp;[ amas dominantes gangbang  candid piedi  insensato student..]</p>
@@ -154,7 +279,7 @@ class B extends A {
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065738/http://d.hatena.ne.jp/softether/" title="http://d.hatena.ne.jp/softether/">297</a> | <a href="https://web.archive.org/web/20070327065738/http://d.hatena.ne.jp/softether/20051001" title="http://d.hatena.ne.jp/softether/20051001">43</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.mx/search?hl=es&amp;q=www.miedo.com&amp;meta=" title="http://www.google.com.mx/search?hl=es&amp;q=www.miedo....">28</a> | <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">16</a> | <a href="https://web.archive.org/web/20070327065738/http://buscador.lycos.es/cgi-bin/pursuit?query=vajinas+eyaculando+gratis&amp;SITE=es&amp;enc=utf-8&amp;cat=web&amp;nightsurf=no" title="http://buscador.lycos.es/cgi-bin/pursuit?query=vaj...">16</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.mx/search?hl=es&amp;q=www.miedo.com&amp;btnG=B%C3%BAsqueda+en+Google&amp;meta=" title="http://www.google.com.mx/search?hl=es&amp;q=www.miedo....">14</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.co/search?hl=es&amp;q=www.miedo.com&amp;meta=" title="http://www.google.com.co/search?hl=es&amp;q=www.miedo....">14</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;sa=X&amp;oi=spell&amp;resnum=0&amp;ct=result&amp;cd=1&amp;q=www+ragazze-grasse.com&amp;spell=1" title="http://www.google.it/search?hl=it&amp;sa=X&amp;oi=spell&amp;re...">13</a> | <a href="https://web.archive.org/web/20070327065738/http://search.msn.es/results.aspx?q=www.mujers+adultas+colombianas&amp;mkt=es-ES&amp;form=QBRE&amp;go.x=13&amp;go.y=9" title="http://search.msn.es/results.aspx?q=www.mujers adu...">13</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.es/search?q=ver+videos+gratis+de+se%C3%B1oras+blancas+follando+con+negros&amp;hl=es&amp;lr=&amp;rls=GGGL,GGGL:2006-41,GGGL:es&amp;start=20&amp;sa=N" title="http://www.google.es/search?q=ver videos gratis de...">8</a> | <a href="./?date=20051001#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065738/http://d.hatena.ne.jp/softether/" title="http://d.hatena.ne.jp/softether/">297</a> | <a href="https://web.archive.org/web/20070327065738/http://d.hatena.ne.jp/softether/20051001" title="http://d.hatena.ne.jp/softether/20051001">43</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.mx/search?hl=es&amp;q=www.miedo.com&amp;meta=" title="http://www.google.com.mx/search?hl=es&amp;q=www.miedo....">28</a> | <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">16</a> | <a href="https://web.archive.org/web/20070327065738/http://buscador.lycos.es/cgi-bin/pursuit?query=vajinas+eyaculando+gratis&amp;SITE=es&amp;enc=utf-8&amp;cat=web&amp;nightsurf=no" title="http://buscador.lycos.es/cgi-bin/pursuit?query=vaj...">16</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.mx/search?hl=es&amp;q=www.miedo.com&amp;btnG=B%C3%BAsqueda+en+Google&amp;meta=" title="http://www.google.com.mx/search?hl=es&amp;q=www.miedo....">14</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.co/search?hl=es&amp;q=www.miedo.com&amp;meta=" title="http://www.google.com.co/search?hl=es&amp;q=www.miedo....">14</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;sa=X&amp;oi=spell&amp;resnum=0&amp;ct=result&amp;cd=1&amp;q=www+ragazze-grasse.com&amp;spell=1" title="http://www.google.it/search?hl=it&amp;sa=X&amp;oi=spell&amp;re...">13</a> | <a href="https://web.archive.org/web/20070327065738/http://search.msn.es/results.aspx?q=www.mujers+adultas+colombianas&amp;mkt=es-ES&amp;form=QBRE&amp;go.x=13&amp;go.y=9" title="http://search.msn.es/results.aspx?q=www.mujers adu...">13</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.es/search?q=ver+videos+gratis+de+se%C3%B1oras+blancas+follando+con+negros&amp;hl=es&amp;lr=&amp;rls=GGGL,GGGL:2006-41,GGGL:es&amp;start=20&amp;sa=N" title="http://www.google.es/search?q=ver videos gratis de...">8</a> | <a href="./?date=20051001#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -167,16 +292,16 @@ class B extends A {
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20051002#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%B8%A1%BA%F7">����</a>]����ѥ�����������ɤ�����</h3><p>
-����Ʊ�ͤΤ��Ȥ򤷤Ƥ���ͤ��������Τǡ������������狼��ʤ�����
-��ʬ�������˸������󥸥󤫤����ͤ���¿�����褦�ʤΤǡ�������ɤ�����ܤˤĤ�����Τ�Ͽ���륫�ƥ�����äƤߤ�������Υ�����ɤϡ֥���ѥ�����������ɤ������סġ��Τ��˥���ѥ�������ϡ����ݤ��������⤷��ʤ��������β����Τꤿ���Τ��ġ��⤷�����ơ�����ѥ������ʤ��Ƥ⡢���͵��Ҥ��饳��ѥ������������褦�ʽ����ϤǤ�õ���Ƥ���Τ���������
+<h3><a href="./?date=20051002#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%B8%A1%BA%F7">検索</a>]コンパイラ作成　めんどくさい</h3><p>
+既に同様のことをしている人は大勢居るので、何番煎じかわからないが、
+自分の日記に検索エンジンから来る人が、多少居るようなので、キーワードの中で目についたものを記録するカテゴリを作ってみた。今回のキーワードは「コンパイラ作成　めんどくさい」…。確かにコンパイラ作成は、面倒くさいかもしれないが、一体何が知りたいのやら…。もしかして、コンパイラを作らなくても、仕様記述からコンパイラを生成するような処理系でも探しているのだろうか。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��2��) [<a href="./?date=20051002#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全2件) [<a href="./?date=20051002#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20051002#c01"><span class="canchor">_</span></a>
 				<span class="commentator">foto lesbiche</span>&nbsp;[ lesbe videos satanicos  gay maduros desnudos  divertente ..]</p>
@@ -192,7 +317,7 @@ class B extends A {
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065738/http://d.hatena.ne.jp/softether/" title="http://d.hatena.ne.jp/softether/">133</a> | <a href="https://web.archive.org/web/20070327065738/http://search.latam.msn.com/results.aspx?srch=105&amp;q=WWW+RUBIAS+CALIENTES+PLAY+BOY.CON&amp;first=11&amp;FORM=PERE" title="http://search.latam.msn.com/results.aspx?srch=105&amp;...">20</a> | <a href="https://web.archive.org/web/20070327065738/http://espanol.search.yahoo.com/search?p=Incesto+Filial+Padre+e+hijas+Lesbicas&amp;ei=UTF-8&amp;fr=ieas&amp;x=wrt" title="http://espanol.search.yahoo.com/search?p=Incesto F...">19</a> | <a href="https://web.archive.org/web/20070327065738/http://d.hatena.ne.jp/softether/20051001" title="http://d.hatena.ne.jp/softether/20051001">19</a> | <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">15</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;client=firefox-a&amp;channel=s&amp;rls=org.mozilla:it-IT:official&amp;hs=jRj&amp;sa=X&amp;oi=spell&amp;resnum=0&amp;ct=result&amp;cd=1&amp;q=troiette+gratis+senza+dowland&amp;spell=1" title="http://www.google.it/search?hl=it&amp;client=firefox-a...">12</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.br/search?hl=pt-BR&amp;q=trepadas+violentas+gay&amp;btnG=Pesquisar&amp;meta=" title="http://www.google.com.br/search?hl=pt-BR&amp;q=trepada...">12</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.fr/search?hl=fr&amp;sa=X&amp;oi=spell&amp;resnum=0&amp;ct=result&amp;cd=1&amp;q=chiquitas%2Bargentina%2Bbuenos%2Bannuncio&amp;spell=1" title="http://www.google.fr/search?hl=fr&amp;sa=X&amp;oi=spell&amp;re...">10</a> | <a href="https://web.archive.org/web/20070327065738/http://search.prodigy.msn.com/results.aspx?q=cexo++gey+en+tre+hombres&amp;FORM=MSNH&amp;srch_type=0" title="http://search.prodigy.msn.com/results.aspx?q=cexo ...">9</a> | <a href="https://web.archive.org/web/20070327065738/http://search.live.com/results.aspx?q=ADOLESENTES%20DE%20SECUNDARIA%20%20DE%2013%20%20A%2014%20ANOS%20%20EN%20PORNOGRAFIA%20INFANTIL%20%20DESNUDAS&amp;FORM=AB&amp;mkt=es-mx" title="http://search.live.com/results.aspx?q=ADOLESENTES ...">8</a> | <a href="./?date=20051002#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065738/http://d.hatena.ne.jp/softether/" title="http://d.hatena.ne.jp/softether/">133</a> | <a href="https://web.archive.org/web/20070327065738/http://search.latam.msn.com/results.aspx?srch=105&amp;q=WWW+RUBIAS+CALIENTES+PLAY+BOY.CON&amp;first=11&amp;FORM=PERE" title="http://search.latam.msn.com/results.aspx?srch=105&amp;...">20</a> | <a href="https://web.archive.org/web/20070327065738/http://espanol.search.yahoo.com/search?p=Incesto+Filial+Padre+e+hijas+Lesbicas&amp;ei=UTF-8&amp;fr=ieas&amp;x=wrt" title="http://espanol.search.yahoo.com/search?p=Incesto F...">19</a> | <a href="https://web.archive.org/web/20070327065738/http://d.hatena.ne.jp/softether/20051001" title="http://d.hatena.ne.jp/softether/20051001">19</a> | <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">15</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;client=firefox-a&amp;channel=s&amp;rls=org.mozilla:it-IT:official&amp;hs=jRj&amp;sa=X&amp;oi=spell&amp;resnum=0&amp;ct=result&amp;cd=1&amp;q=troiette+gratis+senza+dowland&amp;spell=1" title="http://www.google.it/search?hl=it&amp;client=firefox-a...">12</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.br/search?hl=pt-BR&amp;q=trepadas+violentas+gay&amp;btnG=Pesquisar&amp;meta=" title="http://www.google.com.br/search?hl=pt-BR&amp;q=trepada...">12</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.fr/search?hl=fr&amp;sa=X&amp;oi=spell&amp;resnum=0&amp;ct=result&amp;cd=1&amp;q=chiquitas%2Bargentina%2Bbuenos%2Bannuncio&amp;spell=1" title="http://www.google.fr/search?hl=fr&amp;sa=X&amp;oi=spell&amp;re...">10</a> | <a href="https://web.archive.org/web/20070327065738/http://search.prodigy.msn.com/results.aspx?q=cexo++gey+en+tre+hombres&amp;FORM=MSNH&amp;srch_type=0" title="http://search.prodigy.msn.com/results.aspx?q=cexo ...">9</a> | <a href="https://web.archive.org/web/20070327065738/http://search.live.com/results.aspx?q=ADOLESENTES%20DE%20SECUNDARIA%20%20DE%2013%20%20A%2014%20ANOS%20%20EN%20PORNOGRAFIA%20INFANTIL%20%20DESNUDAS&amp;FORM=AB&amp;mkt=es-mx" title="http://search.live.com/results.aspx?q=ADOLESENTES ...">8</a> | <a href="./?date=20051002#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -205,21 +330,21 @@ class B extends A {
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20051003#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=Onion">Onion</a>]Eclipse3.1�ؤΰܹ�</h3><p>
-���ޤ�Onion�γ�ȯ�ˤϡ����ä�Eclipse3.0��ȤäƤ���������������3.1�˰ܹԤ��뤳�Ȥˤ������ܹԤϡ����μ��Τ褦�ʼ��ǿʤ᤿��
+<h3><a href="./?date=20051003#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=Onion">Onion</a>]Eclipse3.1への移行</h3><p>
+今までOnionの開発には、ずっとEclipse3.0を使ってきたが、そろそろ3.1に移行することにした。移行は、大体次のような手順で進めた。
 </p>
 <ol>
-<li>���ʻ��Ѥ��Ƥ���ץ饰����򥤥󥹥ȡ���</li>
-<li>�ץ��������Ȥ�Ť�������ڡ������鿷����������ڡ����˥���ݡ���(�С������֤ǥ�����ڡ����˸ߴ��������뤫�狼��ʤ��ä�����)</li>
-<li>�����Х���ɤΰܹ�</li>
+<li>普段使用しているプラグインをインストール</li>
+<li>プロジェクトを古いワークスペースから新しいワークスペースにインポート(バージョン間でワークスペースに互換性があるかわからなかったため)</li>
+<li>キーバインドの移行</li>
 </ol>
 <p>
-3.�Υ����Х���ɤΰܹԤϡ������Х���ɤ����꤬��¸����Ƥ���ե����뤬�狼��ʤ��ä����ᡢ��֤������ä������ʤ�Ȥ�����餷���ե�����(workspace\.metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.ui.workbench.prefs)
-��õ���Ф��ơ�������������ڡ�����Ʊ̾�Υե������񤭴������Ȥ��������ޤ����ä�������ǥ�Ȥʤɤ�����ʤɤϤޤ��ܹԤǤ��Ƥ��ʤ����������Х���ɰʳ��ϡ�����ۤɥ������ޥ������Ƥ���櫓�ǤϤʤ��Τǡ��ʤ�Ȥ��ʤ��������
+3.のキーバインドの移行は、キーバインドの設定が保存されているファイルがわからなかったため、手間がかかったが、なんとかそれらしいファイル(workspace\.metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.ui.workbench.prefs)
+を探し出して、新しいワークスペースの同名のファイルを書き換えたところ、うまくいった。インデントなどの設定などはまだ移行できていないが、キーバインド以外は、それほどカスタマイズしているわけではないので、なんとかなるだろう。
 </p></div><div class="section">
-<h3><a href="./?date=20051003#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=Java">Java</a>]Java5�Ǵؿ����ץ�����ߥ�</h3><p>
-Java5�Ǵؿ����ץ�����ߥ󥰤äݤ����Ȥ򤹤뤿��Υ饤�֥����äƤߤ����Ȥꤢ�������ߤޤǤˡ�6���ǤޤǤΥ��ץ롢6�����ޤǤδؿ��Υ��꡼����List���Ф���map,foldl,foldr,zip,exists,filter,find,all,tabulate�ޤǤ����������
-�ޤ�������Ĺ�����ε�ǽ��Ȥäơ��ꥹ�Ȥ��ñ����������ؿ���������������Υ饤�֥�����Ѥ����ץ������ϡ��ʲ��Τ褦�ˤʤ롣
+<h3><a href="./?date=20051003#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=Java">Java</a>]Java5で関数型プログラミング</h3><p>
+Java5で関数型プログラミングっぽいことをするためのライブラリを作ってみた。とりあえず現在までに、6要素までのタプル、6引数までの関数のカリー化、Listに対するmap,foldl,foldr,zip,exists,filter,find,all,tabulateまでを実装した。
+また、可変長引数の機能を使って、リストを簡単に生成する関数も実装した。このライブラリを使用したプログラムは、以下のようになる。
 </p>
 <pre>
 import java.util.List;
@@ -288,7 +413,7 @@ public class Usage {
 }
 </pre>
 <p>
-�¹Է�̤ϡ��ʲ��Τ褦�ˤʤ롣
+実行結果は、以下のようになる。
 </p>
 <pre>
 powerList = [1, 4, 9, 16, 25]
@@ -306,7 +431,7 @@ alphabets = [a, b, c, d, e]
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��3��) [<a href="./?date=20051003#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全3件) [<a href="./?date=20051003#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20051003#c01"><span class="canchor">_</span></a>
 				<span class="commentator">troiona gay</span>&nbsp;[ sexy fraces  anale mujeres chichonas  sexylingerie anale ..]</p>
@@ -324,7 +449,7 @@ alphabets = [a, b, c, d, e]
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065738/http://search.live.com/results.aspx?mkt=de-de&amp;FORM=TOOLBR&amp;q=www.amore+tv.de" title="http://search.live.com/results.aspx?mkt=de-de&amp;FORM...">35</a> | <a href="https://web.archive.org/web/20070327065738/http://d.hatena.ne.jp/softether/" title="http://d.hatena.ne.jp/softether/">30</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.es/search?q=escolares+lesbianas+jovencitas+follandose&amp;hl=es&amp;lr=&amp;rls=GGGL,GGGL:2006-37,GGGL:es&amp;start=50&amp;sa=N" title="http://www.google.es/search?q=escolares lesbianas ...">28</a> | <a href="https://web.archive.org/web/20070327065738/http://search.alice.it/search/cgi/search.cgi?f=hp&amp;switch=0&amp;offset=0&amp;hits=10&amp;qs=www.figa+calda.it" title="http://search.alice.it/search/cgi/search.cgi?f=hp&amp;...">24</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.es/search?hl=es&amp;q=ONION+EVOLUCION+DEL+TURISMO+EN+ESPA%C3%91A&amp;btnG=B%C3%BAsqueda+en+Google&amp;meta=" title="http://www.google.es/search?hl=es&amp;q=ONION EVOLUCIO...">21</a> | <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">19</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/ie?q=www.giochi+sexi.it&amp;hl=it&amp;btnG=Cerca" title="http://www.google.com/ie?q=www.giochi sexi.it&amp;hl=i...">18</a> | <a href="https://web.archive.org/web/20070327065738/http://search.alice.it/search/cgi/search.cgi?f=HOR&amp;switch=0&amp;offset=0&amp;hits=10&amp;qs=++www.le+lesbiche.it&amp;imageField.x=41&amp;imageField.y=8" title="http://search.alice.it/search/cgi/search.cgi?f=HOR...">17</a> | <a href="https://web.archive.org/web/20070327065738/http://search.msn.es/results.aspx?srch=105&amp;FORM=AS5&amp;q=www.com+videos+de+ni%c3%b1os+heroticos" title="http://search.msn.es/results.aspx?srch=105&amp;FORM=AS...">16</a> | <a href="https://web.archive.org/web/20070327065738/http://search.msn.es/results.aspx?q=www.sabrina+tetona+con+camara+sex&amp;FORM=MSNH&amp;srch_type=0" title="http://search.msn.es/results.aspx?q=www.sabrina te...">14</a> | <a href="./?date=20051003#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065738/http://search.live.com/results.aspx?mkt=de-de&amp;FORM=TOOLBR&amp;q=www.amore+tv.de" title="http://search.live.com/results.aspx?mkt=de-de&amp;FORM...">35</a> | <a href="https://web.archive.org/web/20070327065738/http://d.hatena.ne.jp/softether/" title="http://d.hatena.ne.jp/softether/">30</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.es/search?q=escolares+lesbianas+jovencitas+follandose&amp;hl=es&amp;lr=&amp;rls=GGGL,GGGL:2006-37,GGGL:es&amp;start=50&amp;sa=N" title="http://www.google.es/search?q=escolares lesbianas ...">28</a> | <a href="https://web.archive.org/web/20070327065738/http://search.alice.it/search/cgi/search.cgi?f=hp&amp;switch=0&amp;offset=0&amp;hits=10&amp;qs=www.figa+calda.it" title="http://search.alice.it/search/cgi/search.cgi?f=hp&amp;...">24</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.es/search?hl=es&amp;q=ONION+EVOLUCION+DEL+TURISMO+EN+ESPA%C3%91A&amp;btnG=B%C3%BAsqueda+en+Google&amp;meta=" title="http://www.google.es/search?hl=es&amp;q=ONION EVOLUCIO...">21</a> | <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">19</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/ie?q=www.giochi+sexi.it&amp;hl=it&amp;btnG=Cerca" title="http://www.google.com/ie?q=www.giochi sexi.it&amp;hl=i...">18</a> | <a href="https://web.archive.org/web/20070327065738/http://search.alice.it/search/cgi/search.cgi?f=HOR&amp;switch=0&amp;offset=0&amp;hits=10&amp;qs=++www.le+lesbiche.it&amp;imageField.x=41&amp;imageField.y=8" title="http://search.alice.it/search/cgi/search.cgi?f=HOR...">17</a> | <a href="https://web.archive.org/web/20070327065738/http://search.msn.es/results.aspx?srch=105&amp;FORM=AS5&amp;q=www.com+videos+de+ni%c3%b1os+heroticos" title="http://search.msn.es/results.aspx?srch=105&amp;FORM=AS...">16</a> | <a href="https://web.archive.org/web/20070327065738/http://search.msn.es/results.aspx?q=www.sabrina+tetona+con+camara+sex&amp;FORM=MSNH&amp;srch_type=0" title="http://search.msn.es/results.aspx?q=www.sabrina te...">14</a> | <a href="./?date=20051003#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -337,44 +462,44 @@ alphabets = [a, b, c, d, e]
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20051005#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0">�ץ�����ߥ�</a>]<a href="https://web.archive.org/web/20070327065738/http://www.programmers-paradise.com/tdiary/?date=20050918#c">Re:��å������ظ����ޤȤ�</a></h3><p>
-�ץ�����ޡ�������9/18�Υ���ȥ���Ф���ĥå��ߤǡ�������ˤ��ֻ��򤹤�ȸ��äƤ����ʤ��顢��Ⱦ��ФäƤ��ޤ�������������ޤ��󡣤�Ȥ�Ȥϡ�9/11�Υ���ȥ���Ф��ƥ����Ȥ���Ĥ��Ǥ����������줫����֤��Фäơ������ΤޤȤ��񤫤줿�褦�ʤΤǡ�������Ф��륳���ȤȤ������ˤ����Ƥ��������ޤ���
+<h3><a href="./?date=20051005#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0">プログラミング</a>]<a href="https://web.archive.org/web/20070327065738/http://www.programmers-paradise.com/tdiary/?date=20050918#c">Re:メッセージ指向：まとめ</a></h3><p>
+プログラマー日記の9/18のエントリに対するツッコミで、数日中には返事をすると言っておきながら、約半月が経ってしまい、申し訳ありません。もともとは、9/11のエントリに対してコメントするつもりでしたが、それから時間が経って、議論のまとめを書かれたようなので、それに対するコメントという形にさせていただきます。
 </p>
 <p>
-<a href="https://web.archive.org/web/20070327065738/http://www.programmers-paradise.com/tdiary/?date=20050918#c"><strong>�ץ�����ޡ�������9/18�Υ���ȥ��ꡧ</strong>
+<a href="https://web.archive.org/web/20070327065738/http://www.programmers-paradise.com/tdiary/?date=20050918#c"><strong>プログラマー日記の9/18のエントリより：</strong>
 </a>
 <blockquote>
 <p>
-* Objective-C��Ruby�Ǥϡ��᥽�åɥ����˥����ưŪ�˻���Ǥ��뵡ǽ����Ȥ��¸�ߤ��롣Java�Ǥϡ��ޤ�JVM�Υ�٥�ǤϤ��Τ褦�ʵ�ǽ�Ϥʤ���Java�Υ�٥��ReflectionAPI���Ȥ߹�碌��ɬ�פ����롣
+* Objective-CやRubyでは、メソッドシグニチャを動的に指定できる機能がもともと存在する。Javaでは、まずJVMのレベルではそのような機能はなく、JavaのレベルでReflectionAPIを組み合わせる必要がある。
 </p>
 </blockquote>
 <p>
-����Ϥ����̤�Ǥ�����JVM�Ȥ����ּ����פ��ä�Objective-C��Ruby�Ρֻ��͡פ�Ʊ�����Ӥ��Ƥ���Τϴ�ۤ˴����ޤ���JVM�λ��ͤˤ�äƸ�����ͤ����󤵤����⤢��ޤ��������ʤ��Ȥ⺣��Υ������Ǥϡ�ưŪ�ʥ᥽�åɸƤӽФ��Υѥե����ޥ󥹤����ꤵ��ȴ���ˤ���С����ߤ�JVM���Java����Ǥ�¸���ǽ�ʤ櫓�Ǥ�����
+これはその通りですが、JVMという「実装」の話とObjective-CやRubyの「仕様」を同列に比較しているのは奇異に感じます。JVMの仕様によって言語仕様が制約される場合もありますが、少なくとも今回のケースでは、動的なメソッド呼び出しのパフォーマンスの問題さえ抜きにすれば、現在のJVM上のJava言語でも実現可能なわけですし。
 </p>
 <blockquote>
 <p>
-* JVM��Ǥ�դΥ᥽�åɥ����˥�������Ǥ���褦�ˤ���ˤϡ�JVM��٥�Ǥο������Х��ȥ����ɤ�Ƴ���ȡ�Java��٥�ǤΥ᥽�åɥ����˥������뵡ǽ��ɬ�ס�
+* JVMで任意のメソッドシグニチャを指定できるようにするには、JVMレベルでの新しいバイトコードの導入と、Javaレベルでのメソッドシグニチャを求める機能が必要。
 </p>
 </blockquote>
 <p>
-���ԤˤĤ��ƤϤ狼��ޤ�������Ԥ�Java��٥�ǤΥ᥽�åɥ����˥������뵡ǽ�Ȥ����Τ�������Ū�ˤɤ�������Τ򤵤��Ƥ���Τ����褯�狼��ޤ���Ǥ�����
+前者についてはわかりますが、後者のJavaレベルでのメソッドシグニチャを求める機能というのが、具体的にどういうものをさしているのかがよくわかりませんでした。
 </p>
 <blockquote>
-* ��å������ظ������Ǥ�դΥ�å������������Ǥ���Τϡ����Ť����夤���ᡣJava�Ǥ϶������Ť���Ԥ����ᡢ���Τ褦�ʤ��Ȥ�����Ƥ��ʤ���
+* メッセージ指向言語で任意のメッセージが送信できるのは、型づけが弱いため。Javaでは強い型づけを行うため、そのようなことを許していない。
 </blockquote>
 <p>
-����Ϥɤ��Ǥ��礦���������դ�����ͳ��Ǥ�դΥ�å������������Ǥ��뵡ǽ��(���ѹ�ʸ/�饤�֥�����鷺)���ݡ��Ȥ��Ƥ��ʤ��Τ��ä��顢��ե쥯�����API��Ʊ�ͤ���ͳ�ǥ��ݡ��Ȥ��ʤ��Τ������ʤ褦�˻פ��ޤ����ġ�
+これはどうでしょう。強い型付けを理由に任意のメッセージが送信できる機能を(専用構文/ライブラリを問わず)サポートしていないのだったら、リフレクションAPIも同様の理由でサポートしないのが自然なように思えますが…。
 </p>
 <blockquote>
 <p>
-* ��å������ظ�����ǤΥ᥽�åɥ����˥���ϥ��饹�ȤϷ�ӤĤ��Ƥ��ʤ���Java�Υ᥽�åɥ����˥����ɽ��Method���֥������Ȥϥ��饹�ȷ�ӤĤ��Ƥ��롣�ʾ�ε�������Ҽڡ�
+* メッセージ指向言語でのメソッドシグニチャはクラスとは結びついていない。Javaのメソッドシグニチャを表すMethodオブジェクトはクラスと結びついている。（上の記事より拝借）
 </p>
 </blockquote>
 <p>
-Java�Υ᥽�åɥ����˥����ɽ���Ȥ������⡢��ե쥯�����API�ˤ�����᥽�åɤ�ɽ���Ȥ����Τ����ΤʤȤ����Ǥ�̵���Ǥ��礦�����ޤ������Τ��Ȥ�ñ�˥�ե쥯�����API���߷פ�����Ǥ��äơ���å������ظ��������äȤ�ľ�ܷ�ӤĤ��ʤ��褦�˻פ��ޤ���
+Javaのメソッドシグニチャを表すというよりも、リフレクションAPIにおけるメソッドを表すというのが正確なところでは無いでしょうか。また、このことは単にリフレクションAPIの設計の問題であって、メッセージ指向云々の話とは直接結びつかないように思います。
 </p></div><div class="section">
-<h3><a href="./?date=20051005#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=Java">Java</a>]Java5�������ƥ��</h3><p>
-�����������ǡ�����Ĺ�����Ȥäƥꥹ�ȥ�ƥ����äƤ�������������ˡ����Ѥ���С������ƥ�����뤳�Ȥ˵����Ĥ����Τǡ���äƤߤ뤳�Ȥˤ����������������ɤϤ���ʴ�����static�᥽�å�array������ǡ����ѥ�᡼��T�β���Ĺ��������褦�ˤ��Ƥ���Τ��ݥ���ȡ����Τ褦�ˤ��뤳�Ȥǡ������η����鼫ưŪ��T�η���������Ƥ���뤿�ᡢ�����������������Ū�˷�����ꤹ��ɬ�פ�̵����
+<h3><a href="./?date=20051005#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=Java">Java</a>]Java5で配列リテラル</h3><p>
+先日の日記で、可変長配列を使ってリストリテラルを作っていたが、この方法を応用すれば、配列リテラルも作れることに気がついたので、作ってみることにした。ソースコードはこんな感じ。staticメソッドarrayの宣言で、型パラメータTの可変長引数を取るようにしているのがポイント。このようにすることで、引数の型から自動的にTの型を推論してくれるため、配列の生成時に明示的に型を指定する必要が無い。
 </p>
 <pre>
 public class Array {
@@ -388,7 +513,7 @@ public class Array {
 }
 </pre>
 <p>
-���ʤߤˡ��¹Է�̤ϰʲ��Τ褦�ˤʤ롣
+ちなみに、実行結果は以下のようになる。
 </p>
 <pre>
 A
@@ -397,13 +522,13 @@ C
 D
 </pre>
 <p>
-�ޤ�������ξ��ϡ�new ��̾[]{...}�����ι�ʸ�����뤿�ᡢ�ꥹ�ȥ�ƥ�����٤��ɬ�����Ϥ��ޤ�̵����������η�̾�򵭽Ҥ���ɬ�פ�̵���Τϡ������������⤷��ʤ����ޤ���������ˡ�ˤϷ��������äơ�array(1,2,3,4)�Τ褦�ʼ�����Integer[]�ȿ�������Ƥ��ޤ������ѥ�᡼��T���ץ�ߥƥ��ַ�����ʤ��椨������ʤΤ���������ä����ؤ�������������Ф��Ƥϡ�array�᥽�åɤ򥪡��С������ɤ��ơ��ʲ��Τ褦�ʥ᥽�åɤ������ä��뤳�Ȥǡ��Ȥꤢ������褹�뤳�ȤϤǤ��롣
+まあ、配列の場合は、new 型名[]{...}形式の構文があるため、リストリテラルに比べると必要性はあまり無いが、配列の型名を記述する必要が無いのは、少し便利かもしれない。また、この方法には欠点があって、array(1,2,3,4)のような式が、Integer[]と推論されてしまう。型パラメータTがプリミティブ型を取れないゆえの制約なのだが、ちょっと不便だ。この問題に対しては、arrayメソッドをオーバーロードして、以下のようなメソッドの定義を加えることで、とりあえず解決することはできる。
 </p>
 <pre>
 int[] array(int... args) { return args; }
 </pre>
 <p>
-������������򤵤�˳�ĥ����double[]�ʤɤⰷ����褦�ˤ��褦�Ȥ��ơ��ʲ��Τ褦�ʥ᥽�å������ä���ȡ�array(1,2,3,4)�θƤӽФ��ϡ�array(int... args)�ȡ�array(double... args)��ξ����Ŭ�礹�뤿�ᡢ�����ޤ��Ǥ���Ȥ������Ȥǥ���ѥ��륨�顼�ˤʤäƤ��ޤ���
+しかし、これをさらに拡張してdouble[]なども扱えるようにしようとして、以下のようなメソッド定義を加えると、array(1,2,3,4)の呼び出しは、array(int... args)と、array(double... args)の両方に適合するため、あいまいであるということでコンパイルエラーになってしまう。
 </p>
 <pre>
 double[] array(double... args) { return args; }
@@ -413,7 +538,7 @@ double[] array(double... args) { return args; }
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��3��) [<a href="./?date=20051005#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全3件) [<a href="./?date=20051005#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20051005#c01"><span class="canchor">_</span></a>
 				<span class="commentator">Coleman Fletcher</span>&nbsp;[ *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  ..]</p>
@@ -431,7 +556,7 @@ double[] array(double... args) { return args; }
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065738/http://www.programmers-paradise.com/tdiary/?date=20050918" title="http://www.programmers-paradise.com/tdiary/?date=2...">47</a> | <a href="https://web.archive.org/web/20070327065738/http://d.hatena.ne.jp/softether/" title="http://d.hatena.ne.jp/softether/">34</a> | <a href="https://web.archive.org/web/20070327065738/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">24</a> | <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">23</a> | <a href="https://web.archive.org/web/20070327065738/http://www.yahoogle.jp/yahoo-12-ni%C3%B1as+calatas.html" title="http://www.yahoogle.jp/yahoo-12-niñas calatas.htm...">19</a> | <a href="https://web.archive.org/web/20070327065738/http://a.hatena.ne.jp/masato_kiyama/simple" title="http://a.hatena.ne.jp/masato_kiyama/simple">18</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.tr/search?hl=tr&amp;q=komiksex&amp;meta=" title="http://www.google.com.tr/search?hl=tr&amp;q=komiksex&amp;m...">13</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/search?sourceid=navclient&amp;hl=it&amp;ie=UTF-8&amp;rls=SUNA,SUNA:2005-52,SUNA:it&amp;q=idraulico+gayfoto+porno" title="google����(idraulico gayfoto porno)">9</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/search?q=www.juguetes.hn" title="google����(www.juguetes.hn)">7</a> | <a href="https://web.archive.org/web/20070327065738/http://d.hatena.ne.jp/softether/20051001" title="http://d.hatena.ne.jp/softether/20051001">7</a> | <a href="./?date=20051005#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065738/http://www.programmers-paradise.com/tdiary/?date=20050918" title="http://www.programmers-paradise.com/tdiary/?date=2...">47</a> | <a href="https://web.archive.org/web/20070327065738/http://d.hatena.ne.jp/softether/" title="http://d.hatena.ne.jp/softether/">34</a> | <a href="https://web.archive.org/web/20070327065738/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">24</a> | <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">23</a> | <a href="https://web.archive.org/web/20070327065738/http://www.yahoogle.jp/yahoo-12-ni%C3%B1as+calatas.html" title="http://www.yahoogle.jp/yahoo-12-ni単as calatas.htm...">19</a> | <a href="https://web.archive.org/web/20070327065738/http://a.hatena.ne.jp/masato_kiyama/simple" title="http://a.hatena.ne.jp/masato_kiyama/simple">18</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.tr/search?hl=tr&amp;q=komiksex&amp;meta=" title="http://www.google.com.tr/search?hl=tr&amp;q=komiksex&amp;m...">13</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/search?sourceid=navclient&amp;hl=it&amp;ie=UTF-8&amp;rls=SUNA,SUNA:2005-52,SUNA:it&amp;q=idraulico+gayfoto+porno" title="google検索(idraulico gayfoto porno)">9</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/search?q=www.juguetes.hn" title="google検索(www.juguetes.hn)">7</a> | <a href="https://web.archive.org/web/20070327065738/http://d.hatena.ne.jp/softether/20051001" title="http://d.hatena.ne.jp/softether/20051001">7</a> | <a href="./?date=20051005#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -444,15 +569,15 @@ double[] array(double... args) { return args; }
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20051012#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]����</h3><p>
-ī�����Ƽ��Ȥ˽Ф��Ȥ������Τ����뤤���Ǯ�äݤ���ʢ��Ĵ�ҤⰭ�����ɤ�������٤�������褦����
+<h3><a href="./?date=20051012#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]風邪</h3><p>
+朝起きて授業に出たところ、体がだるい上に熱っぽく、腹の調子も悪い。どうやら風邪を引いたようだ。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��11��) [<a href="./?date=20051012#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全11件) [<a href="./?date=20051012#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 			<p><a href="./?date=20051012#c01">Before...</a></p>
 				<p><a href="./?date=20051012#c07"><span class="canchor">_</span></a>
@@ -475,7 +600,7 @@ double[] array(double... args) { return args; }
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065738/http://www.yahoogle.jp/yahoo-10-ni%C3%B1as+calatas.html" title="http://www.yahoogle.jp/yahoo-10-niñas calatas.htm...">27</a> | <a href="https://web.archive.org/web/20070327065738/http://search.msn.es/results.aspx?srch=105&amp;FORM=AS5&amp;q=fotos+gratis+de+lolitas+desnu" title="http://search.msn.es/results.aspx?srch=105&amp;FORM=AS...">26</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=yessica+polsky&amp;btnG=Cerca+con+Google&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=yessica polsky...">16</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=cazzi+neri+lunghi+e+grossi+che+trombano+con+troie+in+carne&amp;btnG=Cerca+con+Google&amp;meta=lr%3Dlang_it" title="http://www.google.it/search?hl=it&amp;q=cazzi neri lun...">16</a> | <a href="https://web.archive.org/web/20070327065738/http://www.yahoogle.jp/yahoo-6-videos+sexo+gratis.html" title="http://www.yahoogle.jp/yahoo-6-videos sexo gratis....">13</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/search?hl=en&amp;q=ver+fotos+y+peliculas+de+lolitas+ardientes+porno+www.con+porno+infantil" title="google����(ver fotos y peliculas de lolitas ardientes porno www.con porno infantil)">12</a> | <a href="https://web.archive.org/web/20070327065738/http://search.msn.es/results.aspx?q=videos+gratis+preteens&amp;srch_type=0&amp;first=381&amp;FORM=PERE5" title="http://search.msn.es/results.aspx?q=videos gratis ...">12</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.es/search?q=videos+upskirts+debajo+de+las+faldas&amp;hl=es&amp;lr=&amp;start=40&amp;sa=N" title="http://www.google.es/search?q=videos upskirts deba...">11</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.bambole+sesso.it&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.bambole se...">10</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/search?q=www.super+mamadas.com&amp;hl=es&amp;lr=&amp;start=40&amp;sa=N" title="google����(www.super mamadas.com)">10</a> | <a href="./?date=20051012#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065738/http://www.yahoogle.jp/yahoo-10-ni%C3%B1as+calatas.html" title="http://www.yahoogle.jp/yahoo-10-ni単as calatas.htm...">27</a> | <a href="https://web.archive.org/web/20070327065738/http://search.msn.es/results.aspx?srch=105&amp;FORM=AS5&amp;q=fotos+gratis+de+lolitas+desnu" title="http://search.msn.es/results.aspx?srch=105&amp;FORM=AS...">26</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=yessica+polsky&amp;btnG=Cerca+con+Google&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=yessica polsky...">16</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=cazzi+neri+lunghi+e+grossi+che+trombano+con+troie+in+carne&amp;btnG=Cerca+con+Google&amp;meta=lr%3Dlang_it" title="http://www.google.it/search?hl=it&amp;q=cazzi neri lun...">16</a> | <a href="https://web.archive.org/web/20070327065738/http://www.yahoogle.jp/yahoo-6-videos+sexo+gratis.html" title="http://www.yahoogle.jp/yahoo-6-videos sexo gratis....">13</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/search?hl=en&amp;q=ver+fotos+y+peliculas+de+lolitas+ardientes+porno+www.con+porno+infantil" title="google検索(ver fotos y peliculas de lolitas ardientes porno www.con porno infantil)">12</a> | <a href="https://web.archive.org/web/20070327065738/http://search.msn.es/results.aspx?q=videos+gratis+preteens&amp;srch_type=0&amp;first=381&amp;FORM=PERE5" title="http://search.msn.es/results.aspx?q=videos gratis ...">12</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.es/search?q=videos+upskirts+debajo+de+las+faldas&amp;hl=es&amp;lr=&amp;start=40&amp;sa=N" title="http://www.google.es/search?q=videos upskirts deba...">11</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.bambole+sesso.it&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.bambole se...">10</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/search?q=www.super+mamadas.com&amp;hl=es&amp;lr=&amp;start=40&amp;sa=N" title="google検索(www.super mamadas.com)">10</a> | <a href="./?date=20051012#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -488,18 +613,18 @@ double[] array(double... args) { return args; }
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20051014#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">���祮��</a>]5km,32ʬ</h3><p>
-����(10km)����ͽ����ä�������˷�������ᡢ�����������ä���
+<h3><a href="./?date=20051014#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">ジョギング</a>]5km,32分</h3><p>
+２周(10km)走る予定だったが、寝坊したため、１周だけ走った。
 </p></div><div class="section">
-<h3><a href="./?date=20051014#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]�Ĥ��Хޥ饽�󿽤�����</h3><p>
-�������������������ڤ�ʤΤǡ���������ʧ�äƤ�����
+<h3><a href="./?date=20051014#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]つくばマラソン申し込み</h3><p>
+今日が申し込み締め切りなので、参加費を支払ってきた。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��3��) [<a href="./?date=20051014#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全3件) [<a href="./?date=20051014#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20051014#c01"><span class="canchor">_</span></a>
 				<span class="commentator">fetish mamme troie</span>&nbsp;[ osare lesbiche fottilo  bulma nue gay  gordas lindas sexy..]</p>
@@ -517,7 +642,7 @@ double[] array(double... args) { return args; }
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.filmhard.it&amp;btnG=Cerca+con+Google&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.filmhard.i...">29</a> | <a href="https://web.archive.org/web/20070327065738/http://search.alice.it/search/cgi/search.cgi?qs=www.filmhard.it&amp;dom=s&amp;filter=0&amp;hits=10&amp;offset=0&amp;lr=" title="http://search.alice.it/search/cgi/search.cgi?qs=ww...">28</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.preghiere+del+natale&amp;btnG=Cerca+con+Google&amp;meta=lr%3Dlang_it" title="http://www.google.it/search?hl=it&amp;q=www.preghiere ...">26</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.filmhard.it&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.filmhard.i...">26</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.ro/search?hl=ro&amp;q=video++porno+femei+torturate+&amp;btnG=Caut%C4%83&amp;meta=" title="http://www.google.ro/search?hl=ro&amp;q=video  porno f...">20</a> | <a href="https://web.archive.org/web/20070327065738/http://buscador.aol.com/aol/search?invocationType=wscreen-searchbox&amp;query=adolesentes+sesy" title="http://buscador.aol.com/aol/search?invocationType=...">15</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.bionde.it&amp;btnG=Cerca+con+Google&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.bionde.it&amp;...">13</a> | <a href="https://web.archive.org/web/20070327065738/http://search.prodigy.msn.com/results.aspx?srch=105&amp;FORM=AS5&amp;q=muchachitas+de+14+a%c3%b1os+putitas" title="http://search.prodigy.msn.com/results.aspx?srch=10...">13</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.bionde.it&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.bionde.it&amp;...">12</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=WWW.FILMHARD.IT&amp;btnG=Cerca+con+Google&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=WWW.FILMHARD.I...">10</a> | <a href="./?date=20051014#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.filmhard.it&amp;btnG=Cerca+con+Google&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.filmhard.i...">29</a> | <a href="https://web.archive.org/web/20070327065738/http://search.alice.it/search/cgi/search.cgi?qs=www.filmhard.it&amp;dom=s&amp;filter=0&amp;hits=10&amp;offset=0&amp;lr=" title="http://search.alice.it/search/cgi/search.cgi?qs=ww...">28</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.preghiere+del+natale&amp;btnG=Cerca+con+Google&amp;meta=lr%3Dlang_it" title="http://www.google.it/search?hl=it&amp;q=www.preghiere ...">26</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.filmhard.it&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.filmhard.i...">26</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.ro/search?hl=ro&amp;q=video++porno+femei+torturate+&amp;btnG=Caut%C4%83&amp;meta=" title="http://www.google.ro/search?hl=ro&amp;q=video  porno f...">20</a> | <a href="https://web.archive.org/web/20070327065738/http://buscador.aol.com/aol/search?invocationType=wscreen-searchbox&amp;query=adolesentes+sesy" title="http://buscador.aol.com/aol/search?invocationType=...">15</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.bionde.it&amp;btnG=Cerca+con+Google&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.bionde.it&amp;...">13</a> | <a href="https://web.archive.org/web/20070327065738/http://search.prodigy.msn.com/results.aspx?srch=105&amp;FORM=AS5&amp;q=muchachitas+de+14+a%c3%b1os+putitas" title="http://search.prodigy.msn.com/results.aspx?srch=10...">13</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.bionde.it&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.bionde.it&amp;...">12</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=WWW.FILMHARD.IT&amp;btnG=Cerca+con+Google&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=WWW.FILMHARD.I...">10</a> | <a href="./?date=20051014#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -530,18 +655,18 @@ double[] array(double... args) { return args; }
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20051015#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">���祮��</a>]10km,1����10ʬ</h3><p>
-���������ܳ�Ū�ˤĤ��Хޥ饽��˸������������ǹԤ��ͤФȤ������Ȥǡ���Υ�����䤷��10km���äƤߤ������ä�����ä������ä���������Ǥ⣲���ܤθ�Ⱦ�Ϥ��ʤ꤭�Ĥ��ä��������ࡣ�ޤ��ޤ����Ϥ��Ĥ��Ƥʤ��ʤ���
+<h3><a href="./?date=20051015#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">ジョギング</a>]10km,1時間10分</h3><p>
+そろそろ本格的につくばマラソンに向けて走り込んで行かねばということで、距離を増やして10km走ってみた。けっこうゆっくり走ったが、それでも２周目の後半はかなりきつかった。うーむ。まだまだ体力がついてないなあ。
 </p></div><div class="section">
-<h3><a href="./?date=20051015#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]�����ѹ�</h3><p>
-��ʬ�λȤäƤ������Ӥϡ���ʬ�����顢���ӤΥ���������˰�ư���褦�Ȥ��Ƥ�ʤ��ʤ���˰�ư���������˰�ư���Ƥ��ޤ����ݤ�ȯ�����Ƥ���������Ǥ⤳��ޤǲ������ƻȤäƤ����������������³��ʤΤǡ������ѹ����뤳�Ȥˡ��������Ĥ����ŵ�����ü�ä�������au����åפ�����Τǡ����������Ѥ��������ʤ�Ĺ�����ֻȤäƤ������ᡢ�����ѹ����뤿�����⤬�פä�����¤��Ѥ�ǽ����ä������ʤߤˡ��ѹ���ε���ϥ������׻�����A5512CA��
+<h3><a href="./?date=20051015#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]機種変更</h3><p>
+自分の使っていた携帯は、大分前から、携帯のカーソルを上に移動しようとしてもなかなか上に移動せず、下に移動してしまう現象が発生していた。それでもこれまで我慢して使ってきたが、そろそろ限界なので、機種変更することに。幸い、つくば電気街の端っこの方にauショップがあるので、そこを利用した。かなり長い期間使っていたため、機種変更するための代金が思ったよりも安く済んで助かった。ちなみに、変更後の機種はカシオ計算機のA5512CA。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��4��) [<a href="./?date=20051015#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全4件) [<a href="./?date=20051015#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20051015#c01"><span class="canchor">_</span></a>
 				<span class="commentator">Jason Oddie</span>&nbsp;[ *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  ..]</p>
@@ -561,7 +686,7 @@ double[] array(double... args) { return args; }
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.coppie.com&amp;meta=lr%3Dlang_it" title="http://www.google.it/search?hl=it&amp;q=www.coppie.com...">12</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/search?hl=en&amp;client=firefox-a&amp;channel=s&amp;rls=org.mozilla:en-US:official&amp;hs=lb1&amp;sa=X&amp;oi=spell&amp;resnum=0&amp;ct=result&amp;cd=1&amp;q=videos+de+vaqueras+teniendo+sexo&amp;spell=1" title="google����(videos de vaqueras teniendo sexo)">12</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.es/search?hl=es&amp;client=firefox-a&amp;channel=s&amp;rls=org.mozilla::official&amp;hs=bqP&amp;sa=X&amp;oi=spell&amp;resnum=0&amp;ct=result&amp;cd=1&amp;q=mostra+chochos+jovencitos&amp;spell=1" title="http://www.google.es/search?hl=es&amp;client=firefox-a...">11</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.pe/search?q=adolescentes++tetonas+1960&amp;btnG=B%C3%BAsqueda&amp;hl=es" title="http://www.google.com.pe/search?q=adolescentes  te...">11</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.br/search?hl=pt-BR&amp;q=Sites+pornograficos+do+japon+e+china&amp;btnG=Pesquisar&amp;meta=lr%3Dlang_zh-CN%7Clang_zh-TW%7Clang_ja" title="http://www.google.com.br/search?hl=pt-BR&amp;q=Sites p...">10</a> | <a href="https://web.archive.org/web/20070327065738/http://search.msn.com/results.asp?FORM=AS35&amp;srch=5&amp;q=darmowefilmygay" title="http://search.msn.com/results.asp?FORM=AS35&amp;srch=5...">10</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.tr/search?hl=tr&amp;q=komiksex&amp;meta=" title="http://www.google.com.tr/search?hl=tr&amp;q=komiksex&amp;m...">9</a> | <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">9</a> | <a href="https://web.archive.org/web/20070327065738/http://search.prodigy.msn.com/results.aspx?srch=105&amp;FORM=AS5&amp;q=MUJERES+FOYANDO+CON+ANIMALES" title="http://search.prodigy.msn.com/results.aspx?srch=10...">9</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.calendario+arcuri.it&amp;btnG=Cerca+con+Google&amp;meta=lr%3Dlang_it" title="http://www.google.it/search?hl=it&amp;q=www.calendario...">8</a> | <a href="./?date=20051015#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.coppie.com&amp;meta=lr%3Dlang_it" title="http://www.google.it/search?hl=it&amp;q=www.coppie.com...">12</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/search?hl=en&amp;client=firefox-a&amp;channel=s&amp;rls=org.mozilla:en-US:official&amp;hs=lb1&amp;sa=X&amp;oi=spell&amp;resnum=0&amp;ct=result&amp;cd=1&amp;q=videos+de+vaqueras+teniendo+sexo&amp;spell=1" title="google検索(videos de vaqueras teniendo sexo)">12</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.es/search?hl=es&amp;client=firefox-a&amp;channel=s&amp;rls=org.mozilla::official&amp;hs=bqP&amp;sa=X&amp;oi=spell&amp;resnum=0&amp;ct=result&amp;cd=1&amp;q=mostra+chochos+jovencitos&amp;spell=1" title="http://www.google.es/search?hl=es&amp;client=firefox-a...">11</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.pe/search?q=adolescentes++tetonas+1960&amp;btnG=B%C3%BAsqueda&amp;hl=es" title="http://www.google.com.pe/search?q=adolescentes  te...">11</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.br/search?hl=pt-BR&amp;q=Sites+pornograficos+do+japon+e+china&amp;btnG=Pesquisar&amp;meta=lr%3Dlang_zh-CN%7Clang_zh-TW%7Clang_ja" title="http://www.google.com.br/search?hl=pt-BR&amp;q=Sites p...">10</a> | <a href="https://web.archive.org/web/20070327065738/http://search.msn.com/results.asp?FORM=AS35&amp;srch=5&amp;q=darmowefilmygay" title="http://search.msn.com/results.asp?FORM=AS35&amp;srch=5...">10</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.tr/search?hl=tr&amp;q=komiksex&amp;meta=" title="http://www.google.com.tr/search?hl=tr&amp;q=komiksex&amp;m...">9</a> | <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">9</a> | <a href="https://web.archive.org/web/20070327065738/http://search.prodigy.msn.com/results.aspx?srch=105&amp;FORM=AS5&amp;q=MUJERES+FOYANDO+CON+ANIMALES" title="http://search.prodigy.msn.com/results.aspx?srch=10...">9</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.calendario+arcuri.it&amp;btnG=Cerca+con+Google&amp;meta=lr%3Dlang_it" title="http://www.google.it/search?hl=it&amp;q=www.calendario...">8</a> | <a href="./?date=20051015#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -574,21 +699,21 @@ double[] array(double... args) { return args; }
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20051017#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]�ع�</h3><p>
-���ޤǤϡ��ع֤ǤϱѸ�ε��ѽ�����Ƥ���⤷�Ƥ����Ȥ�����Τ��ä������轵�����轵���Ĥ��ıѸ����ʸ�ˤĤ��ơ����Ƥ�ޤȤ��ȯɽ����������Ѥ�뤳�Ȥˤʤä������ޤǤ������򤯤ʤꤽ�����ɤ��Ȥϻפ��Τ�������ʸ�����Ƥ�ޤȤ�Ʋ��⤷�����Ȥ�̵���ä��Τǡ��ǽ�϶�ϫ����������
+<h3><a href="./?date=20051017#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]輪講</h3><p>
+今までは、輪講では英語の技術書の内容を解説していくというものだったが、来週から毎週１つずつ英語の論文について、内容をまとめて発表する形式に変わることになった。今までよりも面白くなりそうで良いとは思うのだが、論文の内容をまとめて解説したことは無かったので、最初は苦労しそうだ。
 </p>
 <p>
-�Ȥꤢ������<a href="https://web.archive.org/web/20070327065738/http://citeseer.ist.psu.edu/cache/papers/cs/33402/http:zSzzSzpag.lcs.mit.eduzSzreading-groupzSzvariance-ECOOP02.pdf/igarashi02variancebased.pdf">On Variance-Based Subtyping for Parametric Types</a>��<a href="https://web.archive.org/web/20070327065738/http://nemerle.org/~malekith/msc.pdf">TYPE INFERENCE WITH DEFERRAL</a>��<a href="https://web.archive.org/web/20070327065738/http://nemerle.org/metaprogramming.pdf">Meta-programming in Nemerle</a>�Σ��Ĥ���ʸ�����������ɤ��ư���������
+とりあえず、<a href="https://web.archive.org/web/20070327065738/http://citeseer.ist.psu.edu/cache/papers/cs/33402/http:zSzzSzpag.lcs.mit.eduzSzreading-groupzSzvariance-ECOOP02.pdf/igarashi02variancebased.pdf">On Variance-Based Subtyping for Parametric Types</a>、<a href="https://web.archive.org/web/20070327065738/http://nemerle.org/~malekith/msc.pdf">TYPE INFERENCE WITH DEFERRAL</a>、<a href="https://web.archive.org/web/20070327065738/http://nemerle.org/metaprogramming.pdf">Meta-programming in Nemerle</a>の３つの論文をダウンロードして印刷した。
 </p>
 <p>
-�ޤ��ϡ�TYPE INFERENCE WITH DEFERRAL�����ɤ߿ʤ�Ƥ��뤬���ʤ��ʤ����򤤡�
+まずは、TYPE INFERENCE WITH DEFERRALから読み進めているが、なかなか面白い。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��2��) [<a href="./?date=20051017#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全2件) [<a href="./?date=20051017#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20051017#c01"><span class="canchor">_</span></a>
 				<span class="commentator">storie collant</span>&nbsp;[ ditalini xxx  femmine transex  donne nude pelose  fetish ..]</p>
@@ -604,7 +729,7 @@ double[] array(double... args) { return args; }
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065738/http://www.yahoogle.jp/yahoo-9-ni%C3%B1as+calatas.html" title="http://www.yahoogle.jp/yahoo-9-niñas calatas.html">42</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.co.id/search?client=firefox-a&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;channel=s&amp;hl=id&amp;q=w.w.w.film+porno+blue+xxxxxx+com&amp;meta=&amp;btnG=Telusuri+dengan+Google" title="http://www.google.co.id/search?client=firefox-a&amp;rl...">19</a> | <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">18</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.cl/search?hl=es&amp;sa=X&amp;oi=spell&amp;resnum=0&amp;ct=result&amp;cd=1&amp;q=fotos+gratis+colegialas+chilenas+del+alcazar&amp;spell=1" title="http://www.google.cl/search?hl=es&amp;sa=X&amp;oi=spell&amp;re...">11</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.es/search?q=www.tutto:gratis+ESPANOL&amp;hl=es&amp;lr=&amp;rls=GGGL,GGGL:2006-36,GGGL:es&amp;start=10&amp;sa=N" title="http://www.google.es/search?q=www.tutto:gratis ESP...">7</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.vn/search?hl=vi&amp;q=+sexicom&amp;meta=lr%3Dlang_ja" title="http://www.google.com.vn/search?hl=vi&amp;q= sexicom&amp;m...">7</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.pe/search?hl=es&amp;q=espiando+mujeres+dormidas&amp;meta=" title="http://www.google.com.pe/search?hl=es&amp;q=espiando m...">7</a> | <a href="https://web.archive.org/web/20070327065738/http://www.yahoogle.jp/yahoo-6-ni%C3%B1as+calatas.html" title="http://www.yahoogle.jp/yahoo-6-niñas calatas.html">6</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.pe/search?hl=es&amp;q=grandes+folladas+de+patricia+araujo&amp;btnG=B%C3%BAsqueda+en+Google&amp;meta=" title="http://www.google.com.pe/search?hl=es&amp;q=grandes fo...">6</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=incinte+piscione&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=incinte piscio...">5</a> | <a href="./?date=20051017#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065738/http://www.yahoogle.jp/yahoo-9-ni%C3%B1as+calatas.html" title="http://www.yahoogle.jp/yahoo-9-ni単as calatas.html">42</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.co.id/search?client=firefox-a&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;channel=s&amp;hl=id&amp;q=w.w.w.film+porno+blue+xxxxxx+com&amp;meta=&amp;btnG=Telusuri+dengan+Google" title="http://www.google.co.id/search?client=firefox-a&amp;rl...">19</a> | <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">18</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.cl/search?hl=es&amp;sa=X&amp;oi=spell&amp;resnum=0&amp;ct=result&amp;cd=1&amp;q=fotos+gratis+colegialas+chilenas+del+alcazar&amp;spell=1" title="http://www.google.cl/search?hl=es&amp;sa=X&amp;oi=spell&amp;re...">11</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.es/search?q=www.tutto:gratis+ESPANOL&amp;hl=es&amp;lr=&amp;rls=GGGL,GGGL:2006-36,GGGL:es&amp;start=10&amp;sa=N" title="http://www.google.es/search?q=www.tutto:gratis ESP...">7</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.vn/search?hl=vi&amp;q=+sexicom&amp;meta=lr%3Dlang_ja" title="http://www.google.com.vn/search?hl=vi&amp;q= sexicom&amp;m...">7</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.pe/search?hl=es&amp;q=espiando+mujeres+dormidas&amp;meta=" title="http://www.google.com.pe/search?hl=es&amp;q=espiando m...">7</a> | <a href="https://web.archive.org/web/20070327065738/http://www.yahoogle.jp/yahoo-6-ni%C3%B1as+calatas.html" title="http://www.yahoogle.jp/yahoo-6-ni単as calatas.html">6</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.pe/search?hl=es&amp;q=grandes+folladas+de+patricia+araujo&amp;btnG=B%C3%BAsqueda+en+Google&amp;meta=" title="http://www.google.com.pe/search?hl=es&amp;q=grandes fo...">6</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=incinte+piscione&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=incinte piscio...">5</a> | <a href="./?date=20051017#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -617,45 +742,45 @@ double[] array(double... args) { return args; }
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20051019#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=Eclipse">Eclipse</a>]<a href="https://web.archive.org/web/20070327065738/http://eclipsecolorer.sourceforge.net/index_profiler.html">Eclipse Profiler Plugin</a>�β�¤</h3><p>
-ͧ�ͤ���Eclipse 3.1��Eclipse Profiler Plugin���Ȥ��ʤ������Τ��Ȥ�������򤷤Ƥ����Τǡ�������Ĵ�٤뤳�Ȥˤʤä����Ȥꤢ�����ץ饰��������������ɤ��ơ����󥹥ȡ��뤷�Ƥߤ��Ȥ������Τ��˥��顼��å��������Фơ�ư��ʤ���<a href="https://web.archive.org/web/20070327065738/http://eclipsecolorer.sourceforge.net/index_profiler.html">�ޥ˥奢��</a>���ɤ�Ǥߤ�ȡ�
+<h3><a href="./?date=20051019#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=Eclipse">Eclipse</a>]<a href="https://web.archive.org/web/20070327065738/http://eclipsecolorer.sourceforge.net/index_profiler.html">Eclipse Profiler Plugin</a>の改造</h3><p>
+友人が、Eclipse 3.1でEclipse Profiler Pluginが使えないが何故かという質問をしてきたので、原因を調べることになった。とりあえずプラグインをダウンロードして、インストールしてみたところ、確かにエラーメッセージが出て、動作しない。<a href="https://web.archive.org/web/20070327065738/http://eclipsecolorer.sourceforge.net/index_profiler.html">マニュアル</a>を読んでみると、
 <blockquote><p>
 Copy ProfilerDLL.dll from root plugin folder into bin folder of your JRE installation
 </p></blockquote>
-�Ȥ���Τǡ�JRE��bin�ǥ��쥯�ȥ��<strong>ProfilerDLL.dll</strong>���֤��Ƥߤ�������Ϥ�Ʊ�����顼��ȯ�����롣
+とあるので、JREのbinディレクトリに<strong>ProfilerDLL.dll</strong>を置いてみたが、やはり同じエラーが発生する。
 </p>
 <p>
-�����ǡ�ͧ�ͤ�<a href="https://web.archive.org/web/20070327065738/http://jmechanic.sourceforge.net/">jMechanic</a>�Ǥ�Ʊ�����顼��ȯ������ȸ��äƤ����Τǡ����󥹥ȡ��뤷�Ƥߤ�ȡ��Τ���Ʊ�����顼��ȯ�����롣jMechanic�Υ����������������ɤ����ɤ�Ǥߤ�ȡ�Eclipse 3.1�ˤ�̵����Eclipse�����Υѥå������Υ��饹�˰�¸���Ƥ��������ǡ����饹�����Ĥ���ʤ��ä��褦���ä���Eclipse Profiler Plugin���Ȥ��ʤ��ä��Τ�Ʊ�������������Ȼפ���Eclilpse Profiler Plugin�Υ����������������ɤ���Ĵ�٤Ƥߤ�ȡ���Ϥꡢ3.1�ˤ�̵�����饹�˰�¸���Ƥ���ս꤬¸�ߤ�����Eclipse 3.1�ˤ��륯�饹�򻲾Ȥ���褦�˽񤭴����ƥӥ�ɤ����̵����3.1�ǻȤ���褦�ˤʤä��Τǡ����ΥХ��ʥ��ͧ�ͤ��Ϥ��ơ��ʤ�Ȥ�����ϲ�褷����
+ここで、友人が<a href="https://web.archive.org/web/20070327065738/http://jmechanic.sourceforge.net/">jMechanic</a>でも同じエラーが発生すると言ってきたので、インストールしてみると、確かに同じエラーが発生する。jMechanicのソースをダウンロードして読んでみると、Eclipse 3.1には無い、Eclipse内部のパッケージのクラスに依存していたせいで、クラスが見つからなかったようだった。Eclipse Profiler Pluginが使えなかったのも同じ原因だろうと思い、Eclilpse Profiler Pluginのソースをダウンロードして調べてみると、やはり、3.1には無いクラスに依存している箇所が存在した。Eclipse 3.1にあるクラスを参照するように書き換えてビルドすると無事、3.1で使えるようになったので、そのバイナリを友人に渡して、なんとか問題は解決した。
 </p></div><div class="section">
-<h3><a href="./?date=20051019#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%CC%A4%C6%A7%A5%E6%A1%BC%A5%B9">̤Ƨ�桼��</a>][<a href="./?year=2005;month=4Q;category=Storm">Storm</a>]��ե�������󥰵�ǽ�μ�������</h3><p>
-��ե�������󥰵�ǽ���󶡤���饤�֥��μ����򳫻Ϥ������������ǡ����Τ褦��groovy�ץ�������Eclipse�Υ��ǥ���������Ϥ��ơ���˥塼����ץ�������¹Ԥ��뤳�Ȥǡ��ץ��������Ȥ�̾�����ѹ��Ǥ��롣
+<h3><a href="./?date=20051019#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%CC%A4%C6%A7%A5%E6%A1%BC%A5%B9">未踏ユース</a>][<a href="./?year=2005;month=4Q;category=Storm">Storm</a>]リファクタリング機能の実装開始</h3><p>
+リファクタリング機能を提供するライブラリの実装を開始した。現時点で、次のようなgroovyプログラムをEclipseのエディタ上で入力して、メニューからプログラムを実行することで、プロジェクトの名前が変更できる。
 </p>
 <pre>
 import org.onion_lang.storm.lib.*;
 <br>
-hello = Projects.select("foo")//�ץ���������foo�����
-hello.rename("bar")//�ץ���������foo��bar��̾���ѹ�
+hello = Projects.select("foo")//プロジェクトfooを取得
+hello.rename("bar")//プロジェクトfooをbarに名前変更
 </pre>
 <p>
-���ʤߤˡ��ѥå�����̾����ˤ���storm�Ȥ����Τϡ�����ȯ����ץ饰�����̾�Τǡ����������̣����solar storm��ͳ�褷�Ƥ��롣�¤ϡ�̾�Τ�Ĺ���ַ�ᤢ���ͤƤ����Τ�����Eclipse�ץ饰����ˤϡ����ۤ˴ط�����ñ�줬¿���Τǡ�����Ŭ�������۴ط���ñ���ͳ�褹��̾�Τˤ��褦�ȻפäƼ����Ĵ�٤Ƥ����Ȥ�����solar storm�Ȥ����Τ��ʤ�Ȥʤ����å��ɤ������ʤΤǡ�����˷��ꤷ���Τ��ä���
+ちなみに、パッケージ名の中にあるstormというのは、今回開発するプラグインの名称で、太陽風を意味するsolar stormに由来している。実は、名称は長い間決めあぐねていたのだが、Eclipseプラグインには、太陽に関係する単語が多いので、何か適当な太陽関係の単語に由来する名称にしようと思って辞書を調べていたところ、solar stormというのがなんとなくカッコ良さそうなので、それに決定したのだった。
 </p></div><div class="section">
-<h3><a href="./?date=20051019#p03"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]�Ͽ�</h3><p>
-�����������ä��Ф���ʤΤˡ��ޤ�����Ͽ̤��������⡢������������礭���ɤ�ǡ��Ͽ̾���ˤ��ȡ����٣���餷����
+<h3><a href="./?date=20051019#p03"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]地震</h3><p>
+３日前程あったばかりなのに、またもや地震だ。しかも、今回は前よりも大きい揺れで、地震情報によると、震度５弱らしい。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��7��) [<a href="./?date=20051019#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全7件) [<a href="./?date=20051019#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 			<p><a href="./?date=20051019#c01">Before...</a></p>
 				<p><a href="./?date=20051019#c03"><span class="canchor">_</span></a>
-				<span class="commentator">naoki</span>&nbsp;[���餷�ޤ��� �ͤ�Eclipse Profiler Plugin��Eclipse3���� �Ȥ����Ȥ��ޤ�����Ʊ���褦��..]</p>
+				<span class="commentator">naoki</span>&nbsp;[失礼します。 僕もEclipse Profiler PluginをEclipse3から 使おうとしましたが同じように..]</p>
 				<p><a href="./?date=20051019#c04"><span class="canchor">_</span></a>
-				<span class="commentator">�ߤ�����</span>&nbsp;[�狼��ޤ������᡼�륢�ɥ쥹�򶵤��Ƥ���������С������餫�餪���ꤷ�ޤ��衣��Υ᡼�륢�ɥ쥹�ϡ�hau51010@..]</p>
+				<span class="commentator">みずしま</span>&nbsp;[わかりました。メールアドレスを教えていただければ、こちらからお送りしますよ。私のメールアドレスは、hau51010@..]</p>
 				<p><a href="./?date=20051019#c05"><span class="canchor">_</span></a>
-				<span class="commentator">�ߤ�����</span>&nbsp;[�������ߤޤ��󡣤����ȥ᡼�륢�ɥ쥹�Ͻ񤫤�Ƥ��ޤ��͡��Խ��⡼�ɤǸ��Ƥʤ��ä��Τǡ����Ť��ޤ���Ǥ�������������..]</p>
+				<span class="commentator">みずしま</span>&nbsp;[あ、すみません。ちゃんとメールアドレスは書かれていますね。編集モードで見てなかったので、気づきませんでした。今日、明..]</p>
 				<p><a href="./?date=20051019#c06"><span class="canchor">_</span></a>
 				<span class="commentator">strano strozzare</span>&nbsp;[ donne arrapate gay  gay asiatici pompini  vecchie troie c..]</p>
 				<p><a href="./?date=20051019#c07"><span class="canchor">_</span></a>
@@ -670,7 +795,7 @@ hello.rename("bar")//�ץ���������foo��bar��̾���ѹ�
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065738/http://tsumikigoya.blog13.fc2.com/blog-entry-107.html" title="http://tsumikigoya.blog13.fc2.com/blog-entry-107.h...">49</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.filmhard.it&amp;btnG=Cerca+con+Google&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.filmhard.i...">36</a> | <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">24</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.filmhard.it&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.filmhard.i...">22</a> | <a href="https://web.archive.org/web/20070327065738/http://search.alice.it/search/cgi/search.cgi?qs=www.filmhard.it&amp;dom=s&amp;filter=0&amp;hits=10&amp;offset=0&amp;lr=" title="http://search.alice.it/search/cgi/search.cgi?qs=ww...">15</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.maialone.it&amp;btnG=Cerca+con+Google&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.maialone.i...">9</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.siciliane+pompinare.it&amp;btnG=Cerca&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.siciliane ...">8</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?sourceid=navclient-ff&amp;ie=UTF-8&amp;rls=GGGL,GGGL:2006-25,GGGL:it&amp;q=vip+fotografate+senza+mutande" title="http://www.google.it/search?sourceid=navclient-ff&amp;...">7</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/search?sourceid=navclient&amp;ie=UTF-8&amp;rls=ADBS,ADBS:2006-34,ADBS:en&amp;q=dibujos+de+frutillita+para+recortar" title="google����(dibujos de frutillita para recortar)">7</a> | <a href="https://web.archive.org/web/20070327065738/http://search.msn.co.jp/results.aspx?v=1&amp;RS=CHECKED&amp;CY=ja&amp;FORM=MSNH&amp;q=ONION%E8%A8%80%E8%AA%9E" title="msn����(ONION����)">7</a> | <a href="./?date=20051019#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065738/http://tsumikigoya.blog13.fc2.com/blog-entry-107.html" title="http://tsumikigoya.blog13.fc2.com/blog-entry-107.h...">49</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.filmhard.it&amp;btnG=Cerca+con+Google&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.filmhard.i...">36</a> | <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">24</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.filmhard.it&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.filmhard.i...">22</a> | <a href="https://web.archive.org/web/20070327065738/http://search.alice.it/search/cgi/search.cgi?qs=www.filmhard.it&amp;dom=s&amp;filter=0&amp;hits=10&amp;offset=0&amp;lr=" title="http://search.alice.it/search/cgi/search.cgi?qs=ww...">15</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.maialone.it&amp;btnG=Cerca+con+Google&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.maialone.i...">9</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.siciliane+pompinare.it&amp;btnG=Cerca&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.siciliane ...">8</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?sourceid=navclient-ff&amp;ie=UTF-8&amp;rls=GGGL,GGGL:2006-25,GGGL:it&amp;q=vip+fotografate+senza+mutande" title="http://www.google.it/search?sourceid=navclient-ff&amp;...">7</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/search?sourceid=navclient&amp;ie=UTF-8&amp;rls=ADBS,ADBS:2006-34,ADBS:en&amp;q=dibujos+de+frutillita+para+recortar" title="google検索(dibujos de frutillita para recortar)">7</a> | <a href="https://web.archive.org/web/20070327065738/http://search.msn.co.jp/results.aspx?v=1&amp;RS=CHECKED&amp;CY=ja&amp;FORM=MSNH&amp;q=ONION%E8%A8%80%E8%AA%9E" title="msn検索(ONION言語)">7</a> | <a href="./?date=20051019#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -683,20 +808,20 @@ hello.rename("bar")//�ץ���������foo��bar��̾���ѹ�
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20051020#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">���祮��</a>]10km,1����00ʬ</h3><p>
-�����ϡ��롼�פ򤤤��Ĥ��ζ�֤˶��ڤäơ����줾��ζ�����
-������ְ�������뤳�Ȥ���ɸ�ˤ������ä������桢���٤����Ĥ�
-�ʤä�����������Ϥ����ֳڤ����줿��
+<h3><a href="./?date=20051020#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">ジョギング</a>]10km,1時間00分</h3><p>
+今日は、ループをいくつかの区間に区切って、それぞれの区間内を
+一定時間以内に走ることを目標にして走った。途中、何度かきつく
+なったが、前回よりはだいぶ楽に走れた。
 </p></div><div class="section">
-<h3><a href="./?date=20051020#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]TYPE INFERENCE WITH DEFERRAL</h3><p>
-7/20���餤�ޤ��ɤ�������פä�����񤷤����ʤ�Ȥ�����ϤǤ�����������������ع֤λ��֤˲��⤹��ΤϤ���ä�̵�����⡣
+<h3><a href="./?date=20051020#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]TYPE INFERENCE WITH DEFERRAL</h3><p>
+7/20くらいまで読んだが、思ったより難しい。なんとか理解はできそうだが、これを輪講の時間に解説するのはちょっと無理かも。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��17��) [<a href="./?date=20051020#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全17件) [<a href="./?date=20051020#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 			<p><a href="./?date=20051020#c01">Before...</a></p>
 				<p><a href="./?date=20051020#c13"><span class="canchor">_</span></a>
@@ -719,7 +844,7 @@ hello.rename("bar")//�ץ���������foo��bar��̾���ѹ�
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065738/http://www.google.pl/search?client=firefox-a&amp;rls=org.mozilla%3Apl-PL%3Aofficial&amp;channel=s&amp;hl=pl&amp;q=rosyjskiedupy&amp;lr=&amp;btnG=Szukaj+w+Google" title="http://www.google.pl/search?client=firefox-a&amp;rls=o...">20</a> | <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">15</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.es/search?hl=es&amp;q=wwwrebelde.es&amp;btnG=B%C3%BAsqueda&amp;meta=" title="http://www.google.es/search?hl=es&amp;q=wwwrebelde.es&amp;...">10</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/search?sourceid=navclient&amp;aq=t&amp;hl=it&amp;ie=UTF-8&amp;rls=ADBS,ADBS:2006-50,ADBS:it&amp;q=www%2efabio+piscio" title="google����(t)">9</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.dammi+la+figa.it&amp;btnG=Cerca+con+Google&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.dammi la f...">8</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;client=firefox-a&amp;channel=s&amp;rls=org.mozilla%3Ait%3Aofficial&amp;hs=VEi&amp;q=spermate+incestuose&amp;btnG=Cerca&amp;meta=" title="http://www.google.it/search?hl=it&amp;client=firefox-a...">7</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.es/search?hl=es&amp;q=wwwrebelde.es&amp;btnG=B%C3%BAsqueda+en+Google&amp;meta=" title="http://www.google.es/search?hl=es&amp;q=wwwrebelde.es&amp;...">7</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.co/search?hl=es&amp;q=www.penes+grandes.com&amp;meta=" title="http://www.google.com.co/search?hl=es&amp;q=www.penes ...">6</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/" title="http://www.google.com">6</a> | <a href="https://web.archive.org/web/20070327065738/http://search.yahoo.com/search?p=www.pene.grandes.com&amp;fr=yfp-t-501&amp;toggle=1&amp;cop=mss&amp;ei=UTF-8" title="http://search.yahoo.com/search?p=www.pene.grandes....">6</a> | <a href="./?date=20051020#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065738/http://www.google.pl/search?client=firefox-a&amp;rls=org.mozilla%3Apl-PL%3Aofficial&amp;channel=s&amp;hl=pl&amp;q=rosyjskiedupy&amp;lr=&amp;btnG=Szukaj+w+Google" title="http://www.google.pl/search?client=firefox-a&amp;rls=o...">20</a> | <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">15</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.es/search?hl=es&amp;q=wwwrebelde.es&amp;btnG=B%C3%BAsqueda&amp;meta=" title="http://www.google.es/search?hl=es&amp;q=wwwrebelde.es&amp;...">10</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/search?sourceid=navclient&amp;aq=t&amp;hl=it&amp;ie=UTF-8&amp;rls=ADBS,ADBS:2006-50,ADBS:it&amp;q=www%2efabio+piscio" title="google検索(t)">9</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.dammi+la+figa.it&amp;btnG=Cerca+con+Google&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.dammi la f...">8</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;client=firefox-a&amp;channel=s&amp;rls=org.mozilla%3Ait%3Aofficial&amp;hs=VEi&amp;q=spermate+incestuose&amp;btnG=Cerca&amp;meta=" title="http://www.google.it/search?hl=it&amp;client=firefox-a...">7</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.es/search?hl=es&amp;q=wwwrebelde.es&amp;btnG=B%C3%BAsqueda+en+Google&amp;meta=" title="http://www.google.es/search?hl=es&amp;q=wwwrebelde.es&amp;...">7</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.co/search?hl=es&amp;q=www.penes+grandes.com&amp;meta=" title="http://www.google.com.co/search?hl=es&amp;q=www.penes ...">6</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/" title="http://www.google.com">6</a> | <a href="https://web.archive.org/web/20070327065738/http://search.yahoo.com/search?p=www.pene.grandes.com&amp;fr=yfp-t-501&amp;toggle=1&amp;cop=mss&amp;ei=UTF-8" title="http://search.yahoo.com/search?p=www.pene.grandes....">6</a> | <a href="./?date=20051020#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -732,15 +857,15 @@ hello.rename("bar")//�ץ���������foo��bar��̾���ѹ�
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20051021#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">���祮��</a>]10km,1����3ʬ</h3><p>
-�����ܤϡ������Ȥۤ�Ʊ���ڡ��������줿���������ܤ����椫��޷��­���Ť��ʤꡢ���Ū�ˡ����������ʬ�٤��ʤäƤ��ޤä���­�μ夵�����ᤷ����
+<h3><a href="./?date=20051021#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">ジョギング</a>]10km,1時間3分</h3><p>
+１周目は、昨日とほぼ同じペースで走れたが、２周目の途中から急激に足が重くなり、結果的に、昨日より大分遅くなってしまった。足の弱さが恨めしい。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��14��) [<a href="./?date=20051021#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全14件) [<a href="./?date=20051021#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 			<p><a href="./?date=20051021#c01">Before...</a></p>
 				<p><a href="./?date=20051021#c10"><span class="canchor">_</span></a>
@@ -763,7 +888,7 @@ hello.rename("bar")//�ץ���������foo��bar��̾���ѹ�
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.ar/search?hl=es&amp;q=www.chiquitas.com&amp;meta=" title="http://www.google.com.ar/search?hl=es&amp;q=www.chiqui...">22</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.pe/search?hl=es&amp;q=www.chiquitas.com&amp;meta=" title="http://www.google.com.pe/search?hl=es&amp;q=www.chiqui...">21</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.ar/search?hl=es&amp;q=www.chiquitas.com.ar&amp;meta=" title="http://www.google.com.ar/search?hl=es&amp;q=www.chiqui...">18</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.ar/" title="http://www.google.com.ar/">17</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.ar/search?hl=es&amp;sa=X&amp;oi=spell&amp;resnum=0&amp;ct=result&amp;cd=1&amp;q=www.chiquitas.com&amp;spell=1" title="http://www.google.com.ar/search?hl=es&amp;sa=X&amp;oi=spel...">16</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.ar/search?hl=es&amp;q=nenasxxx&amp;meta=" title="http://www.google.com.ar/search?hl=es&amp;q=nenasxxx&amp;m...">16</a> | <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">15</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/search?hl=es&amp;sa=X&amp;oi=spell&amp;resnum=0&amp;ct=result&amp;cd=1&amp;q=www.chiquitas.com&amp;spell=1" title="google����(www.chiquitas.com)">13</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.pe/search?hl=es&amp;sa=X&amp;oi=spell&amp;resnum=0&amp;ct=result&amp;cd=1&amp;q=www.chiquitas.com&amp;spell=1" title="http://www.google.com.pe/search?hl=es&amp;sa=X&amp;oi=spel...">12</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=professoresse+bagnate&amp;btnG=Cerca+con+Google&amp;meta=lr%3Dlang_it" title="http://www.google.it/search?hl=it&amp;q=professoresse ...">11</a> | <a href="./?date=20051021#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.ar/search?hl=es&amp;q=www.chiquitas.com&amp;meta=" title="http://www.google.com.ar/search?hl=es&amp;q=www.chiqui...">22</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.pe/search?hl=es&amp;q=www.chiquitas.com&amp;meta=" title="http://www.google.com.pe/search?hl=es&amp;q=www.chiqui...">21</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.ar/search?hl=es&amp;q=www.chiquitas.com.ar&amp;meta=" title="http://www.google.com.ar/search?hl=es&amp;q=www.chiqui...">18</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.ar/" title="http://www.google.com.ar/">17</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.ar/search?hl=es&amp;sa=X&amp;oi=spell&amp;resnum=0&amp;ct=result&amp;cd=1&amp;q=www.chiquitas.com&amp;spell=1" title="http://www.google.com.ar/search?hl=es&amp;sa=X&amp;oi=spel...">16</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.ar/search?hl=es&amp;q=nenasxxx&amp;meta=" title="http://www.google.com.ar/search?hl=es&amp;q=nenasxxx&amp;m...">16</a> | <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">15</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/search?hl=es&amp;sa=X&amp;oi=spell&amp;resnum=0&amp;ct=result&amp;cd=1&amp;q=www.chiquitas.com&amp;spell=1" title="google検索(www.chiquitas.com)">13</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.pe/search?hl=es&amp;sa=X&amp;oi=spell&amp;resnum=0&amp;ct=result&amp;cd=1&amp;q=www.chiquitas.com&amp;spell=1" title="http://www.google.com.pe/search?hl=es&amp;sa=X&amp;oi=spel...">12</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=professoresse+bagnate&amp;btnG=Cerca+con+Google&amp;meta=lr%3Dlang_it" title="http://www.google.it/search?hl=it&amp;q=professoresse ...">11</a> | <a href="./?date=20051021#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -776,19 +901,19 @@ hello.rename("bar")//�ץ���������foo��bar��̾���ѹ�
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20051022#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]�ޤ��ޤ��Ͽ�</h3><p>
-�ޤ�����Ͽ̤�������Τϡ����ޤ��礭���ʤ��ä�����������
-�Ͽ̤�¿���ȡ��԰¤ˤʤäƤ��롣
+<h3><a href="./?date=20051022#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]またまた地震</h3><p>
+またもや地震だ。今回のは、あまり大きくなかったが、こうも
+地震が多いと、不安になってくる。
 </p></div><div class="section">
-<h3><a href="./?date=20051022#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]�������</h3><p>
-����������μ��Ť���λ�������Ȥꤢ����������ʤ˿��������̵���Ƥ褫�ä��������줫��ϻ������ڤˤ��褦��
+<h3><a href="./?date=20051022#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]虫歯治療</h3><p>
+今日で虫歯の治療が終了した。とりあえず，そんなに深い虫歯が無くてよかったが，これからは歯を大切にしよう。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��2��) [<a href="./?date=20051022#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全2件) [<a href="./?date=20051022#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20051022#c01"><span class="canchor">_</span></a>
 				<span class="commentator">a piedi nudi</span>&nbsp;[ gangbang conchas peludas  juegos eriticos gangbang  perce..]</p>
@@ -804,7 +929,7 @@ hello.rename("bar")//�ץ���������foo��bar��̾���ѹ�
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">10</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.de/search?hl=de&amp;q=www.vidios++gogle+com+de&amp;meta=" title="http://www.google.de/search?hl=de&amp;q=www.vidios  go...">9</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=donnevip+sex&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=donnevip sex&amp;m...">7</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/search?q=shemale+porco+shitting&amp;hl=it&amp;lr=&amp;rls=ADBS,ADBS:2006-36,ADBS:it&amp;start=40&amp;sa=N" title="google����(shemale porco shitting)">7</a> | <a href="https://web.archive.org/web/20070327065738/http://search.mywebsearch.com/mywebsearch/GGmain.jhtml?st=bar&amp;ptnrS=ZCxdm794YYAR&amp;searchfor=www%2efotos+de+conchas+y+pitos+%2ecom" title="http://search.mywebsearch.com/mywebsearch/GGmain.j...">7</a> | <a href="https://web.archive.org/web/20070327065738/http://search.msn.com/results.aspx?q=www.pizde+tv+live.com&amp;FORM=MSNH" title="http://search.msn.com/results.aspx?q=www.pizde tv ...">7</a> | <a href="https://web.archive.org/web/20070327065738/http://search.live.com/results.aspx?q=chatcritiano&amp;FORM=AB&amp;mkt=es-xl" title="http://search.live.com/results.aspx?q=chatcritiano...">7</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?q=www.super.eva&amp;hl=it&amp;lr=lang_it&amp;sa=X&amp;oi=lrtip&amp;ct=restrict&amp;cad=8" title="http://www.google.it/search?q=www.super.eva&amp;hl=it&amp;...">6</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.es/search?hl=es&amp;q=tias+guapas+seksi&amp;btnG=B%C3%BAsqueda+en+Google&amp;meta=" title="http://www.google.es/search?hl=es&amp;q=tias guapas se...">6</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.es/search?hl=ca&amp;q=www.vidios.google.com&amp;meta=" title="http://www.google.es/search?hl=ca&amp;q=www.vidios.goo...">6</a> | <a href="./?date=20051022#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">10</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.de/search?hl=de&amp;q=www.vidios++gogle+com+de&amp;meta=" title="http://www.google.de/search?hl=de&amp;q=www.vidios  go...">9</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=donnevip+sex&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=donnevip sex&amp;m...">7</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/search?q=shemale+porco+shitting&amp;hl=it&amp;lr=&amp;rls=ADBS,ADBS:2006-36,ADBS:it&amp;start=40&amp;sa=N" title="google検索(shemale porco shitting)">7</a> | <a href="https://web.archive.org/web/20070327065738/http://search.mywebsearch.com/mywebsearch/GGmain.jhtml?st=bar&amp;ptnrS=ZCxdm794YYAR&amp;searchfor=www%2efotos+de+conchas+y+pitos+%2ecom" title="http://search.mywebsearch.com/mywebsearch/GGmain.j...">7</a> | <a href="https://web.archive.org/web/20070327065738/http://search.msn.com/results.aspx?q=www.pizde+tv+live.com&amp;FORM=MSNH" title="http://search.msn.com/results.aspx?q=www.pizde tv ...">7</a> | <a href="https://web.archive.org/web/20070327065738/http://search.live.com/results.aspx?q=chatcritiano&amp;FORM=AB&amp;mkt=es-xl" title="http://search.live.com/results.aspx?q=chatcritiano...">7</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?q=www.super.eva&amp;hl=it&amp;lr=lang_it&amp;sa=X&amp;oi=lrtip&amp;ct=restrict&amp;cad=8" title="http://www.google.it/search?q=www.super.eva&amp;hl=it&amp;...">6</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.es/search?hl=es&amp;q=tias+guapas+seksi&amp;btnG=B%C3%BAsqueda+en+Google&amp;meta=" title="http://www.google.es/search?hl=es&amp;q=tias guapas se...">6</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.es/search?hl=ca&amp;q=www.vidios.google.com&amp;meta=" title="http://www.google.es/search?hl=ca&amp;q=www.vidios.goo...">6</a> | <a href="./?date=20051022#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -817,20 +942,20 @@ hello.rename("bar")//�ץ���������foo��bar��̾���ѹ�
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20051023#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]Meta-programming in Nemerle</h3><p>
-TYPE INFERENCE WITH DEFERRAL������Ū���񤷤��ơ��ع֤λ��֤˲��⤹��Τ�̵������Ƚ�Ǥ����̤���ʸ���ɤळ�Ȥˡ������ɤ�Ǥ���Τϡ�Nemerle�Υ᥿�ץ�����ߥ󥰥����ƥ�(�ޥ���)�ˤĤ��Ƥ���ʸ��Lisp����quasi-quotation����Ϥޤäơ����դ����줿�ޥ����䡢����˺��Ѥ���ޥ����ʤɡ���̣�����ä��������󤢤ä����򤤤Τ������������ع֤˴֤˹礤������̵���ơ�����äȵ㤭�������ǽ�ˡ����ä�����ʸ�����֤٤����ä���
+<h3><a href="./?date=20051023#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]Meta-programming in Nemerle</h3><p>
+TYPE INFERENCE WITH DEFERRALが内容的に難しくて、輪講の時間に解説するのは無理だと判断し、別の論文を読むことに。今、読んでいるのは、Nemerleのメタプログラミングシステム(マクロ)についての論文。Lisp風のquasi-quotationから始まって、型付けされたマクロや、宣言に作用するマクロなど、興味深い話がたくさんあって面白いのだが、明日の輪講に間に合いそうに無くて、ちょっと泣きそう。最初に、こっちの論文を選ぶべきだった。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��5��) [<a href="./?date=20051023#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全5件) [<a href="./?date=20051023#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20051023#c01"><span class="canchor">_</span></a>
-				<span class="commentator">soutaro</span>&nbsp;[���⤢�Ȥ��ɤ⡼�äȡ���TYPE INFERENCE WITH DEFERRAL  ]</p>
+				<span class="commentator">soutaro</span>&nbsp;[俺もあとで読もーっと。＞TYPE INFERENCE WITH DEFERRAL  ]</p>
 				<p><a href="./?date=20051023#c02"><span class="canchor">_</span></a>
-				<span class="commentator">�ߤ�����</span>&nbsp;[̾�����פη������ƥ��Ƿ����������äʤΤǡ�soutaro����� ��̣�������Ȥϼ㴳�㤦���⤷��ޤ��󤬡����򤤤Ǥ�..]</p>
+				<span class="commentator">みずしま</span>&nbsp;[名前一致の型システム上で型推論する話なので，soutaroさんの 興味の方向とは若干違うかもしれませんが，面白いです..]</p>
 				<p><a href="./?date=20051023#c03"><span class="canchor">_</span></a>
 				<span class="commentator">Stephen Diedericks</span>&nbsp;[ *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  ..]</p>
 				<p><a href="./?date=20051023#c04"><span class="canchor">_</span></a>
@@ -847,7 +972,7 @@ TYPE INFERENCE WITH DEFERRAL������Ū���񤷤��ơ��ع֤λ��֤˲��⤹��Τ�̵������
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.mx/search?hl=es&amp;q=antros+gey+en+cuba&amp;btnG=Buscar+con+Google&amp;meta=" title="http://www.google.com.mx/search?hl=es&amp;q=antros gey...">34</a> | <a href="https://web.archive.org/web/20070327065738/http://es.altavista.com/web/results?itag=ody&amp;q=galeries+de+ginecologiche&amp;kgs=0&amp;kls=0" title="http://es.altavista.com/web/results?itag=ody&amp;q=gal...">31</a> | <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">14</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/imode?q=Fotos+de+sexo+gratis&amp;hl=es&amp;lr=&amp;btnG=Buscar&amp;site=mobile&amp;mrestrict=chtml" title="http://www.google.com/imode?q=Fotos de sexo gratis...">10</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?sourceid=navclient&amp;aq=t&amp;hl=ru&amp;ie=UTF-8&amp;rls=GGLJ,GGLJ:2006-44,GGLJ:ru&amp;q=www%2ealessia%2emerz" title="http://www.google.it/search?sourceid=navclient&amp;aq=...">9</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/imode?q=Fotos+gratis&amp;hl=es&amp;lr=&amp;btnG=Buscar&amp;site=mobile&amp;mrestrict=chtml" title="http://www.google.com/imode?q=Fotos gratis&amp;hl=es&amp;l...">9</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.scarica.filmati&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.scarica.fi...">6</a> | <a href="https://web.archive.org/web/20070327065738/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">5</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?sourceid=navclient&amp;aq=t&amp;hl=it&amp;ie=UTF-8&amp;rls=GGLR,GGLR:2006-47,GGLR:it&amp;q=culi+sfondat+e+sborrati" title="http://www.google.it/search?sourceid=navclient&amp;aq=...">5</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?q=Zie+inculate+sfondate+sborrate+bocchinare" title="http://www.google.it/search?q=Zie inculate sfondat...">5</a> | <a href="./?date=20051023#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.mx/search?hl=es&amp;q=antros+gey+en+cuba&amp;btnG=Buscar+con+Google&amp;meta=" title="http://www.google.com.mx/search?hl=es&amp;q=antros gey...">34</a> | <a href="https://web.archive.org/web/20070327065738/http://es.altavista.com/web/results?itag=ody&amp;q=galeries+de+ginecologiche&amp;kgs=0&amp;kls=0" title="http://es.altavista.com/web/results?itag=ody&amp;q=gal...">31</a> | <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">14</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/imode?q=Fotos+de+sexo+gratis&amp;hl=es&amp;lr=&amp;btnG=Buscar&amp;site=mobile&amp;mrestrict=chtml" title="http://www.google.com/imode?q=Fotos de sexo gratis...">10</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?sourceid=navclient&amp;aq=t&amp;hl=ru&amp;ie=UTF-8&amp;rls=GGLJ,GGLJ:2006-44,GGLJ:ru&amp;q=www%2ealessia%2emerz" title="http://www.google.it/search?sourceid=navclient&amp;aq=...">9</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/imode?q=Fotos+gratis&amp;hl=es&amp;lr=&amp;btnG=Buscar&amp;site=mobile&amp;mrestrict=chtml" title="http://www.google.com/imode?q=Fotos gratis&amp;hl=es&amp;l...">9</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.scarica.filmati&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.scarica.fi...">6</a> | <a href="https://web.archive.org/web/20070327065738/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">5</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?sourceid=navclient&amp;aq=t&amp;hl=it&amp;ie=UTF-8&amp;rls=GGLR,GGLR:2006-47,GGLR:it&amp;q=culi+sfondat+e+sborrati" title="http://www.google.it/search?sourceid=navclient&amp;aq=...">5</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?q=Zie+inculate+sfondate+sborrate+bocchinare" title="http://www.google.it/search?q=Zie inculate sfondat...">5</a> | <a href="./?date=20051023#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -860,22 +985,22 @@ TYPE INFERENCE WITH DEFERRAL������Ū���񤷤��ơ��ع֤λ��֤˲��⤹��Τ�̵������
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20051024#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]Nemerle�θ츻</h3><p>
-�������ع֤ǡ�Meta-programming in Nemerle�ˤĤ��ƾҲ𤷤��Ȥ��ˡ�
-���漼��M�������˶����Ƥ��ä��Τ�����Nemerle�Ȥ���̾���ϡ������ﵭ�Ȥ������ʤ��о��ʪNemmerle��̾�������ˤʤäƤ���餷�����Τ��ˡ�
-<a href="https://web.archive.org/web/20070327065738/http://www.google.co.jp/search?hl=ja&amp;c2coff=1&amp;q=Nemmerle+%E3%82%B2%E3%83%89%E6%88%A6%E8%A8%98&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=">Nemmerle �����ﵭ</a>��<a href="https://web.archive.org/web/20070327065738/http://www.google.co.jp/search?hl=ja&amp;c2coff=1&amp;q=Nemmerle+Ged&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=">Nemmerle Ged</a>�Ǥ�����ȡ�����餷��ʸ�Ϥ��ФƤ��롣�������������ﵭ�Ȥ������ʡ�̾������ʹ�������ȤϤ����ΤΡ��ºݤˤɤ���äʤΤ����äѤ��Τ�ʤ������١��޽�ۤǤǤ�ڤ�ơ��ɤ�Ǥߤ뤫��
+<h3><a href="./?date=20051024#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]Nemerleの語源</h3><p>
+今日の輪講で、Meta-programming in Nemerleについて紹介したときに、
+研究室のM田先生に教えてもらったのだが、Nemerleという名前は、ゲド戦記という作品の登場人物Nemmerleの名前が元になっているらしい。確かに、
+<a href="https://web.archive.org/web/20070327065738/http://www.google.co.jp/search?hl=ja&amp;c2coff=1&amp;q=Nemmerle+%E3%82%B2%E3%83%89%E6%88%A6%E8%A8%98&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=">Nemmerle ゲド戦記</a>や<a href="https://web.archive.org/web/20070327065738/http://www.google.co.jp/search?hl=ja&amp;c2coff=1&amp;q=Nemmerle+Ged&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=">Nemmerle Ged</a>でぐぐると、それらしき文章が出てくる。しかし、ゲド戦記という作品、名前こそ聞いたことはあるものの、実際にどんな話なのかさっぱり知らない。今度、図書館ででも借りて、読んでみるか。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��4��) [<a href="./?date=20051024#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全4件) [<a href="./?date=20051024#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20051024#c01"><span class="canchor">_</span></a>
-				<span class="commentator">ISHFAQ</span>&nbsp;[�����ﵭ�ϴ��Ⱦ�ǯʸ�ˤˤ⤢��ȤƤ�ͭ̾��ʪ��Ǥ��� ů��Ū�ե��󥿥�����̾ʸ̾�������ˤȸ����Ƥ��ޤ���  ]</p>
+				<span class="commentator">ISHFAQ</span>&nbsp;[ゲド戦記は岩波少年文庫にもあるとても有名な物語です。 哲学的ファンタジーで名文名言の宝庫と言われています。  ]</p>
 				<p><a href="./?date=20051024#c02"><span class="canchor">_</span></a>
-				<span class="commentator">�ߤ�����</span>&nbsp;[���󤢤꤬�Ȥ��������ޤ����Ĥ��лԤο޽�ۤ� ���뤽���ʤΤǡ����ټڤ���ɤ�Ǥߤ뤳�Ȥˤ��ޤ��� &gt; �����ﵭ�ϴ���..]</p>
+				<span class="commentator">みずしま</span>&nbsp;[情報ありがとうございます。つくば市の図書館に あるそうなので、今度借りて読んでみることにします。 &gt; ゲド戦記は岩波..]</p>
 				<p><a href="./?date=20051024#c03"><span class="canchor">_</span></a>
 				<span class="commentator">sexi shop online</span>&nbsp;[ grandes pollas gratis  mulatas lesbe  sborrata bukkake  b..]</p>
 				<p><a href="./?date=20051024#c04"><span class="canchor">_</span></a>
@@ -890,7 +1015,7 @@ TYPE INFERENCE WITH DEFERRAL������Ū���񤷤��ơ��ع֤λ��֤˲��⤹��Τ�̵������
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065738/http://www.google.de/search?hl=de&amp;q=www.tv.hogtied.com&amp;meta=" title="http://www.google.de/search?hl=de&amp;q=www.tv.hogtied...">58</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;client=firefox-a&amp;channel=s&amp;rls=org.mozilla%3Ait%3Aofficial&amp;hs=6Bf&amp;q=ampland+sesso+toilette+&amp;btnG=Cerca&amp;meta=lr%3Dlang_it" title="http://www.google.it/search?hl=it&amp;client=firefox-a...">37</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.fr/search?hl=fr&amp;q=www.tv.hogtied.com&amp;meta=" title="http://www.google.fr/search?hl=fr&amp;q=www.tv.hogtied...">32</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.nudi.it&amp;btnG=Cerca+con+Google&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.nudi.it&amp;bt...">30</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/search?q=www.diva+donne.it" title="google����(www.diva donne.it)">25</a> | <a href="https://web.archive.org/web/20070327065738/http://www.yahoogle.jp/yahoo-17-videos+sexo+gratis.html" title="http://www.yahoogle.jp/yahoo-17-videos sexo gratis...">15</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.es/search?hl=es&amp;q=sobacos+sexsi&amp;meta=" title="http://www.google.es/search?hl=es&amp;q=sobacos sexsi&amp;...">11</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.es/search?hl=es&amp;q=TIAS+LEVIANAS+DES+NUDAS&amp;meta=" title="http://www.google.es/search?hl=es&amp;q=TIAS LEVIANAS ...">11</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/search?sourceid=navclient&amp;ie=UTF-8&amp;rls=GGLR,GGLR:2006-37,GGLR:en&amp;q=WWW%2ETV%2EHOGTIED%2ECOM" title="google����(WWW.TV.HOGTIED.COM)">11</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.tr/search?hl=tr&amp;q=www.tv.hogt%C4%B1ed.com&amp;btnG=Google%27da+Ara&amp;meta=" title="http://www.google.com.tr/search?hl=tr&amp;q=www.tv.hog...">11</a> | <a href="./?date=20051024#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065738/http://www.google.de/search?hl=de&amp;q=www.tv.hogtied.com&amp;meta=" title="http://www.google.de/search?hl=de&amp;q=www.tv.hogtied...">58</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;client=firefox-a&amp;channel=s&amp;rls=org.mozilla%3Ait%3Aofficial&amp;hs=6Bf&amp;q=ampland+sesso+toilette+&amp;btnG=Cerca&amp;meta=lr%3Dlang_it" title="http://www.google.it/search?hl=it&amp;client=firefox-a...">37</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.fr/search?hl=fr&amp;q=www.tv.hogtied.com&amp;meta=" title="http://www.google.fr/search?hl=fr&amp;q=www.tv.hogtied...">32</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.nudi.it&amp;btnG=Cerca+con+Google&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.nudi.it&amp;bt...">30</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/search?q=www.diva+donne.it" title="google検索(www.diva donne.it)">25</a> | <a href="https://web.archive.org/web/20070327065738/http://www.yahoogle.jp/yahoo-17-videos+sexo+gratis.html" title="http://www.yahoogle.jp/yahoo-17-videos sexo gratis...">15</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.es/search?hl=es&amp;q=sobacos+sexsi&amp;meta=" title="http://www.google.es/search?hl=es&amp;q=sobacos sexsi&amp;...">11</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.es/search?hl=es&amp;q=TIAS+LEVIANAS+DES+NUDAS&amp;meta=" title="http://www.google.es/search?hl=es&amp;q=TIAS LEVIANAS ...">11</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/search?sourceid=navclient&amp;ie=UTF-8&amp;rls=GGLR,GGLR:2006-37,GGLR:en&amp;q=WWW%2ETV%2EHOGTIED%2ECOM" title="google検索(WWW.TV.HOGTIED.COM)">11</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.tr/search?hl=tr&amp;q=www.tv.hogt%C4%B1ed.com&amp;btnG=Google%27da+Ara&amp;meta=" title="http://www.google.com.tr/search?hl=tr&amp;q=www.tv.hog...">11</a> | <a href="./?date=20051024#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -903,15 +1028,15 @@ TYPE INFERENCE WITH DEFERRAL������Ū���񤷤��ơ��ع֤λ��֤˲��⤹��Τ�̵������
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20051026#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]�칻�Υ��ߥ�˥ƥ�</h3><p>
-mixi�ǲ����ʤ��칻(�⹻)��̾��������Ƹ������Ƥߤ��顢���ߥ�˥ƥ������ä��Τ����äƤߤ���ΤΡ��Τ�礤��ï�⻲�ä��Ƥʤ��ä��Τǡ�����äȤ����ܤꡣ
+<h3><a href="./?date=20051026#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]母校のコミュニティ</h3><p>
+mixiで何気なく母校(高校)の名前を入れて検索してみたら、コミュニティがあったので入ってみたものの、知り合いは誰も参加してなかったので、ちょっとしょんぼり。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��16��) [<a href="./?date=20051026#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全16件) [<a href="./?date=20051026#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 			<p><a href="./?date=20051026#c01">Before...</a></p>
 				<p><a href="./?date=20051026#c12"><span class="canchor">_</span></a>
@@ -934,7 +1059,7 @@ mixi�ǲ����ʤ��칻(�⹻)��̾��������Ƹ������Ƥߤ��顢���ߥ�˥ƥ������ä��Τ���
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065738/http://www.google.pl/search?client=firefox-a&amp;rls=org.mozilla%3Apl-PL%3Aofficial&amp;channel=s&amp;hl=pl&amp;q=toste+spice+seks&amp;lr=&amp;btnG=Szukaj+w+Google" title="http://www.google.pl/search?client=firefox-a&amp;rls=o...">20</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.co.ve/search?hl=es&amp;q=CHICAS+JOVENCITAS+DE+18A%C3%91OS+XXXGALERIA&amp;meta=" title="http://www.google.co.ve/search?hl=es&amp;q=CHICAS JOVE...">18</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.ch/search?q=venus.com.ar&amp;hl=it&amp;start=90&amp;sa=N" title="http://www.google.ch/search?q=venus.com.ar&amp;hl=it&amp;s...">18</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/search?q=www.moanapozzi.it" title="google����(www.moanapozzi.it)">17</a> | <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">16</a> | <a href="https://web.archive.org/web/20070327065738/http://search.yahoo.co.jp/search?p=tangas+japonesas&amp;x=31&amp;y=6&amp;fr=top_v2&amp;tid=top_v2&amp;ei=euc-jp&amp;search.x=1" title="http://search.yahoo.co.jp/search?p=tangas japonesa...">16</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.moanapozzi.it&amp;btnG=Cerca+con+Google&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.moanapozzi...">12</a> | <a href="https://web.archive.org/web/20070327065738/http://search.prodigy.msn.com/results.aspx?FORM=MSNTOD&amp;q=porno%20video%20grats%20de%20hermaphrodites" title="http://search.prodigy.msn.com/results.aspx?FORM=MS...">12</a> | <a href="https://web.archive.org/web/20070327065738/http://search.msn.es/results.aspx?q=fotos+y+vidos+de+zoofilia+gratis&amp;srch_type=0&amp;first=11&amp;FORM=PERE" title="http://search.msn.es/results.aspx?q=fotos y vidos ...">11</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.co/search?hl=es&amp;q=discotecas+desnudistas+femeninas&amp;meta=" title="http://www.google.com.co/search?hl=es&amp;q=discotecas...">9</a> | <a href="./?date=20051026#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065738/http://www.google.pl/search?client=firefox-a&amp;rls=org.mozilla%3Apl-PL%3Aofficial&amp;channel=s&amp;hl=pl&amp;q=toste+spice+seks&amp;lr=&amp;btnG=Szukaj+w+Google" title="http://www.google.pl/search?client=firefox-a&amp;rls=o...">20</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.co.ve/search?hl=es&amp;q=CHICAS+JOVENCITAS+DE+18A%C3%91OS+XXXGALERIA&amp;meta=" title="http://www.google.co.ve/search?hl=es&amp;q=CHICAS JOVE...">18</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.ch/search?q=venus.com.ar&amp;hl=it&amp;start=90&amp;sa=N" title="http://www.google.ch/search?q=venus.com.ar&amp;hl=it&amp;s...">18</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/search?q=www.moanapozzi.it" title="google検索(www.moanapozzi.it)">17</a> | <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">16</a> | <a href="https://web.archive.org/web/20070327065738/http://search.yahoo.co.jp/search?p=tangas+japonesas&amp;x=31&amp;y=6&amp;fr=top_v2&amp;tid=top_v2&amp;ei=euc-jp&amp;search.x=1" title="http://search.yahoo.co.jp/search?p=tangas japonesa...">16</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.moanapozzi.it&amp;btnG=Cerca+con+Google&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.moanapozzi...">12</a> | <a href="https://web.archive.org/web/20070327065738/http://search.prodigy.msn.com/results.aspx?FORM=MSNTOD&amp;q=porno%20video%20grats%20de%20hermaphrodites" title="http://search.prodigy.msn.com/results.aspx?FORM=MS...">12</a> | <a href="https://web.archive.org/web/20070327065738/http://search.msn.es/results.aspx?q=fotos+y+vidos+de+zoofilia+gratis&amp;srch_type=0&amp;first=11&amp;FORM=PERE" title="http://search.msn.es/results.aspx?q=fotos y vidos ...">11</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.co/search?hl=es&amp;q=discotecas+desnudistas+femeninas&amp;meta=" title="http://www.google.com.co/search?hl=es&amp;q=discotecas...">9</a> | <a href="./?date=20051026#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -947,15 +1072,15 @@ mixi�ǲ����ʤ��칻(�⹻)��̾��������Ƹ������Ƥߤ��顢���ߥ�˥ƥ������ä��Τ���
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20051027#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%C2%B4%CF%C0">´��</a>]´���Ѹ���</h3><p>
-´���λ����������ֶ�Ť�����Ƥ���Τǡ�´���Τ���Υץ������μ����򳫻Ϥ��뤳�Ȥˤ�������ʬ��´���Υơ��ޤϡ���Ū�����֥������Ȼظ��ץ�����ߥ󥰸���Τ���ο�������ǽ����ƤʤΤǡ����ߤϡ��ޤ����١����Ȥʤ륪�֥������Ȼظ��ץ�����ߥ󥰸���μ�����ԤäƤ��롣�Ȥꤢ������11����ܤޤǤˤϡ������Ϥ����̤�ư���Ȥ����ޤǻ��äƹԤ�������
+<h3><a href="./?date=20051027#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%C2%B4%CF%C0">卒論</a>]卒論用言語</h3><p>
+卒論の時期がだいぶ近づいて来ているので、卒論のためのプログラムの実装を開始することにした。自分の卒論のテーマは、静的型オブジェクト指向プログラミング言語のための新しい機能の提案なので、現在は、まず、ベースとなるオブジェクト指向プログラミング言語の実装を行っている。とりあえず、11月中旬までには、処理系が１通り動作するところまで持って行きたい。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��2��) [<a href="./?date=20051027#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全2件) [<a href="./?date=20051027#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20051027#c01"><span class="canchor">_</span></a>
 				<span class="commentator">sesso pornostar</span>&nbsp;[ fiche video gratis  fetish peludos desnudos  mousy cameri..]</p>
@@ -971,7 +1096,7 @@ mixi�ǲ����ʤ��칻(�⹻)��̾��������Ƹ������Ƥߤ��顢���ߥ�˥ƥ������ä��Τ���
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.jessicarizzo.it&amp;btnG=Cerca+con+Google&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.jessicariz...">39</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.es/search?q=galerias+y+clips+de+escolares+lesbianas+en+uniforme+follandose&amp;hl=es&amp;hs=XIt&amp;lr=&amp;client=firefox-a&amp;rls=org.mozilla::official_s&amp;start=10&amp;sa=N" title="http://www.google.es/search?q=galerias y clips de ...">34</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.jessicarizzo.it&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.jessicariz...">25</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.siti+per+incontri.it&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.siti per i...">23</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?q=w.w.w.pompinare+18enni.it" title="http://www.google.it/search?q=w.w.w.pompinare 18en...">18</a> | <a href="https://web.archive.org/web/20070327065738/http://translate.google.com/translate_p?hl=en&amp;sl=ja&amp;u=http://www.coins.tsukuba.ac.jp/~i021216/diary/%3Fdate%3D20051027&amp;prev=/search%3Fq%3DForo%2Bpillados.com%26start%3D30%26hl%3Den%26lr%3D%26rls%3Dcom.microsoft:en-US%26sa%3DN" title="http://translate.google.com/translate_p?hl=en&amp;sl=j...">13</a> | <a href="https://web.archive.org/web/20070327065738/http://translate.google.com/translate?hl=en&amp;sl=ja&amp;u=http://www.coins.tsukuba.ac.jp/~i021216/diary/%3Fdate%3D20051027&amp;sa=X&amp;oi=translate&amp;resnum=9&amp;ct=result&amp;prev=/search%3Fq%3DForo%2Bpillados.com%26start%3D30%26hl%3Den%26lr%3D%26rls%3Dcom.microsoft:en-US%26sa%3DN" title="http://translate.google.com/translate?hl=en&amp;sl=ja&amp;...">13</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.de/search?q=lesbijki+mocne+zdiecia&amp;hl=de&amp;lr=&amp;client=firefox-a&amp;channel=s&amp;rls=org.mozilla:de:official&amp;start=30&amp;sa=N" title="http://www.google.de/search?q=lesbijki mocne zdiec...">11</a> | <a href="https://web.archive.org/web/20070327065738/http://search.latam.msn.com/results.aspx?q=fotos+de+virgen+rusas+de+13+a%c3%b1os+recien+follando&amp;FORM=USNO" title="http://search.latam.msn.com/results.aspx?q=fotos d...">10</a> | <a href="https://web.archive.org/web/20070327065738/http://www.yahoogle.jp/yahoo-16-ni%C3%B1as+calatas.html" title="http://www.yahoogle.jp/yahoo-16-niñas calatas.htm...">9</a> | <a href="./?date=20051027#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.jessicarizzo.it&amp;btnG=Cerca+con+Google&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.jessicariz...">39</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.es/search?q=galerias+y+clips+de+escolares+lesbianas+en+uniforme+follandose&amp;hl=es&amp;hs=XIt&amp;lr=&amp;client=firefox-a&amp;rls=org.mozilla::official_s&amp;start=10&amp;sa=N" title="http://www.google.es/search?q=galerias y clips de ...">34</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.jessicarizzo.it&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.jessicariz...">25</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.siti+per+incontri.it&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.siti per i...">23</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?q=w.w.w.pompinare+18enni.it" title="http://www.google.it/search?q=w.w.w.pompinare 18en...">18</a> | <a href="https://web.archive.org/web/20070327065738/http://translate.google.com/translate_p?hl=en&amp;sl=ja&amp;u=http://www.coins.tsukuba.ac.jp/~i021216/diary/%3Fdate%3D20051027&amp;prev=/search%3Fq%3DForo%2Bpillados.com%26start%3D30%26hl%3Den%26lr%3D%26rls%3Dcom.microsoft:en-US%26sa%3DN" title="http://translate.google.com/translate_p?hl=en&amp;sl=j...">13</a> | <a href="https://web.archive.org/web/20070327065738/http://translate.google.com/translate?hl=en&amp;sl=ja&amp;u=http://www.coins.tsukuba.ac.jp/~i021216/diary/%3Fdate%3D20051027&amp;sa=X&amp;oi=translate&amp;resnum=9&amp;ct=result&amp;prev=/search%3Fq%3DForo%2Bpillados.com%26start%3D30%26hl%3Den%26lr%3D%26rls%3Dcom.microsoft:en-US%26sa%3DN" title="http://translate.google.com/translate?hl=en&amp;sl=ja&amp;...">13</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.de/search?q=lesbijki+mocne+zdiecia&amp;hl=de&amp;lr=&amp;client=firefox-a&amp;channel=s&amp;rls=org.mozilla:de:official&amp;start=30&amp;sa=N" title="http://www.google.de/search?q=lesbijki mocne zdiec...">11</a> | <a href="https://web.archive.org/web/20070327065738/http://search.latam.msn.com/results.aspx?q=fotos+de+virgen+rusas+de+13+a%c3%b1os+recien+follando&amp;FORM=USNO" title="http://search.latam.msn.com/results.aspx?q=fotos d...">10</a> | <a href="https://web.archive.org/web/20070327065738/http://www.yahoogle.jp/yahoo-16-ni%C3%B1as+calatas.html" title="http://www.yahoogle.jp/yahoo-16-ni単as calatas.htm...">9</a> | <a href="./?date=20051027#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -984,15 +1109,15 @@ mixi�ǲ����ʤ��칻(�⹻)��̾��������Ƹ������Ƥߤ��顢���ߥ�˥ƥ������ä��Τ���
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20051028#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">���祮��</a>]5km,33ʬ</h3><p>
-���߽�λ��Ρ����ä���Ť��ʤä��롼��ƻϩ�����ä������Ť��ʤäƤ�������ΤϷ빽���ʤ����ä˽ɼ˼��դϡ�������̵���꤬¿���Τǡ����󤫤Ĥޤ��������ˤʤä�����Ϥꡢ����Τʤ���ī�������ɤ��褦����
+<h3><a href="./?date=20051028#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">ジョギング</a>]5km,33分</h3><p>
+ゼミ終了後の、すっかり暗くなったループ道路を走ったが、暗くなってから走るのは結構危ない。特に宿舎周辺は、街灯が無い所が多いので、何回かつまずきそうになった。やはり、走るのなら早朝の方が良いようだ。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��4��) [<a href="./?date=20051028#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全4件) [<a href="./?date=20051028#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20051028#c01"><span class="canchor">_</span></a>
 				<span class="commentator">filmini comici</span>&nbsp;[ rosse porno  foto sverginate  vergas gigantes pompini  po..]</p>
@@ -1012,7 +1137,7 @@ mixi�ǲ����ʤ��칻(�⹻)��̾��������Ƹ������Ƥߤ��顢���ߥ�˥ƥ������ä��Τ���
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065738/http://azby.search.nifty.com/cgi-bin/search.cgi?select=41&amp;cflg=%8c%9f%8d%f5&amp;htmltype=2&amp;Text=linjerie" title="http://azby.search.nifty.com/cgi-bin/search.cgi?se...">20</a> | <a href="https://web.archive.org/web/20070327065738/http://search.prodigy.msn.com/results.aspx?srch=105&amp;FORM=AS5&amp;q=www.chicas+malas.com." title="http://search.prodigy.msn.com/results.aspx?srch=10...">16</a> | <a href="https://web.archive.org/web/20070327065738/http://www.yahoogle.jp/yahoo-2-fotos+pedofilas.html" title="http://www.yahoogle.jp/yahoo-2-fotos pedofilas.htm...">14</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/search?hl=it&amp;q=foto+amatoriali+ragazze+in+minigonna+e+scarpe+col+tacco&amp;lr=" title="google����(foto amatoriali ragazze in minigonna e scarpe col tacco)">14</a> | <a href="https://web.archive.org/web/20070327065738/http://search.msn.com/results.aspx?srch=105&amp;FORM=AS5&amp;q=www+zdjeci+erotyczne.pl" title="http://search.msn.com/results.aspx?srch=105&amp;FORM=A...">14</a> | <a href="https://web.archive.org/web/20070327065738/http://www.yahoogle.jp/yahoo-1-fotos+pedofilas.html" title="http://www.yahoogle.jp/yahoo-1-fotos pedofilas.htm...">12</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.cl/search?q=paginas+pedofilas+teen&amp;hl=es" title="http://www.google.cl/search?q=paginas pedofilas te...">11</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/search?q=www+femmine+in+calore.com&amp;hl=it&amp;lr=&amp;start=10&amp;sa=N" title="google����(www femmine in calore.com)">10</a> | <a href="https://web.archive.org/web/20070327065738/http://search.msn.de/results.aspx?srch=105&amp;FORM=AS5&amp;q=www.hotel+figo+.pt" title="http://search.msn.de/results.aspx?srch=105&amp;FORM=AS...">10</a> | <a href="https://web.archive.org/web/20070327065738/http://search.alice.it/search/cgi/search.cgi?dom=&amp;offset=0&amp;hits=10&amp;switch=0&amp;f=hs&amp;qs=wwwsex.it&amp;lr=" title="http://search.alice.it/search/cgi/search.cgi?dom=&amp;...">10</a> | <a href="./?date=20051028#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065738/http://azby.search.nifty.com/cgi-bin/search.cgi?select=41&amp;cflg=%8c%9f%8d%f5&amp;htmltype=2&amp;Text=linjerie" title="http://azby.search.nifty.com/cgi-bin/search.cgi?se...">20</a> | <a href="https://web.archive.org/web/20070327065738/http://search.prodigy.msn.com/results.aspx?srch=105&amp;FORM=AS5&amp;q=www.chicas+malas.com." title="http://search.prodigy.msn.com/results.aspx?srch=10...">16</a> | <a href="https://web.archive.org/web/20070327065738/http://www.yahoogle.jp/yahoo-2-fotos+pedofilas.html" title="http://www.yahoogle.jp/yahoo-2-fotos pedofilas.htm...">14</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/search?hl=it&amp;q=foto+amatoriali+ragazze+in+minigonna+e+scarpe+col+tacco&amp;lr=" title="google検索(foto amatoriali ragazze in minigonna e scarpe col tacco)">14</a> | <a href="https://web.archive.org/web/20070327065738/http://search.msn.com/results.aspx?srch=105&amp;FORM=AS5&amp;q=www+zdjeci+erotyczne.pl" title="http://search.msn.com/results.aspx?srch=105&amp;FORM=A...">14</a> | <a href="https://web.archive.org/web/20070327065738/http://www.yahoogle.jp/yahoo-1-fotos+pedofilas.html" title="http://www.yahoogle.jp/yahoo-1-fotos pedofilas.htm...">12</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.cl/search?q=paginas+pedofilas+teen&amp;hl=es" title="http://www.google.cl/search?q=paginas pedofilas te...">11</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com/search?q=www+femmine+in+calore.com&amp;hl=it&amp;lr=&amp;start=10&amp;sa=N" title="google検索(www femmine in calore.com)">10</a> | <a href="https://web.archive.org/web/20070327065738/http://search.msn.de/results.aspx?srch=105&amp;FORM=AS5&amp;q=www.hotel+figo+.pt" title="http://search.msn.de/results.aspx?srch=105&amp;FORM=AS...">10</a> | <a href="https://web.archive.org/web/20070327065738/http://search.alice.it/search/cgi/search.cgi?dom=&amp;offset=0&amp;hits=10&amp;switch=0&amp;f=hs&amp;qs=wwwsex.it&amp;lr=" title="http://search.alice.it/search/cgi/search.cgi?dom=&amp;...">10</a> | <a href="./?date=20051028#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -1025,113 +1150,113 @@ mixi�ǲ����ʤ��칻(�⹻)��̾��������Ƹ������Ƥߤ��顢���ߥ�˥ƥ������ä��Τ���
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20051029#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">���祮��</a>]10km,1����1ʬ</h3><p>
-�����ϡ�­�ˤǤ��������ô��������ʤ��褦�˹��פ�������褦�ˤ��Ƥߤ������Τ����������������꽪�������­����ϫ�����Ĥ�����ʬ���ä��褦����
+<h3><a href="./?date=20051029#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">ジョギング</a>]10km,1時間1分</h3><p>
+今日は、足にできるだけ負担がかからないように工夫して走るようにしてみた。そのせいか、今日は走り終えた後の足の疲労がいつもより大分減ったようだ。
 </p></div><div class="section">
-<h3><a href="./?date=20051029#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]�����Хȥ�</h3><p>
-<a href="https://web.archive.org/web/20070327065738/http://www.ikejisoft.com/antenna/">IKeJI</a>�����äƤ��������ˤ��äơ����ä��˲󤹤Ȥϡ�
+<h3><a href="./?date=20051029#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]乙女バトン</h3><p>
+<a href="https://web.archive.org/web/20070327065738/http://www.ikejisoft.com/antenna/">IKeJI</a>から回ってきた。よりにもよって、こっちに回すとは。
 </p>
 <ol>
 <li>
 <p>
-�����Ϥ��ĤǤ�����
+初恋はいつですか？
 </p>
-�������κ���Ʊ�����饹�λҤ��ä����ɡ�������󡢹���ʤ�Ƥ���櫓��̵�������⤽�⡢�ۤ�Ȥ������ä��Τ������ȤʤäƤϼ�����̵����
+小学生の頃。同じクラスの子だったけど、もちろん、告白なんてするわけも無く。そもそも、ほんとに恋だったのか、今となっては自信が無い。
 </li>
 <li>
 <p>
-���ޤ��դ���ä��Ϳ��ϡ�
+今まで付き合った人数は？
 </p>
-0�͡�IKeJI�⤳�Τ��Ȥ�狼�äƤ�Ϥ��ʤΤˡ��Хȥ��Ϥ�������ʤ���
+0人。IKeJIもこのことをわかってるはずなのに、バトン渡すんだもんなあ。
 </li>
 <li>
 <p>
-�����ʿͤȥǡ��Ȥ��������ϡ�
+好きな人とデートしたい場所は？
 </p>
-�äˤ�������ʤ���Ȥ����Τ�̵���������Ƹ����ʤ顢���˥ϥ����󥰤Ȥ��Ǥ�����򤷤����⡣
+特にここじゃなきゃというのは無い。強いて言うなら、一緒にハイキングとかできたら嬉しいかも。
 </li>
 <li>
-�����ʿͤȴѤ����ǲ�ϡ�
+好きな人と観たい映画は？
 <p>
-�ä�̵�����Ƕᡢ�����ǲ踫�ʤ��Τǡ�
+特に無い。最近、全然映画見ないので。
 </p>
-</li>
-<li>
-<p>
-�����ʿͤ˸����ư��֤��줷���ä����դϡ�
-</p>
-����ʸ��դ������褦�ˤʤꤿ���ʤ���
 </li>
 <li>
 <p>
-�������ʿͤ��ޤ��������οͤι����ʤȤ����ϡ�
+好きな人に言われて一番うれしかった言葉は？
 </p>
-���ʤ���
+そんな言葉を言われるようになりたいなあ。
 </li>
 <li>
 <p>
-����ʿͤ�����̵���äƿͤϡ�
+今好きな人いますか？その人の好きなところは？
 </p>
-�����ܤ�(�Ȱ��̤�ǧ�������褦��)�ä�����͡�
+いない。
 </li>
 <li>
 <p>
-�ⵤ�ϵ����ޤ�����������ʤ�ɤ��ޤǡ�
+こんな人は絶対無理って人は？
 </p>
-�դ���ä����Ȥ�̵���Τǡ��狼��ʤ��ʤ���
+真面目な(と一般に認識されるような)話を嫌う人。
 </li>
 <li>
 <p>
-Ʊ�����Ƥߤ�����
+浮気は許せますか？許せるならどこまで？
 </p>
-YES��Ʊ���������դ��礨�ʤ���ɤ����褦��̵�����ɡ�
+付き合ったことが無いので、わからないなあ。
 </li>
 <li>
 <p>
-���ʤ������򴶤����ư�ϡ�
+同棲してみたい？
 </p>
-����ʹ�ư�򤷤Ƥ�館��褦�ˤʤꤿ���ʤ���
+YES。同棲以前に付き合えなきゃどうしようも無いけど。
 </li>
 <li>
 <p>
-�������ΰ㤤
+あなたが愛を感じる行動は？
 </p>
-���ϰ��Ū�ʤ�Τǡ����ϻ�³Ū�ʤ�Ρ�����
+そんな行動をしてもらえるようになりたいなあ。
 </li>
 <li>
 <p>
-����Ĺ��³���������ϡ�
+愛と恋の違い
 </p>
-���⤽��³�������Ȥ�̵���ʤ���
+恋は一時的なもので、愛は持続的なもの、か？
 </li>
 <li>
 <p>
-���դ��礤������ͭ̾�͡���ǽ�ͤϡ�
+一番長く続いた恋愛は？
 </p>
-�ä�̵����
+そもそも続いたことが無いなあ。
 </li>
 <li>
 <p>
-��ˤ���������ͤ򰦤��ʤ��ʤ롦������ʤ��ʤ롢�ɤä���
+お付き合いしたい有名人・芸能人は？
 </p>
-�����ʤ��ʤ롣
+特に無し。
 </li>
 <li>
 <p>
-���ΥХȥ���Ϥ��޿ͤϡ�
+究極の選択一生人を愛せなくなる・愛されなくなる、どっち？
 </p>
-���ɤ������Τǡ��Ϥ��ʤ���
+愛せなくなる。
+</li>
+<li>
+<p>
+このバトンを渡す五人は？
+</p>
+めんどくさいので、渡さない。
 </li>
 </ol>
 <p>
-�����ࡢ�ʤ�������Ӥʲ����Ф���ˤʤäƤ��ޤä���������Фä���ϻ�����̵����
+うーむ、なんだか不毛な回答ばかりになってしまったが、こればっかりは仕方が無い。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��5��) [<a href="./?date=20051029#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全5件) [<a href="./?date=20051029#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20051029#c01"><span class="canchor">_</span></a>
 				<span class="commentator">Aaron Jacob</span>&nbsp;[ *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  ..]</p>
@@ -1153,7 +1278,7 @@ YES��Ʊ���������դ��礨�ʤ���ɤ����褦��̵�����ɡ�
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065738/http://ikejisoft.com/" title="http://ikejisoft.com/">36</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.co.jp/search?hl=ja&amp;q=Onion+mizu&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=" title="google����(Onion mizu)">18</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.co/search?hl=es&amp;q=www..chicas+para+celular.com&amp;btnG=B%C3%BAsqueda+en+Google&amp;meta=" title="http://www.google.com.co/search?hl=es&amp;q=www..chica...">14</a> | <a href="https://web.archive.org/web/20070327065738/http://ikejisoft.com/index.php?page=%BF%EC%B5%AD&amp;cmd=read&amp;" title="http://ikejisoft.com/index.php?page=�쵭&amp;cmd=read&amp;">14</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.mx/search?hl=es&amp;q=INDIGENAS+AMERICANO+PORNOSTAR&amp;meta=" title="http://www.google.com.mx/search?hl=es&amp;q=INDIGENAS ...">12</a> | <a href="https://web.archive.org/web/20070327065738/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20051029%23p02&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">9</a> | <a href="https://web.archive.org/web/20070327065738/http://ikejisoft.com/?FrontPage" title="http://ikejisoft.com/?FrontPage">9</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?q=posizioni+illustrate+kamasutra&amp;hl=it&amp;lr=&amp;start=40&amp;sa=N" title="http://www.google.it/search?q=posizioni illustrate...">8</a> | <a href="https://web.archive.org/web/20070327065738/http://cgi.todito.com/cgi-bin/search.cgi?busqueda=FOTOGRAFIAS+DE+MUJERES+DESNUDAS+Y+NALGONAS&amp;start=90&amp;tipo=1" title="http://cgi.todito.com/cgi-bin/search.cgi?busqueda=...">8</a> | <a href="https://web.archive.org/web/20070327065738/http://www.ikejisoft.com/" title="http://www.ikejisoft.com/">7</a> | <a href="./?date=20051029#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065738/http://ikejisoft.com/" title="http://ikejisoft.com/">36</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.co.jp/search?hl=ja&amp;q=Onion+mizu&amp;btnG=Google+%E6%A4%9C%E7%B4%A2&amp;lr=" title="google検索(Onion mizu)">18</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.co/search?hl=es&amp;q=www..chicas+para+celular.com&amp;btnG=B%C3%BAsqueda+en+Google&amp;meta=" title="http://www.google.com.co/search?hl=es&amp;q=www..chica...">14</a> | <a href="https://web.archive.org/web/20070327065738/http://ikejisoft.com/index.php?page=%BF%EC%B5%AD&amp;cmd=read&amp;" title="http://ikejisoft.com/index.php?page=酔記&amp;cmd=read&amp;">14</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.mx/search?hl=es&amp;q=INDIGENAS+AMERICANO+PORNOSTAR&amp;meta=" title="http://www.google.com.mx/search?hl=es&amp;q=INDIGENAS ...">12</a> | <a href="https://web.archive.org/web/20070327065738/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20051029%23p02&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">9</a> | <a href="https://web.archive.org/web/20070327065738/http://ikejisoft.com/?FrontPage" title="http://ikejisoft.com/?FrontPage">9</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?q=posizioni+illustrate+kamasutra&amp;hl=it&amp;lr=&amp;start=40&amp;sa=N" title="http://www.google.it/search?q=posizioni illustrate...">8</a> | <a href="https://web.archive.org/web/20070327065738/http://cgi.todito.com/cgi-bin/search.cgi?busqueda=FOTOGRAFIAS+DE+MUJERES+DESNUDAS+Y+NALGONAS&amp;start=90&amp;tipo=1" title="http://cgi.todito.com/cgi-bin/search.cgi?busqueda=...">8</a> | <a href="https://web.archive.org/web/20070327065738/http://www.ikejisoft.com/" title="http://www.ikejisoft.com/">7</a> | <a href="./?date=20051029#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -1166,17 +1291,17 @@ YES��Ʊ���������դ��礨�ʤ���ɤ����褦��̵�����ɡ�
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20051030#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=Eclipse">Eclipse</a>]�����ɥե����ޥå���</h3><p>
-Eclipse SDK�ˤϡ������ɤ�ư�ǥ���ǥ�Ȥ��Ƥ���롢�����ɥե����ޥå���������Τ��������줬(��ʬ�ˤȤä�)��̯�˻Ȥ��ˤ����������ǥ��󥰥��������������ܤϤ��ʤ�˭�٤ǡ������ϰ���Ǥ��ʤ�Υˡ����������뤳�Ȥ��Ǥ���ΤϳΤ��ʤΤ�������ʬ�λȤ����������ǥ��󥰥�������˹�碌�뤳�Ȥ����ޤ��Ǥ��ʤ��Τ���
+<h3><a href="./?date=20051030#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=Eclipse">Eclipse</a>]コードフォーマッター</h3><p>
+Eclipse SDKには、コードを自動でインデントしてくれる、コードフォーマッターがあるのだが、これが(自分にとって)微妙に使いにくい。コーディングスタイルの設定項目はかなり豊富で、その範囲内でかなりのニーズに答えることができるのは確かなのだが、自分の使いたいコーディングスタイルに合わせることがうまくできないのだ。
 <p>
 <p>
-�㤨�С�
+例えば、
 </p>
 <pre>
 String[] strs = {"a", "b", "c", "d", "e", ... }
 </pre>
 <p>
-�Τ褦�ʥ����ɤ����ä��Ȥ��롣���ΤȤ�����������椬Ĺ�����ơ����ꤷ���������˼��ޤ�ʤ��Ȥ��֤Τߡס�
+のようなコードがあったとする。このとき、初期化の中が長すぎて、指定したカラム数に収まらないとき「のみ」、
 </p>
 <pre>
 String[] strs = {
@@ -1184,7 +1309,7 @@ String[] strs = {
 };
 </pre>
 <p>
-�Τ褦�˥���ǥ�Ȥ���褦�ˤ������������������(������Ҥ����ꤷ���������˼��ޤ�Ȥ��Ǥ�)
+のようにインデントするようにしたい。しかし、常に(初期化子が指定したカラム数に収まるときでも)
 </p>
 <pre>
 String[] strs = {
@@ -1192,25 +1317,25 @@ String[] strs = {
 };
 </pre>
 <p>
-�Ȥ�������ϤǤ����ΤΡ����ꤷ���������˼��ޤ�ʤ��Ȥ��Τߤ��Τ褦�ˤ������꤬���ޤ��Ǥ��ʤ������ͤΥ����ǥ��󥰥���������б�����Τ�̵�����⤷��ʤ���������ä����ؤ��������ɥѡ��ƥ��Υ����ɥե����ޥåȥץ饰����(�㤨��<a href="https://web.archive.org/web/20070327065738/http://jalopy.sourceforge.net/index.html">Jalopy</a>)��Ȥ��Ȥ�����⤢�뤬��SDK��ɸ��Ū�˻Ȥ��뵡ǽ��Ʊ���褦�ʵ�ǽ����ä��ץ饰����򿷤��˥��󥹥ȡ��뤹��Τ�ɤ����Ȥ����������ʤ��Ǥ�ʤ���
+とする設定はできるものの、指定したカラム数に収まらないときのみそのようにする設定がうまくできない。万人のコーディングスタイルに対応するのは無理かもしれないが、ちょっと不便だ。サードパーティのコードフォーマットプラグイン(例えば<a href="https://web.archive.org/web/20070327065738/http://jalopy.sourceforge.net/index.html">Jalopy</a>)を使うという手もあるが、SDKで標準的に使える機能と同じような機能を持ったプラグインを新たにインストールするのもどうかという気がしないでもない。
 </p></div><div class="section">
-<h3><a href="./?date=20051030#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">���祮��</a>]10km,59ʬ</h3><p>
-���������ʤ���٤�Ĵ�Ҥ��ɤ����������̤�뤳�Ȥ��Ǥ���������Ĵ�Ҥǡ��Ĥ��Хޥ饽��ޤǴ�ĥ������
+<h3><a href="./?date=20051030#p02"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">ジョギング</a>]10km,59分</h3><p>
+今日は普段に比べて調子が良く、タイムも縮めることができた。この調子で、つくばマラソンまで頑張ろう。
 </p></div><div class="section">
-<h3><a href="./?date=20051030#p03"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=Storm">Storm</a>]���󥿥å����ϥ��饤�ƥ���</h3><p>
-�����ϡ�Storm����¢��Groovy���ǥ����Υ��󥿥å����ϥ��饤�ƥ��󥰵�ǽ�����������ʣ����ʸ����ʤɡ��ޤ������ȥϥ��饤�ƥ��󥰤Ǥ��ʤ���Τ⤢�뤬���ۤȤ�ɤΥ�����ɤ�ʸ�����ƥ�뤬���դ������ɽ�������褦�ˤǤ����������꡼�󥷥�åȤϡ��ʲ������Υ����꡼�󥷥�åȤǤϡ��ץ���������̾��桼���˥����������Ǥ����ͤơ����Υץ��������Ȥ�̾�����ѹ�����Ȥ���Groovy������ץȤ�¹Ԥ��Ƥ��롣
+<h3><a href="./?date=20051030#p03"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=Storm">Storm</a>]シンタックスハイライティング</h3><p>
+今日は、Stormに内蔵のGroovyエディタのシンタックスハイライティング機能を実装した。複数行文字列など、まだちゃんとハイライティングできないものもあるが、ほとんどのキーワードや文字列リテラルが色付けされて表示されるようにできた。スクリーンショットは、以下。このスクリーンショットでは、プロジェクト名をユーザにダイアログでたずねて、そのプロジェクトの名前を変更するというGroovyスクリプトを実行している。
 </p>
 <center>
 <table>
 <tr>
 <td>
-<p>�¹���</p>
+<p>実行前</p>
 <a href="https://web.archive.org/web/20070327065738/http://www2.coins.tsukuba.ac.jp/~i021216/images/storm_screen_shot/storm_screen_shot1.png">
 <img src="https://web.archive.org/web/20070327065738im_/http://www2.coins.tsukuba.ac.jp/~i021216/images/storm_screen_shot/storm_screen_shot1_mini.png">
 </a>
 </td>
 <td>
-<p>�¹���1</p>
+<p>実行中1</p>
 <a href="https://web.archive.org/web/20070327065738/http://www2.coins.tsukuba.ac.jp/~i021216/images/storm_screen_shot/storm_screen_shot2.png">
 <img src="https://web.archive.org/web/20070327065738im_/http://www2.coins.tsukuba.ac.jp/~i021216/images/storm_screen_shot/storm_screen_shot2_mini.png">
 </a>
@@ -1218,13 +1343,13 @@ String[] strs = {
 </tr>
 <tr>
 <td>
-<p>�¹���2</p>
+<p>実行中2</p>
 <a href="https://web.archive.org/web/20070327065738/http://www2.coins.tsukuba.ac.jp/~i021216/images/storm_screen_shot/storm_screen_shot3.png">
 <img src="https://web.archive.org/web/20070327065738im_/http://www2.coins.tsukuba.ac.jp/~i021216/images/storm_screen_shot/storm_screen_shot3_mini.png">
 </a>
 </td>
 <td>
-<p>�¹Ը�</p>
+<p>実行後</p>
 <a href="https://web.archive.org/web/20070327065738/http://www2.coins.tsukuba.ac.jp/~i021216/images/storm_screen_shot/storm_screen_shot4.png">
 <img src="https://web.archive.org/web/20070327065738im_/http://www2.coins.tsukuba.ac.jp/~i021216/images/storm_screen_shot/storm_screen_shot4_mini.png">
 </a>
@@ -1237,7 +1362,7 @@ String[] strs = {
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��2��) [<a href="./?date=20051030#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全2件) [<a href="./?date=20051030#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20051030#c01"><span class="canchor">_</span></a>
 				<span class="commentator">sexy actores mexicanos</span>&nbsp;[ basso dal vivo  amateur quarantenni troie  agreeable figh..]</p>
@@ -1253,7 +1378,7 @@ String[] strs = {
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.porca.com&amp;btnG=Cerca+con+Google&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.porca.com&amp;...">17</a> | <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">17</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=vagine+lubrificate+con+penetrazioni+profonde&amp;btnG=Cerca+con+Google&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=vagine lubrifi...">15</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.mx/search?hl=es&amp;q=www.caricaturas+pornograficas.com&amp;meta=" title="http://www.google.com.mx/search?hl=es&amp;q=www.carica...">14</a> | <a href="https://web.archive.org/web/20070327065738/http://72.30.186.56/language/interstitial?lp=en_it&amp;text=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F%7Ei021216%2Fdiary%2F%3Fdate%3D20051030&amp;.intl=it" title="http://72.30.186.56/language/interstitial?lp=en_it...">12</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.porca.com&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.porca.com&amp;...">9</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.ar/search?hl=es&amp;ie=ISO-8859-1&amp;q=fotolog+colitas+ardientes&amp;btnG=B%FAsqueda+en+Google&amp;meta=" title="http://www.google.com.ar/search?hl=es&amp;ie=ISO-8859-...">7</a> | <a href="https://web.archive.org/web/20070327065738/http://search.msn.it/results.aspx?q=vidio+++casalinche++napoletane+++gratis&amp;mkt=it-IT&amp;form=QBRE&amp;go.x=13&amp;go.y=13" title="http://search.msn.it/results.aspx?q=vidio   casali...">7</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;sa=X&amp;oi=spell&amp;resnum=0&amp;ct=result&amp;cd=1&amp;q=pupe+e+succhiano+hot&amp;spell=1" title="http://www.google.it/search?hl=it&amp;sa=X&amp;oi=spell&amp;re...">6</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=puttane+fumatrici&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=puttane fumatr...">6</a> | <a href="./?date=20051030#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.porca.com&amp;btnG=Cerca+con+Google&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.porca.com&amp;...">17</a> | <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">17</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=vagine+lubrificate+con+penetrazioni+profonde&amp;btnG=Cerca+con+Google&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=vagine lubrifi...">15</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.mx/search?hl=es&amp;q=www.caricaturas+pornograficas.com&amp;meta=" title="http://www.google.com.mx/search?hl=es&amp;q=www.carica...">14</a> | <a href="https://web.archive.org/web/20070327065738/http://72.30.186.56/language/interstitial?lp=en_it&amp;text=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F%7Ei021216%2Fdiary%2F%3Fdate%3D20051030&amp;.intl=it" title="http://72.30.186.56/language/interstitial?lp=en_it...">12</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=www.porca.com&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=www.porca.com&amp;...">9</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.com.ar/search?hl=es&amp;ie=ISO-8859-1&amp;q=fotolog+colitas+ardientes&amp;btnG=B%FAsqueda+en+Google&amp;meta=" title="http://www.google.com.ar/search?hl=es&amp;ie=ISO-8859-...">7</a> | <a href="https://web.archive.org/web/20070327065738/http://search.msn.it/results.aspx?q=vidio+++casalinche++napoletane+++gratis&amp;mkt=it-IT&amp;form=QBRE&amp;go.x=13&amp;go.y=13" title="http://search.msn.it/results.aspx?q=vidio   casali...">7</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;sa=X&amp;oi=spell&amp;resnum=0&amp;ct=result&amp;cd=1&amp;q=pupe+e+succhiano+hot&amp;spell=1" title="http://www.google.it/search?hl=it&amp;sa=X&amp;oi=spell&amp;re...">6</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.it/search?hl=it&amp;q=puttane+fumatrici&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=puttane fumatr...">6</a> | <a href="./?date=20051030#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -1266,13 +1391,13 @@ String[] strs = {
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20051031#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">���祮��</a>]10km,1����00ʬ</h3><p></p></div>
+<h3><a href="./?date=20051031#p01"><span class="sanchor">_</span></a> [<a href="./?year=2005;month=4Q;category=%A5%B8%A5%E7%A5%AE%A5%F3%A5%B0">ジョギング</a>]10km,1時間00分</h3><p></p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��8��) [<a href="./?date=20051031#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全8件) [<a href="./?date=20051031#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 			<p><a href="./?date=20051031#c01">Before...</a></p>
 				<p><a href="./?date=20051031#c04"><span class="canchor">_</span></a>
@@ -1295,7 +1420,7 @@ String[] strs = {
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065738/http://www.google.pl/search?hl=pl&amp;q=dupcenie&amp;lr=" title="http://www.google.pl/search?hl=pl&amp;q=dupcenie&amp;lr=">10</a> | <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">10</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.pl/search?q=dupcenie&amp;hl=pl&amp;lr=&amp;start=10&amp;sa=N" title="http://www.google.pl/search?q=dupcenie&amp;hl=pl&amp;lr=&amp;s...">9</a> | <a href="https://web.archive.org/web/20070327065738/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">7</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.pl/search?hl=pl&amp;q=dupcenie&amp;btnG=Szukaj+w+Google&amp;lr=" title="http://www.google.pl/search?hl=pl&amp;q=dupcenie&amp;btnG=...">4</a> | <a href="https://web.archive.org/web/20070327065738/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">3</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.pl/search?hl=pl&amp;q=www.tanie+suczki&amp;lr=" title="http://www.google.pl/search?hl=pl&amp;q=www.tanie sucz...">3</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.pl/search?client=firefox-a&amp;rls=org.mozilla%3Apl%3Aofficial&amp;channel=s&amp;hl=pl&amp;q=tanie+suczki&amp;lr=&amp;btnG=Szukaj+w+Google" title="http://www.google.pl/search?client=firefox-a&amp;rls=o...">3</a> | <a href="https://web.archive.org/web/20070327065738/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20051031%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">3</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.pl/search?hl=pl&amp;q=tanie+suczki&amp;btnG=Szukaj+w+Google&amp;lr=" title="http://www.google.pl/search?hl=pl&amp;q=tanie suczki&amp;b...">2</a> | <a href="./?date=20051031#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065738/http://www.google.pl/search?hl=pl&amp;q=dupcenie&amp;lr=" title="http://www.google.pl/search?hl=pl&amp;q=dupcenie&amp;lr=">10</a> | <a href="https://web.archive.org/web/20070327065738/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">10</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.pl/search?q=dupcenie&amp;hl=pl&amp;lr=&amp;start=10&amp;sa=N" title="http://www.google.pl/search?q=dupcenie&amp;hl=pl&amp;lr=&amp;s...">9</a> | <a href="https://web.archive.org/web/20070327065738/http://ikejisoft.com/antenna/" title="http://ikejisoft.com/antenna/">7</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.pl/search?hl=pl&amp;q=dupcenie&amp;btnG=Szukaj+w+Google&amp;lr=" title="http://www.google.pl/search?hl=pl&amp;q=dupcenie&amp;btnG=...">4</a> | <a href="https://web.archive.org/web/20070327065738/http://www2.coins.tsukuba.ac.jp/~i021216/" title="http://www2.coins.tsukuba.ac.jp/~i021216/">3</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.pl/search?hl=pl&amp;q=www.tanie+suczki&amp;lr=" title="http://www.google.pl/search?hl=pl&amp;q=www.tanie sucz...">3</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.pl/search?client=firefox-a&amp;rls=org.mozilla%3Apl%3Aofficial&amp;channel=s&amp;hl=pl&amp;q=tanie+suczki&amp;lr=&amp;btnG=Szukaj+w+Google" title="http://www.google.pl/search?client=firefox-a&amp;rls=o...">3</a> | <a href="https://web.archive.org/web/20070327065738/http://mixi.jp/view_diary.pl?url=http%3A%2F%2Fwww2.coins.tsukuba.ac.jp%2F~i021216%2Fdiary%2F%3Fdate%3D20051031%23p01&amp;owner_id=170835" title="http://mixi.jp/view_diary.pl?url=http://www2.coins...">3</a> | <a href="https://web.archive.org/web/20070327065738/http://www.google.pl/search?hl=pl&amp;q=tanie+suczki&amp;btnG=Szukaj+w+Google&amp;lr=" title="http://www.google.pl/search?hl=pl&amp;q=tanie suczki&amp;b...">2</a> | <a href="./?date=20051031#t">TrackBack(0)</a>
 		</div>
 </div>
 

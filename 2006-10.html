@@ -1,43 +1,168 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="ja-JP">
-<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=Hk4-lkW3" charset="utf-8"></script>
-<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<head>
+
 <script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
-<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+
 <script type="text/javascript">
     __wm.init("https://web.archive.org/web");
   __wm.wombat("http://www.coins.tsukuba.ac.jp:80/~i021216/diary/?date=200610","20070327065727","https://web.archive.org/","web","https://web-static.archive.org/_static/",
 	      "1174978647");
 </script>
-<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" />
-<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+
+
 <!-- End Wayback Rewrite JS Include -->
 
-	<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="generator" content="tDiary 2.0.0">
 	<meta http-equiv="Last-Modified" content="Tue, 06 Mar 2007 11:57:20 GMT">
-	<meta http-equiv="Content-Script-Type" content="text/javascript; charset=EUC-JP">
-	<meta name="author" content="���繨��">
+	<meta http-equiv="Content-Script-Type" content="text/javascript; charset=UTF-8">
+	<meta name="author" content="水島宏太">
 	<link rev="made" href="mailto:hau51010{at}tree.odn.ne.jp">
-	<link rel="index" title="�ȥå�" href="http://www.coins.tsukuba.ac.jp/~i021216/">
-	<link rel="start" title="�ǿ�" href="./">
+	<link rel="index" title="トップ" href="http://www.coins.tsukuba.ac.jp/~i021216/">
+	<link rel="start" title="最新" href="./">
 	<meta http-equiv="content-style-type" content="text/css">
 	<link rel="stylesheet" href="/web/20070327065727cs_/http://www.coins.tsukuba.ac.jp/~i021216/diary/theme/base.css" type="text/css" media="all">
 	<link rel="stylesheet" href="/web/20070327065727cs_/http://www.coins.tsukuba.ac.jp/~i021216/diary/theme/another_blue/another_blue.css" title="another_blue" type="text/css" media="all">
-	<title>Onion��ȯ����(2006-10)</title>
+	<title>Onion開発日記(2006-10)</title>
 	
 	<!--link rel="alternate" type="application/x-lirs" title="lirs" href="antenna.lirs"-->
-	<link rel="alternate" type="application/rss+xml" title="RSS" href="https://web.archive.org/web/20070327065727/http://www.coins.tsukuba.ac.jp/~i021216/diary/index.rdf">
+	
+
+<style>
+    /* Modern Styling */
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.7;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        color: #333;
+    }
+    
+    h1 {
+        color: #2c3e50;
+        border-bottom: 3px solid #3498db;
+        padding-bottom: 12px;
+        font-size: 2em;
+        margin-top: 0;
+    }
+    
+    h2 {
+        color: #34495e;
+        border-left: 4px solid #3498db;
+        padding-left: 12px;
+        margin-top: 30px;
+    }
+    
+    h3 {
+        color: #555;
+        margin-top: 24px;
+    }
+    
+    .day {
+        background: white;
+        border-radius: 12px;
+        padding: 24px;
+        margin-bottom: 24px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .day:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+    
+    .section {
+        margin: 16px 0;
+        padding: 12px;
+        border-left: 3px solid #e8e8e8;
+    }
+    
+    .date {
+        color: #3498db;
+        font-weight: 600;
+    }
+    
+    .title {
+        color: #2c3e50;
+        font-size: 1.3em;
+    }
+    
+    a {
+        color: #3498db;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    
+    a:hover {
+        color: #2980b9;
+        text-decoration: underline;
+    }
+    
+    pre {
+        background: #f8f9fa;
+        border: 1px solid #e9ecef;
+        border-radius: 6px;
+        padding: 16px;
+        overflow-x: auto;
+        font-size: 0.9em;
+    }
+    
+    code {
+        background: #f8f9fa;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .comment {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 16px;
+        margin-top: 20px;
+    }
+    
+    .adminmenu, .calendar, .todo {
+        background: white;
+        border-radius: 8px;
+        padding: 12px;
+        margin-bottom: 16px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .referer {
+        font-size: 0.85em;
+        color: #7f8c8d;
+        margin-top: 16px;
+        padding-top: 12px;
+        border-top: 1px solid #e8e8e8;
+    }
+    
+    /* Web Archive ツールバーを非表示 */
+    #wm-ipp-base, #wm-ipp, #donato {
+        display: none !important;
+    }
+    
+    hr.sep {
+        border: none;
+        border-top: 2px solid #e8e8e8;
+        margin: 30px 0;
+    }
+</style>
+
 </head>
 <body>
 
 
 <div class="adminmenu">
-<span class="adminmenu"><a href="https://web.archive.org/web/20070327065727/http://www.coins.tsukuba.ac.jp/~i021216/">�ȥå�</a></span>
-<span class="adminmenu"><a href="./">�ǿ�</a></span>
-<span class="adminmenu"><a href="update.rb">�ɵ�</a></span>
+<span class="adminmenu"><a href="https://web.archive.org/web/20070327065727/http://www.coins.tsukuba.ac.jp/~i021216/">トップ</a></span>
+<span class="adminmenu"><a href="./">最新</a></span>
+<span class="adminmenu"><a href="update.rb">追記</a></span>
 </div>
-<h1>Onion��ȯ����</h1>
+<h1>Onion開発日記</h1>
 <div class="calendar">
 <div class="year">2004|<a href="./?date=200409">09</a>|<a href="./?date=200410">10</a>|<a href="./?date=200411">11</a>|<a href="./?date=200412">12</a>|</div>
 <div class="year">2005|<a href="./?date=200501">01</a>|<a href="./?date=200502">02</a>|<a href="./?date=200503">03</a>|<a href="./?date=200504">04</a>|<a href="./?date=200505">05</a>|<a href="./?date=200506">06</a>|<a href="./?date=200507">07</a>|<a href="./?date=200508">08</a>|<a href="./?date=200509">09</a>|<a href="./?date=200510">10</a>|<a href="./?date=200511">11</a>|<a href="./?date=200512">12</a>|</div>
@@ -66,12 +191,12 @@
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20061017#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=4Q;category=Nemerle">Nemerle</a>]Nemerle�Ϥ���ޤ���</h3><p>
-��������ɥ�����Ȥ�Paper�ɤ���ꤷ�ơ�������ͤγ��פˤĤ��ƤϤ�������Ĵ�٤Ƥ������������ϼ��ΤϤۤȤ�ɿ��ä����Ȥ�̵���ä��Τǡ�����򵡲�˿��äƤߤ뤳�Ȥˤ��롣�ȤϤ��������̤Υץ�������񤤤Ƥ�Ĥޤ��Τǡ�Nemerle����ħ�Ǥ���ޥ�����Ȥä��ץ��������濴�˽񤤤Ƥ������Ȼפ���
+<h3><a href="./?date=20061017#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=4Q;category=Nemerle">Nemerle</a>]Nemerleはじめました</h3><p>
+以前からドキュメントやPaper読んだりして、言語仕様の概要についてはある程度調べていたが、処理系自体はほとんど触ったことが無かったので、これを機会に触ってみることにする。とはいえ、普通のプログラムを書いてもつまらんので、Nemerleの特徴であるマクロを使ったプログラムを中心に書いていこうと思う。
 </p>
-<h3>����׻�</h3>
+<h3>階乗計算</h3>
 <p>
-�ޤ��ϡ�C++�ʤɤΥ᥿�ץ�����ߥ󥰤��äˤʤ��ɬ���ȸ��äƤ������ǤƤ��볬��׻��׻����㡣
+まずは、C++などのメタプログラミングの話になると必ずと言っていい程でてくる階乗計算計算の例。
 </p>
 <p><strong>fact.n</strong></p>
 <pre>
@@ -84,13 +209,13 @@ macro fact(n :int){
 }
 </pre>
 <p>
-<strong>macro</strong>������ɤǥޥ�����������������³���ƥޥ���̾�Ȥ���fact�򡢲������Ȥ���n����ꤷ�Ƥ��롣���θ��:int�Ȥ���Τϡ����Υޥ����������Ȥ�������������뤳�Ȥ�ɽ���Ƥ��롣
+<strong>macro</strong>キーワードでマクロを定義し、それに続いてマクロ名としてfactを、仮引数としてnを指定している。その後に:intとあるのは、このマクロが引数として整数定数を取ることを表している。
 </p>
 <p>
-���Τ����Ǥϡ��ޤ����̤˳����׻�����ؿ�f��ѥ�����ޥå���Ȥä�������������ޥ�����ǸƤӽФ����Ȥǡ�����ѥ�����׻���¸����Ƥ��롣�����ǡ�&lt;[]&gt;��Lisp�ϸ����quote����������$()��unquote���������롣
+本体の方では、まず普通に階乗を計算する関数fをパターンマッチを使って定義し、それをマクロ中で呼び出すことで、コンパイル時計算を実現している。ここで、&lt;[]&gt;はLisp系言語のquoteに相当し、$()はunquoteに相当する。
 </p>
 <p>
-���Υޥ�������Ѥ��륳���ɤϼ��Τ褦�ˤʤ롣
+このマクロを使用するコードは次のようになる。
 </p>
 <p><strong>use_fact.n</strong>
 <pre>
@@ -98,7 +223,7 @@ using System;
 Console.WriteLine("fact({0}) = {1}", 5, fact(3));
 </pre>
 <p>
-����ǰ������ѥ�����˳��褬�׻��Ǥ��Ƥ���櫓����������������ȡ��ºݤ˥���ѥ�����˷׻�����Ƥ��뤫�ɤ������狼��ʤ��������ǡ��ºݤ˥���ѥ�����˷׻�����������ͤ��������褦�ˤ��Ƥߤ롣���٤ϡ������ɤϼ��Τ褦�ˤʤ롣
+これで一応コンパイル時に階乗が計算できているわけだが、これだけだと、実際にコンパイル時に計算されているかどうかがわからない。そこで、実際にコンパイル時に計算した階乗の値を印字するようにしてみる。今度は、コードは次のようになる。
 </p>
 <p><strong>fact2.n</strong></p>
 <pre>
@@ -113,16 +238,16 @@ macro fact(n :int){
 }
 </pre>
 <p>
-���use_fact.n�򤳤Υޥ�����Ȥäƥ���ѥ��뤹��ȡ�����ѥ������
+上のuse_fact.nをこのマクロを使ってコンパイルすると、コンパイル時に
 </p>
 <pre>
 fact(5) = 120
 </pre>
 <p>
-��ɽ������롣
+と表示される。
 </p>
 <p>
-���ơ���������ǥ���ѥ�����˳����׻����뤳�ȤϤǤ��Ƥ���櫓���������Υޥ����ˤϡ�fact(n)�Τ褦���ѿ����Ϥ��ƥޥ�����ƤӽФ��ȥ���ѥ��륨�顼�ˤʤäƤ��ޤ��Ȥ������꤬���롣�����ǡ��Ϥ��줿�Τ�����Ǥʤ���м¹Ի��˷׻�����褦�˲��ɤ��Ƥߤ롣
+さて、これだけでコンパイル時に階乗を計算することはできているわけだが、このマクロには、fact(n)のように変数を渡してマクロを呼び出すとコンパイルエラーになってしまうという問題がある。そこで、渡されたのが定数でなければ実行時に計算するように改良してみる。
 </p>
 <p><strong>fact3.n</strong></p>
 <pre>
@@ -143,10 +268,10 @@ macro fact(n){
 }
 </pre>
 <p>
-���٤Ϥ虜�虜���饹��������ơ��������static�ؿ������Ū�˸ƤӽФ��褦�ˤʤäƤ��뤬������ϳ����¹Ի��˷׻�����ѥ�����ΤȤ��ˡ��ޥ�������������������ؿ���ƤӽФ�������Ÿ������褦�ˤʤäƤ���ȡ��ޥ����θƤӽФ�¦�Ǵؿ�̾�����Ĥ��餺�ˡ�����ѥ��륨�顼�ˤʤ뤿�����
+今度はわざわざクラスを定義して、その中のstatic関数を間接的に呼び出すようになっているが、これは階乗を実行時に計算するパターンのときに、マクロの内部で定義した関数を呼び出す形式に展開するようになっていると、マクロの呼び出し側で関数名が見つからずに、コンパイルエラーになるためだ。
 </p>
 <p>
-���Υץ������ǡ��������ѿ�������˼��褦�ʥޥ����θƤӽФ����¹Ի��˷׻�����뤳�Ȥ�Τ���뤿��ˡ����Τ褦�ʥ���ץ�ץ�������񤤤���
+このプログラムで、ちゃんと変数を引数に取るようなマクロの呼び出しが実行時に計算されることを確かめるために、次のようなサンプルプログラムを書いた。
 </p>
 <p><strong>use_fact3.n</strong></p>
 <pre>
@@ -156,20 +281,20 @@ def n = 10;
 Console.WriteLine("fact({0}) = {1}", n, fact(n));
 </pre>
 <p>
-���Υץ������򥳥�ѥ��뤹��ȡ�<strong>����ѥ�����ˤ�</strong>
+このプログラムをコンパイルすると、<strong>コンパイル時には</strong>
 </p>
 <pre>
 fact(5) = 120
 </pre>
 <p>
-�Ȥ���ɽ�����졢fact(n)�����ϼ¹Ի��˷׻�����Ƥ��뤳�Ȥ��狼�롣
+とだけ表示され、fact(n)の方は実行時に計算されていることがわかる。
 </p>
-<h3>����ɽ����ƥ��</h3>
+<h3>正規表現リテラル</h3>
 <p>
-����Υ���ѥ�����׻��������ȥ���ʤΤǡ����٤Ϥ⤦����äȼ���Ū�����Ω�������ʥޥ������äƤߤ롣���Τϡ�����ѥ����������ɽ�������������ɤ��������å����ơ�������̵����祳��ѥ��륨�顼�ˤ���ޥ�����
+階乗のコンパイル時計算だけだとアレなので、今度はもうちょっと実用的に役に立ちそうなマクロを作ってみる。作るのは、コンパイル時に正規表現が正しいかどうかチェックして、正しく無い場合コンパイルエラーにするマクロ。
 </p>
 <p>
-����ɽ�������������ɤ����Υ����å��ϡ������Ǥ�뤳�Ȥ�Ǥ��뤬������.NET Framework������ɽ���饤�֥�꤬����ΤǤ�������Ѥ��ơ������äȺ�äƤ��ޤ����Ȥˤ��롣�ʲ������Υ����ɡ�
+正規表現が正しいかどうかのチェックは、自前でやることもできるが、既に.NET Frameworkに正規表現ライブラリがあるのでそれを利用して、サクっと作ってしまうことにする。以下がそのコード。
 </p>
 <p><strong>pattern.n</strong<>
 <pre>
@@ -181,25 +306,25 @@ macro pattern(s){
 }
 </pre>
 <p>
-���󥹥ȥ饯��Regex�ϰ������Ϥ���ʸ����������̵����硢ArgumentExeption��throw����Τǡ��ޥ������Ϥ���ʸ�����ƥ��
-������ɽ���Ȥ���������̵����硢�ޥ������ArgumentException��throw���졢���η�̡�����ѥ��륨�顼�ˤʤ롣
+コンストラクタRegexは引数に渡した文字列が正しく無い場合、ArgumentExeptionをthrowするので、マクロに渡した文字列リテラル
+が正規表現として正しく無い場合、マクロ内でArgumentExceptionがthrowされ、その結果、コンパイルエラーになる。
 </p>
 <p>
-���Υޥ��������Ѥ��������ɤϡ����Τ褦�ʴ����ˤʤ롣
+このマクロを利用したコードは、次のような感じになる。
 </p>
 <p><strong>use_pattern.n</strong></p>
 <pre>
 def pat = pattern("***");
 </pre>
 <p>
-���Υ����ɤ򥳥�ѥ��뤹��ȡ�����ѥ������ArgumentException��ȯ����������ѥ��륨�顼�ˤʤ롣
+このコードをコンパイルすると、コンパイル時にArgumentExceptionが発生し、コンパイルエラーになる。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��3��) [<a href="./?date=20061017#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全3件) [<a href="./?date=20061017#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20061017#c01"><span class="canchor">_</span></a>
 				<span class="commentator">wqj4lf5@search.com</span>&nbsp;[funny ringtones  ]</p>
@@ -217,7 +342,7 @@ def pat = pattern("***");
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">704</a> | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">355</a> | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/amateurs/zaebun/" title="http://www.hostones.com/websites/amateurs/zaebun/">261</a> | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/fetish/zamnoy/" title="http://www.hostones.com/websites/fetish/zamnoy/">85</a> | <a href="https://web.archive.org/web/20070327065727/http://alohakun.blog7.fc2.com/" title="http://alohakun.blog7.fc2.com/">28</a> | <a href="https://web.archive.org/web/20070327065727/http://www.coins.tsukuba.ac.jp/" title="http://www.coins.tsukuba.ac.jp">17</a> | <a href="https://web.archive.org/web/20070327065727/http://www.google.es/search?sourceid=navclient-ff&amp;ie=UTF-8&amp;rls=GGGL,GGGL:2006-36,GGGL:es&amp;q=www.tutto%3Agratis+ESPANOL" title="http://www.google.es/search?sourceid=navclient-ff&amp;...">12</a> | <a href="https://web.archive.org/web/20070327065727/http://search.msn.it/results.aspx?q=universitarie+per+appuntamenti+sexdi&amp;FORM=MSNH&amp;CP=1252&amp;srch_type=0" title="http://search.msn.it/results.aspx?q=universitarie ...">12</a> | <a href="https://web.archive.org/web/20070327065727/http://www.google.com.pe/search?hl=es&amp;q=www.peruanitas.com&amp;meta=" title="http://www.google.com.pe/search?hl=es&amp;q=www.peruan...">10</a> | <a href="https://web.archive.org/web/20070327065727/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">10</a> | <a href="./?date=20061017#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">704</a> | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">355</a> | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/amateurs/zaebun/" title="http://www.hostones.com/websites/amateurs/zaebun/">261</a> | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/fetish/zamnoy/" title="http://www.hostones.com/websites/fetish/zamnoy/">85</a> | <a href="https://web.archive.org/web/20070327065727/http://alohakun.blog7.fc2.com/" title="http://alohakun.blog7.fc2.com/">28</a> | <a href="https://web.archive.org/web/20070327065727/http://www.coins.tsukuba.ac.jp/" title="http://www.coins.tsukuba.ac.jp">17</a> | <a href="https://web.archive.org/web/20070327065727/http://www.google.es/search?sourceid=navclient-ff&amp;ie=UTF-8&amp;rls=GGGL,GGGL:2006-36,GGGL:es&amp;q=www.tutto%3Agratis+ESPANOL" title="http://www.google.es/search?sourceid=navclient-ff&amp;...">12</a> | <a href="https://web.archive.org/web/20070327065727/http://search.msn.it/results.aspx?q=universitarie+per+appuntamenti+sexdi&amp;FORM=MSNH&amp;CP=1252&amp;srch_type=0" title="http://search.msn.it/results.aspx?q=universitarie ...">12</a> | <a href="https://web.archive.org/web/20070327065727/http://www.google.com.pe/search?hl=es&amp;q=www.peruanitas.com&amp;meta=" title="http://www.google.com.pe/search?hl=es&amp;q=www.peruan...">10</a> | <a href="https://web.archive.org/web/20070327065727/http://www.coins.tsukuba.ac.jp/~hdk/hina/" title="http://www.coins.tsukuba.ac.jp/~hdk/hina/">10</a> | <a href="./?date=20061017#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -230,19 +355,19 @@ def pat = pattern("***");
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20061018#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=4Q;category=Nemerle">Nemerle</a>]�ޥ�����Ƿ������å��򤹤���ˡ</h3><p>
-Nemerle�Υޥ�����Ǽ��η������å��򤹤���ˡ���狼��ʤ��ġ�
-<a href="https://web.archive.org/web/20070327065727/http://nemerle.org/metaprogramming.pdf">Meta-programming in Nemerle</a>����Ǥϡ�TypedExpr�Ȥ����Τ�Ȥäơ��� -&gt; ���դ������Ѵ����Ƥ��������긵��Nemerle����ѥ���ǤϻȤ��ʤ�����
+<h3><a href="./?date=20061018#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=4Q;category=Nemerle">Nemerle</a>]マクロ内で型チェックをする方法</h3><p>
+Nemerleのマクロ内で式の型チェックをする方法がわからない…。
+<a href="https://web.archive.org/web/20070327065727/http://nemerle.org/metaprogramming.pdf">Meta-programming in Nemerle</a>の例では、TypedExprというのを使って、式 -&gt; 型付き式に変換してるんだが、手元のNemerleコンパイラでは使えないし。
 </p>
 <p>
-�ɵ����ɤ����Nemerle.Macros�͡��ॹ�ڡ�����ImplicitCTX()�ޥ�����ƤӽФ��ȡ����˷����դ��뤿��˻Ȥ���Typer���饹�Υ��֥������Ȥ������Ǥ���äݤ���Typer���饹�Υ��󥹥��󥹤������Ǥ����顢���Ȥ�Typer#TypeExpr(PExpr)��Ȥäơ����˷��դ���Ԥ����Ȥ��Ǥ���褦����<a href="https://web.archive.org/web/20070327065727/http://nemerle.org/Macro_tips">���͡� Macro tips</a>
+追記：どうやらNemerle.MacrosネームスペースのImplicitCTX()マクロを呼び出すと、式に型を付けるために使えるTyperクラスのオブジェクトが取得できるっぽい。Typerクラスのインスタンスが取得できたら、あとはTyper#TypeExpr(PExpr)を使って、式に型付けを行うことができるようだ。<a href="https://web.archive.org/web/20070327065727/http://nemerle.org/Macro_tips">参考： Macro tips</a>
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��1��) [<a href="./?date=20061018#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全1件) [<a href="./?date=20061018#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20061018#c01"><span class="canchor">_</span></a>
 				<span class="commentator">fugcpqm@ebay.com</span>&nbsp;[funny ringtones  ]</p>
@@ -256,7 +381,7 @@ Nemerle�Υޥ�����Ǽ��η������å��򤹤���ˡ���狼��ʤ��ġ�
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065727/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">1052</a> | <a href="https://web.archive.org/web/20070327065727/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">764</a> | <a href="https://web.archive.org/web/20070327065727/http://vsemoe.sultryserver.com/" title="http://vsemoe.sultryserver.com/">712</a> | <a href="https://web.archive.org/web/20070327065727/http://glazam.sultryserver.com/" title="http://glazam.sultryserver.com/">702</a> | <a href="https://web.archive.org/web/20070327065727/http://www2.xfreehosting.com/hardcore/navsegda/" title="http://www2.xfreehosting.com/hardcore/navsegda/">697</a> | <a href="https://web.archive.org/web/20070327065727/http://zakovka.porkyhost.com/" title="http://zakovka.porkyhost.com/">693</a> | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/fetish/zamnoy/" title="http://www.hostones.com/websites/fetish/zamnoy/">604</a> | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/amateurs/zaebun/" title="http://www.hostones.com/websites/amateurs/zaebun/">532</a> | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">353</a> | <a href="https://web.archive.org/web/20070327065727/http://www.google.com.mx/search?hl=es&amp;q=www.pompis.com.mx&amp;meta=" title="http://www.google.com.mx/search?hl=es&amp;q=www.pompis...">106</a> | <a href="./?date=20061018#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065727/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">1052</a> | <a href="https://web.archive.org/web/20070327065727/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">764</a> | <a href="https://web.archive.org/web/20070327065727/http://vsemoe.sultryserver.com/" title="http://vsemoe.sultryserver.com/">712</a> | <a href="https://web.archive.org/web/20070327065727/http://glazam.sultryserver.com/" title="http://glazam.sultryserver.com/">702</a> | <a href="https://web.archive.org/web/20070327065727/http://www2.xfreehosting.com/hardcore/navsegda/" title="http://www2.xfreehosting.com/hardcore/navsegda/">697</a> | <a href="https://web.archive.org/web/20070327065727/http://zakovka.porkyhost.com/" title="http://zakovka.porkyhost.com/">693</a> | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/fetish/zamnoy/" title="http://www.hostones.com/websites/fetish/zamnoy/">604</a> | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/amateurs/zaebun/" title="http://www.hostones.com/websites/amateurs/zaebun/">532</a> | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">353</a> | <a href="https://web.archive.org/web/20070327065727/http://www.google.com.mx/search?hl=es&amp;q=www.pompis.com.mx&amp;meta=" title="http://www.google.com.mx/search?hl=es&amp;q=www.pompis...">106</a> | <a href="./?date=20061018#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -269,24 +394,24 @@ Nemerle�Υޥ�����Ǽ��η������å��򤹤���ˡ���狼��ʤ��ġ�
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20061019#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=4Q;category=%BC%F8%B6%C8">����</a>]�����ƥ���󹩳إ��ߥʡ�</h3><p>
-�����𥻥ߥʡ��ζ����ѹ������ä��Τ򤹤ä���˺��Ƥ����������ǡ����Ȥ˽��ʤ�»�ʤäƤ��ޤä������������轵�ޤǤ˷��ʥ�ݡ��Ƚ񤯤Ϥ��orz
+<h3><a href="./?date=20061019#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=4Q;category=%BC%F8%B6%C8">授業</a>]システム情報工学セミナー</h3><p>
+シス情セミナーの教室変更があったのをすっかり忘れていたおかげで、授業に出席し損なってしまった。おかげで来週までに欠席レポート書くはめにorz
 </p></div><div class="section">
-<h3><a href="./?date=20061019#p02"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=4Q;category=Java">Java</a>]ObjectInputStream�ǥ������९�饹��������Ȥ�</h3><p>
-ObjectInputStream#readObject()�ϥǥե���ȤǤϡ�system classloader��Ȥäƥ��饹������ɤ��Ƥ���褦�ʤΤ����������Υ��饹�������ʤɤ�Ȥäƥ��饹���ɤ߹���ʤ��Ⱥ�����֤������Ƥ��ޤä���
+<h3><a href="./?date=20061019#p02"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=4Q;category=Java">Java</a>]ObjectInputStreamでカスタムクラスローダを使う</h3><p>
+ObjectInputStream#readObject()はデフォルトでは、system classloaderを使ってクラスをロードしているようなのだが、自前のクラスローダなどを使ってクラスを読み込めないと困る事態が起きてしまった。
 </p>
 <p>
-�ʤ�Ȥ�ObjectInputStream#readObject()�ΤȤ��ˡ��������९�饹��������Ȥ��ʤ���Ĵ�٤Ƥ����Ȥ�����ObjectInputStream�򥵥֥��饹�����ơ�
+なんとかObjectInputStream#readObject()のときに、カスタムクラスローダを使えないか調べていたところ、ObjectInputStreamをサブクラス化して、
 </p>
 <pre>
 Class&lt;?&gt; ObjectInputStream#resolveClass(ObjectStreamClass)
 </pre>
 <p>
-�򥪡��С��饤�ɤ��Ƥ����ɤ��餷�������͡� <a href="https://web.archive.org/web/20070327065727/http://forum.java.sun.com/thread.jspa?threadID=468339&amp;messageID=2159594">
+をオーバーライドしてやれば良いらしい。参考： <a href="https://web.archive.org/web/20070327065727/http://forum.java.sun.com/thread.jspa?threadID=468339&amp;messageID=2159594">
 Can't use custom ClassLoader with ObjectInputStream
 </a>
 <p>
-�ǡ�����ʴ����ǥ����ȥ���åɤΥ���ƥ����ȥ��饹��������Ȥ��褦�ˤ��뤳�Ȥǡ�ObjectInputStream#readObject()�򤦤ޤ�ư����뤳�Ȥ��Ǥ�����
+で、こんな感じでカレントスレッドのコンテキストクラスローダを使うようにすることで、ObjectInputStream#readObject()をうまく動作させることができた。
 </p>
 <pre>
 package jp.gr.java_conf.mizu.javaflow.servlet;
@@ -316,7 +441,7 @@ public class CustomObjectInputStream extends ObjectInputStream {
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20061019#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20061019#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -326,7 +451,7 @@ public class CustomObjectInputStream extends ObjectInputStream {
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">1402</a> | <a href="https://web.archive.org/web/20070327065727/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">1049</a> | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">1043</a> | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/fetish/zamnoy/" title="http://www.hostones.com/websites/fetish/zamnoy/">950</a> | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/amateurs/zaebun/" title="http://www.hostones.com/websites/amateurs/zaebun/">860</a> | <a href="https://web.archive.org/web/20070327065727/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">765</a> | <a href="https://web.archive.org/web/20070327065727/http://www2.xfreehosting.com/hardcore/navsegda/" title="http://www2.xfreehosting.com/hardcore/navsegda/">700</a> | <a href="https://web.archive.org/web/20070327065727/http://glazam.sultryserver.com/" title="http://glazam.sultryserver.com/">687</a> | <a href="https://web.archive.org/web/20070327065727/http://zakovka.porkyhost.com/" title="http://zakovka.porkyhost.com/">686</a> | <a href="https://web.archive.org/web/20070327065727/http://vsemoe.sultryserver.com/" title="http://vsemoe.sultryserver.com/">676</a> | <a href="./?date=20061019#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">1402</a> | <a href="https://web.archive.org/web/20070327065727/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">1049</a> | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">1043</a> | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/fetish/zamnoy/" title="http://www.hostones.com/websites/fetish/zamnoy/">950</a> | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/amateurs/zaebun/" title="http://www.hostones.com/websites/amateurs/zaebun/">860</a> | <a href="https://web.archive.org/web/20070327065727/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">765</a> | <a href="https://web.archive.org/web/20070327065727/http://www2.xfreehosting.com/hardcore/navsegda/" title="http://www2.xfreehosting.com/hardcore/navsegda/">700</a> | <a href="https://web.archive.org/web/20070327065727/http://glazam.sultryserver.com/" title="http://glazam.sultryserver.com/">687</a> | <a href="https://web.archive.org/web/20070327065727/http://zakovka.porkyhost.com/" title="http://zakovka.porkyhost.com/">686</a> | <a href="https://web.archive.org/web/20070327065727/http://vsemoe.sultryserver.com/" title="http://vsemoe.sultryserver.com/">676</a> | <a href="./?date=20061019#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -339,19 +464,19 @@ public class CustomObjectInputStream extends ObjectInputStream {
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20061021#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=4Q;category=Java">Java</a>][<a href="./?year=2006;month=4Q;category=Ruby">Ruby</a>]Rubyή�Υ֥��å���Java�Ǽ¸�����Ȥ���������</h3><p>
-<a href="https://web.archive.org/web/20070327065727/http://cappuccino.jp/keisuken/logbook/20061021.html#c">�ҳ�����</a>�����ѡ�
+<h3><a href="./?date=20061021#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=4Q;category=Java">Java</a>][<a href="./?year=2006;month=4Q;category=Ruby">Ruby</a>]Ruby流のブロックをJavaで実現するときの問題点</h3><p>
+<a href="https://web.archive.org/web/20070327065727/http://cappuccino.jp/keisuken/logbook/20061021.html#c">航海日誌</a>より引用：
 </p>
 <blockquote>
-Rubyή�Υ֥��å���ѥ������
-�Ȥ����Τϲ��ε�������ʤ��Τ��ʡ�
-��������������Ƴ�����ʤ��Ȥ⡤anonymous class�ǤǤ��ޤ���(�ۤ�Τ���äȾ�Ĺ������)�����˽񤤤���������ƷǤ���ȡ�
+Ruby流のブロックをパターンで
+というのは何故議論されないのかな．
+一応クロージャを導入しなくとも，anonymous classでできますよ(ほんのちょっと冗長だけど)．前に書いたソースを再掲すると，
 </blockquote>
 <p>
-���ߤ�Java�Ǥ�anonymous class��Ruby�Υ֥��å������Τ�Τ�¸��Ǥ���Ȥ����Τϻ������ä˰�����̵����Ǥ��������ߤ�Java�θ�����ͤ��ϰϤǤ�checked exception���Ф���Ʃ��Ū�ʥ֥��å�����Τ��񤷤��Ȥ���������������󤸤�ʤ��Ǥ��礦����
+現在のJavaでもanonymous classでRubyのブロック相当のものを実現できるというのは賛成で特に異論は無いんですが、現在のJavaの言語仕様の範囲ではchecked exceptionに対して透過的なブロックを作るのが難しいという問題点があるんじゃないでしょうか。
 </p>
 <p>
-�㤨�С�keisuken�����InputStreamBlock���ȡ�run()���椫��IOException�ʳ���Exception���ꤲ�뤳�Ȥ��Ǥ��ޤ���run��throws���Exception���ɲä��뤫��RuntimeException�˥�åפ���throw����Ȥ��������Ϲͤ����ޤ�����������Ⱥ��٤�checked exception�������򻦤��Ƥ��ޤ����Ȥˤʤ꤫�ͤޤ��󡣤��뤤�ϡ����ä������褦�˷��ѥ�᡼����Ȥäơ�
+例えば、keisukenさんのInputStreamBlockだと、run()の中からIOException以外のExceptionを投げることができません。runのthrows節にExceptionを追加するか、RuntimeExceptionにラップしてthrowするという解決策は考えられますが、それだと今度はchecked exceptionの利点を殺してしまうことになりかねません。あるいは、おっしゃられるように型パラメータを使って、
 </p>
 <pre>
 import java.io.*;
@@ -372,26 +497,26 @@ public class Test {
 }
 </pre>
 <p>
-�Τ褦�ˤ��뤳�Ȥǡ�IOException�ʳ��μ�����㳰���ꤲ����褦�ˤʤ�ޤ���������Ǥ�throws�Ǥ���checed exception��1����˸��ꤵ��Ƥ��ޤ��ޤ������Ѿ��1��������Ǥ�ʤ�Ȥ��ʤ륱������¿���Ȥϻפ��ޤ�������ե쥯������API�ʤɡ������Ĥ�μ�����㳰���ꤲ��᥽�åɤ�Ȥä����˺��뤳�Ȥ⤢��ΤǤϤʤ����Ȼפ��ޤ���
+のようにすることで、IOException以外の種類の例外を投げられるようになりますが、これではthrowsできるcheced exceptionが1種類に限定されてしまいます。実用上は1種類だけでもなんとかなるケースが多いとは思いますが、リフレクション系APIなど、いくつもの種類の例外を投げるメソッドを使った場合に困ることもあるのではないかと思います。
 </p>
 <p>
-���ʤߤˡ�Neal Gafter�Υ֥����Υ���ȥ�<a href="https://web.archive.org/web/20070327065727/http://gafter.blogspot.com/2006/09/nominal-closures-for-java-version-02.html">Nominal Closures for Java (version 0.2)</a>���
-��5. Exception type parameters�פǡ����������
-�Ф����������������Ƥ��ޤ���
+ちなみに、Neal Gafterのブログのエントリ<a href="https://web.archive.org/web/20070327065727/http://gafter.blogspot.com/2006/09/nominal-closures-for-java-version-02.html">Nominal Closures for Java (version 0.2)</a>中の
+「5. Exception type parameters」で、その問題に
+対する解決策が議論されています。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��3��) [<a href="./?date=20061021#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全3件) [<a href="./?date=20061021#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20061021#c01"><span class="canchor">_</span></a>
-				<span class="commentator">keisuken</span>&nbsp;[��Rubyή�Υ֥��å���Java�Ǽ¸�����Ȥ������������㳰�η�פˤĤ��Ƥʤ�Ǥ������¤�Generics�����ǤϤ�..]</p>
+				<span class="commentator">keisuken</span>&nbsp;[「Ruby流のブロックをJavaで実現するときの問題点の例外の件」についてなんですが，実はGenericsだけではだ..]</p>
 				<p><a href="./?date=20061021#c02"><span class="canchor">_</span></a>
-				<span class="commentator">�ߤ�����</span>&nbsp;[���֤�狼�äƤ�����Ȼפ��ΤǤ�����ǰ�Τ�����­���Ƥ����ȡ�Nominal Closures for Java����..]</p>
+				<span class="commentator">みずしま</span>&nbsp;[たぶんわかっておられると思うのですが、念のため補足しておくと、Nominal Closures for Javaの話..]</p>
 				<p><a href="./?date=20061021#c03"><span class="canchor">_</span></a>
-				<span class="commentator">keisuken</span>&nbsp;[�ߤ����ޤ���: &gt; Nominal Closures for Java���äϡ�Dolphin�Ǥ��������Τ���������..]</p>
+				<span class="commentator">keisuken</span>&nbsp;[みずしまさん: &gt; Nominal Closures for Javaの話は、Dolphinでそういうのを入れる事を..]</p>
 		</div>
 </div>
 
@@ -402,7 +527,7 @@ public class Test {
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065727/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">3121</a> | <a href="https://web.archive.org/web/20070327065727/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">2319</a> | <a href="https://web.archive.org/web/20070327065727/http://vsemoe.sultryserver.com/" title="http://vsemoe.sultryserver.com/">2221</a> | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">2192</a> | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">2186</a> | <a href="https://web.archive.org/web/20070327065727/http://zakovka.porkyhost.com/" title="http://zakovka.porkyhost.com/">2131</a> | <a href="https://web.archive.org/web/20070327065727/http://www2.xfreehosting.com/hardcore/navsegda/" title="http://www2.xfreehosting.com/hardcore/navsegda/">2089</a> | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/amateurs/zaebun/" title="http://www.hostones.com/websites/amateurs/zaebun/">1900</a> | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/fetish/zamnoy/" title="http://www.hostones.com/websites/fetish/zamnoy/">1886</a> | <a href="https://web.archive.org/web/20070327065727/http://glazam.sultryserver.com/" title="http://glazam.sultryserver.com/">1739</a> | <a href="./?date=20061021#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065727/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">3121</a> | <a href="https://web.archive.org/web/20070327065727/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">2319</a> | <a href="https://web.archive.org/web/20070327065727/http://vsemoe.sultryserver.com/" title="http://vsemoe.sultryserver.com/">2221</a> | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">2192</a> | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">2186</a> | <a href="https://web.archive.org/web/20070327065727/http://zakovka.porkyhost.com/" title="http://zakovka.porkyhost.com/">2131</a> | <a href="https://web.archive.org/web/20070327065727/http://www2.xfreehosting.com/hardcore/navsegda/" title="http://www2.xfreehosting.com/hardcore/navsegda/">2089</a> | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/amateurs/zaebun/" title="http://www.hostones.com/websites/amateurs/zaebun/">1900</a> | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/fetish/zamnoy/" title="http://www.hostones.com/websites/fetish/zamnoy/">1886</a> | <a href="https://web.archive.org/web/20070327065727/http://glazam.sultryserver.com/" title="http://glazam.sultryserver.com/">1739</a> | <a href="./?date=20061021#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -415,24 +540,24 @@ public class Test {
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20061027#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=4Q;category=%B8%A6%B5%E6">����</a>]�٥���ޡ���</h3><p>
-4ǯ���ʹߤˤʤäƤ��֤���ơ���ʬ�θ���Τ���˥٥���ޡ������ä�����������Java�ǥ٥���ޡ�������Τ��񤷤������ޤ����ʤ��ȡ�ư�������JIT����ѥ���κ�Ŭ�����Ϥޤä��ꤷ�ơ����Ϥ�Ĺ������ǽ�δط����狼��ˤ����ʤ롣�ä˺���ϡ����Ϥ����Ūû�����ˤĤ���¬�ꤷ���Τǡ��ʤ����������ɡ�-Xint���ץ����ǥ��󥿥ץ꥿�⡼�ɤˤ��ƥ٥���ޡ������äƤ��ޤä�orz
+<h3><a href="./?date=20061027#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=4Q;category=%B8%A6%B5%E6">研究</a>]ベンチマーク</h3><p>
+4年生以降になってたぶん初めて、自分の研究のためにベンチマークを取った。しかし、Javaでベンチマークを取るのは難しい。うまくやらないと、動作途中にJITコンパイラの最適化が始まったりして、入力の長さと性能の関係がわかりにくくなる。特に今回は、入力が比較的短い場合について測定したので、なおさらだ。結局、-Xintオプションでインタプリタモードにしてベンチマークを取ってしまったorz
 </p></div><div class="section">
-<h3><a href="./?date=20061027#p02"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=4Q;category=Nemerle">Nemerle</a>]����Ҳ�</h3><p>
-ͧ�ͤ���褷��(���ΤȤ���)����ΤߤΥ��٥��<a href="https://web.archive.org/web/20070327065727/http://www.mirai-kaigi.com/kaigi/001/#extended"><strong>̤����</strong></a>�ǡ�Nemerle�ˤĤ��ƾҲ𤹤�ȯɽ�򤷤Ƥ�����
+<h3><a href="./?date=20061027#p02"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=4Q;category=Nemerle">Nemerle</a>]言語紹介</h3><p>
+友人が企画した(今のところ)学内のみのイベント<a href="https://web.archive.org/web/20070327065727/http://www.mirai-kaigi.com/kaigi/001/#extended"><strong>未来会議</strong></a>で、Nemerleについて紹介する発表をしてきた。
 </p>
 <p>
-��ʬ�Ǹ����Τ�ʤ������ï���оݤˤ���ȯɽ�ʤ�����褯�狼��ʤ���ΤˤʤäƤ��ޤä����ؿ�������Ȥ��ޥ����ˤĤ��Ƥ��ޤ��Τ�ʤ��ͤ��оݤˤ���ʤ顢����Ū����ʬ�ˤĤ��Ƥ�äȤ������������٤����ä������ΤäƤ���ͤ��оݤˤ���ʤ餽���դϡ��Ϥ���äƤ��ޤ��٤����ä�����ɡ��ɤä��Ĥ����ˤʤäƤ��ޤä���
+自分で言うのもなんだが、誰を対象にした発表なんだかよくわからないものになってしまった。関数型言語とかマクロについてあまり知らない人を対象にするなら、基本的な部分についてもっとちゃんと説明すべきだったし、知っている人を対象にするならその辺は、はしょってしまうべきだった。結局、どっちつかずになってしまった。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��1��) [<a href="./?date=20061027#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全1件) [<a href="./?date=20061027#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20061027#c01"><span class="canchor">_</span></a>
-				<span class="commentator">��դˤ�</span>&nbsp;[���������ͤ��������ߤ����Ǥ�������ͤ��� �Ȥ��äƤ⡢�������դ��狼��ʤ����������ɤ��ä��Ȼפ��ޤ�����  ]</p>
+				<span class="commentator">らふにん</span>&nbsp;[そういう人たちが混在する場でしたからねぇ。 といっても、そこら辺がわからない方が少数派だったと思いますが。  ]</p>
 		</div>
 </div>
 
@@ -443,7 +568,7 @@ public class Test {
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065727/http://www.google.com/search?hl=en&amp;q=CHICA+PUTA++MASTURBANDOS&amp;btnG=Google+Search" title="google����(CHICA PUTA  MASTURBANDOS)">42</a> | <a href="https://web.archive.org/web/20070327065727/http://www.google.com/search?q=www.adilia.com" title="google����(www.adilia.com)">34</a> | <a href="https://web.archive.org/web/20070327065727/http://aolsearch.aol.co.uk/web?query=www.adilia.com&amp;restrict=wholeweb&amp;isinit=true&amp;invocationType=uk_wssilver_Cl&amp;avtype=" title="http://aolsearch.aol.co.uk/web?query=www.adilia.co...">18</a> | <a href="https://web.archive.org/web/20070327065727/http://www.google.com.tr/search?hl=tr&amp;q=www.adilia.com&amp;btnG=Google%27da+Ara&amp;meta=" title="http://www.google.com.tr/search?hl=tr&amp;q=www.adilia...">17</a> | <a href="https://web.archive.org/web/20070327065727/http://search.yahoo.co.jp/search?p=polno+tube&amp;fr=top_v2&amp;tid=top_v2&amp;ei=euc-jp&amp;search.x=1" title="http://search.yahoo.co.jp/search?p=polno tube&amp;fr=t...">15</a> | <a href="https://web.archive.org/web/20070327065727/http://search.yahoo.co.jp/search?p=polno+tube&amp;ei=UTF-8&amp;fr=top_v2&amp;x=wrt&amp;meta=vc%3D" title="http://search.yahoo.co.jp/search?p=polno tube&amp;ei=U...">13</a> | <a href="https://web.archive.org/web/20070327065727/http://www.google.com.tr/search?hl=tr&amp;q=www.adilia.com&amp;meta=" title="http://www.google.com.tr/search?hl=tr&amp;q=www.adilia...">11</a> | <a href="https://web.archive.org/web/20070327065727/http://www.pop.com.br/barra.php?url=http://www2.coins.tsukuba.ac.jp/~i021216/diary/?date=20061027" title="http://www.pop.com.br/barra.php?url=http://www2.co...">10</a> | <a href="https://web.archive.org/web/20070327065727/http://search.yahoo.co.jp/search?p=polno+tube&amp;ei=UTF-8&amp;fr=top_v2&amp;x=wrt" title="http://search.yahoo.co.jp/search?p=polno tube&amp;ei=U...">10</a> | <a href="https://web.archive.org/web/20070327065727/http://cgi.search.biglobe.ne.jp/cgi-bin/search2-b?search=%8C%9F%8D%F5&amp;q=Polno+Tube" title="BIGLOBE����(Polno Tube)">8</a> | <a href="./?date=20061027#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065727/http://www.google.com/search?hl=en&amp;q=CHICA+PUTA++MASTURBANDOS&amp;btnG=Google+Search" title="google検索(CHICA PUTA  MASTURBANDOS)">42</a> | <a href="https://web.archive.org/web/20070327065727/http://www.google.com/search?q=www.adilia.com" title="google検索(www.adilia.com)">34</a> | <a href="https://web.archive.org/web/20070327065727/http://aolsearch.aol.co.uk/web?query=www.adilia.com&amp;restrict=wholeweb&amp;isinit=true&amp;invocationType=uk_wssilver_Cl&amp;avtype=" title="http://aolsearch.aol.co.uk/web?query=www.adilia.co...">18</a> | <a href="https://web.archive.org/web/20070327065727/http://www.google.com.tr/search?hl=tr&amp;q=www.adilia.com&amp;btnG=Google%27da+Ara&amp;meta=" title="http://www.google.com.tr/search?hl=tr&amp;q=www.adilia...">17</a> | <a href="https://web.archive.org/web/20070327065727/http://search.yahoo.co.jp/search?p=polno+tube&amp;fr=top_v2&amp;tid=top_v2&amp;ei=euc-jp&amp;search.x=1" title="http://search.yahoo.co.jp/search?p=polno tube&amp;fr=t...">15</a> | <a href="https://web.archive.org/web/20070327065727/http://search.yahoo.co.jp/search?p=polno+tube&amp;ei=UTF-8&amp;fr=top_v2&amp;x=wrt&amp;meta=vc%3D" title="http://search.yahoo.co.jp/search?p=polno tube&amp;ei=U...">13</a> | <a href="https://web.archive.org/web/20070327065727/http://www.google.com.tr/search?hl=tr&amp;q=www.adilia.com&amp;meta=" title="http://www.google.com.tr/search?hl=tr&amp;q=www.adilia...">11</a> | <a href="https://web.archive.org/web/20070327065727/http://www.pop.com.br/barra.php?url=http://www2.coins.tsukuba.ac.jp/~i021216/diary/?date=20061027" title="http://www.pop.com.br/barra.php?url=http://www2.co...">10</a> | <a href="https://web.archive.org/web/20070327065727/http://search.yahoo.co.jp/search?p=polno+tube&amp;ei=UTF-8&amp;fr=top_v2&amp;x=wrt" title="http://search.yahoo.co.jp/search?p=polno tube&amp;ei=U...">10</a> | <a href="https://web.archive.org/web/20070327065727/http://cgi.search.biglobe.ne.jp/cgi-bin/search2-b?search=%8C%9F%8D%F5&amp;q=Polno+Tube" title="BIGLOBE検索(Polno Tube)">8</a> | <a href="./?date=20061027#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -456,35 +581,35 @@ public class Test {
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20061028#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=4Q;category=Java">Java</a>]Java��Generic��Visitor</h3><p>
-����ï�������ˤ�äƤ��������ɡ������Ƥ�äƤߤ롣
+<h3><a href="./?date=20061028#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=4Q;category=Java">Java</a>]JavaでGenericなVisitor</h3><p>
+絶対誰かが既にやってそうだけど、あえてやってみる。
 </p>
 <p>
-Java��Visitor�ѥ������Ȥ����η����Ȥ��ơ�
-</p>
-<ul>
-<li>visit�᥽�åɤ��Ϥ�����ƥ����Ⱦ����ɽ�������η���Visitor���饹����Ȥ��˷��ꤷ�ʤ���Фʤ�ʤ����ᡢ�ġ���Visitor�Υ��֥��饹���Ȥ˰ۤʤ뷿�ξ�����Ϥ��Τ�����</li>
-<li>visit�᥽�åɤ��֤��ͤη���Visitor���饹����Ȥ��˷��ꤷ�ʤ���Фʤ�ʤ����ᡢ�ġ���Visitor�Υ��֥��饹���Ȥ˰ۤʤ뷿���ͤ��֤����ꡢ�ġ��Υ��֥��饹��visit�᥽�åɤ��Ȥ˰ۤʤ뷿���ͤ��֤�����Ǥ��ʤ�</li>
-</ul>
-<p>
-�Ȥ����Τ����ä��Τ�����Java 5�ˤϤ��ä���Generics�����������顢�����դ��äȤ��ޤ��񤱤�󤸤�ʤ��������Ȥ������Ȥǡ���äƤߤ��������ϡ����Σ��ġ�
+JavaでVisitorパターンを使う場合の欠点として、
 </p>
 <ul>
-<li>Visitor���󥿥ե�������visit�᥽�åɤ��Ϥ�����ƥ����Ⱦ���η��ǥѥ�᡼��������</li>
-<li>�ġ���visit�᥽�åɤϡ�Visitor���󥿥ե���������������ʳ��Ǥϡ�
-�֤��ͤη���ѥ�᡼��������¿��᥽�åɤȤ���������Ƥ�����
+<li>visitメソッドに渡すコンテキスト情報を表す引数の型を、Visitorクラスを作るときに決定しなければならないため、個々のVisitorのサブクラスごとに異なる型の情報を渡すのが面倒</li>
+<li>visitメソッドの返り値の型をVisitorクラスを作るときに決定しなければならないため、個々のVisitorのサブクラスごとに異なる型の値を返したり、個々のサブクラスでvisitメソッドごとに異なる型の値を返したりできない</li>
+</ul>
+<p>
+というのがあったのだが、Java 5にはせっかくGenericsがあるんだから、この辺をもっとうまく書けるんじゃなかろうかということで、作ってみた。要点は、次の３つ。
+</p>
+<ul>
+<li>Visitorインタフェースをvisitメソッドに渡すコンテキスト情報の型でパラメータ化する</li>
+<li>個々のvisitメソッドは、Visitorインタフェースで宣言する段階では、
+返り値の型をパラメータ化した多相メソッドとして宣言しておく。
 </li>
-<li>visit�оݤΥ��֥������ȤΥ��饹�Ǥϡ�accept���֤��ͤη��ȥ���ƥ����Ⱦ���η��ǥѥ�᡼��������¿��᥽�åɤȤ���������Ƥ�����
+<li>visit対象のオブジェクトのクラスでは、acceptを返り値の型とコンテキスト情報の型でパラメータ化した多相メソッドとして宣言しておく。
 </li>
 </ul>
 <p>
-�ºݤ˺�äƤߤ��������ϰʲ���Visitor���󥿥ե������Ǥϡ�visit�᥽�åɤ��֤��ͤζ���Ū�ʷ��⥳��ƥ����Ⱦ���η�����ꤻ�����ºݤ˽�����Ԥ�Visitor�μ������饹Calculator�Ǹġ���visit�᥽�åɤη��ȥ���ƥ����Ⱦ���η������Ǥ��Ƥ��롣
+実際に作ってみたソースは以下。Visitorインタフェースでは、visitメソッドの返り値の具体的な型もコンテキスト情報の型も指定せず、実際に処理を行うVisitorの実装クラスCalculatorで個々のvisitメソッドの型とコンテキスト情報の型を指定できている。
 </p>
 <p>
-��������������ˡ�ˤϷ��������롣accept�᥽�åɤ��֤��ͤη���Visitor�μ������饹��visit�᥽�åɤη��˰�¸���Ƥ��뤿�ᡢaccept�θƤӽФ���̤��ͤ�������ѿ��η���ְ㤨��ȡ��¹Ի����顼�ˤʤäƤ��ޤ��Τ����Ĥޤꡢ������ˡ��Ȥäƺ�ä�Visitor�Ϸ������Ǥ�̵���ʤäƤ��ޤ���
+しかし、この方法には欠点がある。acceptメソッドが返す値の型はVisitorの実装クラスのvisitメソッドの型に依存しているため、acceptの呼び出し結果の値を入れる変数の型を間違えると、実行時エラーになってしまうのだ。つまり、この方法を使って作ったVisitorは型安全では無くなってしまう。
 </p>
 <p>
-����������ѥ����visit�᥽�åɤμ����ս�ǡ�����������ʤ��Ȥ����ݤηٹ��å�������Ф��Ƥ����Τǡ�accept��ƤӽФ���ʬ�����դ������Ƥ���С����ȻȤ���ƥ��˥å��ʤΤǤϤʤ����Ȼפ���
+ただ、コンパイラはvisitメソッドの実装箇所で、型安全じゃないという旨の警告メッセージを出してくれるので、acceptを呼び出す部分で注意さえしていれば、わりと使えるテクニックなのではないかと思う。
 </p>
 <pre>
 import java.util.*;
@@ -498,7 +623,7 @@ public class Main {
       new MulExp(new AddExp(new VarExp("x"), new VarExp("y")), new VarExp("z"))
     );
     Integer result = exp.accept(new Calculator(), new Env());
-    //String s = exp.accept(new Calculator(), new Env()); �Ƚ񤯤ȼ¹Ի���ClassCastExceptionȯ��
+    //String s = exp.accept(new Calculator(), new Env()); と書くと実行時にClassCastException発生
     System.out.printf("{ x = 2; y = 3; z = 4; (x + y) * z } = %d%n", result);
   }
 }
@@ -624,17 +749,17 @@ class BlkExp extends Exp {
   &lt;R, C&gt; R accept(Visitor&lt;C&gt; v, C c){ return v.&lt;R&gt;visit(this, c); }
 }
 </pre></div><div class="section">
-<h3><a href="./?date=20061028#p02"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=4Q;category=Java">Java</a>]���㥹�ȿ���</h3><p>
-����³����Generics�ͥ��������������٤Τ��������Ω���ʤ�����
+<h3><a href="./?date=20061028#p02"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=4Q;category=Java">Java</a>]キャスト推論</h3><p>
+引き続き、Genericsネタ。ただし、今度のは全く役に立たないが。
 </p>
 <p>
-Java��¿��᥽�åɤǤϡ��᥽�åɸƤӽФ���񤯺ݤˡ��������ˤĤ��ơ��᥽�åɸƤӽФ��ΰ������֤��ͤ����������ѿ��η����餢�����ٿ������Ƥ���롣���Τ��Ȥ����Ѥ���ȡ��㤨��<a href="https://web.archive.org/web/20070327065727/http://www.coins.tsukuba.ac.jp/~i021216/diary/?date=20051003#p02">2005-10-03������</a>�Τ褦�ʷ������ʥꥹ�ȥ�ƥ����ñ�˺��᥽�åɤ��뤳�Ȥ��Ǥ��롣
+Javaの多相メソッドでは、メソッド呼び出しを書く際に、型引数について、メソッド呼び出しの引数や返り値を代入する変数の型からある程度推論してくれる。このことを利用すると、例えば<a href="https://web.archive.org/web/20070327065727/http://www.coins.tsukuba.ac.jp/~i021216/diary/?date=20051003#p02">2005-10-03の日記</a>のような型安全なリストリテラルを簡単に作るメソッドを作ることができる。
 </p>
 <p>
-����Υͥ��ϡ����ο����������Ѥ��ơ��ɤη��˥��㥹�Ȥ���Τ���񤫤��˥��㥹�Ȥ�Ԥ����Ȥ��Ǥ���᥽�åɤ��������Ȥ�����Ρ�
+今回のネタは、この推論機構を悪用して、どの型にキャストするのかを書かずにキャストを行うことができるメソッドを定義するというもの。
 </p>
 <p>
-�ޤ������㥹�Ȥ�Ԥ��᥽�åɤ�����ϡ����Τ褦�ˤʤ롣
+まず、キャストを行うメソッドの定義は、次のようになる。
 <pre>
 public class Util {
   private static &lt;P, R&gt; R cast(P param){
@@ -643,29 +768,29 @@ public class Util {
 }
 </pre>
 <p>
-�᥽�åɤ�����ϼ¤˥���ץ�ǡ����Ĥη���P, R�򷿰����˼�ꡢP�����ͤ򤿤�ñ��R���˥��㥹�Ȥ���¿��᥽�å�cast��������Ƥ��������
+メソッドの定義は実にシンプルで、２つの型をP, Rを型引数に取り、P型の値をただ単にR型にキャストする多相メソッドcastを定義しているだけ。
 </p>
 <p>
-�����������Ȥ�¦�Υ����ɤϼ��Τ褦�ˤʤ롣
+一方、これを使う側のコードは次のようになる。
 </p>
 <pre>
 public class Main {
   public static void main(String[] args){
-    Object o = "Hello, World";//Object����ʸ���������Ƥ���
-    String s = Util.cast(o);//Util.&lt;Object, String&gt;cast(o);�ȿ��������
+    Object o = "Hello, World";//Object型に文字列を入れておく
+    String s = Util.cast(o);//Util.&lt;Object, String&gt;cast(o);と推論される
     System.out.println(s);
   }
 }
 </pre>
 <p>
-���Τ褦�˥��㥹�Ȥ��뷿̾��񤫤��˥��㥹�ȤǤ���櫓������Generics��Ȥ�����ʤ饭�㥹�ȤϤۤȤ�ɽ񤫤ʤ�����cast�᥽�åɤθƤӽФ���̤��ѿ����������ʤ��Ȥ����ȿ������Ƥ���ʤ����ᡢ�������ϤۤȤ��̵����
+このようにキャストする型名を書かずにキャストできるわけだが、Genericsを使う前提ならキャストはほとんど書かないし、castメソッドの呼び出し結果を変数に代入しないとちゃんと推論してくれないため、実用性はほとんど無い。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��1��) [<a href="./?date=20061028#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全1件) [<a href="./?date=20061028#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20061028#c01"><span class="canchor">_</span></a>
 				<span class="commentator">testeras</span>&nbsp;[People who know Bob Miller here?  need icq nubmer of bob m..]</p>
@@ -679,7 +804,7 @@ public class Main {
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/fetish/zamnoy/" title="http://www.hostones.com/websites/fetish/zamnoy/">428</a> | <a href="https://web.archive.org/web/20070327065727/http://zakovka.porkyhost.com/" title="http://zakovka.porkyhost.com/">348</a> | <a href="https://web.archive.org/web/20070327065727/http://vsemoe.sultryserver.com/" title="http://vsemoe.sultryserver.com/">347</a> | <a href="https://web.archive.org/web/20070327065727/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">347</a> | <a href="https://web.archive.org/web/20070327065727/http://www2.xfreehosting.com/hardcore/navsegda/" title="http://www2.xfreehosting.com/hardcore/navsegda/">346</a> | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/amateurs/zaebun/" title="http://www.hostones.com/websites/amateurs/zaebun/">346</a> | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">345</a> | <a href="https://web.archive.org/web/20070327065727/http://glazam.sultryserver.com/" title="http://glazam.sultryserver.com/">344</a> | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">341</a> | <a href="https://web.archive.org/web/20070327065727/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">339</a> | <a href="./?date=20061028#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/fetish/zamnoy/" title="http://www.hostones.com/websites/fetish/zamnoy/">428</a> | <a href="https://web.archive.org/web/20070327065727/http://zakovka.porkyhost.com/" title="http://zakovka.porkyhost.com/">348</a> | <a href="https://web.archive.org/web/20070327065727/http://vsemoe.sultryserver.com/" title="http://vsemoe.sultryserver.com/">347</a> | <a href="https://web.archive.org/web/20070327065727/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">347</a> | <a href="https://web.archive.org/web/20070327065727/http://www2.xfreehosting.com/hardcore/navsegda/" title="http://www2.xfreehosting.com/hardcore/navsegda/">346</a> | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/amateurs/zaebun/" title="http://www.hostones.com/websites/amateurs/zaebun/">346</a> | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">345</a> | <a href="https://web.archive.org/web/20070327065727/http://glazam.sultryserver.com/" title="http://glazam.sultryserver.com/">344</a> | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">341</a> | <a href="https://web.archive.org/web/20070327065727/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">339</a> | <a href="./?date=20061028#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -692,15 +817,15 @@ public class Main {
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20061029#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=4Q;category=%A4%BD%A4%CE%C2%BE">����¾</a>]��Ĵ����</h3><p>
-�����ϰ������ʤ���Ĵ���������䤿���ɡ�夬�Ф뤷���Τ����뤤�����ٰ��������ʤ���
+<h3><a href="./?date=20061029#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=4Q;category=%A4%BD%A4%CE%C2%BE">その他</a>]体調不良</h3><p>
+今日は一日、なんか体調が悪い。やたらに鼻水が出るし、体がだるい。風邪引いたかなあ。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-	<div class="caption">[<a href="./?date=20061029#c">�ĥå��ߤ������</a>]</div>
+	<div class="caption">[<a href="./?date=20061029#c">ツッコミを入れる</a>]</div>
 </div>
 
 
@@ -710,7 +835,7 @@ public class Main {
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065727/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">677</a> | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/amateurs/zaebun/" title="http://www.hostones.com/websites/amateurs/zaebun/">433</a> | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/fetish/zamnoy/" title="http://www.hostones.com/websites/fetish/zamnoy/">425</a> | <a href="https://web.archive.org/web/20070327065727/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">403</a> | <a href="https://web.archive.org/web/20070327065727/http://glazam.sultryserver.com/" title="http://glazam.sultryserver.com/">344</a> | <a href="https://web.archive.org/web/20070327065727/http://vsemoe.sultryserver.com/" title="http://vsemoe.sultryserver.com/">343</a> | <a href="https://web.archive.org/web/20070327065727/http://www2.xfreehosting.com/hardcore/navsegda/" title="http://www2.xfreehosting.com/hardcore/navsegda/">341</a> | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">340</a> | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">334</a> | <a href="https://web.archive.org/web/20070327065727/http://zakovka.porkyhost.com/" title="http://zakovka.porkyhost.com/">332</a> | <a href="./?date=20061029#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065727/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">677</a> | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/amateurs/zaebun/" title="http://www.hostones.com/websites/amateurs/zaebun/">433</a> | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/fetish/zamnoy/" title="http://www.hostones.com/websites/fetish/zamnoy/">425</a> | <a href="https://web.archive.org/web/20070327065727/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">403</a> | <a href="https://web.archive.org/web/20070327065727/http://glazam.sultryserver.com/" title="http://glazam.sultryserver.com/">344</a> | <a href="https://web.archive.org/web/20070327065727/http://vsemoe.sultryserver.com/" title="http://vsemoe.sultryserver.com/">343</a> | <a href="https://web.archive.org/web/20070327065727/http://www2.xfreehosting.com/hardcore/navsegda/" title="http://www2.xfreehosting.com/hardcore/navsegda/">341</a> | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">340</a> | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">334</a> | <a href="https://web.archive.org/web/20070327065727/http://zakovka.porkyhost.com/" title="http://zakovka.porkyhost.com/">332</a> | <a href="./?date=20061029#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -723,20 +848,20 @@ public class Main {
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20061030#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=4Q;category=Nemerle">Nemerle</a>]printf�ޥ���</h3><p>
-�����Τ����printf�����Υޥ������Ȥ��äƤ⡢�ե륹�ڥå���printf���������Τ����Ѥ���������Nemerle�ˤ�ɸ���Printf�ޥ���������Τǡ����ͤϺǾ��¤Τ�Τ�α��Ƥ�����
+<h3><a href="./?date=20061030#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=4Q;category=Nemerle">Nemerle</a>]printfマクロ</h3><p>
+今日のお題はprintf相当のマクロ。といっても、フルスペックのprintfを実装するのは大変だし、既にNemerleには標準でPrintfマクロがあるので、仕様は最小限のものに留めておく。
 </p>
 <p>
-����Ū�ˤϡ����μ��Τ褦�ʻ��ͤˤ��롣
+具体的には、大体次のような仕様にする。
 </p>
 <ul>
-<li>�Ѵ�����Ҥ�%d�Τ�</li>
-<li>����λ���ʤɤε�ǽ�ϰ���̵��</li>
-<li>�Ѵ�����Ҥ��Ф��ơ������ο���¿�������꾯�ʤ������ꤷ�����ϡ����顼��å�������ɽ������</li>
-<li>�Ѵ�����Ҥ��Ф��ơ����ʤ����ΰ������Ϥ��줿���ϥ��顼��å�������ɽ������</li>
+<li>変換指定子は%dのみ</li>
+<li>桁数の指定などの機能は一切無し</li>
+<li>変換指定子に対して、引数の数が多すぎたり少なすぎたりした場合は、エラーメッセージを表示する</li>
+<li>変換指定子に対して、合わない型の引数が渡された場合はエラーメッセージを表示する</li>
 </ul>
 <p>
-���ͤȤ��ƤϾ�������ܤ����뤬������ϡ��ޥ�����Ǥη������å�����ˡ�Ȳ���Ĺ�����Υޥ����ν�������ˡ��ؤ֤Τ���Ū�ʤΤǡ�����Ǥ����Τ����Ȥ����櫓�ǡ��ʲ�����������Nemerle�ˤޤ�����ʤ˴���Ƥ��ʤ������⤢�äơ�ͽ�۳��˹Կ��������Ƥ��ޤä���
+仕様としては少ししょぼすぎるが、今回は、マクロ内での型チェックの方法と可変長引数のマクロの処理の方法を学ぶのが目的なので、これでいいのだ。というわけで、以下がソース。Nemerleにまだそんなに慣れていないせいもあって、予想外に行数が増えてしまった。
 </p>
 <p><strong>printf.n</strong>
 <pre>
@@ -804,7 +929,7 @@ macro Printf(format :string, params args : array[expr]){
 }
 </pre>
 <p>
-�����Ȥ�¦�Υ������ϡ����Τ褦�ʴ����ˤʤ롣
+これを使う側のソースは、次のような感じになる。
 </p>
 <p><strong>use_printf.n</strong></p>
 <pre>
@@ -813,13 +938,13 @@ def b = 20;
 Printf("%d + %d = %d\n", a, b, a + b);
 </pre>
 <p>
-����ѥ��뤷�Ƽ¹Ԥ���ȡ�̵�����ʲ��Τ褦��ɽ������롣
+コンパイルして実行すると、無事、以下のように表示される。
 </p>
 <pre>
 10 + 20 = 30
 </pre>
 <p>
-�ޤ������Τ褦�˴ְ�ä����ΰ�����Ϳ����ȡ�
+また、次のように間違った型の引数を与えると、
 </p>
 <pre>
 def a = 10;
@@ -827,7 +952,7 @@ def b = 20;
 Printf("%d + %d = %d\n", a, b, "Hello");
 </pre>
 <p>
-�����ȥ��顼��å�������ɽ������롣
+ちゃんとエラーメッセージが表示される。
 </p>
 <pre>
 use_printf.n:3:1:3:7: [01;31merror [0m: expected int, got string in type-enforc
@@ -838,11 +963,11 @@ ed expression: System.String is not a subtype of System.Int32 [simple require]
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��6��) [<a href="./?date=20061030#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全6件) [<a href="./?date=20061030#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 			<p><a href="./?date=20061030#c01">Before...</a></p>
 				<p><a href="./?date=20061030#c02"><span class="canchor">_</span></a>
-				<span class="commentator">�ߤ�����</span>&nbsp;[���ߤޤ��󡣳Τ���valid��RDF�ˤʤäƤ��ʤ��ä��褦�ʤΤǡ��������Ƥ����ޤ�����  ]</p>
+				<span class="commentator">みずしま</span>&nbsp;[すみません。確かにvalidなRDFになっていなかったようなので、修正しておきました。  ]</p>
 				<p><a href="./?date=20061030#c03"><span class="canchor">_</span></a>
 				<span class="commentator">testeras</span>&nbsp;[People who know Bob Miller here?  need icq nubmer of bob m..]</p>
 				<p><a href="./?date=20061030#c04"><span class="canchor">_</span></a>
@@ -861,7 +986,7 @@ ed expression: System.String is not a subtype of System.Int32 [simple require]
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/fetish/zamnoy/" title="http://www.hostones.com/websites/fetish/zamnoy/">435</a> | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/amateurs/zaebun/" title="http://www.hostones.com/websites/amateurs/zaebun/">418</a> | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">341</a> | <a href="https://web.archive.org/web/20070327065727/http://glazam.sultryserver.com/" title="http://glazam.sultryserver.com/">341</a> | <a href="https://web.archive.org/web/20070327065727/http://vsemoe.sultryserver.com/" title="http://vsemoe.sultryserver.com/">340</a> | <a href="https://web.archive.org/web/20070327065727/http://www2.xfreehosting.com/hardcore/navsegda/" title="http://www2.xfreehosting.com/hardcore/navsegda/">335</a> | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">335</a> | <a href="https://web.archive.org/web/20070327065727/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">331</a> | <a href="https://web.archive.org/web/20070327065727/http://www.google.it/search?hl=it&amp;q=w.w.w.jessicarizzo.it&amp;meta=lr%3Dlang_it" title="http://www.google.it/search?hl=it&amp;q=w.w.w.jessicar...">22</a> | <a href="https://web.archive.org/web/20070327065727/http://www.google.it/search?hl=it&amp;q=nane+e+nani+porno+gallery&amp;btnG=Cerca&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=nane e nani po...">15</a> | <a href="./?date=20061030#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/fetish/zamnoy/" title="http://www.hostones.com/websites/fetish/zamnoy/">435</a> | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/amateurs/zaebun/" title="http://www.hostones.com/websites/amateurs/zaebun/">418</a> | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">341</a> | <a href="https://web.archive.org/web/20070327065727/http://glazam.sultryserver.com/" title="http://glazam.sultryserver.com/">341</a> | <a href="https://web.archive.org/web/20070327065727/http://vsemoe.sultryserver.com/" title="http://vsemoe.sultryserver.com/">340</a> | <a href="https://web.archive.org/web/20070327065727/http://www2.xfreehosting.com/hardcore/navsegda/" title="http://www2.xfreehosting.com/hardcore/navsegda/">335</a> | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">335</a> | <a href="https://web.archive.org/web/20070327065727/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">331</a> | <a href="https://web.archive.org/web/20070327065727/http://www.google.it/search?hl=it&amp;q=w.w.w.jessicarizzo.it&amp;meta=lr%3Dlang_it" title="http://www.google.it/search?hl=it&amp;q=w.w.w.jessicar...">22</a> | <a href="https://web.archive.org/web/20070327065727/http://www.google.it/search?hl=it&amp;q=nane+e+nani+porno+gallery&amp;btnG=Cerca&amp;meta=" title="http://www.google.it/search?hl=it&amp;q=nane e nani po...">15</a> | <a href="./?date=20061030#t">TrackBack(0)</a>
 		</div>
 </div>
 
@@ -874,26 +999,26 @@ ed expression: System.String is not a subtype of System.Int32 [simple require]
 <div class="body">
 
 <div class="section">
-<h3><a href="./?date=20061031#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=4Q;category=Java">Java</a>]<a href="https://web.archive.org/web/20070327065727/http://blog.livedoor.jp/lalha_java/archives/50741760.html">Java Programming Tips - ���饹���������򼫺����ˡ</a></h3><p>
-<a href="https://web.archive.org/web/20070327065727/http://cappuccino.jp/keisuken/logbook/">�ҳ�����</a>��ͳ��
+<h3><a href="./?date=20061031#p01"><span class="sanchor">_</span></a> [<a href="./?year=2006;month=4Q;category=Java">Java</a>]<a href="https://web.archive.org/web/20070327065727/http://blog.livedoor.jp/lalha_java/archives/50741760.html">Java Programming Tips - クラスローダーを自作する方法</a></h3><p>
+<a href="https://web.archive.org/web/20070327065727/http://cappuccino.jp/keisuken/logbook/">航海日誌</a>経由。
 </p>
 <p>
-���饹�������򼫺����ˡ�ˤĤ��Ƥδ�ñ�ʾҲ𡣥��饹�������򼫺�����ͤˤȤäƤΤȤä�����Ȥ��ơ��ɤ��Ȼפ����������ϤƤʥ֥å��ޡ����Ǥ�Ĥä��ޤ�Ƥ������������URLClassLoader�Ǥ��������ȤʤäƤ��ޤ����ȼ����饹������������åȤ����ޥ����狼��ˤ����ΤǤϤȤ������⤹�롣
+クラスローダを自作する方法についての簡単な紹介。クラスローダを自作したい人にとってのとっかかりとして、良いと思う。ただ、はてなブックマークでもつっこまれてたが、これだとURLClassLoaderでいいじゃんとなってしまい、独自クラスローダを作るメリットがイマイチわかりにくいのではという気もする。
 </p>
 <p>
-���ʤߤˡ�JVM���ư��ƥХ��ȥ����ɤ˥���ѥ���Ǥ��륹����ץȸ��������(Pnuts/Rhino/Groovy/...)�ϡ��ۤȤ�ɤξ�硢�ȼ����饹��������ȤäƤ��λ��Ȥߤ�¸����Ƥ��롣Onion�Ǥ⥹����ץȤ�ľ�ܼ¹Ԥ���⡼�ɤǤ��ȼ����饹���������äƤ��ꡢ�����������ɤ򥳥�ѥ��뤷���Х����󤫤饯�饹������ɤ��Ƽ¹Ԥ���褦�ˤ��Ƥ��롣
+ちなみに、JVM上で動作してバイトコードにコンパイルできるスクリプト言語処理系(Pnuts/Rhino/Groovy/...)は、ほとんどの場合、独自クラスローダを使ってその仕組みを実現している。Onionでもスクリプトを直接実行するモードでは独自クラスローダを作っており、ソースコードをコンパイルしたバイト列からクラスをロードして実行するようにしている。
 </p></div>
 
 </div>
 
 <div class="comment">
 
-		<div class="caption">�����Υĥå���(��2��) [<a href="./?date=20061031#c">�ĥå��ߤ������</a>]</div>
+		<div class="caption">本日のツッコミ(全2件) [<a href="./?date=20061031#c">ツッコミを入れる</a>]</div>
 		<div class="commentshort">
 				<p><a href="./?date=20061031#c01"><span class="canchor">_</span></a>
-				<span class="commentator">IKeJI</span>&nbsp;[�饤�֥�ꥤ�󥸥��������(DLL���󥸥��������ߤ����ʤ�)���Ǥ��롩  ]</p>
+				<span class="commentator">IKeJI</span>&nbsp;[ライブラリインジェクション(DLLインジェクションみたいなの)ができる？  ]</p>
 				<p><a href="./?date=20061031#c02"><span class="canchor">_</span></a>
-				<span class="commentator">�ߤ�����</span>&nbsp;[�饤�֥�ꥤ�󥸥��������Ȥ������դ�����Ū�� ����ؤ��Ƥ��뤫�ˤ��Ȼפ����ɡ�DLL���󥸥�������� �ߤ�������..]</p>
+				<span class="commentator">みずしま</span>&nbsp;[ライブラリインジェクションという言葉が具体的に 何を指しているかによると思うけど、DLLインジェクション みたいに別..]</p>
 		</div>
 </div>
 
@@ -904,7 +1029,7 @@ ed expression: System.String is not a subtype of System.Int32 [simple require]
 
 
 		<div class="referer">
-		�����Υ�󥯸� | <a href="https://web.archive.org/web/20070327065727/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">2679</a> | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">1674</a> | <a href="https://web.archive.org/web/20070327065727/http://www2.xfreehosting.com/hardcore/navsegda/" title="http://www2.xfreehosting.com/hardcore/navsegda/">1670</a> | <a href="https://web.archive.org/web/20070327065727/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">1458</a> | <a href="https://web.archive.org/web/20070327065727/http://glazam.sultryserver.com/" title="http://glazam.sultryserver.com/">1357</a> | <a href="https://web.archive.org/web/20070327065727/http://zakovka.porkyhost.com/" title="http://zakovka.porkyhost.com/">1324</a> | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">1019</a> | <a href="https://web.archive.org/web/20070327065727/http://vsemoe.sultryserver.com/" title="http://vsemoe.sultryserver.com/">1018</a> | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/fetish/zamnoy/" title="http://www.hostones.com/websites/fetish/zamnoy/">1005</a> | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/amateurs/zaebun/" title="http://www.hostones.com/websites/amateurs/zaebun/">905</a> | <a href="./?date=20061031#t">TrackBack(0)</a>
+		本日のリンク元 | <a href="https://web.archive.org/web/20070327065727/http://www2.xfreehosting.com/fetish/zanyato/" title="http://www2.xfreehosting.com/fetish/zanyato/">2679</a> | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/veselis/" title="http://www.nastyhost.com/members/veselis/">1674</a> | <a href="https://web.archive.org/web/20070327065727/http://www2.xfreehosting.com/hardcore/navsegda/" title="http://www2.xfreehosting.com/hardcore/navsegda/">1670</a> | <a href="https://web.archive.org/web/20070327065727/http://prodaza.porkyhost.com/" title="http://prodaza.porkyhost.com/">1458</a> | <a href="https://web.archive.org/web/20070327065727/http://glazam.sultryserver.com/" title="http://glazam.sultryserver.com/">1357</a> | <a href="https://web.archive.org/web/20070327065727/http://zakovka.porkyhost.com/" title="http://zakovka.porkyhost.com/">1324</a> | <a href="https://web.archive.org/web/20070327065727/http://www.nastyhost.com/members/sovsem/" title="http://www.nastyhost.com/members/sovsem/">1019</a> | <a href="https://web.archive.org/web/20070327065727/http://vsemoe.sultryserver.com/" title="http://vsemoe.sultryserver.com/">1018</a> | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/fetish/zamnoy/" title="http://www.hostones.com/websites/fetish/zamnoy/">1005</a> | <a href="https://web.archive.org/web/20070327065727/http://www.hostones.com/websites/amateurs/zaebun/" title="http://www.hostones.com/websites/amateurs/zaebun/">905</a> | <a href="./?date=20061031#t">TrackBack(0)</a>
 		</div>
 </div>
 
